@@ -241,39 +241,39 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5DBB4758
-P 5300 1400
+P 5100 1400
 AR Path="/5C16C03C/5DBB4758" Ref="#PWR?"  Part="1" 
 AR Path="/5BCEDA59/5DBB4758" Ref="#PWR?"  Part="1" 
 AR Path="/5C16BF8E/5DBB4758" Ref="#PWR?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5DBB4758" Ref="#PWR0256"  Part="1" 
-F 0 "#PWR0256" H 5300 1150 50  0001 C CNN
-F 1 "GND" H 5305 1227 50  0000 C CNN
-F 2 "" H 5300 1400 50  0001 C CNN
-F 3 "" H 5300 1400 50  0001 C CNN
-	1    5300 1400
+F 0 "#PWR0256" H 5100 1150 50  0001 C CNN
+F 1 "GND" H 5105 1227 50  0000 C CNN
+F 2 "" H 5100 1400 50  0001 C CNN
+F 3 "" H 5100 1400 50  0001 C CNN
+	1    5100 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 1350 5300 1400
+	5100 1350 5100 1400
 $Comp
 L power:+12V #PWR?
 U 1 1 5DBB4760
-P 5300 950
+P 5100 950
 AR Path="/5C16BF8E/5DBB4760" Ref="#PWR?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5DBB4760" Ref="#PWR0255"  Part="1" 
-F 0 "#PWR0255" H 5300 800 50  0001 C CNN
-F 1 "+12V" H 5315 1123 50  0000 C CNN
-F 2 "" H 5300 950 50  0001 C CNN
-F 3 "" H 5300 950 50  0001 C CNN
-	1    5300 950 
+F 0 "#PWR0255" H 5100 800 50  0001 C CNN
+F 1 "+12V" H 5115 1123 50  0000 C CNN
+F 2 "" H 5100 950 50  0001 C CNN
+F 3 "" H 5100 950 50  0001 C CNN
+	1    5100 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 950  5300 1050
+	5100 950  5100 1050
 Wire Wire Line
 	6150 1050 6150 1700
 $Comp
-L AMC_FMC_Carrier-PcbDoc-rescue:Conn_01x04_Male-Connector-AMC_FMC_Carrier-PcbDoc-rescue-AMC_FMC_Carrier-PcbDoc-rescue-AMC_FMC_Carrier-PcbDoc-rescue J?
+L marble_misc:Conn_01x04_Male-Connector J?
 U 1 1 5DBB4777
 P 3900 2700
 AR Path="/5DBB4777" Ref="J?"  Part="1" 
@@ -282,8 +282,9 @@ AR Path="/5C16BF8E/5DB9B7E6/5DBB4777" Ref="J9"  Part="1"
 F 0 "J9" H 3900 2900 50  0000 C CNN
 F 1 "2057-PH1-04-UA-ND" H 3700 2400 50  0000 C CNN
 F 2 "Connectors THD:SAMTEC_MTLW-104-07-L-S-250" H 3900 2700 50  0001 C CNN
-F 3 "~" H 3900 2700 50  0001 C CNN
-F 4 "2057-PH1-04-UA-ND" H 3900 2700 50  0001 C CNN "Manufacturer Part Number"
+F 3 " " H 3900 2700 50  0001 C CNN
+F 4 "PH1-04-UA" H 3900 2700 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Adam Tech" H 3900 2700 50  0001 C CNN "Manufacturer"
 	1    3900 2700
 	1    0    0    -1  
 $EndComp
@@ -369,7 +370,7 @@ Wire Wire Line
 	4450 2600 4350 2600
 Connection ~ 4350 2600
 $Comp
-L power2:+3.3P #PWR?
+L power:+3.3P #PWR?
 U 1 1 5DBB47C4
 P 4750 2600
 AR Path="/5C16C03C/5DBB47C4" Ref="#PWR?"  Part="1" 
@@ -416,7 +417,7 @@ $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5DBB7E7F
-P 14700 4150
+P 14700 3800
 AR Path="/5BD32060/5DBB7E7F" Ref="#PWR?"  Part="1" 
 AR Path="/5BABAC65/5DBB7E7F" Ref="#PWR?"  Part="1" 
 AR Path="/5CC24E97/5DBB7E7F" Ref="#PWR?"  Part="1" 
@@ -426,11 +427,11 @@ AR Path="/5CC8AFE1/5DBB7E7F" Ref="#PWR?"  Part="1"
 AR Path="/5BCEDA59/5DBB7E7F" Ref="#PWR?"  Part="1" 
 AR Path="/5C16BF8E/5DBB7E7F" Ref="#PWR?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5DBB7E7F" Ref="#PWR0543"  Part="1" 
-F 0 "#PWR0543" H 14700 4000 50  0001 C CNN
-F 1 "+3V3" H 14715 4323 50  0000 C CNN
-F 2 "" H 14700 4150 50  0001 C CNN
-F 3 "" H 14700 4150 50  0001 C CNN
-	1    14700 4150
+F 0 "#PWR0543" H 14700 3650 50  0001 C CNN
+F 1 "+3V3" H 14715 3973 50  0000 C CNN
+F 2 "" H 14700 3800 50  0001 C CNN
+F 3 "" H 14700 3800 50  0001 C CNN
+	1    14700 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -747,16 +748,9 @@ $EndComp
 Wire Wire Line
 	11400 4150 11850 4150
 Wire Wire Line
-	11850 4150 11850 3400
-Wire Wire Line
 	11850 3400 10050 3400
 Wire Wire Line
-	11850 3400 11850 3250
-Wire Wire Line
 	11850 3250 11150 3250
-Connection ~ 11850 3400
-Wire Wire Line
-	10050 3250 10850 3250
 Text Label 10050 3250 0    50   ~ 10
 PSS_XRP_BST2
 Text Label 10050 3400 0    50   ~ 10
@@ -1257,7 +1251,7 @@ $EndComp
 Wire Wire Line
 	12350 7000 12350 7050
 $Comp
-L AMC_FMC_Carrier-PcbDoc-rescue:VCCAUX-powerMG-AMC_FMC_Carrier-PcbDoc-rescue-AMC_FMC_Carrier-PcbDoc-rescue-AMC_FMC_Carrier-PcbDoc-rescue #PWR?
+L marble_misc:VCCAUX #PWR?
 U 1 1 5DBB8165
 P 15250 8200
 AR Path="/5C907554/5C417BCB/5DBB8165" Ref="#PWR?"  Part="1" 
@@ -1271,7 +1265,7 @@ F 3 "" H 15250 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AMC_FMC_Carrier-PcbDoc-rescue:VCCBRAM-powerMG-AMC_FMC_Carrier-PcbDoc-rescue-AMC_FMC_Carrier-PcbDoc-rescue-AMC_FMC_Carrier-PcbDoc-rescue #PWR?
+L marble_misc:VCCBRAM #PWR?
 U 1 1 5DBB816B
 P 15300 5800
 AR Path="/5C907554/5C417BCB/5DBB816B" Ref="#PWR?"  Part="1" 
@@ -1285,7 +1279,7 @@ F 3 "" H 15300 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AMC_FMC_Carrier-PcbDoc-rescue:MGTAVCC-powerMG-AMC_FMC_Carrier-PcbDoc-rescue-AMC_FMC_Carrier-PcbDoc-rescue-AMC_FMC_Carrier-PcbDoc-rescue #PWR?
+L marble_misc:MGTAVCC #PWR?
 U 1 1 5DBB8171
 P 7850 9550
 AR Path="/5C907554/5C417BCB/5DBB8171" Ref="#PWR?"  Part="1" 
@@ -1372,7 +1366,7 @@ F 8 "Standard" H 10800 1030 60  0001 L CNN "Component Kind"
 F 9 "Standard" H 10800 940 60  0001 L CNN "Component Type"
 F 10 "FDMS7608S" H 10800 850 60  0001 L CNN "Device"
 F 11 "SON, 1.27mm Pitch; 8 Pin, 6.00mm W X 5.00mm L X 0.8mm H body, 2x Thermal Pad, IPC Medium Density" H 10800 670 60  0001 L CNN "PackageDescription"
-F 12 "~~" H 10800 580 60  0001 L CNN "Status"
+F 12 " " H 10800 580 60  0001 L CNN "Status"
 F 13 "30V Dual N-Channel PowerTrench® MOSFET" H 10800 490 60  0001 L CNN "Part Description"
 F 14 "FAIRCHILD SEMICONDUCTOR" H 10800 400 60  0001 L CNN "Manufacturer"
 F 15 "FDMS7608S" H 10800 310 60  0001 L CNN "Manufacturer Part Number"
@@ -1383,22 +1377,19 @@ F 19 "No" H 10800 -50 60  0001 L CNN "Socket"
 F 20 "No" H 10800 -140 60  0001 L CNN "PressFit"
 F 21 "Yes" H 10800 -230 60  0001 L CNN "SMD"
 F 22 "No" H 10800 -320 60  0001 L CNN "Sense"
-F 23 "~~" H 10800 -410 60  0001 L CNN "Sense Comment"
+F 23 " " H 10800 -410 60  0001 L CNN "Sense Comment"
 F 24 "No" H 10800 -500 60  0001 L CNN "Bonding"
-F 25 "~~" H 10800 -590 60  0001 L CNN "Status Comment"
+F 25 " " H 10800 -590 60  0001 L CNN "Status Comment"
 F 26 "0.8mm" H 10800 -680 60  0001 L CNN "ComponentHeight"
 F 27 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 10800 -770 60  0001 L CNN "Footprint Path"
 F 28 "FAIRCHILD_MLP08P" H 10800 -860 60  0001 L CNN "Footprint Ref"
-F 29 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\FDMS7608S.pdf" H 10800 -950 60  0001 L CNN "HelpURL"
-F 30 "~~" H 10800 -1040 60  0001 L CNN "ComponentLink1URL"
-F 31 "~~" H 10800 -1130 60  0001 L CNN "ComponentLink1Description"
-F 32 "~~" H 10800 -1220 60  0001 L CNN "ComponentLink2URL"
-F 33 "~~" H 10800 -1310 60  0001 L CNN "ComponentLink2Description"
-F 34 "CERN DEM MR" H 10800 -1400 60  0001 L CNN "Author"
-F 35 "05/25/16 00:00:00" H 10800 -1490 60  0001 L CNN "CreateDate"
-F 36 "04/10/17 00:00:00" H 10800 -1580 60  0001 L CNN "LatestRevisionDate"
-F 37 "ICs And Semiconductors SMD" H 10800 -1670 60  0001 L CNN "Library Name"
-F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10800 -1760 60  0001 L CNN "License"
+F 29 " " H 10800 -1130 60  0001 L CNN "ComponentLink1Description"
+F 30 " " H 10800 -1310 60  0001 L CNN "ComponentLink2Description"
+F 31 "CERN DEM MR" H 10800 -1400 60  0001 L CNN "Author"
+F 32 "05/25/16 00:00:00" H 10800 -1490 60  0001 L CNN "CreateDate"
+F 33 "04/10/17 00:00:00" H 10800 -1580 60  0001 L CNN "LatestRevisionDate"
+F 34 "ICs And Semiconductors SMD" H 10800 -1670 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10800 -1760 60  0001 L CNN "License"
 	1    10800 2750
 	1    0    0    1   
 $EndComp
@@ -1418,7 +1409,7 @@ F 8 "Standard" H 10800 2830 60  0001 L CNN "Component Kind"
 F 9 "Standard" H 10800 2740 60  0001 L CNN "Component Type"
 F 10 "FDMS7608S" H 10800 2650 60  0001 L CNN "Device"
 F 11 "SON, 1.27mm Pitch; 8 Pin, 6.00mm W X 5.00mm L X 0.8mm H body, 2x Thermal Pad, IPC Medium Density" H 10800 2470 60  0001 L CNN "PackageDescription"
-F 12 "~~" H 10800 2380 60  0001 L CNN "Status"
+F 12 " " H 10800 2380 60  0001 L CNN "Status"
 F 13 "30V Dual N-Channel PowerTrench® MOSFET" H 10800 2290 60  0001 L CNN "Part Description"
 F 14 "FAIRCHILD SEMICONDUCTOR" H 10800 2200 60  0001 L CNN "Manufacturer"
 F 15 "FDMS7608S" H 10800 2110 60  0001 L CNN "Manufacturer Part Number"
@@ -1429,22 +1420,19 @@ F 19 "No" H 10800 1750 60  0001 L CNN "Socket"
 F 20 "No" H 10800 1660 60  0001 L CNN "PressFit"
 F 21 "Yes" H 10800 1570 60  0001 L CNN "SMD"
 F 22 "No" H 10800 1480 60  0001 L CNN "Sense"
-F 23 "~~" H 10800 1390 60  0001 L CNN "Sense Comment"
+F 23 " " H 10800 1390 60  0001 L CNN "Sense Comment"
 F 24 "No" H 10800 1300 60  0001 L CNN "Bonding"
-F 25 "~~" H 10800 1210 60  0001 L CNN "Status Comment"
+F 25 " " H 10800 1210 60  0001 L CNN "Status Comment"
 F 26 "0.8mm" H 10800 1120 60  0001 L CNN "ComponentHeight"
 F 27 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 10800 1030 60  0001 L CNN "Footprint Path"
 F 28 "FAIRCHILD_MLP08P" H 10800 940 60  0001 L CNN "Footprint Ref"
-F 29 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\FDMS7608S.pdf" H 10800 850 60  0001 L CNN "HelpURL"
-F 30 "~~" H 10800 760 60  0001 L CNN "ComponentLink1URL"
-F 31 "~~" H 10800 670 60  0001 L CNN "ComponentLink1Description"
-F 32 "~~" H 10800 580 60  0001 L CNN "ComponentLink2URL"
-F 33 "~~" H 10800 490 60  0001 L CNN "ComponentLink2Description"
-F 34 "CERN DEM MR" H 10800 400 60  0001 L CNN "Author"
-F 35 "05/25/16 00:00:00" H 10800 310 60  0001 L CNN "CreateDate"
-F 36 "04/10/17 00:00:00" H 10800 220 60  0001 L CNN "LatestRevisionDate"
-F 37 "ICs And Semiconductors SMD" H 10800 130 60  0001 L CNN "Library Name"
-F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10800 40  60  0001 L CNN "License"
+F 29 " " H 10800 670 60  0001 L CNN "ComponentLink1Description"
+F 30 " " H 10800 490 60  0001 L CNN "ComponentLink2Description"
+F 31 "CERN DEM MR" H 10800 400 60  0001 L CNN "Author"
+F 32 "05/25/16 00:00:00" H 10800 310 60  0001 L CNN "CreateDate"
+F 33 "04/10/17 00:00:00" H 10800 220 60  0001 L CNN "LatestRevisionDate"
+F 34 "ICs And Semiconductors SMD" H 10800 130 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10800 40  60  0001 L CNN "License"
 	1    10800 4550
 	1    0    0    1   
 $EndComp
@@ -1464,7 +1452,7 @@ F 8 "Standard" H 10800 4630 60  0001 L CNN "Component Kind"
 F 9 "Standard" H 10800 4540 60  0001 L CNN "Component Type"
 F 10 "FDMS7608S" H 10800 4450 60  0001 L CNN "Device"
 F 11 "SON, 1.27mm Pitch; 8 Pin, 6.00mm W X 5.00mm L X 0.8mm H body, 2x Thermal Pad, IPC Medium Density" H 10800 4270 60  0001 L CNN "PackageDescription"
-F 12 "~~" H 10800 4180 60  0001 L CNN "Status"
+F 12 " " H 10800 4180 60  0001 L CNN "Status"
 F 13 "30V Dual N-Channel PowerTrench® MOSFET" H 10800 4090 60  0001 L CNN "Part Description"
 F 14 "FAIRCHILD SEMICONDUCTOR" H 10800 4000 60  0001 L CNN "Manufacturer"
 F 15 "FDMS7608S" H 10800 3910 60  0001 L CNN "Manufacturer Part Number"
@@ -1475,22 +1463,19 @@ F 19 "No" H 10800 3550 60  0001 L CNN "Socket"
 F 20 "No" H 10800 3460 60  0001 L CNN "PressFit"
 F 21 "Yes" H 10800 3370 60  0001 L CNN "SMD"
 F 22 "No" H 10800 3280 60  0001 L CNN "Sense"
-F 23 "~~" H 10800 3190 60  0001 L CNN "Sense Comment"
+F 23 " " H 10800 3190 60  0001 L CNN "Sense Comment"
 F 24 "No" H 10800 3100 60  0001 L CNN "Bonding"
-F 25 "~~" H 10800 3010 60  0001 L CNN "Status Comment"
+F 25 " " H 10800 3010 60  0001 L CNN "Status Comment"
 F 26 "0.8mm" H 10800 2920 60  0001 L CNN "ComponentHeight"
 F 27 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 10800 2830 60  0001 L CNN "Footprint Path"
 F 28 "FAIRCHILD_MLP08P" H 10800 2740 60  0001 L CNN "Footprint Ref"
-F 29 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\FDMS7608S.pdf" H 10800 2650 60  0001 L CNN "HelpURL"
-F 30 "~~" H 10800 2560 60  0001 L CNN "ComponentLink1URL"
-F 31 "~~" H 10800 2470 60  0001 L CNN "ComponentLink1Description"
-F 32 "~~" H 10800 2380 60  0001 L CNN "ComponentLink2URL"
-F 33 "~~" H 10800 2290 60  0001 L CNN "ComponentLink2Description"
-F 34 "CERN DEM MR" H 10800 2200 60  0001 L CNN "Author"
-F 35 "05/25/16 00:00:00" H 10800 2110 60  0001 L CNN "CreateDate"
-F 36 "04/10/17 00:00:00" H 10800 2020 60  0001 L CNN "LatestRevisionDate"
-F 37 "ICs And Semiconductors SMD" H 10800 1930 60  0001 L CNN "Library Name"
-F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10800 1840 60  0001 L CNN "License"
+F 29 " " H 10800 2470 60  0001 L CNN "ComponentLink1Description"
+F 30 " " H 10800 2290 60  0001 L CNN "ComponentLink2Description"
+F 31 "CERN DEM MR" H 10800 2200 60  0001 L CNN "Author"
+F 32 "05/25/16 00:00:00" H 10800 2110 60  0001 L CNN "CreateDate"
+F 33 "04/10/17 00:00:00" H 10800 2020 60  0001 L CNN "LatestRevisionDate"
+F 34 "ICs And Semiconductors SMD" H 10800 1930 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10800 1840 60  0001 L CNN "License"
 	1    10800 6350
 	1    0    0    1   
 $EndComp
@@ -1510,7 +1495,7 @@ F 8 "Standard" H 10800 6430 60  0001 L CNN "Component Kind"
 F 9 "Standard" H 10800 6340 60  0001 L CNN "Component Type"
 F 10 "FDMS7608S" H 10800 6250 60  0001 L CNN "Device"
 F 11 "SON, 1.27mm Pitch; 8 Pin, 6.00mm W X 5.00mm L X 0.8mm H body, 2x Thermal Pad, IPC Medium Density" H 10800 6070 60  0001 L CNN "PackageDescription"
-F 12 "~~" H 10800 5980 60  0001 L CNN "Status"
+F 12 " " H 10800 5980 60  0001 L CNN "Status"
 F 13 "30V Dual N-Channel PowerTrench® MOSFET" H 10800 5890 60  0001 L CNN "Part Description"
 F 14 "FAIRCHILD SEMICONDUCTOR" H 10800 5800 60  0001 L CNN "Manufacturer"
 F 15 "FDMS7608S" H 10800 5710 60  0001 L CNN "Manufacturer Part Number"
@@ -1521,22 +1506,19 @@ F 19 "No" H 10800 5350 60  0001 L CNN "Socket"
 F 20 "No" H 10800 5260 60  0001 L CNN "PressFit"
 F 21 "Yes" H 10800 5170 60  0001 L CNN "SMD"
 F 22 "No" H 10800 5080 60  0001 L CNN "Sense"
-F 23 "~~" H 10800 4990 60  0001 L CNN "Sense Comment"
+F 23 " " H 10800 4990 60  0001 L CNN "Sense Comment"
 F 24 "No" H 10800 4900 60  0001 L CNN "Bonding"
-F 25 "~~" H 10800 4810 60  0001 L CNN "Status Comment"
+F 25 " " H 10800 4810 60  0001 L CNN "Status Comment"
 F 26 "0.8mm" H 10800 4720 60  0001 L CNN "ComponentHeight"
 F 27 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 10800 4630 60  0001 L CNN "Footprint Path"
 F 28 "FAIRCHILD_MLP08P" H 10800 4540 60  0001 L CNN "Footprint Ref"
-F 29 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\FDMS7608S.pdf" H 10800 4450 60  0001 L CNN "HelpURL"
-F 30 "~~" H 10800 4360 60  0001 L CNN "ComponentLink1URL"
-F 31 "~~" H 10800 4270 60  0001 L CNN "ComponentLink1Description"
-F 32 "~~" H 10800 4180 60  0001 L CNN "ComponentLink2URL"
-F 33 "~~" H 10800 4090 60  0001 L CNN "ComponentLink2Description"
-F 34 "CERN DEM MR" H 10800 4000 60  0001 L CNN "Author"
-F 35 "05/25/16 00:00:00" H 10800 3910 60  0001 L CNN "CreateDate"
-F 36 "04/10/17 00:00:00" H 10800 3820 60  0001 L CNN "LatestRevisionDate"
-F 37 "ICs And Semiconductors SMD" H 10800 3730 60  0001 L CNN "Library Name"
-F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10800 3640 60  0001 L CNN "License"
+F 29 " " H 10800 4270 60  0001 L CNN "ComponentLink1Description"
+F 30 " " H 10800 4090 60  0001 L CNN "ComponentLink2Description"
+F 31 "CERN DEM MR" H 10800 4000 60  0001 L CNN "Author"
+F 32 "05/25/16 00:00:00" H 10800 3910 60  0001 L CNN "CreateDate"
+F 33 "04/10/17 00:00:00" H 10800 3820 60  0001 L CNN "LatestRevisionDate"
+F 34 "ICs And Semiconductors SMD" H 10800 3730 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10800 3640 60  0001 L CNN "License"
 	1    10800 8150
 	1    0    0    1   
 $EndComp
@@ -1555,15 +1537,15 @@ F 7 "SchLib\\Inductors & Transformers.SchLib" H 13900 1710 60  0001 L CNN "Libra
 F 8 "=Value" H 13900 1620 60  0001 L CNN "Comment"
 F 9 "Standard" H 13900 1530 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 13900 1440 60  0001 L CNN "Component Type"
-F 11 "~~" H 13900 1260 60  0001 L CNN "PackageDescription"
-F 12 "2.0000000000000000e+00" H 13900 1170 60  0001 L CNN "Pin Count"
+F 11 " " H 13900 1260 60  0001 L CNN "PackageDescription"
+F 12 "2" H 13900 1170 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Inductors SMD.PcbLib" H 13900 1080 60  0001 L CNN "Footprint Path"
 F 14 "INDC4516X180N" H 13900 990 60  0001 L CNN "Footprint Ref"
 F 15 "60R@100MHz" H 13900 900 60  0001 L CNN "Val"
 F 16 "None" H 13900 810 60  0001 L CNN "Status"
 F 17 "6A" H 13900 720 60  0001 L CNN "Power"
 F 18 "0.01R" H 13900 630 60  0001 L CNN "Resistance"
-F 19 "~~" H 13900 540 60  0001 L CNN "Tolerance"
+F 19 " " H 13900 540 60  0001 L CNN "Tolerance"
 F 20 "SMD EMI Suppression Chip Ferrite Bead (BLM41P Series)" H 13900 450 60  0001 L CNN "Part Description"
 F 21 "MURATA" H 13900 360 60  0001 L CNN "Manufacturer"
 F 22 "BLM41PG600SN1L" H 13900 270 60  0001 L CNN "Manufacturer Part Number"
@@ -1571,16 +1553,15 @@ F 23 "1806" H 13900 180 60  0001 L CNN "Case"
 F 24 "Yes" H 13900 90  60  0001 L CNN "Mounted"
 F 25 "No" H 13900 0   60  0001 L CNN "Socket"
 F 26 "Yes" H 13900 -90 60  0001 L CNN "SMD"
-F 27 "~~" H 13900 -180 60  0001 L CNN "Sense Comment"
+F 27 " " H 13900 -180 60  0001 L CNN "Sense Comment"
 F 28 "No" H 13900 -270 60  0001 L CNN "Sense"
-F 29 "~~" H 13900 -360 60  0001 L CNN "Status Comment"
+F 29 " " H 13900 -360 60  0001 L CNN "Status Comment"
 F 30 "1.8mm" H 13900 -450 60  0001 L CNN "ComponentHeight"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND1806_MURATA_BLM41P.pdf" H 13900 -540 60  0001 L CNN "HelpURL"
-F 32 "CERN DEM JLC" H 13900 -630 60  0001 L CNN "Author"
-F 33 "12/02/09 00:00:00" H 13900 -720 60  0001 L CNN "CreateDate"
-F 34 "12/02/09 00:00:00" H 13900 -810 60  0001 L CNN "LatestRevisionDate"
-F 35 "Inductors SMD" H 13900 -900 60  0001 L CNN "Library Name"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13900 -990 60  0001 L CNN "License"
+F 31 "CERN DEM JLC" H 13900 -630 60  0001 L CNN "Author"
+F 32 "12/02/09 00:00:00" H 13900 -720 60  0001 L CNN "CreateDate"
+F 33 "12/02/09 00:00:00" H 13900 -810 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 13900 -900 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13900 -990 60  0001 L CNN "License"
 	1    13900 2350
 	1    0    0    -1  
 $EndComp
@@ -1599,8 +1580,8 @@ F 7 "SchLib\\Inductors & Transformers.SchLib" H 14850 5310 60  0001 L CNN "Libra
 F 8 "=Value" H 14850 5220 60  0001 L CNN "Comment"
 F 9 "Standard" H 14850 5130 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 14850 5040 60  0001 L CNN "Component Type"
-F 11 "~~" H 14850 4860 60  0001 L CNN "PackageDescription"
-F 12 "2.0000000000000000e+00" H 14850 4770 60  0001 L CNN "Pin Count"
+F 11 " " H 14850 4860 60  0001 L CNN "PackageDescription"
+F 12 "2" H 14850 4770 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Inductors SMD.PcbLib" H 14850 4680 60  0001 L CNN "Footprint Path"
 F 14 "INDC1608X65N" H 14850 4590 60  0001 L CNN "Footprint Ref"
 F 15 "120R@100MHz" H 14850 4500 60  0001 L CNN "Val"
@@ -1615,16 +1596,15 @@ F 23 "0603" H 14850 3780 60  0001 L CNN "Case"
 F 24 "Yes" H 14850 3690 60  0001 L CNN "Mounted"
 F 25 "No" H 14850 3600 60  0001 L CNN "Socket"
 F 26 "Yes" H 14850 3510 60  0001 L CNN "SMD"
-F 27 "~~" H 14850 3420 60  0001 L CNN "Sense Comment"
+F 27 " " H 14850 3420 60  0001 L CNN "Sense Comment"
 F 28 "No" H 14850 3330 60  0001 L CNN "Sense"
-F 29 "~~" H 14850 3240 60  0001 L CNN "Status Comment"
+F 29 " " H 14850 3240 60  0001 L CNN "Status Comment"
 F 30 "0.65mm" H 14850 3150 60  0001 L CNN "ComponentHeight"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND0603_MURATA_BLM18S.pdf" H 14850 3060 60  0001 L CNN "HelpURL"
-F 32 "CERN DEM JLC" H 14850 2970 60  0001 L CNN "Author"
-F 33 "07/23/14 00:00:00" H 14850 2880 60  0001 L CNN "CreateDate"
-F 34 "07/23/14 00:00:00" H 14850 2790 60  0001 L CNN "LatestRevisionDate"
-F 35 "Inductors SMD" H 14850 2700 60  0001 L CNN "Library Name"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 14850 2610 60  0001 L CNN "License"
+F 31 "CERN DEM JLC" H 14850 2970 60  0001 L CNN "Author"
+F 32 "07/23/14 00:00:00" H 14850 2880 60  0001 L CNN "CreateDate"
+F 33 "07/23/14 00:00:00" H 14850 2790 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 14850 2700 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 14850 2610 60  0001 L CNN "License"
 	1    14850 5950
 	1    0    0    -1  
 $EndComp
@@ -1643,8 +1623,8 @@ F 7 "SchLib\\Inductors & Transformers.SchLib" H 7450 9010 60  0001 L CNN "Librar
 F 8 "=Value" H 7450 8920 60  0001 L CNN "Comment"
 F 9 "Standard" H 7450 8830 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 7450 8740 60  0001 L CNN "Component Type"
-F 11 "~~" H 7450 8560 60  0001 L CNN "PackageDescription"
-F 12 "2.0000000000000000e+00" H 7450 8470 60  0001 L CNN "Pin Count"
+F 11 " " H 7450 8560 60  0001 L CNN "PackageDescription"
+F 12 "2" H 7450 8470 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Inductors SMD.PcbLib" H 7450 8380 60  0001 L CNN "Footprint Path"
 F 14 "INDC1608X65N" H 7450 8290 60  0001 L CNN "Footprint Ref"
 F 15 "120R@100MHz" H 7450 8200 60  0001 L CNN "Val"
@@ -1659,16 +1639,15 @@ F 23 "0603" H 7450 7480 60  0001 L CNN "Case"
 F 24 "Yes" H 7450 7390 60  0001 L CNN "Mounted"
 F 25 "No" H 7450 7300 60  0001 L CNN "Socket"
 F 26 "Yes" H 7450 7210 60  0001 L CNN "SMD"
-F 27 "~~" H 7450 7120 60  0001 L CNN "Sense Comment"
+F 27 " " H 7450 7120 60  0001 L CNN "Sense Comment"
 F 28 "No" H 7450 7030 60  0001 L CNN "Sense"
-F 29 "~~" H 7450 6940 60  0001 L CNN "Status Comment"
+F 29 " " H 7450 6940 60  0001 L CNN "Status Comment"
 F 30 "0.65mm" H 7450 6850 60  0001 L CNN "ComponentHeight"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND0603_MURATA_BLM18S.pdf" H 7450 6760 60  0001 L CNN "HelpURL"
-F 32 "CERN DEM JLC" H 7450 6670 60  0001 L CNN "Author"
-F 33 "07/23/14 00:00:00" H 7450 6580 60  0001 L CNN "CreateDate"
-F 34 "07/23/14 00:00:00" H 7450 6490 60  0001 L CNN "LatestRevisionDate"
-F 35 "Inductors SMD" H 7450 6400 60  0001 L CNN "Library Name"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 7450 6310 60  0001 L CNN "License"
+F 31 "CERN DEM JLC" H 7450 6670 60  0001 L CNN "Author"
+F 32 "07/23/14 00:00:00" H 7450 6580 60  0001 L CNN "CreateDate"
+F 33 "07/23/14 00:00:00" H 7450 6490 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 7450 6400 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 7450 6310 60  0001 L CNN "License"
 	1    7450 9650
 	1    0    0    -1  
 $EndComp
@@ -1687,8 +1666,8 @@ F 7 "SchLib\\Inductors & Transformers.SchLib" H 14650 7610 60  0001 L CNN "Libra
 F 8 "=Value" H 14650 7520 60  0001 L CNN "Comment"
 F 9 "Standard" H 14650 7430 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 14650 7340 60  0001 L CNN "Component Type"
-F 11 "~~" H 14650 7160 60  0001 L CNN "PackageDescription"
-F 12 "2.0000000000000000e+00" H 14650 7070 60  0001 L CNN "Pin Count"
+F 11 " " H 14650 7160 60  0001 L CNN "PackageDescription"
+F 12 "2" H 14650 7070 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Inductors SMD.PcbLib" H 14650 6980 60  0001 L CNN "Footprint Path"
 F 14 "INDC1608X65N" H 14650 6890 60  0001 L CNN "Footprint Ref"
 F 15 "120R@100MHz" H 14650 6800 60  0001 L CNN "Val"
@@ -1703,16 +1682,15 @@ F 23 "0603" H 14650 6080 60  0001 L CNN "Case"
 F 24 "Yes" H 14650 5990 60  0001 L CNN "Mounted"
 F 25 "No" H 14650 5900 60  0001 L CNN "Socket"
 F 26 "Yes" H 14650 5810 60  0001 L CNN "SMD"
-F 27 "~~" H 14650 5720 60  0001 L CNN "Sense Comment"
+F 27 " " H 14650 5720 60  0001 L CNN "Sense Comment"
 F 28 "No" H 14650 5630 60  0001 L CNN "Sense"
-F 29 "~~" H 14650 5540 60  0001 L CNN "Status Comment"
+F 29 " " H 14650 5540 60  0001 L CNN "Status Comment"
 F 30 "0.65mm" H 14650 5450 60  0001 L CNN "ComponentHeight"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND0603_MURATA_BLM18S.pdf" H 14650 5360 60  0001 L CNN "HelpURL"
-F 32 "CERN DEM JLC" H 14650 5270 60  0001 L CNN "Author"
-F 33 "07/23/14 00:00:00" H 14650 5180 60  0001 L CNN "CreateDate"
-F 34 "07/23/14 00:00:00" H 14650 5090 60  0001 L CNN "LatestRevisionDate"
-F 35 "Inductors SMD" H 14650 5000 60  0001 L CNN "Library Name"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 14650 4910 60  0001 L CNN "License"
+F 31 "CERN DEM JLC" H 14650 5270 60  0001 L CNN "Author"
+F 32 "07/23/14 00:00:00" H 14650 5180 60  0001 L CNN "CreateDate"
+F 33 "07/23/14 00:00:00" H 14650 5090 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 14650 5000 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 14650 4910 60  0001 L CNN "License"
 	1    14650 8250
 	1    0    0    -1  
 $EndComp
@@ -1731,15 +1709,15 @@ F 7 "SchLib\\Inductors & Transformers.SchLib" H 13900 3510 60  0001 L CNN "Libra
 F 8 "=Value" H 13900 3420 60  0001 L CNN "Comment"
 F 9 "Standard" H 13900 3330 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 13900 3240 60  0001 L CNN "Component Type"
-F 11 "~~" H 13900 3060 60  0001 L CNN "PackageDescription"
-F 12 "2.0000000000000000e+00" H 13900 2970 60  0001 L CNN "Pin Count"
+F 11 " " H 13900 3060 60  0001 L CNN "PackageDescription"
+F 12 "2" H 13900 2970 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Inductors SMD.PcbLib" H 13900 2880 60  0001 L CNN "Footprint Path"
 F 14 "INDC4516X180N" H 13900 2790 60  0001 L CNN "Footprint Ref"
 F 15 "60R@100MHz" H 13900 2700 60  0001 L CNN "Val"
 F 16 "None" H 13900 2610 60  0001 L CNN "Status"
 F 17 "6A" H 13900 2520 60  0001 L CNN "Power"
 F 18 "0.01R" H 13900 2430 60  0001 L CNN "Resistance"
-F 19 "~~" H 13900 2340 60  0001 L CNN "Tolerance"
+F 19 " " H 13900 2340 60  0001 L CNN "Tolerance"
 F 20 "SMD EMI Suppression Chip Ferrite Bead (BLM41P Series)" H 13900 2250 60  0001 L CNN "Part Description"
 F 21 "MURATA" H 13900 2160 60  0001 L CNN "Manufacturer"
 F 22 "BLM41PG600SN1L" H 13900 2070 60  0001 L CNN "Manufacturer Part Number"
@@ -1747,16 +1725,15 @@ F 23 "1806" H 13900 1980 60  0001 L CNN "Case"
 F 24 "Yes" H 13900 1890 60  0001 L CNN "Mounted"
 F 25 "No" H 13900 1800 60  0001 L CNN "Socket"
 F 26 "Yes" H 13900 1710 60  0001 L CNN "SMD"
-F 27 "~~" H 13900 1620 60  0001 L CNN "Sense Comment"
+F 27 " " H 13900 1620 60  0001 L CNN "Sense Comment"
 F 28 "No" H 13900 1530 60  0001 L CNN "Sense"
-F 29 "~~" H 13900 1440 60  0001 L CNN "Status Comment"
+F 29 " " H 13900 1440 60  0001 L CNN "Status Comment"
 F 30 "1.8mm" H 13900 1350 60  0001 L CNN "ComponentHeight"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND1806_MURATA_BLM41P.pdf" H 13900 1260 60  0001 L CNN "HelpURL"
-F 32 "CERN DEM JLC" H 13900 1170 60  0001 L CNN "Author"
-F 33 "12/02/09 00:00:00" H 13900 1080 60  0001 L CNN "CreateDate"
-F 34 "12/02/09 00:00:00" H 13900 990 60  0001 L CNN "LatestRevisionDate"
-F 35 "Inductors SMD" H 13900 900 60  0001 L CNN "Library Name"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13900 810 60  0001 L CNN "License"
+F 31 "CERN DEM JLC" H 13900 1170 60  0001 L CNN "Author"
+F 32 "12/02/09 00:00:00" H 13900 1080 60  0001 L CNN "CreateDate"
+F 33 "12/02/09 00:00:00" H 13900 990 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 13900 900 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13900 810 60  0001 L CNN "License"
 	1    13900 4150
 	1    0    0    -1  
 $EndComp
@@ -1775,15 +1752,15 @@ F 7 "SchLib\\Inductors & Transformers.SchLib" H 13900 7110 60  0001 L CNN "Libra
 F 8 "=Value" H 13900 7020 60  0001 L CNN "Comment"
 F 9 "Standard" H 13900 6930 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 13900 6840 60  0001 L CNN "Component Type"
-F 11 "~~" H 13900 6660 60  0001 L CNN "PackageDescription"
-F 12 "2.0000000000000000e+00" H 13900 6570 60  0001 L CNN "Pin Count"
+F 11 " " H 13900 6660 60  0001 L CNN "PackageDescription"
+F 12 "2" H 13900 6570 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Inductors SMD.PcbLib" H 13900 6480 60  0001 L CNN "Footprint Path"
 F 14 "INDC4516X180N" H 13900 6390 60  0001 L CNN "Footprint Ref"
 F 15 "60R@100MHz" H 13900 6300 60  0001 L CNN "Val"
 F 16 "None" H 13900 6210 60  0001 L CNN "Status"
 F 17 "6A" H 13900 6120 60  0001 L CNN "Power"
 F 18 "0.01R" H 13900 6030 60  0001 L CNN "Resistance"
-F 19 "~~" H 13900 5940 60  0001 L CNN "Tolerance"
+F 19 " " H 13900 5940 60  0001 L CNN "Tolerance"
 F 20 "SMD EMI Suppression Chip Ferrite Bead (BLM41P Series)" H 13900 5850 60  0001 L CNN "Part Description"
 F 21 "MURATA" H 13900 5760 60  0001 L CNN "Manufacturer"
 F 22 "BLM41PG600SN1L" H 13900 5670 60  0001 L CNN "Manufacturer Part Number"
@@ -1791,16 +1768,15 @@ F 23 "1806" H 13900 5580 60  0001 L CNN "Case"
 F 24 "Yes" H 13900 5490 60  0001 L CNN "Mounted"
 F 25 "No" H 13900 5400 60  0001 L CNN "Socket"
 F 26 "Yes" H 13900 5310 60  0001 L CNN "SMD"
-F 27 "~~" H 13900 5220 60  0001 L CNN "Sense Comment"
+F 27 " " H 13900 5220 60  0001 L CNN "Sense Comment"
 F 28 "No" H 13900 5130 60  0001 L CNN "Sense"
-F 29 "~~" H 13900 5040 60  0001 L CNN "Status Comment"
+F 29 " " H 13900 5040 60  0001 L CNN "Status Comment"
 F 30 "1.8mm" H 13900 4950 60  0001 L CNN "ComponentHeight"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND1806_MURATA_BLM41P.pdf" H 13900 4860 60  0001 L CNN "HelpURL"
-F 32 "CERN DEM JLC" H 13900 4770 60  0001 L CNN "Author"
-F 33 "12/02/09 00:00:00" H 13900 4680 60  0001 L CNN "CreateDate"
-F 34 "12/02/09 00:00:00" H 13900 4590 60  0001 L CNN "LatestRevisionDate"
-F 35 "Inductors SMD" H 13900 4500 60  0001 L CNN "Library Name"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13900 4410 60  0001 L CNN "License"
+F 31 "CERN DEM JLC" H 13900 4770 60  0001 L CNN "Author"
+F 32 "12/02/09 00:00:00" H 13900 4680 60  0001 L CNN "CreateDate"
+F 33 "12/02/09 00:00:00" H 13900 4590 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 13900 4500 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13900 4410 60  0001 L CNN "License"
 	1    13900 7750
 	1    0    0    -1  
 $EndComp
@@ -1819,15 +1795,15 @@ F 7 "SchLib\\Inductors & Transformers.SchLib" H 13900 5310 60  0001 L CNN "Libra
 F 8 "=Value" H 13900 5220 60  0001 L CNN "Comment"
 F 9 "Standard" H 13900 5130 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 13900 5040 60  0001 L CNN "Component Type"
-F 11 "~~" H 13900 4860 60  0001 L CNN "PackageDescription"
-F 12 "2.0000000000000000e+00" H 13900 4770 60  0001 L CNN "Pin Count"
+F 11 " " H 13900 4860 60  0001 L CNN "PackageDescription"
+F 12 "2" H 13900 4770 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Inductors SMD.PcbLib" H 13900 4680 60  0001 L CNN "Footprint Path"
 F 14 "INDC4516X180N" H 13900 4590 60  0001 L CNN "Footprint Ref"
 F 15 "60R@100MHz" H 13900 4500 60  0001 L CNN "Val"
 F 16 "None" H 13900 4410 60  0001 L CNN "Status"
 F 17 "6A" H 13900 4320 60  0001 L CNN "Power"
 F 18 "0.01R" H 13900 4230 60  0001 L CNN "Resistance"
-F 19 "~~" H 13900 4140 60  0001 L CNN "Tolerance"
+F 19 " " H 13900 4140 60  0001 L CNN "Tolerance"
 F 20 "SMD EMI Suppression Chip Ferrite Bead (BLM41P Series)" H 13900 4050 60  0001 L CNN "Part Description"
 F 21 "MURATA" H 13900 3960 60  0001 L CNN "Manufacturer"
 F 22 "BLM41PG600SN1L" H 13900 3870 60  0001 L CNN "Manufacturer Part Number"
@@ -1835,21 +1811,18 @@ F 23 "1806" H 13900 3780 60  0001 L CNN "Case"
 F 24 "Yes" H 13900 3690 60  0001 L CNN "Mounted"
 F 25 "No" H 13900 3600 60  0001 L CNN "Socket"
 F 26 "Yes" H 13900 3510 60  0001 L CNN "SMD"
-F 27 "~~" H 13900 3420 60  0001 L CNN "Sense Comment"
+F 27 " " H 13900 3420 60  0001 L CNN "Sense Comment"
 F 28 "No" H 13900 3330 60  0001 L CNN "Sense"
-F 29 "~~" H 13900 3240 60  0001 L CNN "Status Comment"
+F 29 " " H 13900 3240 60  0001 L CNN "Status Comment"
 F 30 "1.8mm" H 13900 3150 60  0001 L CNN "ComponentHeight"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND1806_MURATA_BLM41P.pdf" H 13900 3060 60  0001 L CNN "HelpURL"
-F 32 "CERN DEM JLC" H 13900 2970 60  0001 L CNN "Author"
-F 33 "12/02/09 00:00:00" H 13900 2880 60  0001 L CNN "CreateDate"
-F 34 "12/02/09 00:00:00" H 13900 2790 60  0001 L CNN "LatestRevisionDate"
-F 35 "Inductors SMD" H 13900 2700 60  0001 L CNN "Library Name"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13900 2610 60  0001 L CNN "License"
+F 31 "CERN DEM JLC" H 13900 2970 60  0001 L CNN "Author"
+F 32 "12/02/09 00:00:00" H 13900 2880 60  0001 L CNN "CreateDate"
+F 33 "12/02/09 00:00:00" H 13900 2790 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 13900 2700 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13900 2610 60  0001 L CNN "License"
 	1    13900 5950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14200 4150 14400 4150
 $Comp
 L Capacitors_SMD:CC0805_47UF_6.3V_20%_X5R C152
 U 1 1 5D2E0E7D
@@ -1865,13 +1838,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 12350 1640 60  0001 L CNN "Library Path"
 F 8 "=Value" H 12350 1550 60  0001 L CNN "Comment"
 F 9 "Standard" H 12350 1460 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 12350 1370 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 12350 1190 60  0001 L CNN "Pin Count"
+F 11 "2" H 12350 1190 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 12350 1100 60  0001 L CNN "Footprint Path"
 F 13 "CAPC2012X140N" H 12350 1010 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 12350 920 60  0001 L CNN "PackageDescription"
+F 14 " " H 12350 920 60  0001 L CNN "PackageDescription"
 F 15 "47uF" H 12350 830 60  0001 L CNN "Val"
 F 16 "Preferred" H 12350 740 60  0001 L CNN "Status"
-F 17 "~~" H 12350 650 60  0001 L CNN "Status Comment"
+F 17 " " H 12350 650 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 12350 560 60  0001 L CNN "Voltage"
 F 19 "X5R" H 12350 470 60  0001 L CNN "TC"
 F 20 "±20%" H 12350 380 60  0001 L CNN "Tolerance"
@@ -1882,19 +1855,18 @@ F 24 "0805" H 12350 20  60  0001 L CNN "Case"
 F 25 "Yes" H 12350 -70 60  0001 L CNN "Mounted"
 F 26 "No" H 12350 -160 60  0001 L CNN "Socket"
 F 27 "Yes" H 12350 -250 60  0001 L CNN "SMD"
-F 28 "~~" H 12350 -340 60  0001 L CNN "PressFit"
+F 28 " " H 12350 -340 60  0001 L CNN "PressFit"
 F 29 "No" H 12350 -430 60  0001 L CNN "Sense"
-F 30 "~~" H 12350 -520 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 12350 -610 60  0001 L CNN "ComponentHeight"
+F 30 " " H 12350 -520 60  0001 L CNN "Sense Comment"
+F 31 " " H 12350 -610 60  0001 L CNN "ComponentHeight"
 F 32 "KEMET" H 12350 -700 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C0805C476M9PACTU" H 12350 -790 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1.4mm" H 12350 -880 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0805_X5R_KEMET.pdf" H 12350 -970 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 12350 -1060 60  0001 L CNN "Author"
-F 37 "10/16/12 00:00:00" H 12350 -1150 60  0001 L CNN "CreateDate"
-F 38 "10/16/12 00:00:00" H 12350 -1240 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 12350 -1330 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 -1420 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 12350 -1060 60  0001 L CNN "Author"
+F 36 "10/16/12 00:00:00" H 12350 -1150 60  0001 L CNN "CreateDate"
+F 37 "10/16/12 00:00:00" H 12350 -1240 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 12350 -1330 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 -1420 60  0001 L CNN "License"
 	1    12350 2350
 	0    1    1    0   
 $EndComp
@@ -1918,13 +1890,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 12650 1640 60  0001 L CNN "Library Path"
 F 8 "=Value" H 12650 1550 60  0001 L CNN "Comment"
 F 9 "Standard" H 12650 1460 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 12650 1370 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 12650 1190 60  0001 L CNN "Pin Count"
+F 11 "2" H 12650 1190 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 12650 1100 60  0001 L CNN "Footprint Path"
 F 13 "CAPC2012X140N" H 12650 1010 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 12650 920 60  0001 L CNN "PackageDescription"
+F 14 " " H 12650 920 60  0001 L CNN "PackageDescription"
 F 15 "47uF" H 12650 830 60  0001 L CNN "Val"
 F 16 "Preferred" H 12650 740 60  0001 L CNN "Status"
-F 17 "~~" H 12650 650 60  0001 L CNN "Status Comment"
+F 17 " " H 12650 650 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 12650 560 60  0001 L CNN "Voltage"
 F 19 "X5R" H 12650 470 60  0001 L CNN "TC"
 F 20 "±20%" H 12650 380 60  0001 L CNN "Tolerance"
@@ -1935,19 +1907,18 @@ F 24 "0805" H 12650 20  60  0001 L CNN "Case"
 F 25 "Yes" H 12650 -70 60  0001 L CNN "Mounted"
 F 26 "No" H 12650 -160 60  0001 L CNN "Socket"
 F 27 "Yes" H 12650 -250 60  0001 L CNN "SMD"
-F 28 "~~" H 12650 -340 60  0001 L CNN "PressFit"
+F 28 " " H 12650 -340 60  0001 L CNN "PressFit"
 F 29 "No" H 12650 -430 60  0001 L CNN "Sense"
-F 30 "~~" H 12650 -520 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 12650 -610 60  0001 L CNN "ComponentHeight"
+F 30 " " H 12650 -520 60  0001 L CNN "Sense Comment"
+F 31 " " H 12650 -610 60  0001 L CNN "ComponentHeight"
 F 32 "KEMET" H 12650 -700 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C0805C476M9PACTU" H 12650 -790 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1.4mm" H 12650 -880 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0805_X5R_KEMET.pdf" H 12650 -970 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 12650 -1060 60  0001 L CNN "Author"
-F 37 "10/16/12 00:00:00" H 12650 -1150 60  0001 L CNN "CreateDate"
-F 38 "10/16/12 00:00:00" H 12650 -1240 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 12650 -1330 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 -1420 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 12650 -1060 60  0001 L CNN "Author"
+F 36 "10/16/12 00:00:00" H 12650 -1150 60  0001 L CNN "CreateDate"
+F 37 "10/16/12 00:00:00" H 12650 -1240 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 12650 -1330 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 -1420 60  0001 L CNN "License"
 	1    12650 2350
 	0    1    1    0   
 $EndComp
@@ -1966,13 +1937,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 12950 5240 60  0001 L CNN "Library Path"
 F 8 "=Value" H 12950 5150 60  0001 L CNN "Comment"
 F 9 "Standard" H 12950 5060 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 12950 4970 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 12950 4790 60  0001 L CNN "Pin Count"
+F 11 "2" H 12950 4790 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 12950 4700 60  0001 L CNN "Footprint Path"
 F 13 "CAPC2012X140N" H 12950 4610 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 12950 4520 60  0001 L CNN "PackageDescription"
+F 14 " " H 12950 4520 60  0001 L CNN "PackageDescription"
 F 15 "47uF" H 12950 4430 60  0001 L CNN "Val"
 F 16 "Preferred" H 12950 4340 60  0001 L CNN "Status"
-F 17 "~~" H 12950 4250 60  0001 L CNN "Status Comment"
+F 17 " " H 12950 4250 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 12950 4160 60  0001 L CNN "Voltage"
 F 19 "X5R" H 12950 4070 60  0001 L CNN "TC"
 F 20 "±20%" H 12950 3980 60  0001 L CNN "Tolerance"
@@ -1983,19 +1954,18 @@ F 24 "0805" H 12950 3620 60  0001 L CNN "Case"
 F 25 "Yes" H 12950 3530 60  0001 L CNN "Mounted"
 F 26 "No" H 12950 3440 60  0001 L CNN "Socket"
 F 27 "Yes" H 12950 3350 60  0001 L CNN "SMD"
-F 28 "~~" H 12950 3260 60  0001 L CNN "PressFit"
+F 28 " " H 12950 3260 60  0001 L CNN "PressFit"
 F 29 "No" H 12950 3170 60  0001 L CNN "Sense"
-F 30 "~~" H 12950 3080 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 12950 2990 60  0001 L CNN "ComponentHeight"
+F 30 " " H 12950 3080 60  0001 L CNN "Sense Comment"
+F 31 " " H 12950 2990 60  0001 L CNN "ComponentHeight"
 F 32 "KEMET" H 12950 2900 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C0805C476M9PACTU" H 12950 2810 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1.4mm" H 12950 2720 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0805_X5R_KEMET.pdf" H 12950 2630 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 12950 2540 60  0001 L CNN "Author"
-F 37 "10/16/12 00:00:00" H 12950 2450 60  0001 L CNN "CreateDate"
-F 38 "10/16/12 00:00:00" H 12950 2360 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 12950 2270 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12950 2180 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 12950 2540 60  0001 L CNN "Author"
+F 36 "10/16/12 00:00:00" H 12950 2450 60  0001 L CNN "CreateDate"
+F 37 "10/16/12 00:00:00" H 12950 2360 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 12950 2270 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12950 2180 60  0001 L CNN "License"
 	1    12950 5950
 	0    1    1    0   
 $EndComp
@@ -2014,13 +1984,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 13250 5240 60  0001 L CNN "Library Path"
 F 8 "=Value" H 13250 5150 60  0001 L CNN "Comment"
 F 9 "Standard" H 13250 5060 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 13250 4970 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 13250 4790 60  0001 L CNN "Pin Count"
+F 11 "2" H 13250 4790 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 13250 4700 60  0001 L CNN "Footprint Path"
 F 13 "CAPC2012X140N" H 13250 4610 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 13250 4520 60  0001 L CNN "PackageDescription"
+F 14 " " H 13250 4520 60  0001 L CNN "PackageDescription"
 F 15 "47uF" H 13250 4430 60  0001 L CNN "Val"
 F 16 "Preferred" H 13250 4340 60  0001 L CNN "Status"
-F 17 "~~" H 13250 4250 60  0001 L CNN "Status Comment"
+F 17 " " H 13250 4250 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 13250 4160 60  0001 L CNN "Voltage"
 F 19 "X5R" H 13250 4070 60  0001 L CNN "TC"
 F 20 "±20%" H 13250 3980 60  0001 L CNN "Tolerance"
@@ -2031,19 +2001,18 @@ F 24 "0805" H 13250 3620 60  0001 L CNN "Case"
 F 25 "Yes" H 13250 3530 60  0001 L CNN "Mounted"
 F 26 "No" H 13250 3440 60  0001 L CNN "Socket"
 F 27 "Yes" H 13250 3350 60  0001 L CNN "SMD"
-F 28 "~~" H 13250 3260 60  0001 L CNN "PressFit"
+F 28 " " H 13250 3260 60  0001 L CNN "PressFit"
 F 29 "No" H 13250 3170 60  0001 L CNN "Sense"
-F 30 "~~" H 13250 3080 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 13250 2990 60  0001 L CNN "ComponentHeight"
+F 30 " " H 13250 3080 60  0001 L CNN "Sense Comment"
+F 31 " " H 13250 2990 60  0001 L CNN "ComponentHeight"
 F 32 "KEMET" H 13250 2900 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C0805C476M9PACTU" H 13250 2810 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1.4mm" H 13250 2720 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0805_X5R_KEMET.pdf" H 13250 2630 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 13250 2540 60  0001 L CNN "Author"
-F 37 "10/16/12 00:00:00" H 13250 2450 60  0001 L CNN "CreateDate"
-F 38 "10/16/12 00:00:00" H 13250 2360 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 13250 2270 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13250 2180 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 13250 2540 60  0001 L CNN "Author"
+F 36 "10/16/12 00:00:00" H 13250 2450 60  0001 L CNN "CreateDate"
+F 37 "10/16/12 00:00:00" H 13250 2360 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 13250 2270 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13250 2180 60  0001 L CNN "License"
 	1    13250 5950
 	0    1    1    0   
 $EndComp
@@ -2062,13 +2031,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 13550 1640 60  0001 L CNN "Library Path"
 F 8 "=Value" H 13550 1550 60  0001 L CNN "Comment"
 F 9 "Standard" H 13550 1460 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 13550 1370 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 13550 1190 60  0001 L CNN "Pin Count"
+F 11 "2" H 13550 1190 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 13550 1100 60  0001 L CNN "Footprint Path"
 F 13 "CAPC2012X140N" H 13550 1010 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 13550 920 60  0001 L CNN "PackageDescription"
+F 14 " " H 13550 920 60  0001 L CNN "PackageDescription"
 F 15 "47uF" H 13550 830 60  0001 L CNN "Val"
 F 16 "Preferred" H 13550 740 60  0001 L CNN "Status"
-F 17 "~~" H 13550 650 60  0001 L CNN "Status Comment"
+F 17 " " H 13550 650 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 13550 560 60  0001 L CNN "Voltage"
 F 19 "X5R" H 13550 470 60  0001 L CNN "TC"
 F 20 "±20%" H 13550 380 60  0001 L CNN "Tolerance"
@@ -2079,19 +2048,18 @@ F 24 "0805" H 13550 20  60  0001 L CNN "Case"
 F 25 "Yes" H 13550 -70 60  0001 L CNN "Mounted"
 F 26 "No" H 13550 -160 60  0001 L CNN "Socket"
 F 27 "Yes" H 13550 -250 60  0001 L CNN "SMD"
-F 28 "~~" H 13550 -340 60  0001 L CNN "PressFit"
+F 28 " " H 13550 -340 60  0001 L CNN "PressFit"
 F 29 "No" H 13550 -430 60  0001 L CNN "Sense"
-F 30 "~~" H 13550 -520 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 13550 -610 60  0001 L CNN "ComponentHeight"
+F 30 " " H 13550 -520 60  0001 L CNN "Sense Comment"
+F 31 " " H 13550 -610 60  0001 L CNN "ComponentHeight"
 F 32 "KEMET" H 13550 -700 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C0805C476M9PACTU" H 13550 -790 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1.4mm" H 13550 -880 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0805_X5R_KEMET.pdf" H 13550 -970 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 13550 -1060 60  0001 L CNN "Author"
-F 37 "10/16/12 00:00:00" H 13550 -1150 60  0001 L CNN "CreateDate"
-F 38 "10/16/12 00:00:00" H 13550 -1240 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 13550 -1330 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13550 -1420 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 13550 -1060 60  0001 L CNN "Author"
+F 36 "10/16/12 00:00:00" H 13550 -1150 60  0001 L CNN "CreateDate"
+F 37 "10/16/12 00:00:00" H 13550 -1240 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 13550 -1330 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13550 -1420 60  0001 L CNN "License"
 	1    13550 2350
 	0    1    1    0   
 $EndComp
@@ -2100,194 +2068,190 @@ Connection ~ 13550 2350
 Wire Wire Line
 	13550 2350 13900 2350
 $Comp
-L Capacitors_SMD:CC0603_4.7UF_16V_10%_X5R C347
+L Capacitors_SMD:CC0603_4.7UF_25V_10%_X5R C347
 U 1 1 5D4C7FD6
 P 13550 4150
 F 0 "C347" V 13600 4150 50  0000 L CNN
-F 1 "CC0603_4.7UF_16V_10%_X5R" H 13550 3890 60  0001 L CNN
-F 2 "CAPC1709X95N" H 13550 3080 60  0001 L CNN
+F 1 "CC0603_4.7UF_25V_10%_X5R" H 13550 3890 60  0001 L CNN
+F 2 "Capacitors SMD:CAPC1608X90N" H 13550 3080 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X7R_TAIYO-YUDEN_HIGH-VALUE.pdf" H 13550 3710 60  0001 L CNN
 F 4 "4.7uF" V 13800 4150 50  0000 L CNN "~"
-F 5 "CC0603_4.7UF_16V_10%_X5R" H 13550 3620 60  0001 L CNN "Part Number"
+F 5 "CC0603_4.7UF_25V_10%_X5R" H 13550 3620 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 13550 3530 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 13550 3440 60  0001 L CNN "Library Path"
-F 8 "=Value" H 13550 3350 60  0001 L CNN "Comment"
+F 8 "4.7uF" H 13550 3350 60  0001 L CNN "Comment"
 F 9 "Standard" H 13550 3260 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 13550 3170 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 13550 2990 60  0001 L CNN "Pin Count"
+F 11 "2" H 13550 2990 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 13550 2900 60  0001 L CNN "Footprint Path"
-F 13 "CAPC1709X95N" H 13550 2810 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 13550 2720 60  0001 L CNN "PackageDescription"
+F 13 "CAPC1608X90N" H 13550 2810 60  0001 L CNN "Footprint Ref"
+F 14 " " H 13550 2720 60  0001 L CNN "PackageDescription"
 F 15 "4.7uF" H 13550 2630 60  0001 L CNN "Val"
 F 16 "None" H 13550 2540 60  0001 L CNN "Status"
-F 17 "~~" H 13550 2450 60  0001 L CNN "Status Comment"
-F 18 "16V" H 13550 2360 60  0001 L CNN "Voltage"
+F 17 " " H 13550 2450 60  0001 L CNN "Status Comment"
+F 18 "25V" H 13550 2360 60  0001 L CNN "Voltage"
 F 19 "X5R" H 13550 2270 60  0001 L CNN "TC"
 F 20 "±10%" H 13550 2180 60  0001 L CNN "Tolerance"
 F 21 "SMD Multilayer Chip Ceramic Capacitor" H 13550 2090 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 13550 2000 60  0001 L CNN "Manufacturer"
-F 23 "CC0603_4.7UF_16V_10%_X5R" H 13550 1910 60  0001 L CNN "Manufacturer Part Number"
+F 23 "CC0603_4.7UF_25V_10%_X5R" H 13550 1910 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0603" H 13550 1820 60  0001 L CNN "Case"
 F 25 "Yes" H 13550 1730 60  0001 L CNN "Mounted"
 F 26 "No" H 13550 1640 60  0001 L CNN "Socket"
 F 27 "Yes" H 13550 1550 60  0001 L CNN "SMD"
-F 28 "~~" H 13550 1460 60  0001 L CNN "PressFit"
+F 28 " " H 13550 1460 60  0001 L CNN "PressFit"
 F 29 "No" H 13550 1370 60  0001 L CNN "Sense"
-F 30 "~~" H 13550 1280 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 13550 1190 60  0001 L CNN "ComponentHeight"
-F 32 "TAIYO YUDEN" H 13550 1100 60  0001 L CNN "Manufacturer1 Example"
-F 33 "EMK107ABJ475KA-T" H 13550 1010 60  0001 L CNN "Manufacturer1 Part Number"
+F 30 " " H 13550 1280 60  0001 L CNN "Sense Comment"
+F 31 " " H 13550 1190 60  0001 L CNN "ComponentHeight"
+F 32 "MURATA" H 13550 1100 60  0001 L CNN "Manufacturer1 Example"
+F 33 "GRM188R61E475KE11D" H 13550 1010 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "0.95mm" H 13550 920 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X7R_TAIYO-YUDEN_HIGH-VALUE.pdf" H 13550 830 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 13550 740 60  0001 L CNN "Author"
-F 37 "12/16/13 00:00:00" H 13550 650 60  0001 L CNN "CreateDate"
-F 38 "09/16/14 00:00:00" H 13550 560 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 13550 470 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13550 380 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 13550 740 60  0001 L CNN "Author"
+F 36 "11/10/14 00:00:00" H 13550 650 60  0001 L CNN "CreateDate"
+F 37 "11/10/14 00:00:00" H 13550 560 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors.DbLib" H 13550 470 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13550 380 60  0001 L CNN "License"
 	1    13550 4150
 	0    1    1    0   
 $EndComp
 $Comp
-L Capacitors_SMD:CC0603_4.7UF_16V_10%_X5R C348
+L Capacitors_SMD:CC0603_4.7UF_25V_10%_X5R C348
 U 1 1 5D4F0D75
 P 13550 7750
 F 0 "C348" V 13600 7750 50  0000 L CNN
-F 1 "CC0603_4.7UF_16V_10%_X5R" H 13550 7490 60  0001 L CNN
-F 2 "CAPC1709X95N" H 13550 6680 60  0001 L CNN
+F 1 "CC0603_4.7UF_25V_10%_X5R" H 13550 7490 60  0001 L CNN
+F 2 "Capacitors SMD:CAPC1608X90N" H 13550 6680 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X7R_TAIYO-YUDEN_HIGH-VALUE.pdf" H 13550 7310 60  0001 L CNN
 F 4 "4.7uF" V 13800 7750 50  0000 L CNN "~"
-F 5 "CC0603_4.7UF_16V_10%_X5R" H 13550 7220 60  0001 L CNN "Part Number"
+F 5 "CC0603_4.7UF_25V_10%_X5R" H 13550 7220 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 13550 7130 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 13550 7040 60  0001 L CNN "Library Path"
-F 8 "=Value" H 13550 6950 60  0001 L CNN "Comment"
+F 8 "4.7uF" H 13550 6950 60  0001 L CNN "Comment"
 F 9 "Standard" H 13550 6860 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 13550 6770 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 13550 6590 60  0001 L CNN "Pin Count"
+F 11 "2" H 13550 6590 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 13550 6500 60  0001 L CNN "Footprint Path"
-F 13 "CAPC1709X95N" H 13550 6410 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 13550 6320 60  0001 L CNN "PackageDescription"
+F 13 "CAPC1608X90N" H 13550 6410 60  0001 L CNN "Footprint Ref"
+F 14 " " H 13550 6320 60  0001 L CNN "PackageDescription"
 F 15 "4.7uF" H 13550 6230 60  0001 L CNN "Val"
 F 16 "None" H 13550 6140 60  0001 L CNN "Status"
-F 17 "~~" H 13550 6050 60  0001 L CNN "Status Comment"
-F 18 "16V" H 13550 5960 60  0001 L CNN "Voltage"
+F 17 " " H 13550 6050 60  0001 L CNN "Status Comment"
+F 18 "25V" H 13550 5960 60  0001 L CNN "Voltage"
 F 19 "X5R" H 13550 5870 60  0001 L CNN "TC"
 F 20 "±10%" H 13550 5780 60  0001 L CNN "Tolerance"
 F 21 "SMD Multilayer Chip Ceramic Capacitor" H 13550 5690 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 13550 5600 60  0001 L CNN "Manufacturer"
-F 23 "CC0603_4.7UF_16V_10%_X5R" H 13550 5510 60  0001 L CNN "Manufacturer Part Number"
+F 23 "CC0603_4.7UF_25V_10%_X5R" H 13550 5510 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0603" H 13550 5420 60  0001 L CNN "Case"
 F 25 "Yes" H 13550 5330 60  0001 L CNN "Mounted"
 F 26 "No" H 13550 5240 60  0001 L CNN "Socket"
 F 27 "Yes" H 13550 5150 60  0001 L CNN "SMD"
-F 28 "~~" H 13550 5060 60  0001 L CNN "PressFit"
+F 28 " " H 13550 5060 60  0001 L CNN "PressFit"
 F 29 "No" H 13550 4970 60  0001 L CNN "Sense"
-F 30 "~~" H 13550 4880 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 13550 4790 60  0001 L CNN "ComponentHeight"
-F 32 "TAIYO YUDEN" H 13550 4700 60  0001 L CNN "Manufacturer1 Example"
-F 33 "EMK107ABJ475KA-T" H 13550 4610 60  0001 L CNN "Manufacturer1 Part Number"
+F 30 " " H 13550 4880 60  0001 L CNN "Sense Comment"
+F 31 " " H 13550 4790 60  0001 L CNN "ComponentHeight"
+F 32 "MURATA" H 13550 4700 60  0001 L CNN "Manufacturer1 Example"
+F 33 "GRM188R61E475KE11D" H 13550 4610 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "0.95mm" H 13550 4520 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X7R_TAIYO-YUDEN_HIGH-VALUE.pdf" H 13550 4430 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 13550 4340 60  0001 L CNN "Author"
-F 37 "12/16/13 00:00:00" H 13550 4250 60  0001 L CNN "CreateDate"
-F 38 "09/16/14 00:00:00" H 13550 4160 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 13550 4070 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13550 3980 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 13550 4340 60  0001 L CNN "Author"
+F 36 "11/10/14 00:00:00" H 13550 4250 60  0001 L CNN "CreateDate"
+F 37 "11/10/14 00:00:00" H 13550 4160 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors.DbLib" H 13550 4070 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13550 3980 60  0001 L CNN "License"
 	1    13550 7750
 	0    1    1    0   
 $EndComp
 $Comp
-L Capacitors_SMD:CC0603_4.7UF_16V_10%_X5R C349
+L Capacitors_SMD:CC0603_4.7UF_25V_10%_X5R C349
 U 1 1 5D519966
 P 13550 5950
 F 0 "C349" V 13600 5950 50  0000 L CNN
-F 1 "CC0603_4.7UF_16V_10%_X5R" H 13550 5690 60  0001 L CNN
-F 2 "CAPC1709X95N" H 13550 4880 60  0001 L CNN
+F 1 "CC0603_4.7UF_25V_10%_X5R" H 13550 5690 60  0001 L CNN
+F 2 "Capacitors SMD:CAPC1608X90N" H 13550 4880 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X7R_TAIYO-YUDEN_HIGH-VALUE.pdf" H 13550 5510 60  0001 L CNN
 F 4 "4.7uF" V 13800 5950 50  0000 L CNN "~"
-F 5 "CC0603_4.7UF_16V_10%_X5R" H 13550 5420 60  0001 L CNN "Part Number"
+F 5 "CC0603_4.7UF_25V_10%_X5R" H 13550 5420 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 13550 5330 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 13550 5240 60  0001 L CNN "Library Path"
-F 8 "=Value" H 13550 5150 60  0001 L CNN "Comment"
+F 8 "4.7uF" H 13550 5150 60  0001 L CNN "Comment"
 F 9 "Standard" H 13550 5060 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 13550 4970 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 13550 4790 60  0001 L CNN "Pin Count"
+F 11 "2" H 13550 4790 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 13550 4700 60  0001 L CNN "Footprint Path"
-F 13 "CAPC1709X95N" H 13550 4610 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 13550 4520 60  0001 L CNN "PackageDescription"
+F 13 "CAPC1608X90N" H 13550 4610 60  0001 L CNN "Footprint Ref"
+F 14 " " H 13550 4520 60  0001 L CNN "PackageDescription"
 F 15 "4.7uF" H 13550 4430 60  0001 L CNN "Val"
 F 16 "None" H 13550 4340 60  0001 L CNN "Status"
-F 17 "~~" H 13550 4250 60  0001 L CNN "Status Comment"
-F 18 "16V" H 13550 4160 60  0001 L CNN "Voltage"
+F 17 " " H 13550 4250 60  0001 L CNN "Status Comment"
+F 18 "25V" H 13550 4160 60  0001 L CNN "Voltage"
 F 19 "X5R" H 13550 4070 60  0001 L CNN "TC"
 F 20 "±10%" H 13550 3980 60  0001 L CNN "Tolerance"
 F 21 "SMD Multilayer Chip Ceramic Capacitor" H 13550 3890 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 13550 3800 60  0001 L CNN "Manufacturer"
-F 23 "CC0603_4.7UF_16V_10%_X5R" H 13550 3710 60  0001 L CNN "Manufacturer Part Number"
+F 23 "CC0603_4.7UF_25V_10%_X5R" H 13550 3710 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0603" H 13550 3620 60  0001 L CNN "Case"
 F 25 "Yes" H 13550 3530 60  0001 L CNN "Mounted"
 F 26 "No" H 13550 3440 60  0001 L CNN "Socket"
 F 27 "Yes" H 13550 3350 60  0001 L CNN "SMD"
-F 28 "~~" H 13550 3260 60  0001 L CNN "PressFit"
+F 28 " " H 13550 3260 60  0001 L CNN "PressFit"
 F 29 "No" H 13550 3170 60  0001 L CNN "Sense"
-F 30 "~~" H 13550 3080 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 13550 2990 60  0001 L CNN "ComponentHeight"
-F 32 "TAIYO YUDEN" H 13550 2900 60  0001 L CNN "Manufacturer1 Example"
-F 33 "EMK107ABJ475KA-T" H 13550 2810 60  0001 L CNN "Manufacturer1 Part Number"
+F 30 " " H 13550 3080 60  0001 L CNN "Sense Comment"
+F 31 " " H 13550 2990 60  0001 L CNN "ComponentHeight"
+F 32 "MURATA" H 13550 2900 60  0001 L CNN "Manufacturer1 Example"
+F 33 "GRM188R61E475KE11D" H 13550 2810 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "0.95mm" H 13550 2720 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X7R_TAIYO-YUDEN_HIGH-VALUE.pdf" H 13550 2630 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 13550 2540 60  0001 L CNN "Author"
-F 37 "12/16/13 00:00:00" H 13550 2450 60  0001 L CNN "CreateDate"
-F 38 "09/16/14 00:00:00" H 13550 2360 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 13550 2270 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13550 2180 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 13550 2540 60  0001 L CNN "Author"
+F 36 "11/10/14 00:00:00" H 13550 2450 60  0001 L CNN "CreateDate"
+F 37 "11/10/14 00:00:00" H 13550 2360 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors.DbLib" H 13550 2270 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13550 2180 60  0001 L CNN "License"
 	1    13550 5950
 	0    1    1    0   
 $EndComp
 $Comp
-L Capacitors_SMD:CC0603_4.7UF_16V_10%_X5R C127
+L Capacitors_SMD:CC0603_4.7UF_25V_10%_X5R C127
 U 1 1 5D5D25A8
 P 5450 4200
 F 0 "C127" V 5500 4000 50  0000 L CNN
-F 1 "CC0603_4.7UF_16V_10%_X5R" H 5450 3940 60  0001 L CNN
-F 2 "CAPC1709X95N" H 5450 3130 60  0001 L CNN
+F 1 "CC0603_4.7UF_25V_10%_X5R" H 5450 3940 60  0001 L CNN
+F 2 "Capacitors SMD:CAPC1608X90N" H 5450 3130 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X7R_TAIYO-YUDEN_HIGH-VALUE.pdf" H 5450 3760 60  0001 L CNN
 F 4 "4.7uF" V 5700 3950 50  0000 L CNN "~"
-F 5 "CC0603_4.7UF_16V_10%_X5R" H 5450 3670 60  0001 L CNN "Part Number"
+F 5 "CC0603_4.7UF_25V_10%_X5R" H 5450 3670 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 5450 3580 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 5450 3490 60  0001 L CNN "Library Path"
-F 8 "=Value" H 5450 3400 60  0001 L CNN "Comment"
+F 8 "4.7uF" H 5450 3400 60  0001 L CNN "Comment"
 F 9 "Standard" H 5450 3310 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 5450 3220 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 5450 3040 60  0001 L CNN "Pin Count"
+F 11 "2" H 5450 3040 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 5450 2950 60  0001 L CNN "Footprint Path"
-F 13 "CAPC1709X95N" H 5450 2860 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 5450 2770 60  0001 L CNN "PackageDescription"
+F 13 "CAPC1608X90N" H 5450 2860 60  0001 L CNN "Footprint Ref"
+F 14 " " H 5450 2770 60  0001 L CNN "PackageDescription"
 F 15 "4.7uF" H 5450 2680 60  0001 L CNN "Val"
 F 16 "None" H 5450 2590 60  0001 L CNN "Status"
-F 17 "~~" H 5450 2500 60  0001 L CNN "Status Comment"
-F 18 "16V" H 5450 2410 60  0001 L CNN "Voltage"
+F 17 " " H 5450 2500 60  0001 L CNN "Status Comment"
+F 18 "25V" H 5450 2410 60  0001 L CNN "Voltage"
 F 19 "X5R" H 5450 2320 60  0001 L CNN "TC"
 F 20 "±10%" H 5450 2230 60  0001 L CNN "Tolerance"
 F 21 "SMD Multilayer Chip Ceramic Capacitor" H 5450 2140 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 5450 2050 60  0001 L CNN "Manufacturer"
-F 23 "CC0603_4.7UF_16V_10%_X5R" H 5450 1960 60  0001 L CNN "Manufacturer Part Number"
+F 23 "CC0603_4.7UF_25V_10%_X5R" H 5450 1960 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0603" H 5450 1870 60  0001 L CNN "Case"
 F 25 "Yes" H 5450 1780 60  0001 L CNN "Mounted"
 F 26 "No" H 5450 1690 60  0001 L CNN "Socket"
 F 27 "Yes" H 5450 1600 60  0001 L CNN "SMD"
-F 28 "~~" H 5450 1510 60  0001 L CNN "PressFit"
+F 28 " " H 5450 1510 60  0001 L CNN "PressFit"
 F 29 "No" H 5450 1420 60  0001 L CNN "Sense"
-F 30 "~~" H 5450 1330 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 5450 1240 60  0001 L CNN "ComponentHeight"
-F 32 "TAIYO YUDEN" H 5450 1150 60  0001 L CNN "Manufacturer1 Example"
-F 33 "EMK107ABJ475KA-T" H 5450 1060 60  0001 L CNN "Manufacturer1 Part Number"
+F 30 " " H 5450 1330 60  0001 L CNN "Sense Comment"
+F 31 " " H 5450 1240 60  0001 L CNN "ComponentHeight"
+F 32 "MURATA" H 5450 1150 60  0001 L CNN "Manufacturer1 Example"
+F 33 "GRM188R61E475KE11D" H 5450 1060 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "0.95mm" H 5450 970 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X7R_TAIYO-YUDEN_HIGH-VALUE.pdf" H 5450 880 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 5450 790 60  0001 L CNN "Author"
-F 37 "12/16/13 00:00:00" H 5450 700 60  0001 L CNN "CreateDate"
-F 38 "09/16/14 00:00:00" H 5450 610 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 5450 520 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5450 430 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 5450 790 60  0001 L CNN "Author"
+F 36 "11/10/14 00:00:00" H 5450 700 60  0001 L CNN "CreateDate"
+F 37 "11/10/14 00:00:00" H 5450 610 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors.DbLib" H 5450 520 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5450 430 60  0001 L CNN "License"
 	1    5450 4200
 	0    1    1    0   
 $EndComp
@@ -2300,7 +2264,7 @@ Wire Wire Line
 	13550 7750 13900 7750
 Connection ~ 13550 4150
 Wire Wire Line
-	13550 4150 13900 4150
+	13550 4150 13800 4150
 Wire Wire Line
 	12200 4150 12350 4150
 $Comp
@@ -2318,13 +2282,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 12350 3440 60  0001 L CNN "Library Path"
 F 8 "=Value" H 12350 3350 60  0001 L CNN "Comment"
 F 9 "Standard" H 12350 3260 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 12350 3170 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 12350 2990 60  0001 L CNN "Pin Count"
+F 11 "2" H 12350 2990 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 12350 2900 60  0001 L CNN "Footprint Path"
 F 13 "CAPC2012X140N" H 12350 2810 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 12350 2720 60  0001 L CNN "PackageDescription"
+F 14 " " H 12350 2720 60  0001 L CNN "PackageDescription"
 F 15 "47uF" H 12350 2630 60  0001 L CNN "Val"
 F 16 "Preferred" H 12350 2540 60  0001 L CNN "Status"
-F 17 "~~" H 12350 2450 60  0001 L CNN "Status Comment"
+F 17 " " H 12350 2450 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 12350 2360 60  0001 L CNN "Voltage"
 F 19 "X5R" H 12350 2270 60  0001 L CNN "TC"
 F 20 "±20%" H 12350 2180 60  0001 L CNN "Tolerance"
@@ -2335,19 +2299,18 @@ F 24 "0805" H 12350 1820 60  0001 L CNN "Case"
 F 25 "Yes" H 12350 1730 60  0001 L CNN "Mounted"
 F 26 "No" H 12350 1640 60  0001 L CNN "Socket"
 F 27 "Yes" H 12350 1550 60  0001 L CNN "SMD"
-F 28 "~~" H 12350 1460 60  0001 L CNN "PressFit"
+F 28 " " H 12350 1460 60  0001 L CNN "PressFit"
 F 29 "No" H 12350 1370 60  0001 L CNN "Sense"
-F 30 "~~" H 12350 1280 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 12350 1190 60  0001 L CNN "ComponentHeight"
+F 30 " " H 12350 1280 60  0001 L CNN "Sense Comment"
+F 31 " " H 12350 1190 60  0001 L CNN "ComponentHeight"
 F 32 "KEMET" H 12350 1100 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C0805C476M9PACTU" H 12350 1010 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1.4mm" H 12350 920 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0805_X5R_KEMET.pdf" H 12350 830 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 12350 740 60  0001 L CNN "Author"
-F 37 "10/16/12 00:00:00" H 12350 650 60  0001 L CNN "CreateDate"
-F 38 "10/16/12 00:00:00" H 12350 560 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 12350 470 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 380 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 12350 740 60  0001 L CNN "Author"
+F 36 "10/16/12 00:00:00" H 12350 650 60  0001 L CNN "CreateDate"
+F 37 "10/16/12 00:00:00" H 12350 560 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 12350 470 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 380 60  0001 L CNN "License"
 	1    12350 4150
 	0    1    1    0   
 $EndComp
@@ -2366,13 +2329,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 12650 3440 60  0001 L CNN "Library Path"
 F 8 "=Value" H 12650 3350 60  0001 L CNN "Comment"
 F 9 "Standard" H 12650 3260 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 12650 3170 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 12650 2990 60  0001 L CNN "Pin Count"
+F 11 "2" H 12650 2990 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 12650 2900 60  0001 L CNN "Footprint Path"
 F 13 "CAPC2012X140N" H 12650 2810 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 12650 2720 60  0001 L CNN "PackageDescription"
+F 14 " " H 12650 2720 60  0001 L CNN "PackageDescription"
 F 15 "47uF" H 12650 2630 60  0001 L CNN "Val"
 F 16 "Preferred" H 12650 2540 60  0001 L CNN "Status"
-F 17 "~~" H 12650 2450 60  0001 L CNN "Status Comment"
+F 17 " " H 12650 2450 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 12650 2360 60  0001 L CNN "Voltage"
 F 19 "X5R" H 12650 2270 60  0001 L CNN "TC"
 F 20 "±20%" H 12650 2180 60  0001 L CNN "Tolerance"
@@ -2383,19 +2346,18 @@ F 24 "0805" H 12650 1820 60  0001 L CNN "Case"
 F 25 "Yes" H 12650 1730 60  0001 L CNN "Mounted"
 F 26 "No" H 12650 1640 60  0001 L CNN "Socket"
 F 27 "Yes" H 12650 1550 60  0001 L CNN "SMD"
-F 28 "~~" H 12650 1460 60  0001 L CNN "PressFit"
+F 28 " " H 12650 1460 60  0001 L CNN "PressFit"
 F 29 "No" H 12650 1370 60  0001 L CNN "Sense"
-F 30 "~~" H 12650 1280 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 12650 1190 60  0001 L CNN "ComponentHeight"
+F 30 " " H 12650 1280 60  0001 L CNN "Sense Comment"
+F 31 " " H 12650 1190 60  0001 L CNN "ComponentHeight"
 F 32 "KEMET" H 12650 1100 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C0805C476M9PACTU" H 12650 1010 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1.4mm" H 12650 920 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0805_X5R_KEMET.pdf" H 12650 830 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 12650 740 60  0001 L CNN "Author"
-F 37 "10/16/12 00:00:00" H 12650 650 60  0001 L CNN "CreateDate"
-F 38 "10/16/12 00:00:00" H 12650 560 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 12650 470 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 380 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 12650 740 60  0001 L CNN "Author"
+F 36 "10/16/12 00:00:00" H 12650 650 60  0001 L CNN "CreateDate"
+F 37 "10/16/12 00:00:00" H 12650 560 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 12650 470 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 380 60  0001 L CNN "License"
 	1    12650 4150
 	0    1    1    0   
 $EndComp
@@ -2422,13 +2384,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 12350 7040 60  0001 L CNN "Library Path"
 F 8 "=Value" H 12350 6950 60  0001 L CNN "Comment"
 F 9 "Standard" H 12350 6860 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 12350 6770 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 12350 6590 60  0001 L CNN "Pin Count"
+F 11 "2" H 12350 6590 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 12350 6500 60  0001 L CNN "Footprint Path"
 F 13 "CAPC2012X140N" H 12350 6410 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 12350 6320 60  0001 L CNN "PackageDescription"
+F 14 " " H 12350 6320 60  0001 L CNN "PackageDescription"
 F 15 "47uF" H 12350 6230 60  0001 L CNN "Val"
 F 16 "Preferred" H 12350 6140 60  0001 L CNN "Status"
-F 17 "~~" H 12350 6050 60  0001 L CNN "Status Comment"
+F 17 " " H 12350 6050 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 12350 5960 60  0001 L CNN "Voltage"
 F 19 "X5R" H 12350 5870 60  0001 L CNN "TC"
 F 20 "±20%" H 12350 5780 60  0001 L CNN "Tolerance"
@@ -2439,19 +2401,18 @@ F 24 "0805" H 12350 5420 60  0001 L CNN "Case"
 F 25 "Yes" H 12350 5330 60  0001 L CNN "Mounted"
 F 26 "No" H 12350 5240 60  0001 L CNN "Socket"
 F 27 "Yes" H 12350 5150 60  0001 L CNN "SMD"
-F 28 "~~" H 12350 5060 60  0001 L CNN "PressFit"
+F 28 " " H 12350 5060 60  0001 L CNN "PressFit"
 F 29 "No" H 12350 4970 60  0001 L CNN "Sense"
-F 30 "~~" H 12350 4880 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 12350 4790 60  0001 L CNN "ComponentHeight"
+F 30 " " H 12350 4880 60  0001 L CNN "Sense Comment"
+F 31 " " H 12350 4790 60  0001 L CNN "ComponentHeight"
 F 32 "KEMET" H 12350 4700 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C0805C476M9PACTU" H 12350 4610 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1.4mm" H 12350 4520 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0805_X5R_KEMET.pdf" H 12350 4430 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 12350 4340 60  0001 L CNN "Author"
-F 37 "10/16/12 00:00:00" H 12350 4250 60  0001 L CNN "CreateDate"
-F 38 "10/16/12 00:00:00" H 12350 4160 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 12350 4070 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 3980 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 12350 4340 60  0001 L CNN "Author"
+F 36 "10/16/12 00:00:00" H 12350 4250 60  0001 L CNN "CreateDate"
+F 37 "10/16/12 00:00:00" H 12350 4160 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 12350 4070 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 3980 60  0001 L CNN "License"
 	1    12350 7750
 	0    1    1    0   
 $EndComp
@@ -2470,13 +2431,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 12650 7040 60  0001 L CNN "Library Path"
 F 8 "=Value" H 12650 6950 60  0001 L CNN "Comment"
 F 9 "Standard" H 12650 6860 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 12650 6770 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 12650 6590 60  0001 L CNN "Pin Count"
+F 11 "2" H 12650 6590 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 12650 6500 60  0001 L CNN "Footprint Path"
 F 13 "CAPC2012X140N" H 12650 6410 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 12650 6320 60  0001 L CNN "PackageDescription"
+F 14 " " H 12650 6320 60  0001 L CNN "PackageDescription"
 F 15 "47uF" H 12650 6230 60  0001 L CNN "Val"
 F 16 "Preferred" H 12650 6140 60  0001 L CNN "Status"
-F 17 "~~" H 12650 6050 60  0001 L CNN "Status Comment"
+F 17 " " H 12650 6050 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 12650 5960 60  0001 L CNN "Voltage"
 F 19 "X5R" H 12650 5870 60  0001 L CNN "TC"
 F 20 "±20%" H 12650 5780 60  0001 L CNN "Tolerance"
@@ -2487,19 +2448,18 @@ F 24 "0805" H 12650 5420 60  0001 L CNN "Case"
 F 25 "Yes" H 12650 5330 60  0001 L CNN "Mounted"
 F 26 "No" H 12650 5240 60  0001 L CNN "Socket"
 F 27 "Yes" H 12650 5150 60  0001 L CNN "SMD"
-F 28 "~~" H 12650 5060 60  0001 L CNN "PressFit"
+F 28 " " H 12650 5060 60  0001 L CNN "PressFit"
 F 29 "No" H 12650 4970 60  0001 L CNN "Sense"
-F 30 "~~" H 12650 4880 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 12650 4790 60  0001 L CNN "ComponentHeight"
+F 30 " " H 12650 4880 60  0001 L CNN "Sense Comment"
+F 31 " " H 12650 4790 60  0001 L CNN "ComponentHeight"
 F 32 "KEMET" H 12650 4700 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C0805C476M9PACTU" H 12650 4610 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1.4mm" H 12650 4520 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0805_X5R_KEMET.pdf" H 12650 4430 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 12650 4340 60  0001 L CNN "Author"
-F 37 "10/16/12 00:00:00" H 12650 4250 60  0001 L CNN "CreateDate"
-F 38 "10/16/12 00:00:00" H 12650 4160 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 12650 4070 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 3980 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 12650 4340 60  0001 L CNN "Author"
+F 36 "10/16/12 00:00:00" H 12650 4250 60  0001 L CNN "CreateDate"
+F 37 "10/16/12 00:00:00" H 12650 4160 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 12650 4070 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 3980 60  0001 L CNN "License"
 	1    12650 7750
 	0    1    1    0   
 $EndComp
@@ -2526,13 +2486,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 12350 5240 60  0001 L CNN "Library Path"
 F 8 "=Value" H 12350 5150 60  0001 L CNN "Comment"
 F 9 "Standard" H 12350 5060 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 12350 4970 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 12350 4790 60  0001 L CNN "Pin Count"
+F 11 "2" H 12350 4790 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 12350 4700 60  0001 L CNN "Footprint Path"
 F 13 "CAPC2012X140N" H 12350 4610 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 12350 4520 60  0001 L CNN "PackageDescription"
+F 14 " " H 12350 4520 60  0001 L CNN "PackageDescription"
 F 15 "47uF" H 12350 4430 60  0001 L CNN "Val"
 F 16 "Preferred" H 12350 4340 60  0001 L CNN "Status"
-F 17 "~~" H 12350 4250 60  0001 L CNN "Status Comment"
+F 17 " " H 12350 4250 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 12350 4160 60  0001 L CNN "Voltage"
 F 19 "X5R" H 12350 4070 60  0001 L CNN "TC"
 F 20 "±20%" H 12350 3980 60  0001 L CNN "Tolerance"
@@ -2543,19 +2503,18 @@ F 24 "0805" H 12350 3620 60  0001 L CNN "Case"
 F 25 "Yes" H 12350 3530 60  0001 L CNN "Mounted"
 F 26 "No" H 12350 3440 60  0001 L CNN "Socket"
 F 27 "Yes" H 12350 3350 60  0001 L CNN "SMD"
-F 28 "~~" H 12350 3260 60  0001 L CNN "PressFit"
+F 28 " " H 12350 3260 60  0001 L CNN "PressFit"
 F 29 "No" H 12350 3170 60  0001 L CNN "Sense"
-F 30 "~~" H 12350 3080 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 12350 2990 60  0001 L CNN "ComponentHeight"
+F 30 " " H 12350 3080 60  0001 L CNN "Sense Comment"
+F 31 " " H 12350 2990 60  0001 L CNN "ComponentHeight"
 F 32 "KEMET" H 12350 2900 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C0805C476M9PACTU" H 12350 2810 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1.4mm" H 12350 2720 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0805_X5R_KEMET.pdf" H 12350 2630 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 12350 2540 60  0001 L CNN "Author"
-F 37 "10/16/12 00:00:00" H 12350 2450 60  0001 L CNN "CreateDate"
-F 38 "10/16/12 00:00:00" H 12350 2360 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 12350 2270 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 2180 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 12350 2540 60  0001 L CNN "Author"
+F 36 "10/16/12 00:00:00" H 12350 2450 60  0001 L CNN "CreateDate"
+F 37 "10/16/12 00:00:00" H 12350 2360 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 12350 2270 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 2180 60  0001 L CNN "License"
 	1    12350 5950
 	0    1    1    0   
 $EndComp
@@ -2574,13 +2533,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 12650 5240 60  0001 L CNN "Library Path"
 F 8 "=Value" H 12650 5150 60  0001 L CNN "Comment"
 F 9 "Standard" H 12650 5060 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 12650 4970 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 12650 4790 60  0001 L CNN "Pin Count"
+F 11 "2" H 12650 4790 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 12650 4700 60  0001 L CNN "Footprint Path"
 F 13 "CAPC2012X140N" H 12650 4610 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 12650 4520 60  0001 L CNN "PackageDescription"
+F 14 " " H 12650 4520 60  0001 L CNN "PackageDescription"
 F 15 "47uF" H 12650 4430 60  0001 L CNN "Val"
 F 16 "Preferred" H 12650 4340 60  0001 L CNN "Status"
-F 17 "~~" H 12650 4250 60  0001 L CNN "Status Comment"
+F 17 " " H 12650 4250 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 12650 4160 60  0001 L CNN "Voltage"
 F 19 "X5R" H 12650 4070 60  0001 L CNN "TC"
 F 20 "±20%" H 12650 3980 60  0001 L CNN "Tolerance"
@@ -2591,19 +2550,18 @@ F 24 "0805" H 12650 3620 60  0001 L CNN "Case"
 F 25 "Yes" H 12650 3530 60  0001 L CNN "Mounted"
 F 26 "No" H 12650 3440 60  0001 L CNN "Socket"
 F 27 "Yes" H 12650 3350 60  0001 L CNN "SMD"
-F 28 "~~" H 12650 3260 60  0001 L CNN "PressFit"
+F 28 " " H 12650 3260 60  0001 L CNN "PressFit"
 F 29 "No" H 12650 3170 60  0001 L CNN "Sense"
-F 30 "~~" H 12650 3080 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 12650 2990 60  0001 L CNN "ComponentHeight"
+F 30 " " H 12650 3080 60  0001 L CNN "Sense Comment"
+F 31 " " H 12650 2990 60  0001 L CNN "ComponentHeight"
 F 32 "KEMET" H 12650 2900 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C0805C476M9PACTU" H 12650 2810 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1.4mm" H 12650 2720 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0805_X5R_KEMET.pdf" H 12650 2630 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 12650 2540 60  0001 L CNN "Author"
-F 37 "10/16/12 00:00:00" H 12650 2450 60  0001 L CNN "CreateDate"
-F 38 "10/16/12 00:00:00" H 12650 2360 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 12650 2270 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 2180 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 12650 2540 60  0001 L CNN "Author"
+F 36 "10/16/12 00:00:00" H 12650 2450 60  0001 L CNN "CreateDate"
+F 37 "10/16/12 00:00:00" H 12650 2360 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 12650 2270 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 2180 60  0001 L CNN "License"
 	1    12650 5950
 	0    1    1    0   
 $EndComp
@@ -2628,8 +2586,8 @@ F 7 "SchLib\\Inductors & Transformers.SchLib" H 11900 1710 60  0001 L CNN "Libra
 F 8 "=Value" H 11900 1620 60  0001 L CNN "Comment"
 F 9 "Standard" H 11900 1530 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 11900 1440 60  0001 L CNN "Component Type"
-F 11 "~~" H 11900 1260 60  0001 L CNN "PackageDescription"
-F 12 "2.0000000000000000e+00" H 11900 1170 60  0001 L CNN "Pin Count"
+F 11 " " H 11900 1260 60  0001 L CNN "PackageDescription"
+F 12 "2" H 11900 1170 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Inductors SMD.PcbLib" H 11900 1080 60  0001 L CNN "Footprint Path"
 F 14 "IND_BOURNS_SRP6540" H 11900 990 60  0001 L CNN "Footprint Ref"
 F 15 "2.2uH" H 11900 900 60  0001 L CNN "Val"
@@ -2640,20 +2598,19 @@ F 19 "±20%" H 11900 540 60  0001 L CNN "Tolerance"
 F 20 "Shielded SMD Power Inductor" H 11900 450 60  0001 L CNN "Part Description"
 F 21 "BOURNS" H 11900 360 60  0001 L CNN "Manufacturer"
 F 22 "SRP6540-2R2M" H 11900 270 60  0001 L CNN "Manufacturer Part Number"
-F 23 "~~" H 11900 180 60  0001 L CNN "Case"
+F 23 " " H 11900 180 60  0001 L CNN "Case"
 F 24 "Yes" H 11900 90  60  0001 L CNN "Mounted"
 F 25 "No" H 11900 0   60  0001 L CNN "Socket"
 F 26 "Yes" H 11900 -90 60  0001 L CNN "SMD"
-F 27 "~~" H 11900 -180 60  0001 L CNN "Sense Comment"
+F 27 " " H 11900 -180 60  0001 L CNN "Sense Comment"
 F 28 "No" H 11900 -270 60  0001 L CNN "Sense"
-F 29 "~~" H 11900 -360 60  0001 L CNN "Status Comment"
+F 29 " " H 11900 -360 60  0001 L CNN "Status Comment"
 F 30 "4mm" H 11900 -450 60  0001 L CNN "ComponentHeight"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND_BOURNS_SRP6540.pdf" H 11900 -540 60  0001 L CNN "HelpURL"
-F 32 "CERN DEM JMW" H 11900 -630 60  0001 L CNN "Author"
-F 33 "08/06/15 00:00:00" H 11900 -720 60  0001 L CNN "CreateDate"
-F 34 "08/06/15 00:00:00" H 11900 -810 60  0001 L CNN "LatestRevisionDate"
-F 35 "Inductors SMD" H 11900 -900 60  0001 L CNN "Library Name"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 11900 -990 60  0001 L CNN "License"
+F 31 "CERN DEM JMW" H 11900 -630 60  0001 L CNN "Author"
+F 32 "08/06/15 00:00:00" H 11900 -720 60  0001 L CNN "CreateDate"
+F 33 "08/06/15 00:00:00" H 11900 -810 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 11900 -900 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 11900 -990 60  0001 L CNN "License"
 	1    11900 2350
 	1    0    0    -1  
 $EndComp
@@ -2672,8 +2629,8 @@ F 7 "SchLib\\Inductors & Transformers.SchLib" H 11900 3510 60  0001 L CNN "Libra
 F 8 "=Value" H 11900 3420 60  0001 L CNN "Comment"
 F 9 "Standard" H 11900 3330 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 11900 3240 60  0001 L CNN "Component Type"
-F 11 "~~" H 11900 3060 60  0001 L CNN "PackageDescription"
-F 12 "2.0000000000000000e+00" H 11900 2970 60  0001 L CNN "Pin Count"
+F 11 " " H 11900 3060 60  0001 L CNN "PackageDescription"
+F 12 "2" H 11900 2970 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Inductors SMD.PcbLib" H 11900 2880 60  0001 L CNN "Footprint Path"
 F 14 "IND_BOURNS_SRP6540" H 11900 2790 60  0001 L CNN "Footprint Ref"
 F 15 "2.2uH" H 11900 2700 60  0001 L CNN "Val"
@@ -2684,20 +2641,19 @@ F 19 "±20%" H 11900 2340 60  0001 L CNN "Tolerance"
 F 20 "Shielded SMD Power Inductor" H 11900 2250 60  0001 L CNN "Part Description"
 F 21 "BOURNS" H 11900 2160 60  0001 L CNN "Manufacturer"
 F 22 "SRP6540-2R2M" H 11900 2070 60  0001 L CNN "Manufacturer Part Number"
-F 23 "~~" H 11900 1980 60  0001 L CNN "Case"
+F 23 " " H 11900 1980 60  0001 L CNN "Case"
 F 24 "Yes" H 11900 1890 60  0001 L CNN "Mounted"
 F 25 "No" H 11900 1800 60  0001 L CNN "Socket"
 F 26 "Yes" H 11900 1710 60  0001 L CNN "SMD"
-F 27 "~~" H 11900 1620 60  0001 L CNN "Sense Comment"
+F 27 " " H 11900 1620 60  0001 L CNN "Sense Comment"
 F 28 "No" H 11900 1530 60  0001 L CNN "Sense"
-F 29 "~~" H 11900 1440 60  0001 L CNN "Status Comment"
+F 29 " " H 11900 1440 60  0001 L CNN "Status Comment"
 F 30 "4mm" H 11900 1350 60  0001 L CNN "ComponentHeight"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND_BOURNS_SRP6540.pdf" H 11900 1260 60  0001 L CNN "HelpURL"
-F 32 "CERN DEM JMW" H 11900 1170 60  0001 L CNN "Author"
-F 33 "08/06/15 00:00:00" H 11900 1080 60  0001 L CNN "CreateDate"
-F 34 "08/06/15 00:00:00" H 11900 990 60  0001 L CNN "LatestRevisionDate"
-F 35 "Inductors SMD" H 11900 900 60  0001 L CNN "Library Name"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 11900 810 60  0001 L CNN "License"
+F 31 "CERN DEM JMW" H 11900 1170 60  0001 L CNN "Author"
+F 32 "08/06/15 00:00:00" H 11900 1080 60  0001 L CNN "CreateDate"
+F 33 "08/06/15 00:00:00" H 11900 990 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 11900 900 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 11900 810 60  0001 L CNN "License"
 	1    11900 4150
 	1    0    0    -1  
 $EndComp
@@ -2716,8 +2672,8 @@ F 7 "SchLib\\Inductors & Transformers.SchLib" H 11900 7110 60  0001 L CNN "Libra
 F 8 "=Value" H 11900 7020 60  0001 L CNN "Comment"
 F 9 "Standard" H 11900 6930 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 11900 6840 60  0001 L CNN "Component Type"
-F 11 "~~" H 11900 6660 60  0001 L CNN "PackageDescription"
-F 12 "2.0000000000000000e+00" H 11900 6570 60  0001 L CNN "Pin Count"
+F 11 " " H 11900 6660 60  0001 L CNN "PackageDescription"
+F 12 "2" H 11900 6570 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Inductors SMD.PcbLib" H 11900 6480 60  0001 L CNN "Footprint Path"
 F 14 "IND_BOURNS_SRP6540" H 11900 6390 60  0001 L CNN "Footprint Ref"
 F 15 "2.2uH" H 11900 6300 60  0001 L CNN "Val"
@@ -2728,20 +2684,19 @@ F 19 "±20%" H 11900 5940 60  0001 L CNN "Tolerance"
 F 20 "Shielded SMD Power Inductor" H 11900 5850 60  0001 L CNN "Part Description"
 F 21 "BOURNS" H 11900 5760 60  0001 L CNN "Manufacturer"
 F 22 "SRP6540-2R2M" H 11900 5670 60  0001 L CNN "Manufacturer Part Number"
-F 23 "~~" H 11900 5580 60  0001 L CNN "Case"
+F 23 " " H 11900 5580 60  0001 L CNN "Case"
 F 24 "Yes" H 11900 5490 60  0001 L CNN "Mounted"
 F 25 "No" H 11900 5400 60  0001 L CNN "Socket"
 F 26 "Yes" H 11900 5310 60  0001 L CNN "SMD"
-F 27 "~~" H 11900 5220 60  0001 L CNN "Sense Comment"
+F 27 " " H 11900 5220 60  0001 L CNN "Sense Comment"
 F 28 "No" H 11900 5130 60  0001 L CNN "Sense"
-F 29 "~~" H 11900 5040 60  0001 L CNN "Status Comment"
+F 29 " " H 11900 5040 60  0001 L CNN "Status Comment"
 F 30 "4mm" H 11900 4950 60  0001 L CNN "ComponentHeight"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND_BOURNS_SRP6540.pdf" H 11900 4860 60  0001 L CNN "HelpURL"
-F 32 "CERN DEM JMW" H 11900 4770 60  0001 L CNN "Author"
-F 33 "08/06/15 00:00:00" H 11900 4680 60  0001 L CNN "CreateDate"
-F 34 "08/06/15 00:00:00" H 11900 4590 60  0001 L CNN "LatestRevisionDate"
-F 35 "Inductors SMD" H 11900 4500 60  0001 L CNN "Library Name"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 11900 4410 60  0001 L CNN "License"
+F 31 "CERN DEM JMW" H 11900 4770 60  0001 L CNN "Author"
+F 32 "08/06/15 00:00:00" H 11900 4680 60  0001 L CNN "CreateDate"
+F 33 "08/06/15 00:00:00" H 11900 4590 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 11900 4500 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 11900 4410 60  0001 L CNN "License"
 	1    11900 7750
 	1    0    0    -1  
 $EndComp
@@ -2753,22 +2708,22 @@ U 1 1 5DA37AF5
 P 5700 3300
 F 0 "C138" H 5850 3450 50  0000 C CNN
 F 1 "CC0402_2.2NF_50V_10%_X7R" H 5700 3040 60  0001 L CNN
-F 2 "CAPC1005X55N" H 5700 2230 60  0001 L CNN
+F 2 "Capacitors SMD:CAPC1005X55N" H 5700 2230 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X7R_PHYCOMP.pdf" H 5700 2860 60  0001 L CNN
 F 4 "2.2nF" H 5850 3150 50  0000 C CNN "~"
 F 5 "CC0402_2.2NF_50V_10%_X7R" H 5700 2770 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 5700 2680 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 5700 2590 60  0001 L CNN "Library Path"
-F 8 "=Value" H 5700 2500 60  0001 L CNN "Comment"
+F 8 "2.2nF" H 5700 2500 60  0001 L CNN "Comment"
 F 9 "Standard" H 5700 2410 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 5700 2320 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 5700 2140 60  0001 L CNN "Pin Count"
+F 11 "2" H 5700 2140 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 5700 2050 60  0001 L CNN "Footprint Path"
 F 13 "CAPC1005X55N" H 5700 1960 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 5700 1870 60  0001 L CNN "PackageDescription"
+F 14 " " H 5700 1870 60  0001 L CNN "PackageDescription"
 F 15 "2.2nF" H 5700 1780 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 5700 1690 60  0001 L CNN "Status"
-F 17 "~~" H 5700 1600 60  0001 L CNN "Status Comment"
+F 17 " " H 5700 1600 60  0001 L CNN "Status Comment"
 F 18 "50V" H 5700 1510 60  0001 L CNN "Voltage"
 F 19 "X7R" H 5700 1420 60  0001 L CNN "TC"
 F 20 "±10%" H 5700 1330 60  0001 L CNN "Tolerance"
@@ -2779,86 +2734,82 @@ F 24 "0402" H 5700 970 60  0001 L CNN "Case"
 F 25 "Yes" H 5700 880 60  0001 L CNN "Mounted"
 F 26 "No" H 5700 790 60  0001 L CNN "Socket"
 F 27 "Yes" H 5700 700 60  0001 L CNN "SMD"
-F 28 "~~" H 5700 610 60  0001 L CNN "PressFit"
+F 28 " " H 5700 610 60  0001 L CNN "PressFit"
 F 29 "No" H 5700 520 60  0001 L CNN "Sense"
-F 30 "~~" H 5700 430 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 5700 340 60  0001 L CNN "ComponentHeight"
+F 30 " " H 5700 430 60  0001 L CNN "Sense Comment"
+F 31 " " H 5700 340 60  0001 L CNN "ComponentHeight"
 F 32 "PHYCOMP" H 5700 250 60  0001 L CNN "Manufacturer1 Example"
 F 33 "223858715627" H 5700 160 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "0.55mm" H 5700 70  60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X7R_PHYCOMP.pdf" H 5700 -20 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 5700 -110 60  0001 L CNN "Author"
-F 37 "12/03/07 00:00:00" H 5700 -200 60  0001 L CNN "CreateDate"
-F 38 "12/03/07 00:00:00" H 5700 -290 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 5700 -380 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5700 -470 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 5700 -110 60  0001 L CNN "Author"
+F 36 "12/03/07 00:00:00" H 5700 -200 60  0001 L CNN "CreateDate"
+F 37 "12/03/07 00:00:00" H 5700 -290 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors.DbLib" H 5700 -380 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5700 -470 60  0001 L CNN "License"
 	1    5700 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 1350 5550 1350
+	5100 1350 5350 1350
 Wire Wire Line
-	5300 1050 5550 1050
+	5100 1050 5350 1050
 $Comp
-L Capacitors_SMD:CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF C137
+L Capacitors_SMD:CC0402_100NF_25V_10%_X5R C137
 U 1 1 5DA8A88F
-P 5550 1050
-F 0 "C137" V 5600 1050 50  0000 L CNN
-F 1 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 5550 790 60  0001 L CNN
-F 2 "Capacitors SMD:CAPC1005X55N" H 5550 -20 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 5550 610 60  0001 L CNN
-F 4 "100nF" V 5800 1050 50  0000 L CNN "~"
-F 5 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 5550 520 60  0001 L CNN "Part Number"
-F 6 "Capacitor - non polarized" H 5550 430 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\Capacitors.SchLib" H 5550 340 60  0001 L CNN "Library Path"
-F 8 "100nF" H 5550 250 60  0001 L CNN "Comment"
-F 9 "Standard" H 5550 160 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 5550 70  60  0001 L CNN "Component Type"
-F 11 "2" H 5550 -110 60  0001 L CNN "Pin Count"
-F 12 "PcbLib\\Capacitors SMD.PcbLib" H 5550 -200 60  0001 L CNN "Footprint Path"
-F 13 "CAPC1005X55N" H 5550 -290 60  0001 L CNN "Footprint Ref"
-F 14 " " H 5550 -380 60  0001 L CNN "PackageDescription"
-F 15 "100nF" H 5550 -470 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 5550 -560 60  0001 L CNN "Status"
-F 17 " " H 5550 -650 60  0001 L CNN "Status Comment"
-F 18 "25V" H 5550 -740 60  0001 L CNN "Voltage"
-F 19 "X7R" H 5550 -830 60  0001 L CNN "TC"
-F 20 "±10%" H 5550 -920 60  0001 L CNN "Tolerance"
-F 21 "SMD Multilayer Chip Ceramic Capacitor (High Dielectric Type) for Automotive / Industrial Applications" H 5550 -1010 60  0001 L CNN "Part Description"
-F 22 "TAIYO YUDEN" H 5550 -1100 60  0001 L CNN "Manufacturer"
-F 23 "TMK105B7104KVHF" H 5550 -1190 60  0001 L CNN "Manufacturer Part Number"
-F 24 "0402" H 5550 -1280 60  0001 L CNN "Case"
-F 25 "Yes" H 5550 -1370 60  0001 L CNN "Mounted"
-F 26 "No" H 5550 -1460 60  0001 L CNN "Socket"
-F 27 "Yes" H 5550 -1550 60  0001 L CNN "SMD"
-F 28 " " H 5550 -1640 60  0001 L CNN "PressFit"
-F 29 "No" H 5550 -1730 60  0001 L CNN "Sense"
-F 30 " " H 5550 -1820 60  0001 L CNN "Sense Comment"
-F 31 "0.55mm" H 5550 -1910 60  0001 L CNN "ComponentHeight"
-F 32 " " H 5550 -2000 60  0001 L CNN "Manufacturer1 Example"
-F 33 " " H 5550 -2090 60  0001 L CNN "Manufacturer1 Part Number"
-F 34 " " H 5550 -2180 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 5550 -2270 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 5550 -2360 60  0001 L CNN "Author"
-F 37 "05/10/17 00:00:00" H 5550 -2450 60  0001 L CNN "CreateDate"
-F 38 "05/10/17 00:00:00" H 5550 -2540 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors.DbLib" H 5550 -2630 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5550 -2720 60  0001 L CNN "License"
-F 41 "Capacitors SMD" H 5550 1050 50  0001 C CNN "Database Table Name"
-F 42 "Capacitors SMD" H 5550 1050 50  0001 C CNN "Footprint Library"
-	1    5550 1050
+P 5350 1050
+F 0 "C137" V 5400 1050 50  0000 L CNN
+F 1 "CC0402_100NF_25V_10%_X5R" H 5350 790 60  0001 L CNN
+F 2 "Marble:CAPC1005X55N" H 5350 -20 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 5350 610 60  0001 L CNN
+F 4 "100nF" V 5600 1050 50  0000 L CNN "~"
+F 5 "CC0402_100NF_25V_10%_X5R" H 5350 520 60  0001 L CNN "Part Number"
+F 6 "Capacitor - non polarized" H 5350 430 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Capacitors.SchLib" H 5350 340 60  0001 L CNN "Library Path"
+F 8 "100nF" H 5350 250 60  0001 L CNN "Comment"
+F 9 "Standard" H 5350 160 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 5350 70  60  0001 L CNN "Component Type"
+F 11 "2" H 5350 -110 60  0001 L CNN "Pin Count"
+F 12 "PcbLib\\Capacitors SMD.PcbLib" H 5350 -200 60  0001 L CNN "Footprint Path"
+F 13 "CAPC1005X55N" H 5350 -290 60  0001 L CNN "Footprint Ref"
+F 14 " " H 5350 -380 60  0001 L CNN "PackageDescription"
+F 15 "100nF" H 5350 -470 60  0001 L CNN "Val"
+F 16 "None" H 5350 -560 60  0001 L CNN "Status"
+F 17 " " H 5350 -650 60  0001 L CNN "Status Comment"
+F 18 "25V" H 5350 -740 60  0001 L CNN "Voltage"
+F 19 "X5R" H 5350 -830 60  0001 L CNN "TC"
+F 20 "±10%" H 5350 -920 60  0001 L CNN "Tolerance"
+F 21 "SMD Multilayer Chip Ceramic Capacitor" H 5350 -1010 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 5350 -1100 60  0001 L CNN "Manufacturer"
+F 23 "CC0402_100NF_25V_10%_X5R" H 5350 -1190 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0402" H 5350 -1280 60  0001 L CNN "Case"
+F 25 "Yes" H 5350 -1370 60  0001 L CNN "Mounted"
+F 26 "No" H 5350 -1460 60  0001 L CNN "Socket"
+F 27 "Yes" H 5350 -1550 60  0001 L CNN "SMD"
+F 28 " " H 5350 -1640 60  0001 L CNN "PressFit"
+F 29 "No" H 5350 -1730 60  0001 L CNN "Sense"
+F 30 " " H 5350 -1820 60  0001 L CNN "Sense Comment"
+F 31 " " H 5350 -1910 60  0001 L CNN "ComponentHeight"
+F 32 "Samsung" H 5350 -2000 60  0001 L CNN "Manufacturer1 Example"
+F 33 "CL05A104KA5NNNC" H 5350 -2090 60  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.55mm" H 5350 -2180 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 5350 -2360 60  0001 L CNN "Author"
+F 36 "12/10/13 00:00:00" H 5350 -2450 60  0001 L CNN "CreateDate"
+F 37 "05/25/20 00:00:00" H 5350 -2540 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 5350 -2630 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5350 -2720 60  0001 L CNN "License"
+	1    5350 1050
 	0    1    1    0   
 $EndComp
 $Comp
-L Capacitors_SMD:CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF C147
+L Capacitors_SMD:CC0402_100NF_25V_10%_X5R C147
 U 1 1 5DA8B01C
 P 10850 1450
 F 0 "C147" H 11000 1697 50  0000 C CNN
-F 1 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 10850 1190 60  0001 L CNN
-F 2 "Capacitors SMD:CAPC1005X55N" H 10850 380 60  0001 L CNN
+F 1 "CC0402_100NF_25V_10%_X5R" H 10850 1190 60  0001 L CNN
+F 2 "Marble:CAPC1005X55N" H 10850 380 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 10850 1010 60  0001 L CNN
 F 4 "100nF" H 11000 1606 50  0000 C CNN "~"
-F 5 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 10850 920 60  0001 L CNN "Part Number"
+F 5 "CC0402_100NF_25V_10%_X5R" H 10850 920 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 10850 830 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 10850 740 60  0001 L CNN "Library Path"
 F 8 "100nF" H 10850 650 60  0001 L CNN "Comment"
@@ -2869,14 +2820,14 @@ F 12 "PcbLib\\Capacitors SMD.PcbLib" H 10850 200 60  0001 L CNN "Footprint Path"
 F 13 "CAPC1005X55N" H 10850 110 60  0001 L CNN "Footprint Ref"
 F 14 " " H 10850 20  60  0001 L CNN "PackageDescription"
 F 15 "100nF" H 10850 -70 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 10850 -160 60  0001 L CNN "Status"
+F 16 "None" H 10850 -160 60  0001 L CNN "Status"
 F 17 " " H 10850 -250 60  0001 L CNN "Status Comment"
 F 18 "25V" H 10850 -340 60  0001 L CNN "Voltage"
-F 19 "X7R" H 10850 -430 60  0001 L CNN "TC"
+F 19 "X5R" H 10850 -430 60  0001 L CNN "TC"
 F 20 "±10%" H 10850 -520 60  0001 L CNN "Tolerance"
-F 21 "SMD Multilayer Chip Ceramic Capacitor (High Dielectric Type) for Automotive / Industrial Applications" H 10850 -610 60  0001 L CNN "Part Description"
-F 22 "TAIYO YUDEN" H 10850 -700 60  0001 L CNN "Manufacturer"
-F 23 "TMK105B7104KVHF" H 10850 -790 60  0001 L CNN "Manufacturer Part Number"
+F 21 "SMD Multilayer Chip Ceramic Capacitor" H 10850 -610 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 10850 -700 60  0001 L CNN "Manufacturer"
+F 23 "CC0402_100NF_25V_10%_X5R" H 10850 -790 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 10850 -880 60  0001 L CNN "Case"
 F 25 "Yes" H 10850 -970 60  0001 L CNN "Mounted"
 F 26 "No" H 10850 -1060 60  0001 L CNN "Socket"
@@ -2884,31 +2835,28 @@ F 27 "Yes" H 10850 -1150 60  0001 L CNN "SMD"
 F 28 " " H 10850 -1240 60  0001 L CNN "PressFit"
 F 29 "No" H 10850 -1330 60  0001 L CNN "Sense"
 F 30 " " H 10850 -1420 60  0001 L CNN "Sense Comment"
-F 31 "0.55mm" H 10850 -1510 60  0001 L CNN "ComponentHeight"
-F 32 " " H 10850 -1600 60  0001 L CNN "Manufacturer1 Example"
-F 33 " " H 10850 -1690 60  0001 L CNN "Manufacturer1 Part Number"
-F 34 " " H 10850 -1780 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 10850 -1870 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 10850 -1960 60  0001 L CNN "Author"
-F 37 "05/10/17 00:00:00" H 10850 -2050 60  0001 L CNN "CreateDate"
-F 38 "05/10/17 00:00:00" H 10850 -2140 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors.DbLib" H 10850 -2230 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10850 -2320 60  0001 L CNN "License"
-F 41 "Capacitors SMD" H 10850 1450 50  0001 C CNN "Database Table Name"
-F 42 "Capacitors SMD" H 10850 1450 50  0001 C CNN "Footprint Library"
+F 31 " " H 10850 -1510 60  0001 L CNN "ComponentHeight"
+F 32 "Samsung" H 10850 -1600 60  0001 L CNN "Manufacturer1 Example"
+F 33 "CL05A104KA5NNNC" H 10850 -1690 60  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.55mm" H 10850 -1780 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 10850 -1960 60  0001 L CNN "Author"
+F 36 "12/10/13 00:00:00" H 10850 -2050 60  0001 L CNN "CreateDate"
+F 37 "05/25/20 00:00:00" H 10850 -2140 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 10850 -2230 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10850 -2320 60  0001 L CNN "License"
 	1    10850 1450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Capacitors_SMD:CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF C148
+L Capacitors_SMD:CC0402_100NF_25V_10%_X5R C148
 U 1 1 5DA9F2E3
 P 10850 3250
 F 0 "C148" H 11000 3497 50  0000 C CNN
-F 1 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 10850 2990 60  0001 L CNN
-F 2 "Capacitors SMD:CAPC1005X55N" H 10850 2180 60  0001 L CNN
+F 1 "CC0402_100NF_25V_10%_X5R" H 10850 2990 60  0001 L CNN
+F 2 "Marble:CAPC1005X55N" H 10850 2180 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 10850 2810 60  0001 L CNN
 F 4 "100nF" H 11000 3406 50  0000 C CNN "~"
-F 5 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 10850 2720 60  0001 L CNN "Part Number"
+F 5 "CC0402_100NF_25V_10%_X5R" H 10850 2720 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 10850 2630 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 10850 2540 60  0001 L CNN "Library Path"
 F 8 "100nF" H 10850 2450 60  0001 L CNN "Comment"
@@ -2919,14 +2867,14 @@ F 12 "PcbLib\\Capacitors SMD.PcbLib" H 10850 2000 60  0001 L CNN "Footprint Path
 F 13 "CAPC1005X55N" H 10850 1910 60  0001 L CNN "Footprint Ref"
 F 14 " " H 10850 1820 60  0001 L CNN "PackageDescription"
 F 15 "100nF" H 10850 1730 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 10850 1640 60  0001 L CNN "Status"
+F 16 "None" H 10850 1640 60  0001 L CNN "Status"
 F 17 " " H 10850 1550 60  0001 L CNN "Status Comment"
 F 18 "25V" H 10850 1460 60  0001 L CNN "Voltage"
-F 19 "X7R" H 10850 1370 60  0001 L CNN "TC"
+F 19 "X5R" H 10850 1370 60  0001 L CNN "TC"
 F 20 "±10%" H 10850 1280 60  0001 L CNN "Tolerance"
-F 21 "SMD Multilayer Chip Ceramic Capacitor (High Dielectric Type) for Automotive / Industrial Applications" H 10850 1190 60  0001 L CNN "Part Description"
-F 22 "TAIYO YUDEN" H 10850 1100 60  0001 L CNN "Manufacturer"
-F 23 "TMK105B7104KVHF" H 10850 1010 60  0001 L CNN "Manufacturer Part Number"
+F 21 "SMD Multilayer Chip Ceramic Capacitor" H 10850 1190 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 10850 1100 60  0001 L CNN "Manufacturer"
+F 23 "CC0402_100NF_25V_10%_X5R" H 10850 1010 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 10850 920 60  0001 L CNN "Case"
 F 25 "Yes" H 10850 830 60  0001 L CNN "Mounted"
 F 26 "No" H 10850 740 60  0001 L CNN "Socket"
@@ -2934,31 +2882,28 @@ F 27 "Yes" H 10850 650 60  0001 L CNN "SMD"
 F 28 " " H 10850 560 60  0001 L CNN "PressFit"
 F 29 "No" H 10850 470 60  0001 L CNN "Sense"
 F 30 " " H 10850 380 60  0001 L CNN "Sense Comment"
-F 31 "0.55mm" H 10850 290 60  0001 L CNN "ComponentHeight"
-F 32 " " H 10850 200 60  0001 L CNN "Manufacturer1 Example"
-F 33 " " H 10850 110 60  0001 L CNN "Manufacturer1 Part Number"
-F 34 " " H 10850 20  60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 10850 -70 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 10850 -160 60  0001 L CNN "Author"
-F 37 "05/10/17 00:00:00" H 10850 -250 60  0001 L CNN "CreateDate"
-F 38 "05/10/17 00:00:00" H 10850 -340 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors.DbLib" H 10850 -430 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10850 -520 60  0001 L CNN "License"
-F 41 "Capacitors SMD" H 10850 3250 50  0001 C CNN "Database Table Name"
-F 42 "Capacitors SMD" H 10850 3250 50  0001 C CNN "Footprint Library"
+F 31 " " H 10850 290 60  0001 L CNN "ComponentHeight"
+F 32 "Samsung" H 10850 200 60  0001 L CNN "Manufacturer1 Example"
+F 33 "CL05A104KA5NNNC" H 10850 110 60  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.55mm" H 10850 20  60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 10850 -160 60  0001 L CNN "Author"
+F 36 "12/10/13 00:00:00" H 10850 -250 60  0001 L CNN "CreateDate"
+F 37 "05/25/20 00:00:00" H 10850 -340 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 10850 -430 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10850 -520 60  0001 L CNN "License"
 	1    10850 3250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Capacitors_SMD:CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF C149
+L Capacitors_SMD:CC0402_100NF_25V_10%_X5R C149
 U 1 1 5DAB35A7
 P 10850 5050
 F 0 "C149" H 11000 5297 50  0000 C CNN
-F 1 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 10850 4790 60  0001 L CNN
-F 2 "Capacitors SMD:CAPC1005X55N" H 10850 3980 60  0001 L CNN
+F 1 "CC0402_100NF_25V_10%_X5R" H 10850 4790 60  0001 L CNN
+F 2 "Marble:CAPC1005X55N" H 10850 3980 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 10850 4610 60  0001 L CNN
 F 4 "100nF" H 11000 5206 50  0000 C CNN "~"
-F 5 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 10850 4520 60  0001 L CNN "Part Number"
+F 5 "CC0402_100NF_25V_10%_X5R" H 10850 4520 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 10850 4430 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 10850 4340 60  0001 L CNN "Library Path"
 F 8 "100nF" H 10850 4250 60  0001 L CNN "Comment"
@@ -2969,14 +2914,14 @@ F 12 "PcbLib\\Capacitors SMD.PcbLib" H 10850 3800 60  0001 L CNN "Footprint Path
 F 13 "CAPC1005X55N" H 10850 3710 60  0001 L CNN "Footprint Ref"
 F 14 " " H 10850 3620 60  0001 L CNN "PackageDescription"
 F 15 "100nF" H 10850 3530 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 10850 3440 60  0001 L CNN "Status"
+F 16 "None" H 10850 3440 60  0001 L CNN "Status"
 F 17 " " H 10850 3350 60  0001 L CNN "Status Comment"
 F 18 "25V" H 10850 3260 60  0001 L CNN "Voltage"
-F 19 "X7R" H 10850 3170 60  0001 L CNN "TC"
+F 19 "X5R" H 10850 3170 60  0001 L CNN "TC"
 F 20 "±10%" H 10850 3080 60  0001 L CNN "Tolerance"
-F 21 "SMD Multilayer Chip Ceramic Capacitor (High Dielectric Type) for Automotive / Industrial Applications" H 10850 2990 60  0001 L CNN "Part Description"
-F 22 "TAIYO YUDEN" H 10850 2900 60  0001 L CNN "Manufacturer"
-F 23 "TMK105B7104KVHF" H 10850 2810 60  0001 L CNN "Manufacturer Part Number"
+F 21 "SMD Multilayer Chip Ceramic Capacitor" H 10850 2990 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 10850 2900 60  0001 L CNN "Manufacturer"
+F 23 "CC0402_100NF_25V_10%_X5R" H 10850 2810 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 10850 2720 60  0001 L CNN "Case"
 F 25 "Yes" H 10850 2630 60  0001 L CNN "Mounted"
 F 26 "No" H 10850 2540 60  0001 L CNN "Socket"
@@ -2984,31 +2929,28 @@ F 27 "Yes" H 10850 2450 60  0001 L CNN "SMD"
 F 28 " " H 10850 2360 60  0001 L CNN "PressFit"
 F 29 "No" H 10850 2270 60  0001 L CNN "Sense"
 F 30 " " H 10850 2180 60  0001 L CNN "Sense Comment"
-F 31 "0.55mm" H 10850 2090 60  0001 L CNN "ComponentHeight"
-F 32 " " H 10850 2000 60  0001 L CNN "Manufacturer1 Example"
-F 33 " " H 10850 1910 60  0001 L CNN "Manufacturer1 Part Number"
-F 34 " " H 10850 1820 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 10850 1730 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 10850 1640 60  0001 L CNN "Author"
-F 37 "05/10/17 00:00:00" H 10850 1550 60  0001 L CNN "CreateDate"
-F 38 "05/10/17 00:00:00" H 10850 1460 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors.DbLib" H 10850 1370 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10850 1280 60  0001 L CNN "License"
-F 41 "Capacitors SMD" H 10850 5050 50  0001 C CNN "Database Table Name"
-F 42 "Capacitors SMD" H 10850 5050 50  0001 C CNN "Footprint Library"
+F 31 " " H 10850 2090 60  0001 L CNN "ComponentHeight"
+F 32 "Samsung" H 10850 2000 60  0001 L CNN "Manufacturer1 Example"
+F 33 "CL05A104KA5NNNC" H 10850 1910 60  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.55mm" H 10850 1820 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 10850 1640 60  0001 L CNN "Author"
+F 36 "12/10/13 00:00:00" H 10850 1550 60  0001 L CNN "CreateDate"
+F 37 "05/25/20 00:00:00" H 10850 1460 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 10850 1370 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10850 1280 60  0001 L CNN "License"
 	1    10850 5050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Capacitors_SMD:CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF C150
+L Capacitors_SMD:CC0402_100NF_25V_10%_X5R C150
 U 1 1 5DAC786E
 P 10850 6850
 F 0 "C150" H 11000 7097 50  0000 C CNN
-F 1 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 10850 6590 60  0001 L CNN
-F 2 "Capacitors SMD:CAPC1005X55N" H 10850 5780 60  0001 L CNN
+F 1 "CC0402_100NF_25V_10%_X5R" H 10850 6590 60  0001 L CNN
+F 2 "Marble:CAPC1005X55N" H 10850 5780 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 10850 6410 60  0001 L CNN
 F 4 "100nF" H 11000 7006 50  0000 C CNN "~"
-F 5 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 10850 6320 60  0001 L CNN "Part Number"
+F 5 "CC0402_100NF_25V_10%_X5R" H 10850 6320 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 10850 6230 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 10850 6140 60  0001 L CNN "Library Path"
 F 8 "100nF" H 10850 6050 60  0001 L CNN "Comment"
@@ -3019,14 +2961,14 @@ F 12 "PcbLib\\Capacitors SMD.PcbLib" H 10850 5600 60  0001 L CNN "Footprint Path
 F 13 "CAPC1005X55N" H 10850 5510 60  0001 L CNN "Footprint Ref"
 F 14 " " H 10850 5420 60  0001 L CNN "PackageDescription"
 F 15 "100nF" H 10850 5330 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 10850 5240 60  0001 L CNN "Status"
+F 16 "None" H 10850 5240 60  0001 L CNN "Status"
 F 17 " " H 10850 5150 60  0001 L CNN "Status Comment"
 F 18 "25V" H 10850 5060 60  0001 L CNN "Voltage"
-F 19 "X7R" H 10850 4970 60  0001 L CNN "TC"
+F 19 "X5R" H 10850 4970 60  0001 L CNN "TC"
 F 20 "±10%" H 10850 4880 60  0001 L CNN "Tolerance"
-F 21 "SMD Multilayer Chip Ceramic Capacitor (High Dielectric Type) for Automotive / Industrial Applications" H 10850 4790 60  0001 L CNN "Part Description"
-F 22 "TAIYO YUDEN" H 10850 4700 60  0001 L CNN "Manufacturer"
-F 23 "TMK105B7104KVHF" H 10850 4610 60  0001 L CNN "Manufacturer Part Number"
+F 21 "SMD Multilayer Chip Ceramic Capacitor" H 10850 4790 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 10850 4700 60  0001 L CNN "Manufacturer"
+F 23 "CC0402_100NF_25V_10%_X5R" H 10850 4610 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 10850 4520 60  0001 L CNN "Case"
 F 25 "Yes" H 10850 4430 60  0001 L CNN "Mounted"
 F 26 "No" H 10850 4340 60  0001 L CNN "Socket"
@@ -3034,31 +2976,28 @@ F 27 "Yes" H 10850 4250 60  0001 L CNN "SMD"
 F 28 " " H 10850 4160 60  0001 L CNN "PressFit"
 F 29 "No" H 10850 4070 60  0001 L CNN "Sense"
 F 30 " " H 10850 3980 60  0001 L CNN "Sense Comment"
-F 31 "0.55mm" H 10850 3890 60  0001 L CNN "ComponentHeight"
-F 32 " " H 10850 3800 60  0001 L CNN "Manufacturer1 Example"
-F 33 " " H 10850 3710 60  0001 L CNN "Manufacturer1 Part Number"
-F 34 " " H 10850 3620 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 10850 3530 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 10850 3440 60  0001 L CNN "Author"
-F 37 "05/10/17 00:00:00" H 10850 3350 60  0001 L CNN "CreateDate"
-F 38 "05/10/17 00:00:00" H 10850 3260 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors.DbLib" H 10850 3170 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10850 3080 60  0001 L CNN "License"
-F 41 "Capacitors SMD" H 10850 6850 50  0001 C CNN "Database Table Name"
-F 42 "Capacitors SMD" H 10850 6850 50  0001 C CNN "Footprint Library"
+F 31 " " H 10850 3890 60  0001 L CNN "ComponentHeight"
+F 32 "Samsung" H 10850 3800 60  0001 L CNN "Manufacturer1 Example"
+F 33 "CL05A104KA5NNNC" H 10850 3710 60  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.55mm" H 10850 3620 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 10850 3440 60  0001 L CNN "Author"
+F 36 "12/10/13 00:00:00" H 10850 3350 60  0001 L CNN "CreateDate"
+F 37 "05/25/20 00:00:00" H 10850 3260 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 10850 3170 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 10850 3080 60  0001 L CNN "License"
 	1    10850 6850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Capacitors_SMD:CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF C140
+L Capacitors_SMD:CC0402_100NF_25V_10%_X5R C140
 U 1 1 5DADC0B9
 P 5800 4200
 F 0 "C140" V 5850 4000 50  0000 L CNN
-F 1 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 5800 3940 60  0001 L CNN
-F 2 "Capacitors SMD:CAPC1005X55N" H 5800 3130 60  0001 L CNN
+F 1 "CC0402_100NF_25V_10%_X5R" H 5800 3940 60  0001 L CNN
+F 2 "Marble:CAPC1005X55N" H 5800 3130 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 5800 3760 60  0001 L CNN
 F 4 "100nF" V 6050 3950 50  0000 L CNN "~"
-F 5 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 5800 3670 60  0001 L CNN "Part Number"
+F 5 "CC0402_100NF_25V_10%_X5R" H 5800 3670 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 5800 3580 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 5800 3490 60  0001 L CNN "Library Path"
 F 8 "100nF" H 5800 3400 60  0001 L CNN "Comment"
@@ -3069,14 +3008,14 @@ F 12 "PcbLib\\Capacitors SMD.PcbLib" H 5800 2950 60  0001 L CNN "Footprint Path"
 F 13 "CAPC1005X55N" H 5800 2860 60  0001 L CNN "Footprint Ref"
 F 14 " " H 5800 2770 60  0001 L CNN "PackageDescription"
 F 15 "100nF" H 5800 2680 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 5800 2590 60  0001 L CNN "Status"
+F 16 "None" H 5800 2590 60  0001 L CNN "Status"
 F 17 " " H 5800 2500 60  0001 L CNN "Status Comment"
 F 18 "25V" H 5800 2410 60  0001 L CNN "Voltage"
-F 19 "X7R" H 5800 2320 60  0001 L CNN "TC"
+F 19 "X5R" H 5800 2320 60  0001 L CNN "TC"
 F 20 "±10%" H 5800 2230 60  0001 L CNN "Tolerance"
-F 21 "SMD Multilayer Chip Ceramic Capacitor (High Dielectric Type) for Automotive / Industrial Applications" H 5800 2140 60  0001 L CNN "Part Description"
-F 22 "TAIYO YUDEN" H 5800 2050 60  0001 L CNN "Manufacturer"
-F 23 "TMK105B7104KVHF" H 5800 1960 60  0001 L CNN "Manufacturer Part Number"
+F 21 "SMD Multilayer Chip Ceramic Capacitor" H 5800 2140 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 5800 2050 60  0001 L CNN "Manufacturer"
+F 23 "CC0402_100NF_25V_10%_X5R" H 5800 1960 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 5800 1870 60  0001 L CNN "Case"
 F 25 "Yes" H 5800 1780 60  0001 L CNN "Mounted"
 F 26 "No" H 5800 1690 60  0001 L CNN "Socket"
@@ -3084,78 +3023,22 @@ F 27 "Yes" H 5800 1600 60  0001 L CNN "SMD"
 F 28 " " H 5800 1510 60  0001 L CNN "PressFit"
 F 29 "No" H 5800 1420 60  0001 L CNN "Sense"
 F 30 " " H 5800 1330 60  0001 L CNN "Sense Comment"
-F 31 "0.55mm" H 5800 1240 60  0001 L CNN "ComponentHeight"
-F 32 " " H 5800 1150 60  0001 L CNN "Manufacturer1 Example"
-F 33 " " H 5800 1060 60  0001 L CNN "Manufacturer1 Part Number"
-F 34 " " H 5800 970 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 5800 880 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 5800 790 60  0001 L CNN "Author"
-F 37 "05/10/17 00:00:00" H 5800 700 60  0001 L CNN "CreateDate"
-F 38 "05/10/17 00:00:00" H 5800 610 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors.DbLib" H 5800 520 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5800 430 60  0001 L CNN "License"
-F 41 "Capacitors SMD" H 5800 4200 50  0001 C CNN "Database Table Name"
-F 42 "Capacitors SMD" H 5800 4200 50  0001 C CNN "Footprint Library"
+F 31 " " H 5800 1240 60  0001 L CNN "ComponentHeight"
+F 32 "Samsung" H 5800 1150 60  0001 L CNN "Manufacturer1 Example"
+F 33 "CL05A104KA5NNNC" H 5800 1060 60  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.55mm" H 5800 970 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 5800 790 60  0001 L CNN "Author"
+F 36 "12/10/13 00:00:00" H 5800 700 60  0001 L CNN "CreateDate"
+F 37 "05/25/20 00:00:00" H 5800 610 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 5800 520 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5800 430 60  0001 L CNN "License"
 	1    5800 4200
 	0    1    1    0   
 $EndComp
-$Comp
-L Capacitors_SMD:CC1206_47UF_25V_20%_X5R C141
-U 1 1 5DAF13F0
-P 5850 1050
-F 0 "C141" V 5900 1050 50  0000 L CNN
-F 1 "CC1206_47UF_25V_20%_X5R" H 5850 790 60  0001 L CNN
-F 2 "CAPC3216X180N" H 5850 -20 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC1206_X5R_TDK_C.pdf" H 5850 610 60  0001 L CNN
-F 4 "47uF" V 6100 1050 50  0000 L CNN "~"
-F 5 "CC1206_47UF_25V_20%_X5R" H 5850 520 60  0001 L CNN "Part Number"
-F 6 "Capacitor - non polarized" H 5850 430 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\Capacitors.SchLib" H 5850 340 60  0001 L CNN "Library Path"
-F 8 "=Value" H 5850 250 60  0001 L CNN "Comment"
-F 9 "Standard" H 5850 160 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 5850 70  60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 5850 -110 60  0001 L CNN "Pin Count"
-F 12 "PcbLib\\Capacitors SMD.PcbLib" H 5850 -200 60  0001 L CNN "Footprint Path"
-F 13 "CAPC3216X180N" H 5850 -290 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 5850 -380 60  0001 L CNN "PackageDescription"
-F 15 "47uF" H 5850 -470 60  0001 L CNN "Val"
-F 16 "None" H 5850 -560 60  0001 L CNN "Status"
-F 17 "~~" H 5850 -650 60  0001 L CNN "Status Comment"
-F 18 "25V" H 5850 -740 60  0001 L CNN "Voltage"
-F 19 "X5R" H 5850 -830 60  0001 L CNN "TC"
-F 20 "±20%" H 5850 -920 60  0001 L CNN "Tolerance"
-F 21 "SMD Multilayer Chip Ceramic Capacitor" H 5850 -1010 60  0001 L CNN "Part Description"
-F 22 "GENERIC" H 5850 -1100 60  0001 L CNN "Manufacturer"
-F 23 "CC1206_47UF_25V_20%_X5R" H 5850 -1190 60  0001 L CNN "Manufacturer Part Number"
-F 24 "1206" H 5850 -1280 60  0001 L CNN "Case"
-F 25 "Yes" H 5850 -1370 60  0001 L CNN "Mounted"
-F 26 "No" H 5850 -1460 60  0001 L CNN "Socket"
-F 27 "Yes" H 5850 -1550 60  0001 L CNN "SMD"
-F 28 "~~" H 5850 -1640 60  0001 L CNN "PressFit"
-F 29 "No" H 5850 -1730 60  0001 L CNN "Sense"
-F 30 "~~" H 5850 -1820 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 5850 -1910 60  0001 L CNN "ComponentHeight"
-F 32 "TDK" H 5850 -2000 60  0001 L CNN "Manufacturer1 Example"
-F 33 "C3216X5R1E476M160AC" H 5850 -2090 60  0001 L CNN "Manufacturer1 Part Number"
-F 34 "1.8mm" H 5850 -2180 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC1206_X5R_TDK_C.pdf" H 5850 -2270 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 5850 -2360 60  0001 L CNN "Author"
-F 37 "11/20/13 00:00:00" H 5850 -2450 60  0001 L CNN "CreateDate"
-F 38 "03/14/17 00:00:00" H 5850 -2540 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 5850 -2630 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5850 -2720 60  0001 L CNN "License"
-	1    5850 1050
-	0    1    1    0   
-$EndComp
-Connection ~ 5550 1050
+Connection ~ 5350 1050
+Connection ~ 5350 1350
 Wire Wire Line
-	5550 1050 5850 1050
-Connection ~ 5550 1350
-Wire Wire Line
-	5550 1350 5850 1350
-Connection ~ 5850 1050
-Wire Wire Line
-	5850 1050 6150 1050
+	5350 1350 5650 1350
 Connection ~ 5800 4200
 Wire Wire Line
 	5800 4200 5950 4200
@@ -3178,37 +3061,36 @@ F 7 "SchLib\\Resistors.SchLib" H 9100 1540 60  0001 L CNN "Library Path"
 F 8 "=Value" H 9100 1450 60  0001 L CNN "Comment"
 F 9 "Standard" H 9100 1360 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 9100 1270 60  0001 L CNN "Component Type"
-F 11 "~~" H 9100 1090 60  0001 L CNN "PackageDescription"
+F 11 " " H 9100 1090 60  0001 L CNN "PackageDescription"
 F 12 "2" H 9100 1000 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 9100 910 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 9100 820 60  0001 L CNN "Footprint Ref"
 F 15 "0" H 9100 730 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 9100 640 60  0001 L CNN "Status"
-F 17 "~~" H 9100 550 60  0001 L CNN "Power"
-F 18 "~~" H 9100 460 60  0001 L CNN "TC"
-F 19 "~~" H 9100 370 60  0001 L CNN "Voltage"
-F 20 "~~" H 9100 280 60  0001 L CNN "Tolerance"
+F 17 " " H 9100 550 60  0001 L CNN "Power"
+F 18 " " H 9100 460 60  0001 L CNN "TC"
+F 19 " " H 9100 370 60  0001 L CNN "Voltage"
+F 20 " " H 9100 280 60  0001 L CNN "Tolerance"
 F 21 "1A (0.05R Max DC Resistance) Zero Ohm Jumper" H 9100 190 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 9100 100 60  0001 L CNN "Manufacturer"
 F 23 "R0402_0R_JUMPER" H 9100 10  60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 9100 -80 60  0001 L CNN "Case"
 F 25 "No" H 9100 -170 60  0001 L CNN "PressFit"
 F 26 "Yes" H 9100 -260 60  0001 L CNN "Mounted"
-F 27 "~~" H 9100 -350 60  0001 L CNN "Sense Comment"
+F 27 " " H 9100 -350 60  0001 L CNN "Sense Comment"
 F 28 "No" H 9100 -440 60  0001 L CNN "Sense"
-F 29 "~~" H 9100 -530 60  0001 L CNN "Status Comment"
+F 29 " " H 9100 -530 60  0001 L CNN "Status Comment"
 F 30 "No" H 9100 -620 60  0001 L CNN "Socket"
 F 31 "Yes" H 9100 -710 60  0001 L CNN "SMD"
-F 32 "~~" H 9100 -800 60  0001 L CNN "ComponentHeight"
+F 32 " " H 9100 -800 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 9100 -890 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270591001L" H 9100 -980 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 9100 -1070 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 9100 -1160 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 9100 -1250 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 9100 -1340 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 9100 -1430 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 9100 -1520 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9100 -1610 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 9100 -1250 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 9100 -1340 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 9100 -1430 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 9100 -1520 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9100 -1610 60  0001 L CNN "License"
 	1    9100 2200
 	-1   0    0    1   
 $EndComp
@@ -3227,37 +3109,36 @@ F 7 "SchLib\\Resistors.SchLib" H 9100 2240 60  0001 L CNN "Library Path"
 F 8 "=Value" H 9100 2150 60  0001 L CNN "Comment"
 F 9 "Standard" H 9100 2060 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 9100 1970 60  0001 L CNN "Component Type"
-F 11 "~~" H 9100 1790 60  0001 L CNN "PackageDescription"
+F 11 " " H 9100 1790 60  0001 L CNN "PackageDescription"
 F 12 "2" H 9100 1700 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 9100 1610 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 9100 1520 60  0001 L CNN "Footprint Ref"
 F 15 "0" H 9100 1430 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 9100 1340 60  0001 L CNN "Status"
-F 17 "~~" H 9100 1250 60  0001 L CNN "Power"
-F 18 "~~" H 9100 1160 60  0001 L CNN "TC"
-F 19 "~~" H 9100 1070 60  0001 L CNN "Voltage"
-F 20 "~~" H 9100 980 60  0001 L CNN "Tolerance"
+F 17 " " H 9100 1250 60  0001 L CNN "Power"
+F 18 " " H 9100 1160 60  0001 L CNN "TC"
+F 19 " " H 9100 1070 60  0001 L CNN "Voltage"
+F 20 " " H 9100 980 60  0001 L CNN "Tolerance"
 F 21 "1A (0.05R Max DC Resistance) Zero Ohm Jumper" H 9100 890 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 9100 800 60  0001 L CNN "Manufacturer"
 F 23 "R0402_0R_JUMPER" H 9100 710 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 9100 620 60  0001 L CNN "Case"
 F 25 "No" H 9100 530 60  0001 L CNN "PressFit"
 F 26 "Yes" H 9100 440 60  0001 L CNN "Mounted"
-F 27 "~~" H 9100 350 60  0001 L CNN "Sense Comment"
+F 27 " " H 9100 350 60  0001 L CNN "Sense Comment"
 F 28 "No" H 9100 260 60  0001 L CNN "Sense"
-F 29 "~~" H 9100 170 60  0001 L CNN "Status Comment"
+F 29 " " H 9100 170 60  0001 L CNN "Status Comment"
 F 30 "No" H 9100 80  60  0001 L CNN "Socket"
 F 31 "Yes" H 9100 -10 60  0001 L CNN "SMD"
-F 32 "~~" H 9100 -100 60  0001 L CNN "ComponentHeight"
+F 32 " " H 9100 -100 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 9100 -190 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270591001L" H 9100 -280 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 9100 -370 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 9100 -460 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 9100 -550 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 9100 -640 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 9100 -730 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 9100 -820 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9100 -910 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 9100 -550 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 9100 -640 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 9100 -730 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 9100 -820 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9100 -910 60  0001 L CNN "License"
 	1    9100 2900
 	-1   0    0    1   
 $EndComp
@@ -3276,37 +3157,36 @@ F 7 "SchLib\\Resistors.SchLib" H 9100 2940 60  0001 L CNN "Library Path"
 F 8 "=Value" H 9100 2850 60  0001 L CNN "Comment"
 F 9 "Standard" H 9100 2760 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 9100 2670 60  0001 L CNN "Component Type"
-F 11 "~~" H 9100 2490 60  0001 L CNN "PackageDescription"
+F 11 " " H 9100 2490 60  0001 L CNN "PackageDescription"
 F 12 "2" H 9100 2400 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 9100 2310 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 9100 2220 60  0001 L CNN "Footprint Ref"
 F 15 "0" H 9100 2130 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 9100 2040 60  0001 L CNN "Status"
-F 17 "~~" H 9100 1950 60  0001 L CNN "Power"
-F 18 "~~" H 9100 1860 60  0001 L CNN "TC"
-F 19 "~~" H 9100 1770 60  0001 L CNN "Voltage"
-F 20 "~~" H 9100 1680 60  0001 L CNN "Tolerance"
+F 17 " " H 9100 1950 60  0001 L CNN "Power"
+F 18 " " H 9100 1860 60  0001 L CNN "TC"
+F 19 " " H 9100 1770 60  0001 L CNN "Voltage"
+F 20 " " H 9100 1680 60  0001 L CNN "Tolerance"
 F 21 "1A (0.05R Max DC Resistance) Zero Ohm Jumper" H 9100 1590 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 9100 1500 60  0001 L CNN "Manufacturer"
 F 23 "R0402_0R_JUMPER" H 9100 1410 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 9100 1320 60  0001 L CNN "Case"
 F 25 "No" H 9100 1230 60  0001 L CNN "PressFit"
 F 26 "Yes" H 9100 1140 60  0001 L CNN "Mounted"
-F 27 "~~" H 9100 1050 60  0001 L CNN "Sense Comment"
+F 27 " " H 9100 1050 60  0001 L CNN "Sense Comment"
 F 28 "No" H 9100 960 60  0001 L CNN "Sense"
-F 29 "~~" H 9100 870 60  0001 L CNN "Status Comment"
+F 29 " " H 9100 870 60  0001 L CNN "Status Comment"
 F 30 "No" H 9100 780 60  0001 L CNN "Socket"
 F 31 "Yes" H 9100 690 60  0001 L CNN "SMD"
-F 32 "~~" H 9100 600 60  0001 L CNN "ComponentHeight"
+F 32 " " H 9100 600 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 9100 510 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270591001L" H 9100 420 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 9100 330 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 9100 240 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 9100 150 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 9100 60  60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 9100 -30 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 9100 -120 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9100 -210 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 9100 150 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 9100 60  60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 9100 -30 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 9100 -120 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9100 -210 60  0001 L CNN "License"
 	1    9100 3600
 	-1   0    0    1   
 $EndComp
@@ -3325,37 +3205,36 @@ F 7 "SchLib\\Resistors.SchLib" H 8000 3140 60  0001 L CNN "Library Path"
 F 8 "=Value" H 8000 3050 60  0001 L CNN "Comment"
 F 9 "Standard" H 8000 2960 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 8000 2870 60  0001 L CNN "Component Type"
-F 11 "~~" H 8000 2690 60  0001 L CNN "PackageDescription"
+F 11 " " H 8000 2690 60  0001 L CNN "PackageDescription"
 F 12 "2" H 8000 2600 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 8000 2510 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 8000 2420 60  0001 L CNN "Footprint Ref"
 F 15 "0" H 8000 2330 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 8000 2240 60  0001 L CNN "Status"
-F 17 "~~" H 8000 2150 60  0001 L CNN "Power"
-F 18 "~~" H 8000 2060 60  0001 L CNN "TC"
-F 19 "~~" H 8000 1970 60  0001 L CNN "Voltage"
-F 20 "~~" H 8000 1880 60  0001 L CNN "Tolerance"
+F 17 " " H 8000 2150 60  0001 L CNN "Power"
+F 18 " " H 8000 2060 60  0001 L CNN "TC"
+F 19 " " H 8000 1970 60  0001 L CNN "Voltage"
+F 20 " " H 8000 1880 60  0001 L CNN "Tolerance"
 F 21 "1A (0.05R Max DC Resistance) Zero Ohm Jumper" H 8000 1790 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 8000 1700 60  0001 L CNN "Manufacturer"
 F 23 "R0402_0R_JUMPER" H 8000 1610 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 8000 1520 60  0001 L CNN "Case"
 F 25 "No" H 8000 1430 60  0001 L CNN "PressFit"
 F 26 "Yes" H 8000 1340 60  0001 L CNN "Mounted"
-F 27 "~~" H 8000 1250 60  0001 L CNN "Sense Comment"
+F 27 " " H 8000 1250 60  0001 L CNN "Sense Comment"
 F 28 "No" H 8000 1160 60  0001 L CNN "Sense"
-F 29 "~~" H 8000 1070 60  0001 L CNN "Status Comment"
+F 29 " " H 8000 1070 60  0001 L CNN "Status Comment"
 F 30 "No" H 8000 980 60  0001 L CNN "Socket"
 F 31 "Yes" H 8000 890 60  0001 L CNN "SMD"
-F 32 "~~" H 8000 800 60  0001 L CNN "ComponentHeight"
+F 32 " " H 8000 800 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 8000 710 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270591001L" H 8000 620 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 8000 530 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 8000 440 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 8000 350 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 8000 260 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 8000 170 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 8000 80  60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8000 -10 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 8000 350 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 8000 260 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 8000 170 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 8000 80  60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8000 -10 60  0001 L CNN "License"
 	1    8000 3800
 	-1   0    0    1   
 $EndComp
@@ -3374,37 +3253,36 @@ F 7 "SchLib\\Resistors.SchLib" H 9100 3840 60  0001 L CNN "Library Path"
 F 8 "=Value" H 9100 3750 60  0001 L CNN "Comment"
 F 9 "Standard" H 9100 3660 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 9100 3570 60  0001 L CNN "Component Type"
-F 11 "~~" H 9100 3390 60  0001 L CNN "PackageDescription"
+F 11 " " H 9100 3390 60  0001 L CNN "PackageDescription"
 F 12 "2" H 9100 3300 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 9100 3210 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 9100 3120 60  0001 L CNN "Footprint Ref"
 F 15 "0" H 9100 3030 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 9100 2940 60  0001 L CNN "Status"
-F 17 "~~" H 9100 2850 60  0001 L CNN "Power"
-F 18 "~~" H 9100 2760 60  0001 L CNN "TC"
-F 19 "~~" H 9100 2670 60  0001 L CNN "Voltage"
-F 20 "~~" H 9100 2580 60  0001 L CNN "Tolerance"
+F 17 " " H 9100 2850 60  0001 L CNN "Power"
+F 18 " " H 9100 2760 60  0001 L CNN "TC"
+F 19 " " H 9100 2670 60  0001 L CNN "Voltage"
+F 20 " " H 9100 2580 60  0001 L CNN "Tolerance"
 F 21 "1A (0.05R Max DC Resistance) Zero Ohm Jumper" H 9100 2490 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 9100 2400 60  0001 L CNN "Manufacturer"
 F 23 "R0402_0R_JUMPER" H 9100 2310 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 9100 2220 60  0001 L CNN "Case"
 F 25 "No" H 9100 2130 60  0001 L CNN "PressFit"
 F 26 "Yes" H 9100 2040 60  0001 L CNN "Mounted"
-F 27 "~~" H 9100 1950 60  0001 L CNN "Sense Comment"
+F 27 " " H 9100 1950 60  0001 L CNN "Sense Comment"
 F 28 "No" H 9100 1860 60  0001 L CNN "Sense"
-F 29 "~~" H 9100 1770 60  0001 L CNN "Status Comment"
+F 29 " " H 9100 1770 60  0001 L CNN "Status Comment"
 F 30 "No" H 9100 1680 60  0001 L CNN "Socket"
 F 31 "Yes" H 9100 1590 60  0001 L CNN "SMD"
-F 32 "~~" H 9100 1500 60  0001 L CNN "ComponentHeight"
+F 32 " " H 9100 1500 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 9100 1410 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270591001L" H 9100 1320 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 9100 1230 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 9100 1140 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 9100 1050 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 9100 960 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 9100 870 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 9100 780 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9100 690 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 9100 1050 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 9100 960 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 9100 870 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 9100 780 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9100 690 60  0001 L CNN "License"
 	1    9100 4500
 	-1   0    0    1   
 $EndComp
@@ -3423,7 +3301,7 @@ F 7 "SchLib\\Resistors.SchLib" H 5250 1740 60  0001 L CNN "Library Path"
 F 8 "=Value" H 5250 1650 60  0001 L CNN "Comment"
 F 9 "Standard" H 5250 1560 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 5250 1470 60  0001 L CNN "Component Type"
-F 11 "~~" H 5250 1290 60  0001 L CNN "PackageDescription"
+F 11 " " H 5250 1290 60  0001 L CNN "PackageDescription"
 F 12 "2" H 5250 1200 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 5250 1110 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 5250 1020 60  0001 L CNN "Footprint Ref"
@@ -3431,7 +3309,7 @@ F 15 "10k" H 5250 930 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 5250 840 60  0001 L CNN "Status"
 F 17 "0.0625W" H 5250 750 60  0001 L CNN "Power"
 F 18 "±100ppm/°C" H 5250 660 60  0001 L CNN "TC"
-F 19 "~~" H 5250 570 60  0001 L CNN "Voltage"
+F 19 " " H 5250 570 60  0001 L CNN "Voltage"
 F 20 "±1%" H 5250 480 60  0001 L CNN "Tolerance"
 F 21 "General Purpose Thick Film Chip Resistor" H 5250 390 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 5250 300 60  0001 L CNN "Manufacturer"
@@ -3439,21 +3317,20 @@ F 23 "R0402_10K_1%_0.0625W_100PPM" H 5250 210 60  0001 L CNN "Manufacturer Part 
 F 24 "0402" H 5250 120 60  0001 L CNN "Case"
 F 25 "No" H 5250 30  60  0001 L CNN "PressFit"
 F 26 "Yes" H 5250 -60 60  0001 L CNN "Mounted"
-F 27 "~~" H 5250 -150 60  0001 L CNN "Sense Comment"
+F 27 " " H 5250 -150 60  0001 L CNN "Sense Comment"
 F 28 "No" H 5250 -240 60  0001 L CNN "Sense"
-F 29 "~~" H 5250 -330 60  0001 L CNN "Status Comment"
+F 29 " " H 5250 -330 60  0001 L CNN "Status Comment"
 F 30 "No" H 5250 -420 60  0001 L CNN "Socket"
 F 31 "Yes" H 5250 -510 60  0001 L CNN "SMD"
-F 32 "~~" H 5250 -600 60  0001 L CNN "ComponentHeight"
+F 32 " " H 5250 -600 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 5250 -690 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270671003L" H 5250 -780 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 5250 -870 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 5250 -960 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 5250 -1050 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 5250 -1140 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 5250 -1230 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 5250 -1320 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5250 -1410 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 5250 -1050 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 5250 -1140 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 5250 -1230 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 5250 -1320 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5250 -1410 60  0001 L CNN "License"
 	1    5250 2400
 	1    0    0    -1  
 $EndComp
@@ -3472,7 +3349,7 @@ F 7 "SchLib\\Resistors.SchLib" H 5250 1840 60  0001 L CNN "Library Path"
 F 8 "=Value" H 5250 1750 60  0001 L CNN "Comment"
 F 9 "Standard" H 5250 1660 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 5250 1570 60  0001 L CNN "Component Type"
-F 11 "~~" H 5250 1390 60  0001 L CNN "PackageDescription"
+F 11 " " H 5250 1390 60  0001 L CNN "PackageDescription"
 F 12 "2" H 5250 1300 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 5250 1210 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 5250 1120 60  0001 L CNN "Footprint Ref"
@@ -3480,7 +3357,7 @@ F 15 "10k" H 5250 1030 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 5250 940 60  0001 L CNN "Status"
 F 17 "0.0625W" H 5250 850 60  0001 L CNN "Power"
 F 18 "±100ppm/°C" H 5250 760 60  0001 L CNN "TC"
-F 19 "~~" H 5250 670 60  0001 L CNN "Voltage"
+F 19 " " H 5250 670 60  0001 L CNN "Voltage"
 F 20 "±1%" H 5250 580 60  0001 L CNN "Tolerance"
 F 21 "General Purpose Thick Film Chip Resistor" H 5250 490 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 5250 400 60  0001 L CNN "Manufacturer"
@@ -3488,21 +3365,20 @@ F 23 "R0402_10K_1%_0.0625W_100PPM" H 5250 310 60  0001 L CNN "Manufacturer Part 
 F 24 "0402" H 5250 220 60  0001 L CNN "Case"
 F 25 "No" H 5250 130 60  0001 L CNN "PressFit"
 F 26 "Yes" H 5250 40  60  0001 L CNN "Mounted"
-F 27 "~~" H 5250 -50 60  0001 L CNN "Sense Comment"
+F 27 " " H 5250 -50 60  0001 L CNN "Sense Comment"
 F 28 "No" H 5250 -140 60  0001 L CNN "Sense"
-F 29 "~~" H 5250 -230 60  0001 L CNN "Status Comment"
+F 29 " " H 5250 -230 60  0001 L CNN "Status Comment"
 F 30 "No" H 5250 -320 60  0001 L CNN "Socket"
 F 31 "Yes" H 5250 -410 60  0001 L CNN "SMD"
-F 32 "~~" H 5250 -500 60  0001 L CNN "ComponentHeight"
+F 32 " " H 5250 -500 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 5250 -590 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270671003L" H 5250 -680 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 5250 -770 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 5250 -860 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 5250 -950 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 5250 -1040 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 5250 -1130 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 5250 -1220 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5250 -1310 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 5250 -950 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 5250 -1040 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 5250 -1130 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 5250 -1220 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5250 -1310 60  0001 L CNN "License"
 	1    5250 2500
 	1    0    0    -1  
 $EndComp
@@ -3528,7 +3404,7 @@ F 7 "SchLib\\Resistors.SchLib" H 4100 1240 60  0001 L CNN "Library Path"
 F 8 "=Value" H 4100 1150 60  0001 L CNN "Comment"
 F 9 "Standard" H 4100 1060 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 4100 970 60  0001 L CNN "Component Type"
-F 11 "~~" H 4100 790 60  0001 L CNN "PackageDescription"
+F 11 " " H 4100 790 60  0001 L CNN "PackageDescription"
 F 12 "2" H 4100 700 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 4100 610 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 4100 520 60  0001 L CNN "Footprint Ref"
@@ -3536,7 +3412,7 @@ F 15 "1k" H 4100 430 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 4100 340 60  0001 L CNN "Status"
 F 17 "0.0625W" H 4100 250 60  0001 L CNN "Power"
 F 18 "±100ppm/°C" H 4100 160 60  0001 L CNN "TC"
-F 19 "~~" H 4100 70  60  0001 L CNN "Voltage"
+F 19 " " H 4100 70  60  0001 L CNN "Voltage"
 F 20 "±1%" H 4100 -20 60  0001 L CNN "Tolerance"
 F 21 "General Purpose Thick Film Chip Resistor" H 4100 -110 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 4100 -200 60  0001 L CNN "Manufacturer"
@@ -3544,21 +3420,20 @@ F 23 "R0402_1K_1%_0.0625W_100PPM" H 4100 -290 60  0001 L CNN "Manufacturer Part 
 F 24 "0402" H 4100 -380 60  0001 L CNN "Case"
 F 25 "No" H 4100 -470 60  0001 L CNN "PressFit"
 F 26 "Yes" H 4100 -560 60  0001 L CNN "Mounted"
-F 27 "~~" H 4100 -650 60  0001 L CNN "Sense Comment"
+F 27 " " H 4100 -650 60  0001 L CNN "Sense Comment"
 F 28 "No" H 4100 -740 60  0001 L CNN "Sense"
-F 29 "~~" H 4100 -830 60  0001 L CNN "Status Comment"
+F 29 " " H 4100 -830 60  0001 L CNN "Status Comment"
 F 30 "No" H 4100 -920 60  0001 L CNN "Socket"
 F 31 "Yes" H 4100 -1010 60  0001 L CNN "SMD"
-F 32 "~~" H 4100 -1100 60  0001 L CNN "ComponentHeight"
+F 32 " " H 4100 -1100 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 4100 -1190 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270671002L" H 4100 -1280 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 4100 -1370 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 4100 -1460 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 4100 -1550 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 4100 -1640 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 4100 -1730 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 4100 -1820 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4100 -1910 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 4100 -1550 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 4100 -1640 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 4100 -1730 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 4100 -1820 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4100 -1910 60  0001 L CNN "License"
 	1    4100 1900
 	-1   0    0    1   
 $EndComp
@@ -3568,98 +3443,6 @@ Wire Wire Line
 	2700 1900 3800 1900
 Wire Wire Line
 	4100 1900 4350 1900
-$Comp
-L Transistors:BC847BV Q26
-U 1 1 5C5AEB93
-P 1200 6650
-F 0 "Q26" H 1533 6696 50  0000 L CNN
-F 1 "BC847BV" H 1533 6605 50  0000 L CNN
-F 2 "SOTFL50P160X60-6N" H 1200 5390 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\BC847BV.pdf" H 1200 6110 60  0001 L CNN
-F 4 "BC847BV" H 1200 6020 60  0001 L CNN "Part Number"
-F 5 "BC847BV" H 1200 5930 60  0001 L CNN "Library Ref"
-F 6 "SchLib\\Transistors.SchLib" H 1200 5840 60  0001 L CNN "Library Path"
-F 7 "=Device" H 1200 5750 60  0001 L CNN "Comment"
-F 8 "Standard" H 1200 5660 60  0001 L CNN "Component Kind"
-F 9 "Standard" H 1200 5570 60  0001 L CNN "Component Type"
-F 10 "BC847BV" H 1200 5480 60  0001 L CNN "Device"
-F 11 "SOTFL (SOT666), 0.50mm, Pitch; 6 Pin, 1.20mm W X 1.60mm L X 0.60mm H Body, IPC Medium Density" H 1200 5300 60  0001 L CNN "PackageDescription"
-F 12 "~~" H 1200 5210 60  0001 L CNN "Status"
-F 13 "45V 100mA NPN General Purpose Double Transistor" H 1200 5120 60  0001 L CNN "Part Description"
-F 14 "NXP SEMICONDUCTORS" H 1200 5030 60  0001 L CNN "Manufacturer"
-F 15 "BC847BV" H 1200 4940 60  0001 L CNN "Manufacturer Part Number"
-F 16 "6" H 1200 4850 60  0001 L CNN "Pin Count"
-F 17 "SOT666" H 1200 4760 60  0001 L CNN "Case"
-F 18 "Yes" H 1200 4670 60  0001 L CNN "Mounted"
-F 19 "No" H 1200 4580 60  0001 L CNN "Socket"
-F 20 "No" H 1200 4490 60  0001 L CNN "PressFit"
-F 21 "Yes" H 1200 4400 60  0001 L CNN "SMD"
-F 22 "No" H 1200 4310 60  0001 L CNN "Sense"
-F 23 "~~" H 1200 4220 60  0001 L CNN "Sense Comment"
-F 24 "No" H 1200 4130 60  0001 L CNN "Bonding"
-F 25 "~~" H 1200 4040 60  0001 L CNN "Status Comment"
-F 26 "0.6mm" H 1200 3950 60  0001 L CNN "ComponentHeight"
-F 27 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 1200 3860 60  0001 L CNN "Footprint Path"
-F 28 "SOTFL50P160X60-6N" H 1200 3770 60  0001 L CNN "Footprint Ref"
-F 29 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\BC847BV.pdf" H 1200 3680 60  0001 L CNN "HelpURL"
-F 30 "~~" H 1200 3590 60  0001 L CNN "ComponentLink1URL"
-F 31 "~~" H 1200 3500 60  0001 L CNN "ComponentLink1Description"
-F 32 "~~" H 1200 3410 60  0001 L CNN "ComponentLink2URL"
-F 33 "~~" H 1200 3320 60  0001 L CNN "ComponentLink2Description"
-F 34 "CERN DEM JLC" H 1200 3230 60  0001 L CNN "Author"
-F 35 "12/01/11 00:00:00" H 1200 3140 60  0001 L CNN "CreateDate"
-F 36 "12/01/11 00:00:00" H 1200 3050 60  0001 L CNN "LatestRevisionDate"
-F 37 "ICs And Semiconductors SMD" H 1200 2960 60  0001 L CNN "Library Name"
-F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1200 2870 60  0001 L CNN "License"
-	1    1200 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistors:BC847BV Q26
-U 2 1 5C5AEE82
-P 2250 6650
-F 0 "Q26" H 2583 6696 50  0000 L CNN
-F 1 "BC847BV" H 2583 6605 50  0000 L CNN
-F 2 "SOTFL50P160X60-6N" H 2250 5390 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\BC847BV.pdf" H 2250 6110 60  0001 L CNN
-F 4 "BC847BV" H 2250 6020 60  0001 L CNN "Part Number"
-F 5 "BC847BV" H 2250 5930 60  0001 L CNN "Library Ref"
-F 6 "SchLib\\Transistors.SchLib" H 2250 5840 60  0001 L CNN "Library Path"
-F 7 "=Device" H 2250 5750 60  0001 L CNN "Comment"
-F 8 "Standard" H 2250 5660 60  0001 L CNN "Component Kind"
-F 9 "Standard" H 2250 5570 60  0001 L CNN "Component Type"
-F 10 "BC847BV" H 2250 5480 60  0001 L CNN "Device"
-F 11 "SOTFL (SOT666), 0.50mm, Pitch; 6 Pin, 1.20mm W X 1.60mm L X 0.60mm H Body, IPC Medium Density" H 2250 5300 60  0001 L CNN "PackageDescription"
-F 12 "~~" H 2250 5210 60  0001 L CNN "Status"
-F 13 "45V 100mA NPN General Purpose Double Transistor" H 2250 5120 60  0001 L CNN "Part Description"
-F 14 "NXP SEMICONDUCTORS" H 2250 5030 60  0001 L CNN "Manufacturer"
-F 15 "BC847BV" H 2250 4940 60  0001 L CNN "Manufacturer Part Number"
-F 16 "6" H 2250 4850 60  0001 L CNN "Pin Count"
-F 17 "SOT666" H 2250 4760 60  0001 L CNN "Case"
-F 18 "Yes" H 2250 4670 60  0001 L CNN "Mounted"
-F 19 "No" H 2250 4580 60  0001 L CNN "Socket"
-F 20 "No" H 2250 4490 60  0001 L CNN "PressFit"
-F 21 "Yes" H 2250 4400 60  0001 L CNN "SMD"
-F 22 "No" H 2250 4310 60  0001 L CNN "Sense"
-F 23 "~~" H 2250 4220 60  0001 L CNN "Sense Comment"
-F 24 "No" H 2250 4130 60  0001 L CNN "Bonding"
-F 25 "~~" H 2250 4040 60  0001 L CNN "Status Comment"
-F 26 "0.6mm" H 2250 3950 60  0001 L CNN "ComponentHeight"
-F 27 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 2250 3860 60  0001 L CNN "Footprint Path"
-F 28 "SOTFL50P160X60-6N" H 2250 3770 60  0001 L CNN "Footprint Ref"
-F 29 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\BC847BV.pdf" H 2250 3680 60  0001 L CNN "HelpURL"
-F 30 "~~" H 2250 3590 60  0001 L CNN "ComponentLink1URL"
-F 31 "~~" H 2250 3500 60  0001 L CNN "ComponentLink1Description"
-F 32 "~~" H 2250 3410 60  0001 L CNN "ComponentLink2URL"
-F 33 "~~" H 2250 3320 60  0001 L CNN "ComponentLink2Description"
-F 34 "CERN DEM JLC" H 2250 3230 60  0001 L CNN "Author"
-F 35 "12/01/11 00:00:00" H 2250 3140 60  0001 L CNN "CreateDate"
-F 36 "12/01/11 00:00:00" H 2250 3050 60  0001 L CNN "LatestRevisionDate"
-F 37 "ICs And Semiconductors SMD" H 2250 2960 60  0001 L CNN "Library Name"
-F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2250 2870 60  0001 L CNN "License"
-	2    2250 6650
-	1    0    0    -1  
-$EndComp
 $Comp
 L Resistors_SMD:R0402_10K_1%_0.0625W_100PPM R?
 U 1 1 5C5DE283
@@ -3679,7 +3462,7 @@ F 7 "SchLib\\Resistors.SchLib" H 1450 5190 60  0001 L CNN "Library Path"
 F 8 "=Value" H 1450 5100 60  0001 L CNN "Comment"
 F 9 "Standard" H 1450 5010 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 1450 4920 60  0001 L CNN "Component Type"
-F 11 "~~" H 1450 4740 60  0001 L CNN "PackageDescription"
+F 11 " " H 1450 4740 60  0001 L CNN "PackageDescription"
 F 12 "2" H 1450 4650 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 1450 4560 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 1450 4470 60  0001 L CNN "Footprint Ref"
@@ -3687,7 +3470,7 @@ F 15 "10k" H 1450 4380 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 1450 4290 60  0001 L CNN "Status"
 F 17 "0.0625W" H 1450 4200 60  0001 L CNN "Power"
 F 18 "±100ppm/°C" H 1450 4110 60  0001 L CNN "TC"
-F 19 "~~" H 1450 4020 60  0001 L CNN "Voltage"
+F 19 " " H 1450 4020 60  0001 L CNN "Voltage"
 F 20 "±1%" H 1450 3930 60  0001 L CNN "Tolerance"
 F 21 "General Purpose Thick Film Chip Resistor" H 1450 3840 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 1450 3750 60  0001 L CNN "Manufacturer"
@@ -3695,21 +3478,20 @@ F 23 "R0402_10K_1%_0.0625W_100PPM" H 1450 3660 60  0001 L CNN "Manufacturer Part
 F 24 "0402" H 1450 3570 60  0001 L CNN "Case"
 F 25 "No" H 1450 3480 60  0001 L CNN "PressFit"
 F 26 "Yes" H 1450 3390 60  0001 L CNN "Mounted"
-F 27 "~~" H 1450 3300 60  0001 L CNN "Sense Comment"
+F 27 " " H 1450 3300 60  0001 L CNN "Sense Comment"
 F 28 "No" H 1450 3210 60  0001 L CNN "Sense"
-F 29 "~~" H 1450 3120 60  0001 L CNN "Status Comment"
+F 29 " " H 1450 3120 60  0001 L CNN "Status Comment"
 F 30 "No" H 1450 3030 60  0001 L CNN "Socket"
 F 31 "Yes" H 1450 2940 60  0001 L CNN "SMD"
-F 32 "~~" H 1450 2850 60  0001 L CNN "ComponentHeight"
+F 32 " " H 1450 2850 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 1450 2760 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270671003L" H 1450 2670 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 1450 2580 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 1450 2490 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 1450 2400 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 1450 2310 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 1450 2220 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 1450 2130 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1450 2040 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 1450 2400 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 1450 2310 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 1450 2220 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 1450 2130 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1450 2040 60  0001 L CNN "License"
 	1    1450 5850
 	0    1    1    0   
 $EndComp
@@ -3724,43 +3506,39 @@ F 0 "LD5" V 1450 6470 50  0000 L CNN
 F 1 "LED_KINGBRIGHT_KPH-1608CGCK" H 1450 6070 60  0001 L CNN
 F 2 "ICs And Semiconductors SMD:LED_KINGBRIGHT_KPH-1608CGCK" H 1450 5080 60  0001 L CNN
 F 3 "" H 1450 5890 60  0001 L CNN
-F 4 "Green" H 1450 5800 60  0001 L CNN "Pole4"
-F 5 "150060VS75000" H 1450 5800 60  0001 L CNN "Part Number"
-F 6 "LED Green 1C 2A" H 1450 5710 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\LEDs & Displays.SchLib" H 1450 5620 60  0001 L CNN "Library Path"
-F 8 "~~" H 1450 5530 60  0001 L CNN "Comment"
-F 9 "Standard" H 1450 5440 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 1450 5350 60  0001 L CNN "Component Type"
-F 11 "Green" H 1450 5260 60  0001 L CNN "Color"
-F 12 "~~" H 1450 5170 60  0001 L CNN "Device"
-F 13 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 1450 4990 60  0001 L CNN "PackageDescription"
-F 14 "~~" H 1450 4900 60  0001 L CNN "Status"
-F 15 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 1450 4810 60  0001 L CNN "Part Description"
-F 16 "KINGBRIGHT" H 1450 4720 60  0001 L CNN "Manufacturer"
-F 17 "150060VS75000" H 1450 4630 60  0001 L CNN "Manufacturer Part Number"
-F 18 "2" H 1450 4540 60  0001 L CNN "Pin Count"
-F 19 "~~" H 1450 4450 60  0001 L CNN "Case"
-F 20 "Yes" H 1450 4360 60  0001 L CNN "Mounted"
-F 21 "No" H 1450 4270 60  0001 L CNN "Socket"
-F 22 "Yes" H 1450 4180 60  0001 L CNN "SMD"
-F 23 "No" H 1450 4090 60  0001 L CNN "PressFit"
-F 24 "~~" H 1450 4000 60  0001 L CNN "Sense Comment"
-F 25 "No" H 1450 3910 60  0001 L CNN "Sense"
-F 26 "No" H 1450 3820 60  0001 L CNN "Bonding"
-F 27 "~~" H 1450 3730 60  0001 L CNN "Status Comment"
-F 28 "0.65mm" H 1450 3640 60  0001 L CNN "ComponentHeight"
-F 29 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 1450 3550 60  0001 L CNN "Footprint Path"
-F 30 "LED_KINGBRIGHT_KPH-1608CGCK" H 1450 3460 60  0001 L CNN "Footprint Ref"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\LED_KINGBRIGHT_KPH-1608CGCK.pdf" H 1450 3370 60  0001 L CNN "HelpURL"
-F 32 "~~" H 1450 3280 60  0001 L CNN "ComponentLink1URL"
-F 33 "~~" H 1450 3190 60  0001 L CNN "ComponentLink1Description"
-F 34 "~~" H 1450 3100 60  0001 L CNN "ComponentLink2URL"
-F 35 "~~" H 1450 3010 60  0001 L CNN "ComponentLink2Description"
-F 36 "CERN DEM JLC" H 1450 2920 60  0001 L CNN "Author"
-F 37 "07/03/17 00:00:00" H 1450 2830 60  0001 L CNN "CreateDate"
-F 38 "07/03/17 00:00:00" H 1450 2740 60  0001 L CNN "LatestRevisionDate"
-F 39 "ICs And Semiconductors SMD" H 1450 2650 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1450 2560 60  0001 L CNN "License"
+F 4 "LED_KINGBRIGHT_KPH-1608CGCK" H 1450 5800 60  0001 L CNN "Part Number"
+F 5 "LED Green 1C 2A" H 1450 5710 60  0001 L CNN "Library Ref"
+F 6 "SchLib\\LEDs & Displays.SchLib" H 1450 5620 60  0001 L CNN "Library Path"
+F 7 " " H 1450 5530 60  0001 L CNN "Comment"
+F 8 "Standard" H 1450 5440 60  0001 L CNN "Component Kind"
+F 9 "Standard" H 1450 5350 60  0001 L CNN "Component Type"
+F 10 "Green" H 1450 5260 60  0001 L CNN "Color"
+F 11 " " H 1450 5170 60  0001 L CNN "Device"
+F 12 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 1450 4990 60  0001 L CNN "PackageDescription"
+F 13 " " H 1450 4900 60  0001 L CNN "Status"
+F 14 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 1450 4810 60  0001 L CNN "Part Description"
+F 15 "WURTH" H 1450 4720 60  0001 L CNN "Manufacturer"
+F 16 "150060VS75000" H 1450 4630 60  0001 L CNN "Manufacturer Part Number"
+F 17 "2" H 1450 4540 60  0001 L CNN "Pin Count"
+F 18 " " H 1450 4450 60  0001 L CNN "Case"
+F 19 "Yes" H 1450 4360 60  0001 L CNN "Mounted"
+F 20 "No" H 1450 4270 60  0001 L CNN "Socket"
+F 21 "Yes" H 1450 4180 60  0001 L CNN "SMD"
+F 22 "No" H 1450 4090 60  0001 L CNN "PressFit"
+F 23 " " H 1450 4000 60  0001 L CNN "Sense Comment"
+F 24 "No" H 1450 3910 60  0001 L CNN "Sense"
+F 25 "No" H 1450 3820 60  0001 L CNN "Bonding"
+F 26 " " H 1450 3730 60  0001 L CNN "Status Comment"
+F 27 "0.65mm" H 1450 3640 60  0001 L CNN "ComponentHeight"
+F 28 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 1450 3550 60  0001 L CNN "Footprint Path"
+F 29 "LED_KINGBRIGHT_KPH-1608CGCK" H 1450 3460 60  0001 L CNN "Footprint Ref"
+F 30 " " H 1450 3190 60  0001 L CNN "ComponentLink1Description"
+F 31 " " H 1450 3010 60  0001 L CNN "ComponentLink2Description"
+F 32 "CERN DEM JLC" H 1450 2920 60  0001 L CNN "Author"
+F 33 "07/03/17 00:00:00" H 1450 2830 60  0001 L CNN "CreateDate"
+F 34 "07/03/17 00:00:00" H 1450 2740 60  0001 L CNN "LatestRevisionDate"
+F 35 "ICs And Semiconductors SMD" H 1450 2650 60  0001 L CNN "Library Name"
+F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1450 2560 60  0001 L CNN "License"
 	1    1450 6300
 	0    1    1    0   
 $EndComp
@@ -3783,7 +3561,7 @@ F 7 "SchLib\\Resistors.SchLib" H 2500 5190 60  0001 L CNN "Library Path"
 F 8 "=Value" H 2500 5100 60  0001 L CNN "Comment"
 F 9 "Standard" H 2500 5010 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 2500 4920 60  0001 L CNN "Component Type"
-F 11 "~~" H 2500 4740 60  0001 L CNN "PackageDescription"
+F 11 " " H 2500 4740 60  0001 L CNN "PackageDescription"
 F 12 "2" H 2500 4650 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 2500 4560 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 2500 4470 60  0001 L CNN "Footprint Ref"
@@ -3791,7 +3569,7 @@ F 15 "10k" H 2500 4380 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 2500 4290 60  0001 L CNN "Status"
 F 17 "0.0625W" H 2500 4200 60  0001 L CNN "Power"
 F 18 "±100ppm/°C" H 2500 4110 60  0001 L CNN "TC"
-F 19 "~~" H 2500 4020 60  0001 L CNN "Voltage"
+F 19 " " H 2500 4020 60  0001 L CNN "Voltage"
 F 20 "±1%" H 2500 3930 60  0001 L CNN "Tolerance"
 F 21 "General Purpose Thick Film Chip Resistor" H 2500 3840 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 2500 3750 60  0001 L CNN "Manufacturer"
@@ -3799,21 +3577,20 @@ F 23 "R0402_10K_1%_0.0625W_100PPM" H 2500 3660 60  0001 L CNN "Manufacturer Part
 F 24 "0402" H 2500 3570 60  0001 L CNN "Case"
 F 25 "No" H 2500 3480 60  0001 L CNN "PressFit"
 F 26 "Yes" H 2500 3390 60  0001 L CNN "Mounted"
-F 27 "~~" H 2500 3300 60  0001 L CNN "Sense Comment"
+F 27 " " H 2500 3300 60  0001 L CNN "Sense Comment"
 F 28 "No" H 2500 3210 60  0001 L CNN "Sense"
-F 29 "~~" H 2500 3120 60  0001 L CNN "Status Comment"
+F 29 " " H 2500 3120 60  0001 L CNN "Status Comment"
 F 30 "No" H 2500 3030 60  0001 L CNN "Socket"
 F 31 "Yes" H 2500 2940 60  0001 L CNN "SMD"
-F 32 "~~" H 2500 2850 60  0001 L CNN "ComponentHeight"
+F 32 " " H 2500 2850 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 2500 2760 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270671003L" H 2500 2670 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 2500 2580 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 2500 2490 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 2500 2400 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 2500 2310 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 2500 2220 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 2500 2130 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2500 2040 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 2500 2400 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 2500 2310 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 2500 2220 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 2500 2130 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2500 2040 60  0001 L CNN "License"
 	1    2500 5850
 	0    1    1    0   
 $EndComp
@@ -3828,137 +3605,41 @@ F 0 "LD7" V 2500 6470 50  0000 L CNN
 F 1 "LED_KINGBRIGHT_KPH-1608CGCK" H 2500 6070 60  0001 L CNN
 F 2 "ICs And Semiconductors SMD:LED_KINGBRIGHT_KPH-1608CGCK" H 2500 5080 60  0001 L CNN
 F 3 "" H 2500 5890 60  0001 L CNN
-F 4 "Green" H 2500 5800 60  0001 L CNN "Pole4"
-F 5 "150060VS75000" H 2500 5800 60  0001 L CNN "Part Number"
-F 6 "LED Green 1C 2A" H 2500 5710 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\LEDs & Displays.SchLib" H 2500 5620 60  0001 L CNN "Library Path"
-F 8 "~~" H 2500 5530 60  0001 L CNN "Comment"
-F 9 "Standard" H 2500 5440 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 2500 5350 60  0001 L CNN "Component Type"
-F 11 "Green" H 2500 5260 60  0001 L CNN "Color"
-F 12 "~~" H 2500 5170 60  0001 L CNN "Device"
-F 13 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 2500 4990 60  0001 L CNN "PackageDescription"
-F 14 "~~" H 2500 4900 60  0001 L CNN "Status"
-F 15 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 2500 4810 60  0001 L CNN "Part Description"
-F 16 "KINGBRIGHT" H 2500 4720 60  0001 L CNN "Manufacturer"
-F 17 "150060VS75000" H 2500 4630 60  0001 L CNN "Manufacturer Part Number"
-F 18 "2" H 2500 4540 60  0001 L CNN "Pin Count"
-F 19 "~~" H 2500 4450 60  0001 L CNN "Case"
-F 20 "Yes" H 2500 4360 60  0001 L CNN "Mounted"
-F 21 "No" H 2500 4270 60  0001 L CNN "Socket"
-F 22 "Yes" H 2500 4180 60  0001 L CNN "SMD"
-F 23 "No" H 2500 4090 60  0001 L CNN "PressFit"
-F 24 "~~" H 2500 4000 60  0001 L CNN "Sense Comment"
-F 25 "No" H 2500 3910 60  0001 L CNN "Sense"
-F 26 "No" H 2500 3820 60  0001 L CNN "Bonding"
-F 27 "~~" H 2500 3730 60  0001 L CNN "Status Comment"
-F 28 "0.65mm" H 2500 3640 60  0001 L CNN "ComponentHeight"
-F 29 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 2500 3550 60  0001 L CNN "Footprint Path"
-F 30 "LED_KINGBRIGHT_KPH-1608CGCK" H 2500 3460 60  0001 L CNN "Footprint Ref"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\LED_KINGBRIGHT_KPH-1608CGCK.pdf" H 2500 3370 60  0001 L CNN "HelpURL"
-F 32 "~~" H 2500 3280 60  0001 L CNN "ComponentLink1URL"
-F 33 "~~" H 2500 3190 60  0001 L CNN "ComponentLink1Description"
-F 34 "~~" H 2500 3100 60  0001 L CNN "ComponentLink2URL"
-F 35 "~~" H 2500 3010 60  0001 L CNN "ComponentLink2Description"
-F 36 "CERN DEM JLC" H 2500 2920 60  0001 L CNN "Author"
-F 37 "07/03/17 00:00:00" H 2500 2830 60  0001 L CNN "CreateDate"
-F 38 "07/03/17 00:00:00" H 2500 2740 60  0001 L CNN "LatestRevisionDate"
-F 39 "ICs And Semiconductors SMD" H 2500 2650 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2500 2560 60  0001 L CNN "License"
+F 4 "LED_KINGBRIGHT_KPH-1608CGCK" H 2500 5800 60  0001 L CNN "Part Number"
+F 5 "LED Green 1C 2A" H 2500 5710 60  0001 L CNN "Library Ref"
+F 6 "SchLib\\LEDs & Displays.SchLib" H 2500 5620 60  0001 L CNN "Library Path"
+F 7 " " H 2500 5530 60  0001 L CNN "Comment"
+F 8 "Standard" H 2500 5440 60  0001 L CNN "Component Kind"
+F 9 "Standard" H 2500 5350 60  0001 L CNN "Component Type"
+F 10 "Green" H 2500 5260 60  0001 L CNN "Color"
+F 11 " " H 2500 5170 60  0001 L CNN "Device"
+F 12 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 2500 4990 60  0001 L CNN "PackageDescription"
+F 13 " " H 2500 4900 60  0001 L CNN "Status"
+F 14 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 2500 4810 60  0001 L CNN "Part Description"
+F 15 "WURTH" H 2500 4720 60  0001 L CNN "Manufacturer"
+F 16 "150060VS75000" H 2500 4630 60  0001 L CNN "Manufacturer Part Number"
+F 17 "2" H 2500 4540 60  0001 L CNN "Pin Count"
+F 18 " " H 2500 4450 60  0001 L CNN "Case"
+F 19 "Yes" H 2500 4360 60  0001 L CNN "Mounted"
+F 20 "No" H 2500 4270 60  0001 L CNN "Socket"
+F 21 "Yes" H 2500 4180 60  0001 L CNN "SMD"
+F 22 "No" H 2500 4090 60  0001 L CNN "PressFit"
+F 23 " " H 2500 4000 60  0001 L CNN "Sense Comment"
+F 24 "No" H 2500 3910 60  0001 L CNN "Sense"
+F 25 "No" H 2500 3820 60  0001 L CNN "Bonding"
+F 26 " " H 2500 3730 60  0001 L CNN "Status Comment"
+F 27 "0.65mm" H 2500 3640 60  0001 L CNN "ComponentHeight"
+F 28 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 2500 3550 60  0001 L CNN "Footprint Path"
+F 29 "LED_KINGBRIGHT_KPH-1608CGCK" H 2500 3460 60  0001 L CNN "Footprint Ref"
+F 30 " " H 2500 3190 60  0001 L CNN "ComponentLink1Description"
+F 31 " " H 2500 3010 60  0001 L CNN "ComponentLink2Description"
+F 32 "CERN DEM JLC" H 2500 2920 60  0001 L CNN "Author"
+F 33 "07/03/17 00:00:00" H 2500 2830 60  0001 L CNN "CreateDate"
+F 34 "07/03/17 00:00:00" H 2500 2740 60  0001 L CNN "LatestRevisionDate"
+F 35 "ICs And Semiconductors SMD" H 2500 2650 60  0001 L CNN "Library Name"
+F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2500 2560 60  0001 L CNN "License"
 	1    2500 6300
 	0    1    1    0   
-$EndComp
-$Comp
-L Transistors:BC847BV Q27
-U 1 1 5C608813
-P 3400 6650
-F 0 "Q27" H 3733 6696 50  0000 L CNN
-F 1 "BC847BV" H 3733 6605 50  0000 L CNN
-F 2 "SOTFL50P160X60-6N" H 3400 5390 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\BC847BV.pdf" H 3400 6110 60  0001 L CNN
-F 4 "BC847BV" H 3400 6020 60  0001 L CNN "Part Number"
-F 5 "BC847BV" H 3400 5930 60  0001 L CNN "Library Ref"
-F 6 "SchLib\\Transistors.SchLib" H 3400 5840 60  0001 L CNN "Library Path"
-F 7 "=Device" H 3400 5750 60  0001 L CNN "Comment"
-F 8 "Standard" H 3400 5660 60  0001 L CNN "Component Kind"
-F 9 "Standard" H 3400 5570 60  0001 L CNN "Component Type"
-F 10 "BC847BV" H 3400 5480 60  0001 L CNN "Device"
-F 11 "SOTFL (SOT666), 0.50mm, Pitch; 6 Pin, 1.20mm W X 1.60mm L X 0.60mm H Body, IPC Medium Density" H 3400 5300 60  0001 L CNN "PackageDescription"
-F 12 "~~" H 3400 5210 60  0001 L CNN "Status"
-F 13 "45V 100mA NPN General Purpose Double Transistor" H 3400 5120 60  0001 L CNN "Part Description"
-F 14 "NXP SEMICONDUCTORS" H 3400 5030 60  0001 L CNN "Manufacturer"
-F 15 "BC847BV" H 3400 4940 60  0001 L CNN "Manufacturer Part Number"
-F 16 "6" H 3400 4850 60  0001 L CNN "Pin Count"
-F 17 "SOT666" H 3400 4760 60  0001 L CNN "Case"
-F 18 "Yes" H 3400 4670 60  0001 L CNN "Mounted"
-F 19 "No" H 3400 4580 60  0001 L CNN "Socket"
-F 20 "No" H 3400 4490 60  0001 L CNN "PressFit"
-F 21 "Yes" H 3400 4400 60  0001 L CNN "SMD"
-F 22 "No" H 3400 4310 60  0001 L CNN "Sense"
-F 23 "~~" H 3400 4220 60  0001 L CNN "Sense Comment"
-F 24 "No" H 3400 4130 60  0001 L CNN "Bonding"
-F 25 "~~" H 3400 4040 60  0001 L CNN "Status Comment"
-F 26 "0.6mm" H 3400 3950 60  0001 L CNN "ComponentHeight"
-F 27 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 3400 3860 60  0001 L CNN "Footprint Path"
-F 28 "SOTFL50P160X60-6N" H 3400 3770 60  0001 L CNN "Footprint Ref"
-F 29 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\BC847BV.pdf" H 3400 3680 60  0001 L CNN "HelpURL"
-F 30 "~~" H 3400 3590 60  0001 L CNN "ComponentLink1URL"
-F 31 "~~" H 3400 3500 60  0001 L CNN "ComponentLink1Description"
-F 32 "~~" H 3400 3410 60  0001 L CNN "ComponentLink2URL"
-F 33 "~~" H 3400 3320 60  0001 L CNN "ComponentLink2Description"
-F 34 "CERN DEM JLC" H 3400 3230 60  0001 L CNN "Author"
-F 35 "12/01/11 00:00:00" H 3400 3140 60  0001 L CNN "CreateDate"
-F 36 "12/01/11 00:00:00" H 3400 3050 60  0001 L CNN "LatestRevisionDate"
-F 37 "ICs And Semiconductors SMD" H 3400 2960 60  0001 L CNN "Library Name"
-F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3400 2870 60  0001 L CNN "License"
-	1    3400 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistors:BC847BV Q27
-U 2 1 5C60883D
-P 4450 6650
-F 0 "Q27" H 4783 6696 50  0000 L CNN
-F 1 "BC847BV" H 4783 6605 50  0000 L CNN
-F 2 "SOTFL50P160X60-6N" H 4450 5390 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\BC847BV.pdf" H 4450 6110 60  0001 L CNN
-F 4 "BC847BV" H 4450 6020 60  0001 L CNN "Part Number"
-F 5 "BC847BV" H 4450 5930 60  0001 L CNN "Library Ref"
-F 6 "SchLib\\Transistors.SchLib" H 4450 5840 60  0001 L CNN "Library Path"
-F 7 "=Device" H 4450 5750 60  0001 L CNN "Comment"
-F 8 "Standard" H 4450 5660 60  0001 L CNN "Component Kind"
-F 9 "Standard" H 4450 5570 60  0001 L CNN "Component Type"
-F 10 "BC847BV" H 4450 5480 60  0001 L CNN "Device"
-F 11 "SOTFL (SOT666), 0.50mm, Pitch; 6 Pin, 1.20mm W X 1.60mm L X 0.60mm H Body, IPC Medium Density" H 4450 5300 60  0001 L CNN "PackageDescription"
-F 12 "~~" H 4450 5210 60  0001 L CNN "Status"
-F 13 "45V 100mA NPN General Purpose Double Transistor" H 4450 5120 60  0001 L CNN "Part Description"
-F 14 "NXP SEMICONDUCTORS" H 4450 5030 60  0001 L CNN "Manufacturer"
-F 15 "BC847BV" H 4450 4940 60  0001 L CNN "Manufacturer Part Number"
-F 16 "6" H 4450 4850 60  0001 L CNN "Pin Count"
-F 17 "SOT666" H 4450 4760 60  0001 L CNN "Case"
-F 18 "Yes" H 4450 4670 60  0001 L CNN "Mounted"
-F 19 "No" H 4450 4580 60  0001 L CNN "Socket"
-F 20 "No" H 4450 4490 60  0001 L CNN "PressFit"
-F 21 "Yes" H 4450 4400 60  0001 L CNN "SMD"
-F 22 "No" H 4450 4310 60  0001 L CNN "Sense"
-F 23 "~~" H 4450 4220 60  0001 L CNN "Sense Comment"
-F 24 "No" H 4450 4130 60  0001 L CNN "Bonding"
-F 25 "~~" H 4450 4040 60  0001 L CNN "Status Comment"
-F 26 "0.6mm" H 4450 3950 60  0001 L CNN "ComponentHeight"
-F 27 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 4450 3860 60  0001 L CNN "Footprint Path"
-F 28 "SOTFL50P160X60-6N" H 4450 3770 60  0001 L CNN "Footprint Ref"
-F 29 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\BC847BV.pdf" H 4450 3680 60  0001 L CNN "HelpURL"
-F 30 "~~" H 4450 3590 60  0001 L CNN "ComponentLink1URL"
-F 31 "~~" H 4450 3500 60  0001 L CNN "ComponentLink1Description"
-F 32 "~~" H 4450 3410 60  0001 L CNN "ComponentLink2URL"
-F 33 "~~" H 4450 3320 60  0001 L CNN "ComponentLink2Description"
-F 34 "CERN DEM JLC" H 4450 3230 60  0001 L CNN "Author"
-F 35 "12/01/11 00:00:00" H 4450 3140 60  0001 L CNN "CreateDate"
-F 36 "12/01/11 00:00:00" H 4450 3050 60  0001 L CNN "LatestRevisionDate"
-F 37 "ICs And Semiconductors SMD" H 4450 2960 60  0001 L CNN "Library Name"
-F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4450 2870 60  0001 L CNN "License"
-	2    4450 6650
-	1    0    0    -1  
 $EndComp
 $Comp
 L Resistors_SMD:R0402_10K_1%_0.0625W_100PPM R?
@@ -3979,7 +3660,7 @@ F 7 "SchLib\\Resistors.SchLib" H 3650 5190 60  0001 L CNN "Library Path"
 F 8 "=Value" H 3650 5100 60  0001 L CNN "Comment"
 F 9 "Standard" H 3650 5010 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 3650 4920 60  0001 L CNN "Component Type"
-F 11 "~~" H 3650 4740 60  0001 L CNN "PackageDescription"
+F 11 " " H 3650 4740 60  0001 L CNN "PackageDescription"
 F 12 "2" H 3650 4650 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 3650 4560 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 3650 4470 60  0001 L CNN "Footprint Ref"
@@ -3987,7 +3668,7 @@ F 15 "10k" H 3650 4380 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 3650 4290 60  0001 L CNN "Status"
 F 17 "0.0625W" H 3650 4200 60  0001 L CNN "Power"
 F 18 "±100ppm/°C" H 3650 4110 60  0001 L CNN "TC"
-F 19 "~~" H 3650 4020 60  0001 L CNN "Voltage"
+F 19 " " H 3650 4020 60  0001 L CNN "Voltage"
 F 20 "±1%" H 3650 3930 60  0001 L CNN "Tolerance"
 F 21 "General Purpose Thick Film Chip Resistor" H 3650 3840 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 3650 3750 60  0001 L CNN "Manufacturer"
@@ -3995,21 +3676,20 @@ F 23 "R0402_10K_1%_0.0625W_100PPM" H 3650 3660 60  0001 L CNN "Manufacturer Part
 F 24 "0402" H 3650 3570 60  0001 L CNN "Case"
 F 25 "No" H 3650 3480 60  0001 L CNN "PressFit"
 F 26 "Yes" H 3650 3390 60  0001 L CNN "Mounted"
-F 27 "~~" H 3650 3300 60  0001 L CNN "Sense Comment"
+F 27 " " H 3650 3300 60  0001 L CNN "Sense Comment"
 F 28 "No" H 3650 3210 60  0001 L CNN "Sense"
-F 29 "~~" H 3650 3120 60  0001 L CNN "Status Comment"
+F 29 " " H 3650 3120 60  0001 L CNN "Status Comment"
 F 30 "No" H 3650 3030 60  0001 L CNN "Socket"
 F 31 "Yes" H 3650 2940 60  0001 L CNN "SMD"
-F 32 "~~" H 3650 2850 60  0001 L CNN "ComponentHeight"
+F 32 " " H 3650 2850 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 3650 2760 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270671003L" H 3650 2670 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 3650 2580 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 3650 2490 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 3650 2400 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 3650 2310 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 3650 2220 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 3650 2130 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3650 2040 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 3650 2400 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 3650 2310 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 3650 2220 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 3650 2130 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3650 2040 60  0001 L CNN "License"
 	1    3650 5850
 	0    1    1    0   
 $EndComp
@@ -4024,43 +3704,39 @@ F 0 "LD8" V 3650 6470 50  0000 L CNN
 F 1 "LED_KINGBRIGHT_KPH-1608CGCK" H 3650 6070 60  0001 L CNN
 F 2 "ICs And Semiconductors SMD:LED_KINGBRIGHT_KPH-1608CGCK" H 3650 5080 60  0001 L CNN
 F 3 "" H 3650 5890 60  0001 L CNN
-F 4 "Green" H 3650 5800 60  0001 L CNN "Pole4"
-F 5 "150060VS75000" H 3650 5800 60  0001 L CNN "Part Number"
-F 6 "LED Green 1C 2A" H 3650 5710 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\LEDs & Displays.SchLib" H 3650 5620 60  0001 L CNN "Library Path"
-F 8 "~~" H 3650 5530 60  0001 L CNN "Comment"
-F 9 "Standard" H 3650 5440 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 3650 5350 60  0001 L CNN "Component Type"
-F 11 "Green" H 3650 5260 60  0001 L CNN "Color"
-F 12 "~~" H 3650 5170 60  0001 L CNN "Device"
-F 13 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 3650 4990 60  0001 L CNN "PackageDescription"
-F 14 "~~" H 3650 4900 60  0001 L CNN "Status"
-F 15 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 3650 4810 60  0001 L CNN "Part Description"
-F 16 "KINGBRIGHT" H 3650 4720 60  0001 L CNN "Manufacturer"
-F 17 "150060VS75000" H 3650 4630 60  0001 L CNN "Manufacturer Part Number"
-F 18 "2" H 3650 4540 60  0001 L CNN "Pin Count"
-F 19 "~~" H 3650 4450 60  0001 L CNN "Case"
-F 20 "Yes" H 3650 4360 60  0001 L CNN "Mounted"
-F 21 "No" H 3650 4270 60  0001 L CNN "Socket"
-F 22 "Yes" H 3650 4180 60  0001 L CNN "SMD"
-F 23 "No" H 3650 4090 60  0001 L CNN "PressFit"
-F 24 "~~" H 3650 4000 60  0001 L CNN "Sense Comment"
-F 25 "No" H 3650 3910 60  0001 L CNN "Sense"
-F 26 "No" H 3650 3820 60  0001 L CNN "Bonding"
-F 27 "~~" H 3650 3730 60  0001 L CNN "Status Comment"
-F 28 "0.65mm" H 3650 3640 60  0001 L CNN "ComponentHeight"
-F 29 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 3650 3550 60  0001 L CNN "Footprint Path"
-F 30 "LED_KINGBRIGHT_KPH-1608CGCK" H 3650 3460 60  0001 L CNN "Footprint Ref"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\LED_KINGBRIGHT_KPH-1608CGCK.pdf" H 3650 3370 60  0001 L CNN "HelpURL"
-F 32 "~~" H 3650 3280 60  0001 L CNN "ComponentLink1URL"
-F 33 "~~" H 3650 3190 60  0001 L CNN "ComponentLink1Description"
-F 34 "~~" H 3650 3100 60  0001 L CNN "ComponentLink2URL"
-F 35 "~~" H 3650 3010 60  0001 L CNN "ComponentLink2Description"
-F 36 "CERN DEM JLC" H 3650 2920 60  0001 L CNN "Author"
-F 37 "07/03/17 00:00:00" H 3650 2830 60  0001 L CNN "CreateDate"
-F 38 "07/03/17 00:00:00" H 3650 2740 60  0001 L CNN "LatestRevisionDate"
-F 39 "ICs And Semiconductors SMD" H 3650 2650 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3650 2560 60  0001 L CNN "License"
+F 4 "LED_KINGBRIGHT_KPH-1608CGCK" H 3650 5800 60  0001 L CNN "Part Number"
+F 5 "LED Green 1C 2A" H 3650 5710 60  0001 L CNN "Library Ref"
+F 6 "SchLib\\LEDs & Displays.SchLib" H 3650 5620 60  0001 L CNN "Library Path"
+F 7 " " H 3650 5530 60  0001 L CNN "Comment"
+F 8 "Standard" H 3650 5440 60  0001 L CNN "Component Kind"
+F 9 "Standard" H 3650 5350 60  0001 L CNN "Component Type"
+F 10 "Green" H 3650 5260 60  0001 L CNN "Color"
+F 11 " " H 3650 5170 60  0001 L CNN "Device"
+F 12 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 3650 4990 60  0001 L CNN "PackageDescription"
+F 13 " " H 3650 4900 60  0001 L CNN "Status"
+F 14 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 3650 4810 60  0001 L CNN "Part Description"
+F 15 "WURTH" H 3650 4720 60  0001 L CNN "Manufacturer"
+F 16 "150060VS75000" H 3650 4630 60  0001 L CNN "Manufacturer Part Number"
+F 17 "2" H 3650 4540 60  0001 L CNN "Pin Count"
+F 18 " " H 3650 4450 60  0001 L CNN "Case"
+F 19 "Yes" H 3650 4360 60  0001 L CNN "Mounted"
+F 20 "No" H 3650 4270 60  0001 L CNN "Socket"
+F 21 "Yes" H 3650 4180 60  0001 L CNN "SMD"
+F 22 "No" H 3650 4090 60  0001 L CNN "PressFit"
+F 23 " " H 3650 4000 60  0001 L CNN "Sense Comment"
+F 24 "No" H 3650 3910 60  0001 L CNN "Sense"
+F 25 "No" H 3650 3820 60  0001 L CNN "Bonding"
+F 26 " " H 3650 3730 60  0001 L CNN "Status Comment"
+F 27 "0.65mm" H 3650 3640 60  0001 L CNN "ComponentHeight"
+F 28 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 3650 3550 60  0001 L CNN "Footprint Path"
+F 29 "LED_KINGBRIGHT_KPH-1608CGCK" H 3650 3460 60  0001 L CNN "Footprint Ref"
+F 30 " " H 3650 3190 60  0001 L CNN "ComponentLink1Description"
+F 31 " " H 3650 3010 60  0001 L CNN "ComponentLink2Description"
+F 32 "CERN DEM JLC" H 3650 2920 60  0001 L CNN "Author"
+F 33 "07/03/17 00:00:00" H 3650 2830 60  0001 L CNN "CreateDate"
+F 34 "07/03/17 00:00:00" H 3650 2740 60  0001 L CNN "LatestRevisionDate"
+F 35 "ICs And Semiconductors SMD" H 3650 2650 60  0001 L CNN "Library Name"
+F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3650 2560 60  0001 L CNN "License"
 	1    3650 6300
 	0    1    1    0   
 $EndComp
@@ -4083,7 +3759,7 @@ F 7 "SchLib\\Resistors.SchLib" H 4700 5190 60  0001 L CNN "Library Path"
 F 8 "=Value" H 4700 5100 60  0001 L CNN "Comment"
 F 9 "Standard" H 4700 5010 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 4700 4920 60  0001 L CNN "Component Type"
-F 11 "~~" H 4700 4740 60  0001 L CNN "PackageDescription"
+F 11 " " H 4700 4740 60  0001 L CNN "PackageDescription"
 F 12 "2" H 4700 4650 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 4700 4560 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 4700 4470 60  0001 L CNN "Footprint Ref"
@@ -4091,7 +3767,7 @@ F 15 "10k" H 4700 4380 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 4700 4290 60  0001 L CNN "Status"
 F 17 "0.0625W" H 4700 4200 60  0001 L CNN "Power"
 F 18 "±100ppm/°C" H 4700 4110 60  0001 L CNN "TC"
-F 19 "~~" H 4700 4020 60  0001 L CNN "Voltage"
+F 19 " " H 4700 4020 60  0001 L CNN "Voltage"
 F 20 "±1%" H 4700 3930 60  0001 L CNN "Tolerance"
 F 21 "General Purpose Thick Film Chip Resistor" H 4700 3840 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 4700 3750 60  0001 L CNN "Manufacturer"
@@ -4099,21 +3775,20 @@ F 23 "R0402_10K_1%_0.0625W_100PPM" H 4700 3660 60  0001 L CNN "Manufacturer Part
 F 24 "0402" H 4700 3570 60  0001 L CNN "Case"
 F 25 "No" H 4700 3480 60  0001 L CNN "PressFit"
 F 26 "Yes" H 4700 3390 60  0001 L CNN "Mounted"
-F 27 "~~" H 4700 3300 60  0001 L CNN "Sense Comment"
+F 27 " " H 4700 3300 60  0001 L CNN "Sense Comment"
 F 28 "No" H 4700 3210 60  0001 L CNN "Sense"
-F 29 "~~" H 4700 3120 60  0001 L CNN "Status Comment"
+F 29 " " H 4700 3120 60  0001 L CNN "Status Comment"
 F 30 "No" H 4700 3030 60  0001 L CNN "Socket"
 F 31 "Yes" H 4700 2940 60  0001 L CNN "SMD"
-F 32 "~~" H 4700 2850 60  0001 L CNN "ComponentHeight"
+F 32 " " H 4700 2850 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 4700 2760 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270671003L" H 4700 2670 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 4700 2580 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 4700 2490 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 4700 2400 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 4700 2310 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 4700 2220 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 4700 2130 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4700 2040 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 4700 2400 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 4700 2310 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 4700 2220 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 4700 2130 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4700 2040 60  0001 L CNN "License"
 	1    4700 5850
 	0    1    1    0   
 $EndComp
@@ -4128,248 +3803,240 @@ F 0 "LD9" V 4700 6470 50  0000 L CNN
 F 1 "LED_KINGBRIGHT_KPH-1608CGCK" H 4700 6070 60  0001 L CNN
 F 2 "ICs And Semiconductors SMD:LED_KINGBRIGHT_KPH-1608CGCK" H 4700 5080 60  0001 L CNN
 F 3 "" H 4700 5890 60  0001 L CNN
-F 4 "Green" H 4700 5800 60  0001 L CNN "Pole4"
-F 5 "150060VS75000" H 4700 5800 60  0001 L CNN "Part Number"
-F 6 "LED Green 1C 2A" H 4700 5710 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\LEDs & Displays.SchLib" H 4700 5620 60  0001 L CNN "Library Path"
-F 8 "~~" H 4700 5530 60  0001 L CNN "Comment"
-F 9 "Standard" H 4700 5440 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 4700 5350 60  0001 L CNN "Component Type"
-F 11 "Green" H 4700 5260 60  0001 L CNN "Color"
-F 12 "~~" H 4700 5170 60  0001 L CNN "Device"
-F 13 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 4700 4990 60  0001 L CNN "PackageDescription"
-F 14 "~~" H 4700 4900 60  0001 L CNN "Status"
-F 15 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 4700 4810 60  0001 L CNN "Part Description"
-F 16 "KINGBRIGHT" H 4700 4720 60  0001 L CNN "Manufacturer"
-F 17 "150060VS75000" H 4700 4630 60  0001 L CNN "Manufacturer Part Number"
-F 18 "2" H 4700 4540 60  0001 L CNN "Pin Count"
-F 19 "~~" H 4700 4450 60  0001 L CNN "Case"
-F 20 "Yes" H 4700 4360 60  0001 L CNN "Mounted"
-F 21 "No" H 4700 4270 60  0001 L CNN "Socket"
-F 22 "Yes" H 4700 4180 60  0001 L CNN "SMD"
-F 23 "No" H 4700 4090 60  0001 L CNN "PressFit"
-F 24 "~~" H 4700 4000 60  0001 L CNN "Sense Comment"
-F 25 "No" H 4700 3910 60  0001 L CNN "Sense"
-F 26 "No" H 4700 3820 60  0001 L CNN "Bonding"
-F 27 "~~" H 4700 3730 60  0001 L CNN "Status Comment"
-F 28 "0.65mm" H 4700 3640 60  0001 L CNN "ComponentHeight"
-F 29 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 4700 3550 60  0001 L CNN "Footprint Path"
-F 30 "LED_KINGBRIGHT_KPH-1608CGCK" H 4700 3460 60  0001 L CNN "Footprint Ref"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\LED_KINGBRIGHT_KPH-1608CGCK.pdf" H 4700 3370 60  0001 L CNN "HelpURL"
-F 32 "~~" H 4700 3280 60  0001 L CNN "ComponentLink1URL"
-F 33 "~~" H 4700 3190 60  0001 L CNN "ComponentLink1Description"
-F 34 "~~" H 4700 3100 60  0001 L CNN "ComponentLink2URL"
-F 35 "~~" H 4700 3010 60  0001 L CNN "ComponentLink2Description"
-F 36 "CERN DEM JLC" H 4700 2920 60  0001 L CNN "Author"
-F 37 "07/03/17 00:00:00" H 4700 2830 60  0001 L CNN "CreateDate"
-F 38 "07/03/17 00:00:00" H 4700 2740 60  0001 L CNN "LatestRevisionDate"
-F 39 "ICs And Semiconductors SMD" H 4700 2650 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4700 2560 60  0001 L CNN "License"
+F 4 "LED_KINGBRIGHT_KPH-1608CGCK" H 4700 5800 60  0001 L CNN "Part Number"
+F 5 "LED Green 1C 2A" H 4700 5710 60  0001 L CNN "Library Ref"
+F 6 "SchLib\\LEDs & Displays.SchLib" H 4700 5620 60  0001 L CNN "Library Path"
+F 7 " " H 4700 5530 60  0001 L CNN "Comment"
+F 8 "Standard" H 4700 5440 60  0001 L CNN "Component Kind"
+F 9 "Standard" H 4700 5350 60  0001 L CNN "Component Type"
+F 10 "Green" H 4700 5260 60  0001 L CNN "Color"
+F 11 " " H 4700 5170 60  0001 L CNN "Device"
+F 12 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 4700 4990 60  0001 L CNN "PackageDescription"
+F 13 " " H 4700 4900 60  0001 L CNN "Status"
+F 14 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 4700 4810 60  0001 L CNN "Part Description"
+F 15 "WURTH" H 4700 4720 60  0001 L CNN "Manufacturer"
+F 16 "150060VS75000" H 4700 4630 60  0001 L CNN "Manufacturer Part Number"
+F 17 "2" H 4700 4540 60  0001 L CNN "Pin Count"
+F 18 " " H 4700 4450 60  0001 L CNN "Case"
+F 19 "Yes" H 4700 4360 60  0001 L CNN "Mounted"
+F 20 "No" H 4700 4270 60  0001 L CNN "Socket"
+F 21 "Yes" H 4700 4180 60  0001 L CNN "SMD"
+F 22 "No" H 4700 4090 60  0001 L CNN "PressFit"
+F 23 " " H 4700 4000 60  0001 L CNN "Sense Comment"
+F 24 "No" H 4700 3910 60  0001 L CNN "Sense"
+F 25 "No" H 4700 3820 60  0001 L CNN "Bonding"
+F 26 " " H 4700 3730 60  0001 L CNN "Status Comment"
+F 27 "0.65mm" H 4700 3640 60  0001 L CNN "ComponentHeight"
+F 28 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 4700 3550 60  0001 L CNN "Footprint Path"
+F 29 "LED_KINGBRIGHT_KPH-1608CGCK" H 4700 3460 60  0001 L CNN "Footprint Ref"
+F 30 " " H 4700 3190 60  0001 L CNN "ComponentLink1Description"
+F 31 " " H 4700 3010 60  0001 L CNN "ComponentLink2Description"
+F 32 "CERN DEM JLC" H 4700 2920 60  0001 L CNN "Author"
+F 33 "07/03/17 00:00:00" H 4700 2830 60  0001 L CNN "CreateDate"
+F 34 "07/03/17 00:00:00" H 4700 2740 60  0001 L CNN "LatestRevisionDate"
+F 35 "ICs And Semiconductors SMD" H 4700 2650 60  0001 L CNN "Library Name"
+F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4700 2560 60  0001 L CNN "License"
 	1    4700 6300
 	0    1    1    0   
 $EndComp
 $Comp
 L Resistors_SMD:R0402_10K_1%_0.0625W_100PPM R?
 U 1 1 5C61E75F
-P 900 6650
+P 900 6700
 AR Path="/5C16BF8E/5C61E75F" Ref="R?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5C61E75F" Ref="R247"  Part="1" 
-F 0 "R247" H 1050 6847 50  0000 C CNN
-F 1 "R0402_10K_1%_0.0625W_100PPM" H 900 6440 60  0001 L CNN
-F 2 "RESC1005X40N" H 900 5630 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 900 6260 60  0001 L CNN
-F 4 "10k" H 1050 6756 50  0000 C CNN "~"
-F 5 "R0402_10K_1%_0.0625W_100PPM" H 900 6170 60  0001 L CNN "Part Number"
-F 6 "Resistor - 1%" H 900 6080 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 900 5990 60  0001 L CNN "Library Path"
-F 8 "=Value" H 900 5900 60  0001 L CNN "Comment"
-F 9 "Standard" H 900 5810 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 900 5720 60  0001 L CNN "Component Type"
-F 11 "~~" H 900 5540 60  0001 L CNN "PackageDescription"
-F 12 "2" H 900 5450 60  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 900 5360 60  0001 L CNN "Footprint Path"
-F 14 "RESC1005X40N" H 900 5270 60  0001 L CNN "Footprint Ref"
-F 15 "10k" H 900 5180 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 900 5090 60  0001 L CNN "Status"
-F 17 "0.0625W" H 900 5000 60  0001 L CNN "Power"
-F 18 "±100ppm/°C" H 900 4910 60  0001 L CNN "TC"
-F 19 "~~" H 900 4820 60  0001 L CNN "Voltage"
-F 20 "±1%" H 900 4730 60  0001 L CNN "Tolerance"
-F 21 "General Purpose Thick Film Chip Resistor" H 900 4640 60  0001 L CNN "Part Description"
-F 22 "GENERIC" H 900 4550 60  0001 L CNN "Manufacturer"
-F 23 "R0402_10K_1%_0.0625W_100PPM" H 900 4460 60  0001 L CNN "Manufacturer Part Number"
-F 24 "0402" H 900 4370 60  0001 L CNN "Case"
-F 25 "No" H 900 4280 60  0001 L CNN "PressFit"
-F 26 "Yes" H 900 4190 60  0001 L CNN "Mounted"
-F 27 "~~" H 900 4100 60  0001 L CNN "Sense Comment"
-F 28 "No" H 900 4010 60  0001 L CNN "Sense"
-F 29 "~~" H 900 3920 60  0001 L CNN "Status Comment"
-F 30 "No" H 900 3830 60  0001 L CNN "Socket"
-F 31 "Yes" H 900 3740 60  0001 L CNN "SMD"
-F 32 "~~" H 900 3650 60  0001 L CNN "ComponentHeight"
-F 33 "YAGEO PHYCOMP" H 900 3560 60  0001 L CNN "Manufacturer1 Example"
-F 34 "232270671003L" H 900 3470 60  0001 L CNN "Manufacturer1 Part Number"
-F 35 "0.4mm" H 900 3380 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 900 3290 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 900 3200 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 900 3110 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 900 3020 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 900 2930 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 900 2840 60  0001 L CNN "License"
-	1    900  6650
+F 0 "R247" H 1050 6897 50  0000 C CNN
+F 1 "R0402_10K_1%_0.0625W_100PPM" H 900 6490 60  0001 L CNN
+F 2 "RESC1005X40N" H 900 5680 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 900 6310 60  0001 L CNN
+F 4 "10k" H 1050 6806 50  0000 C CNN "~"
+F 5 "R0402_10K_1%_0.0625W_100PPM" H 900 6220 60  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 900 6130 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 900 6040 60  0001 L CNN "Library Path"
+F 8 "=Value" H 900 5950 60  0001 L CNN "Comment"
+F 9 "Standard" H 900 5860 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 900 5770 60  0001 L CNN "Component Type"
+F 11 " " H 900 5590 60  0001 L CNN "PackageDescription"
+F 12 "2" H 900 5500 60  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 900 5410 60  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 900 5320 60  0001 L CNN "Footprint Ref"
+F 15 "10k" H 900 5230 60  0001 L CNN "Val"
+F 16 "Not Recommended" H 900 5140 60  0001 L CNN "Status"
+F 17 "0.0625W" H 900 5050 60  0001 L CNN "Power"
+F 18 "±100ppm/°C" H 900 4960 60  0001 L CNN "TC"
+F 19 " " H 900 4870 60  0001 L CNN "Voltage"
+F 20 "±1%" H 900 4780 60  0001 L CNN "Tolerance"
+F 21 "General Purpose Thick Film Chip Resistor" H 900 4690 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 900 4600 60  0001 L CNN "Manufacturer"
+F 23 "R0402_10K_1%_0.0625W_100PPM" H 900 4510 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0402" H 900 4420 60  0001 L CNN "Case"
+F 25 "No" H 900 4330 60  0001 L CNN "PressFit"
+F 26 "Yes" H 900 4240 60  0001 L CNN "Mounted"
+F 27 " " H 900 4150 60  0001 L CNN "Sense Comment"
+F 28 "No" H 900 4060 60  0001 L CNN "Sense"
+F 29 " " H 900 3970 60  0001 L CNN "Status Comment"
+F 30 "No" H 900 3880 60  0001 L CNN "Socket"
+F 31 "Yes" H 900 3790 60  0001 L CNN "SMD"
+F 32 " " H 900 3700 60  0001 L CNN "ComponentHeight"
+F 33 "YAGEO PHYCOMP" H 900 3610 60  0001 L CNN "Manufacturer1 Example"
+F 34 "232270671003L" H 900 3520 60  0001 L CNN "Manufacturer1 Part Number"
+F 35 "0.4mm" H 900 3430 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 36 "CERN DEM JLC" H 900 3250 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 900 3160 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 900 3070 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 900 2980 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 900 2890 60  0001 L CNN "License"
+	1    900  6700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Resistors_SMD:R0402_10K_1%_0.0625W_100PPM R?
 U 1 1 5C6338F6
-P 1950 6650
+P 1950 6700
 AR Path="/5C16BF8E/5C6338F6" Ref="R?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5C6338F6" Ref="R250"  Part="1" 
-F 0 "R250" H 2100 6847 50  0000 C CNN
-F 1 "R0402_10K_1%_0.0625W_100PPM" H 1950 6440 60  0001 L CNN
-F 2 "RESC1005X40N" H 1950 5630 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 1950 6260 60  0001 L CNN
-F 4 "10k" H 2100 6756 50  0000 C CNN "~"
-F 5 "R0402_10K_1%_0.0625W_100PPM" H 1950 6170 60  0001 L CNN "Part Number"
-F 6 "Resistor - 1%" H 1950 6080 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 1950 5990 60  0001 L CNN "Library Path"
-F 8 "=Value" H 1950 5900 60  0001 L CNN "Comment"
-F 9 "Standard" H 1950 5810 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 1950 5720 60  0001 L CNN "Component Type"
-F 11 "~~" H 1950 5540 60  0001 L CNN "PackageDescription"
-F 12 "2" H 1950 5450 60  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 1950 5360 60  0001 L CNN "Footprint Path"
-F 14 "RESC1005X40N" H 1950 5270 60  0001 L CNN "Footprint Ref"
-F 15 "10k" H 1950 5180 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 1950 5090 60  0001 L CNN "Status"
-F 17 "0.0625W" H 1950 5000 60  0001 L CNN "Power"
-F 18 "±100ppm/°C" H 1950 4910 60  0001 L CNN "TC"
-F 19 "~~" H 1950 4820 60  0001 L CNN "Voltage"
-F 20 "±1%" H 1950 4730 60  0001 L CNN "Tolerance"
-F 21 "General Purpose Thick Film Chip Resistor" H 1950 4640 60  0001 L CNN "Part Description"
-F 22 "GENERIC" H 1950 4550 60  0001 L CNN "Manufacturer"
-F 23 "R0402_10K_1%_0.0625W_100PPM" H 1950 4460 60  0001 L CNN "Manufacturer Part Number"
-F 24 "0402" H 1950 4370 60  0001 L CNN "Case"
-F 25 "No" H 1950 4280 60  0001 L CNN "PressFit"
-F 26 "Yes" H 1950 4190 60  0001 L CNN "Mounted"
-F 27 "~~" H 1950 4100 60  0001 L CNN "Sense Comment"
-F 28 "No" H 1950 4010 60  0001 L CNN "Sense"
-F 29 "~~" H 1950 3920 60  0001 L CNN "Status Comment"
-F 30 "No" H 1950 3830 60  0001 L CNN "Socket"
-F 31 "Yes" H 1950 3740 60  0001 L CNN "SMD"
-F 32 "~~" H 1950 3650 60  0001 L CNN "ComponentHeight"
-F 33 "YAGEO PHYCOMP" H 1950 3560 60  0001 L CNN "Manufacturer1 Example"
-F 34 "232270671003L" H 1950 3470 60  0001 L CNN "Manufacturer1 Part Number"
-F 35 "0.4mm" H 1950 3380 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 1950 3290 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 1950 3200 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 1950 3110 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 1950 3020 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 1950 2930 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1950 2840 60  0001 L CNN "License"
-	1    1950 6650
+F 0 "R250" H 2100 6897 50  0000 C CNN
+F 1 "R0402_10K_1%_0.0625W_100PPM" H 1950 6490 60  0001 L CNN
+F 2 "RESC1005X40N" H 1950 5680 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 1950 6310 60  0001 L CNN
+F 4 "10k" H 2100 6806 50  0000 C CNN "~"
+F 5 "R0402_10K_1%_0.0625W_100PPM" H 1950 6220 60  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 1950 6130 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 1950 6040 60  0001 L CNN "Library Path"
+F 8 "=Value" H 1950 5950 60  0001 L CNN "Comment"
+F 9 "Standard" H 1950 5860 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 1950 5770 60  0001 L CNN "Component Type"
+F 11 " " H 1950 5590 60  0001 L CNN "PackageDescription"
+F 12 "2" H 1950 5500 60  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 1950 5410 60  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 1950 5320 60  0001 L CNN "Footprint Ref"
+F 15 "10k" H 1950 5230 60  0001 L CNN "Val"
+F 16 "Not Recommended" H 1950 5140 60  0001 L CNN "Status"
+F 17 "0.0625W" H 1950 5050 60  0001 L CNN "Power"
+F 18 "±100ppm/°C" H 1950 4960 60  0001 L CNN "TC"
+F 19 " " H 1950 4870 60  0001 L CNN "Voltage"
+F 20 "±1%" H 1950 4780 60  0001 L CNN "Tolerance"
+F 21 "General Purpose Thick Film Chip Resistor" H 1950 4690 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 1950 4600 60  0001 L CNN "Manufacturer"
+F 23 "R0402_10K_1%_0.0625W_100PPM" H 1950 4510 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0402" H 1950 4420 60  0001 L CNN "Case"
+F 25 "No" H 1950 4330 60  0001 L CNN "PressFit"
+F 26 "Yes" H 1950 4240 60  0001 L CNN "Mounted"
+F 27 " " H 1950 4150 60  0001 L CNN "Sense Comment"
+F 28 "No" H 1950 4060 60  0001 L CNN "Sense"
+F 29 " " H 1950 3970 60  0001 L CNN "Status Comment"
+F 30 "No" H 1950 3880 60  0001 L CNN "Socket"
+F 31 "Yes" H 1950 3790 60  0001 L CNN "SMD"
+F 32 " " H 1950 3700 60  0001 L CNN "ComponentHeight"
+F 33 "YAGEO PHYCOMP" H 1950 3610 60  0001 L CNN "Manufacturer1 Example"
+F 34 "232270671003L" H 1950 3520 60  0001 L CNN "Manufacturer1 Part Number"
+F 35 "0.4mm" H 1950 3430 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 36 "CERN DEM JLC" H 1950 3250 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 1950 3160 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 1950 3070 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 1950 2980 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1950 2890 60  0001 L CNN "License"
+	1    1950 6700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Resistors_SMD:R0402_10K_1%_0.0625W_100PPM R?
 U 1 1 5C648A88
-P 3100 6650
+P 3100 6700
 AR Path="/5C16BF8E/5C648A88" Ref="R?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5C648A88" Ref="R253"  Part="1" 
-F 0 "R253" H 3250 6847 50  0000 C CNN
-F 1 "R0402_10K_1%_0.0625W_100PPM" H 3100 6440 60  0001 L CNN
-F 2 "RESC1005X40N" H 3100 5630 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 3100 6260 60  0001 L CNN
-F 4 "10k" H 3250 6756 50  0000 C CNN "~"
-F 5 "R0402_10K_1%_0.0625W_100PPM" H 3100 6170 60  0001 L CNN "Part Number"
-F 6 "Resistor - 1%" H 3100 6080 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 3100 5990 60  0001 L CNN "Library Path"
-F 8 "=Value" H 3100 5900 60  0001 L CNN "Comment"
-F 9 "Standard" H 3100 5810 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 3100 5720 60  0001 L CNN "Component Type"
-F 11 "~~" H 3100 5540 60  0001 L CNN "PackageDescription"
-F 12 "2" H 3100 5450 60  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 3100 5360 60  0001 L CNN "Footprint Path"
-F 14 "RESC1005X40N" H 3100 5270 60  0001 L CNN "Footprint Ref"
-F 15 "10k" H 3100 5180 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 3100 5090 60  0001 L CNN "Status"
-F 17 "0.0625W" H 3100 5000 60  0001 L CNN "Power"
-F 18 "±100ppm/°C" H 3100 4910 60  0001 L CNN "TC"
-F 19 "~~" H 3100 4820 60  0001 L CNN "Voltage"
-F 20 "±1%" H 3100 4730 60  0001 L CNN "Tolerance"
-F 21 "General Purpose Thick Film Chip Resistor" H 3100 4640 60  0001 L CNN "Part Description"
-F 22 "GENERIC" H 3100 4550 60  0001 L CNN "Manufacturer"
-F 23 "R0402_10K_1%_0.0625W_100PPM" H 3100 4460 60  0001 L CNN "Manufacturer Part Number"
-F 24 "0402" H 3100 4370 60  0001 L CNN "Case"
-F 25 "No" H 3100 4280 60  0001 L CNN "PressFit"
-F 26 "Yes" H 3100 4190 60  0001 L CNN "Mounted"
-F 27 "~~" H 3100 4100 60  0001 L CNN "Sense Comment"
-F 28 "No" H 3100 4010 60  0001 L CNN "Sense"
-F 29 "~~" H 3100 3920 60  0001 L CNN "Status Comment"
-F 30 "No" H 3100 3830 60  0001 L CNN "Socket"
-F 31 "Yes" H 3100 3740 60  0001 L CNN "SMD"
-F 32 "~~" H 3100 3650 60  0001 L CNN "ComponentHeight"
-F 33 "YAGEO PHYCOMP" H 3100 3560 60  0001 L CNN "Manufacturer1 Example"
-F 34 "232270671003L" H 3100 3470 60  0001 L CNN "Manufacturer1 Part Number"
-F 35 "0.4mm" H 3100 3380 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 3100 3290 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 3100 3200 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 3100 3110 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 3100 3020 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 3100 2930 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3100 2840 60  0001 L CNN "License"
-	1    3100 6650
+F 0 "R253" H 3250 6897 50  0000 C CNN
+F 1 "R0402_10K_1%_0.0625W_100PPM" H 3100 6490 60  0001 L CNN
+F 2 "RESC1005X40N" H 3100 5680 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 3100 6310 60  0001 L CNN
+F 4 "10k" H 3250 6806 50  0000 C CNN "~"
+F 5 "R0402_10K_1%_0.0625W_100PPM" H 3100 6220 60  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 3100 6130 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 3100 6040 60  0001 L CNN "Library Path"
+F 8 "=Value" H 3100 5950 60  0001 L CNN "Comment"
+F 9 "Standard" H 3100 5860 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 3100 5770 60  0001 L CNN "Component Type"
+F 11 " " H 3100 5590 60  0001 L CNN "PackageDescription"
+F 12 "2" H 3100 5500 60  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 3100 5410 60  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 3100 5320 60  0001 L CNN "Footprint Ref"
+F 15 "10k" H 3100 5230 60  0001 L CNN "Val"
+F 16 "Not Recommended" H 3100 5140 60  0001 L CNN "Status"
+F 17 "0.0625W" H 3100 5050 60  0001 L CNN "Power"
+F 18 "±100ppm/°C" H 3100 4960 60  0001 L CNN "TC"
+F 19 " " H 3100 4870 60  0001 L CNN "Voltage"
+F 20 "±1%" H 3100 4780 60  0001 L CNN "Tolerance"
+F 21 "General Purpose Thick Film Chip Resistor" H 3100 4690 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 3100 4600 60  0001 L CNN "Manufacturer"
+F 23 "R0402_10K_1%_0.0625W_100PPM" H 3100 4510 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0402" H 3100 4420 60  0001 L CNN "Case"
+F 25 "No" H 3100 4330 60  0001 L CNN "PressFit"
+F 26 "Yes" H 3100 4240 60  0001 L CNN "Mounted"
+F 27 " " H 3100 4150 60  0001 L CNN "Sense Comment"
+F 28 "No" H 3100 4060 60  0001 L CNN "Sense"
+F 29 " " H 3100 3970 60  0001 L CNN "Status Comment"
+F 30 "No" H 3100 3880 60  0001 L CNN "Socket"
+F 31 "Yes" H 3100 3790 60  0001 L CNN "SMD"
+F 32 " " H 3100 3700 60  0001 L CNN "ComponentHeight"
+F 33 "YAGEO PHYCOMP" H 3100 3610 60  0001 L CNN "Manufacturer1 Example"
+F 34 "232270671003L" H 3100 3520 60  0001 L CNN "Manufacturer1 Part Number"
+F 35 "0.4mm" H 3100 3430 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 36 "CERN DEM JLC" H 3100 3250 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 3100 3160 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 3100 3070 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 3100 2980 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3100 2890 60  0001 L CNN "License"
+	1    3100 6700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Resistors_SMD:R0402_10K_1%_0.0625W_100PPM R?
 U 1 1 5C65DC1B
-P 4150 6650
+P 4150 6700
 AR Path="/5C16BF8E/5C65DC1B" Ref="R?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5C65DC1B" Ref="R255"  Part="1" 
-F 0 "R255" H 4300 6847 50  0000 C CNN
-F 1 "R0402_10K_1%_0.0625W_100PPM" H 4150 6440 60  0001 L CNN
-F 2 "RESC1005X40N" H 4150 5630 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 4150 6260 60  0001 L CNN
-F 4 "10k" H 4300 6756 50  0000 C CNN "~"
-F 5 "R0402_10K_1%_0.0625W_100PPM" H 4150 6170 60  0001 L CNN "Part Number"
-F 6 "Resistor - 1%" H 4150 6080 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 4150 5990 60  0001 L CNN "Library Path"
-F 8 "=Value" H 4150 5900 60  0001 L CNN "Comment"
-F 9 "Standard" H 4150 5810 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 4150 5720 60  0001 L CNN "Component Type"
-F 11 "~~" H 4150 5540 60  0001 L CNN "PackageDescription"
-F 12 "2" H 4150 5450 60  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 4150 5360 60  0001 L CNN "Footprint Path"
-F 14 "RESC1005X40N" H 4150 5270 60  0001 L CNN "Footprint Ref"
-F 15 "10k" H 4150 5180 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 4150 5090 60  0001 L CNN "Status"
-F 17 "0.0625W" H 4150 5000 60  0001 L CNN "Power"
-F 18 "±100ppm/°C" H 4150 4910 60  0001 L CNN "TC"
-F 19 "~~" H 4150 4820 60  0001 L CNN "Voltage"
-F 20 "±1%" H 4150 4730 60  0001 L CNN "Tolerance"
-F 21 "General Purpose Thick Film Chip Resistor" H 4150 4640 60  0001 L CNN "Part Description"
-F 22 "GENERIC" H 4150 4550 60  0001 L CNN "Manufacturer"
-F 23 "R0402_10K_1%_0.0625W_100PPM" H 4150 4460 60  0001 L CNN "Manufacturer Part Number"
-F 24 "0402" H 4150 4370 60  0001 L CNN "Case"
-F 25 "No" H 4150 4280 60  0001 L CNN "PressFit"
-F 26 "Yes" H 4150 4190 60  0001 L CNN "Mounted"
-F 27 "~~" H 4150 4100 60  0001 L CNN "Sense Comment"
-F 28 "No" H 4150 4010 60  0001 L CNN "Sense"
-F 29 "~~" H 4150 3920 60  0001 L CNN "Status Comment"
-F 30 "No" H 4150 3830 60  0001 L CNN "Socket"
-F 31 "Yes" H 4150 3740 60  0001 L CNN "SMD"
-F 32 "~~" H 4150 3650 60  0001 L CNN "ComponentHeight"
-F 33 "YAGEO PHYCOMP" H 4150 3560 60  0001 L CNN "Manufacturer1 Example"
-F 34 "232270671003L" H 4150 3470 60  0001 L CNN "Manufacturer1 Part Number"
-F 35 "0.4mm" H 4150 3380 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 4150 3290 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 4150 3200 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 4150 3110 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 4150 3020 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 4150 2930 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4150 2840 60  0001 L CNN "License"
-	1    4150 6650
+F 0 "R255" H 4300 6897 50  0000 C CNN
+F 1 "R0402_10K_1%_0.0625W_100PPM" H 4150 6490 60  0001 L CNN
+F 2 "RESC1005X40N" H 4150 5680 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 4150 6310 60  0001 L CNN
+F 4 "10k" H 4300 6806 50  0000 C CNN "~"
+F 5 "R0402_10K_1%_0.0625W_100PPM" H 4150 6220 60  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 4150 6130 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 4150 6040 60  0001 L CNN "Library Path"
+F 8 "=Value" H 4150 5950 60  0001 L CNN "Comment"
+F 9 "Standard" H 4150 5860 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 4150 5770 60  0001 L CNN "Component Type"
+F 11 " " H 4150 5590 60  0001 L CNN "PackageDescription"
+F 12 "2" H 4150 5500 60  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 4150 5410 60  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 4150 5320 60  0001 L CNN "Footprint Ref"
+F 15 "10k" H 4150 5230 60  0001 L CNN "Val"
+F 16 "Not Recommended" H 4150 5140 60  0001 L CNN "Status"
+F 17 "0.0625W" H 4150 5050 60  0001 L CNN "Power"
+F 18 "±100ppm/°C" H 4150 4960 60  0001 L CNN "TC"
+F 19 " " H 4150 4870 60  0001 L CNN "Voltage"
+F 20 "±1%" H 4150 4780 60  0001 L CNN "Tolerance"
+F 21 "General Purpose Thick Film Chip Resistor" H 4150 4690 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 4150 4600 60  0001 L CNN "Manufacturer"
+F 23 "R0402_10K_1%_0.0625W_100PPM" H 4150 4510 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0402" H 4150 4420 60  0001 L CNN "Case"
+F 25 "No" H 4150 4330 60  0001 L CNN "PressFit"
+F 26 "Yes" H 4150 4240 60  0001 L CNN "Mounted"
+F 27 " " H 4150 4150 60  0001 L CNN "Sense Comment"
+F 28 "No" H 4150 4060 60  0001 L CNN "Sense"
+F 29 " " H 4150 3970 60  0001 L CNN "Status Comment"
+F 30 "No" H 4150 3880 60  0001 L CNN "Socket"
+F 31 "Yes" H 4150 3790 60  0001 L CNN "SMD"
+F 32 " " H 4150 3700 60  0001 L CNN "ComponentHeight"
+F 33 "YAGEO PHYCOMP" H 4150 3610 60  0001 L CNN "Manufacturer1 Example"
+F 34 "232270671003L" H 4150 3520 60  0001 L CNN "Manufacturer1 Part Number"
+F 35 "0.4mm" H 4150 3430 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 36 "CERN DEM JLC" H 4150 3250 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 4150 3160 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 4150 3070 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 4150 2980 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4150 2890 60  0001 L CNN "License"
+	1    4150 6700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -4499,7 +4166,7 @@ F 7 "SchLib\\Resistors.SchLib" H 5250 5190 60  0001 L CNN "Library Path"
 F 8 "=Value" H 5250 5100 60  0001 L CNN "Comment"
 F 9 "Standard" H 5250 5010 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 5250 4920 60  0001 L CNN "Component Type"
-F 11 "~~" H 5250 4740 60  0001 L CNN "PackageDescription"
+F 11 " " H 5250 4740 60  0001 L CNN "PackageDescription"
 F 12 "2" H 5250 4650 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 5250 4560 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 5250 4470 60  0001 L CNN "Footprint Ref"
@@ -4507,7 +4174,7 @@ F 15 "10k" H 5250 4380 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 5250 4290 60  0001 L CNN "Status"
 F 17 "0.0625W" H 5250 4200 60  0001 L CNN "Power"
 F 18 "±100ppm/°C" H 5250 4110 60  0001 L CNN "TC"
-F 19 "~~" H 5250 4020 60  0001 L CNN "Voltage"
+F 19 " " H 5250 4020 60  0001 L CNN "Voltage"
 F 20 "±1%" H 5250 3930 60  0001 L CNN "Tolerance"
 F 21 "General Purpose Thick Film Chip Resistor" H 5250 3840 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 5250 3750 60  0001 L CNN "Manufacturer"
@@ -4515,21 +4182,20 @@ F 23 "R0402_10K_1%_0.0625W_100PPM" H 5250 3660 60  0001 L CNN "Manufacturer Part
 F 24 "0402" H 5250 3570 60  0001 L CNN "Case"
 F 25 "No" H 5250 3480 60  0001 L CNN "PressFit"
 F 26 "Yes" H 5250 3390 60  0001 L CNN "Mounted"
-F 27 "~~" H 5250 3300 60  0001 L CNN "Sense Comment"
+F 27 " " H 5250 3300 60  0001 L CNN "Sense Comment"
 F 28 "No" H 5250 3210 60  0001 L CNN "Sense"
-F 29 "~~" H 5250 3120 60  0001 L CNN "Status Comment"
+F 29 " " H 5250 3120 60  0001 L CNN "Status Comment"
 F 30 "No" H 5250 3030 60  0001 L CNN "Socket"
 F 31 "Yes" H 5250 2940 60  0001 L CNN "SMD"
-F 32 "~~" H 5250 2850 60  0001 L CNN "ComponentHeight"
+F 32 " " H 5250 2850 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 5250 2760 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270671003L" H 5250 2670 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 5250 2580 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 5250 2490 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 5250 2400 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 5250 2310 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 5250 2220 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 5250 2130 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5250 2040 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 5250 2400 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 5250 2310 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 5250 2220 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 5250 2130 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5250 2040 60  0001 L CNN "License"
 	1    5250 5850
 	0    1    1    0   
 $EndComp
@@ -4544,43 +4210,39 @@ F 0 "LD10" V 5250 6470 50  0000 L CNN
 F 1 "LED_KINGBRIGHT_KPH-1608CGCK" H 5250 6070 60  0001 L CNN
 F 2 "ICs And Semiconductors SMD:LED_KINGBRIGHT_KPH-1608CGCK" H 5250 5080 60  0001 L CNN
 F 3 "" H 5250 5890 60  0001 L CNN
-F 4 "Green" H 5250 5800 60  0001 L CNN "Pole4"
-F 5 "150060VS75000" H 5250 5800 60  0001 L CNN "Part Number"
-F 6 "LED Green 1C 2A" H 5250 5710 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\LEDs & Displays.SchLib" H 5250 5620 60  0001 L CNN "Library Path"
-F 8 "~~" H 5250 5530 60  0001 L CNN "Comment"
-F 9 "Standard" H 5250 5440 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 5250 5350 60  0001 L CNN "Component Type"
-F 11 "Green" H 5250 5260 60  0001 L CNN "Color"
-F 12 "~~" H 5250 5170 60  0001 L CNN "Device"
-F 13 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 5250 4990 60  0001 L CNN "PackageDescription"
-F 14 "~~" H 5250 4900 60  0001 L CNN "Status"
-F 15 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 5250 4810 60  0001 L CNN "Part Description"
-F 16 "KINGBRIGHT" H 5250 4720 60  0001 L CNN "Manufacturer"
-F 17 "150060VS75000" H 5250 4630 60  0001 L CNN "Manufacturer Part Number"
-F 18 "2" H 5250 4540 60  0001 L CNN "Pin Count"
-F 19 "~~" H 5250 4450 60  0001 L CNN "Case"
-F 20 "Yes" H 5250 4360 60  0001 L CNN "Mounted"
-F 21 "No" H 5250 4270 60  0001 L CNN "Socket"
-F 22 "Yes" H 5250 4180 60  0001 L CNN "SMD"
-F 23 "No" H 5250 4090 60  0001 L CNN "PressFit"
-F 24 "~~" H 5250 4000 60  0001 L CNN "Sense Comment"
-F 25 "No" H 5250 3910 60  0001 L CNN "Sense"
-F 26 "No" H 5250 3820 60  0001 L CNN "Bonding"
-F 27 "~~" H 5250 3730 60  0001 L CNN "Status Comment"
-F 28 "0.65mm" H 5250 3640 60  0001 L CNN "ComponentHeight"
-F 29 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 5250 3550 60  0001 L CNN "Footprint Path"
-F 30 "LED_KINGBRIGHT_KPH-1608CGCK" H 5250 3460 60  0001 L CNN "Footprint Ref"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\LED_KINGBRIGHT_KPH-1608CGCK.pdf" H 5250 3370 60  0001 L CNN "HelpURL"
-F 32 "~~" H 5250 3280 60  0001 L CNN "ComponentLink1URL"
-F 33 "~~" H 5250 3190 60  0001 L CNN "ComponentLink1Description"
-F 34 "~~" H 5250 3100 60  0001 L CNN "ComponentLink2URL"
-F 35 "~~" H 5250 3010 60  0001 L CNN "ComponentLink2Description"
-F 36 "CERN DEM JLC" H 5250 2920 60  0001 L CNN "Author"
-F 37 "07/03/17 00:00:00" H 5250 2830 60  0001 L CNN "CreateDate"
-F 38 "07/03/17 00:00:00" H 5250 2740 60  0001 L CNN "LatestRevisionDate"
-F 39 "ICs And Semiconductors SMD" H 5250 2650 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5250 2560 60  0001 L CNN "License"
+F 4 "LED_KINGBRIGHT_KPH-1608CGCK" H 5250 5800 60  0001 L CNN "Part Number"
+F 5 "LED Green 1C 2A" H 5250 5710 60  0001 L CNN "Library Ref"
+F 6 "SchLib\\LEDs & Displays.SchLib" H 5250 5620 60  0001 L CNN "Library Path"
+F 7 " " H 5250 5530 60  0001 L CNN "Comment"
+F 8 "Standard" H 5250 5440 60  0001 L CNN "Component Kind"
+F 9 "Standard" H 5250 5350 60  0001 L CNN "Component Type"
+F 10 "Green" H 5250 5260 60  0001 L CNN "Color"
+F 11 " " H 5250 5170 60  0001 L CNN "Device"
+F 12 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 5250 4990 60  0001 L CNN "PackageDescription"
+F 13 " " H 5250 4900 60  0001 L CNN "Status"
+F 14 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 5250 4810 60  0001 L CNN "Part Description"
+F 15 "WURTH" H 5250 4720 60  0001 L CNN "Manufacturer"
+F 16 "150060VS75000" H 5250 4630 60  0001 L CNN "Manufacturer Part Number"
+F 17 "2" H 5250 4540 60  0001 L CNN "Pin Count"
+F 18 " " H 5250 4450 60  0001 L CNN "Case"
+F 19 "Yes" H 5250 4360 60  0001 L CNN "Mounted"
+F 20 "No" H 5250 4270 60  0001 L CNN "Socket"
+F 21 "Yes" H 5250 4180 60  0001 L CNN "SMD"
+F 22 "No" H 5250 4090 60  0001 L CNN "PressFit"
+F 23 " " H 5250 4000 60  0001 L CNN "Sense Comment"
+F 24 "No" H 5250 3910 60  0001 L CNN "Sense"
+F 25 "No" H 5250 3820 60  0001 L CNN "Bonding"
+F 26 " " H 5250 3730 60  0001 L CNN "Status Comment"
+F 27 "0.65mm" H 5250 3640 60  0001 L CNN "ComponentHeight"
+F 28 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 5250 3550 60  0001 L CNN "Footprint Path"
+F 29 "LED_KINGBRIGHT_KPH-1608CGCK" H 5250 3460 60  0001 L CNN "Footprint Ref"
+F 30 " " H 5250 3190 60  0001 L CNN "ComponentLink1Description"
+F 31 " " H 5250 3010 60  0001 L CNN "ComponentLink2Description"
+F 32 "CERN DEM JLC" H 5250 2920 60  0001 L CNN "Author"
+F 33 "07/03/17 00:00:00" H 5250 2830 60  0001 L CNN "CreateDate"
+F 34 "07/03/17 00:00:00" H 5250 2740 60  0001 L CNN "LatestRevisionDate"
+F 35 "ICs And Semiconductors SMD" H 5250 2650 60  0001 L CNN "Library Name"
+F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5250 2560 60  0001 L CNN "License"
 	1    5250 6300
 	0    1    1    0   
 $EndComp
@@ -4616,40 +4278,40 @@ Wire Wire Line
 $Comp
 L power:+1V0 #PWR?
 U 1 1 5C7717D3
-P 900 6450
+P 900 6500
 AR Path="/5C16BF8E/5C7717D3" Ref="#PWR?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5C7717D3" Ref="#PWR0613"  Part="1" 
-F 0 "#PWR0613" H 900 6300 50  0001 C CNN
-F 1 "+1V0" H 915 6623 50  0000 C CNN
-F 2 "" H 900 6450 50  0001 C CNN
-F 3 "" H 900 6450 50  0001 C CNN
-	1    900  6450
+F 0 "#PWR0613" H 900 6350 50  0001 C CNN
+F 1 "+1V0" H 915 6673 50  0000 C CNN
+F 2 "" H 900 6500 50  0001 C CNN
+F 3 "" H 900 6500 50  0001 C CNN
+	1    900  6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+1V8 #PWR?
 U 1 1 5C7B2389
-P 4150 6450
+P 4150 6500
 AR Path="/5BD31F9A/5C7B2389" Ref="#PWR?"  Part="1" 
 AR Path="/5BD31F9F/5C7B2389" Ref="#PWR?"  Part="1" 
 AR Path="/5BCEDA59/5C7B2389" Ref="#PWR?"  Part="1" 
 AR Path="/5C16BF8E/5C7B2389" Ref="#PWR?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5C7B2389" Ref="#PWR0626"  Part="1" 
-F 0 "#PWR0626" H 4150 6300 50  0001 C CNN
-F 1 "+1V8" H 4165 6623 50  0000 C CNN
-F 2 "" H 4150 6450 50  0001 C CNN
-F 3 "" H 4150 6450 50  0001 C CNN
-	1    4150 6450
+F 0 "#PWR0626" H 4150 6350 50  0001 C CNN
+F 1 "+1V8" H 4165 6673 50  0000 C CNN
+F 2 "" H 4150 6500 50  0001 C CNN
+F 3 "" H 4150 6500 50  0001 C CNN
+	1    4150 6500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	900  6450 900  6650
+	900  6500 900  6700
 Wire Wire Line
-	1950 6450 1950 6650
+	1950 6500 1950 6700
 Wire Wire Line
-	3100 6450 3100 6650
+	3100 6500 3100 6700
 Wire Wire Line
-	4150 6450 4150 6650
+	4150 6500 4150 6700
 $Comp
 L LEDs_&_Displays:LED_KINGBRIGHT_KPH-1608CGCK LD?
 U 1 1 5C849AD9
@@ -4661,43 +4323,39 @@ F 0 "LD4" V 1400 8070 50  0000 L CNN
 F 1 "LED_KINGBRIGHT_KPH-1608CGCK" H 1400 7670 60  0001 L CNN
 F 2 "ICs And Semiconductors SMD:LED_KINGBRIGHT_KPH-1608CGCK" H 1400 6680 60  0001 L CNN
 F 3 "" H 1400 7490 60  0001 L CNN
-F 4 "Green" H 1400 7400 60  0001 L CNN "Pole4"
-F 5 "150060VS75000" H 1400 7400 60  0001 L CNN "Part Number"
-F 6 "LED Green 1C 2A" H 1400 7310 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\LEDs & Displays.SchLib" H 1400 7220 60  0001 L CNN "Library Path"
-F 8 "~~" H 1400 7130 60  0001 L CNN "Comment"
-F 9 "Standard" H 1400 7040 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 1400 6950 60  0001 L CNN "Component Type"
-F 11 "Green" H 1400 6860 60  0001 L CNN "Color"
-F 12 "~~" H 1400 6770 60  0001 L CNN "Device"
-F 13 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 1400 6590 60  0001 L CNN "PackageDescription"
-F 14 "~~" H 1400 6500 60  0001 L CNN "Status"
-F 15 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 1400 6410 60  0001 L CNN "Part Description"
-F 16 "KINGBRIGHT" H 1400 6320 60  0001 L CNN "Manufacturer"
-F 17 "150060VS75000" H 1400 6230 60  0001 L CNN "Manufacturer Part Number"
-F 18 "2" H 1400 6140 60  0001 L CNN "Pin Count"
-F 19 "~~" H 1400 6050 60  0001 L CNN "Case"
-F 20 "Yes" H 1400 5960 60  0001 L CNN "Mounted"
-F 21 "No" H 1400 5870 60  0001 L CNN "Socket"
-F 22 "Yes" H 1400 5780 60  0001 L CNN "SMD"
-F 23 "No" H 1400 5690 60  0001 L CNN "PressFit"
-F 24 "~~" H 1400 5600 60  0001 L CNN "Sense Comment"
-F 25 "No" H 1400 5510 60  0001 L CNN "Sense"
-F 26 "No" H 1400 5420 60  0001 L CNN "Bonding"
-F 27 "~~" H 1400 5330 60  0001 L CNN "Status Comment"
-F 28 "0.65mm" H 1400 5240 60  0001 L CNN "ComponentHeight"
-F 29 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 1400 5150 60  0001 L CNN "Footprint Path"
-F 30 "LED_KINGBRIGHT_KPH-1608CGCK" H 1400 5060 60  0001 L CNN "Footprint Ref"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\LED_KINGBRIGHT_KPH-1608CGCK.pdf" H 1400 4970 60  0001 L CNN "HelpURL"
-F 32 "~~" H 1400 4880 60  0001 L CNN "ComponentLink1URL"
-F 33 "~~" H 1400 4790 60  0001 L CNN "ComponentLink1Description"
-F 34 "~~" H 1400 4700 60  0001 L CNN "ComponentLink2URL"
-F 35 "~~" H 1400 4610 60  0001 L CNN "ComponentLink2Description"
-F 36 "CERN DEM JLC" H 1400 4520 60  0001 L CNN "Author"
-F 37 "07/03/17 00:00:00" H 1400 4430 60  0001 L CNN "CreateDate"
-F 38 "07/03/17 00:00:00" H 1400 4340 60  0001 L CNN "LatestRevisionDate"
-F 39 "ICs And Semiconductors SMD" H 1400 4250 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1400 4160 60  0001 L CNN "License"
+F 4 "LED_KINGBRIGHT_KPH-1608CGCK" H 1400 7400 60  0001 L CNN "Part Number"
+F 5 "LED Green 1C 2A" H 1400 7310 60  0001 L CNN "Library Ref"
+F 6 "SchLib\\LEDs & Displays.SchLib" H 1400 7220 60  0001 L CNN "Library Path"
+F 7 " " H 1400 7130 60  0001 L CNN "Comment"
+F 8 "Standard" H 1400 7040 60  0001 L CNN "Component Kind"
+F 9 "Standard" H 1400 6950 60  0001 L CNN "Component Type"
+F 10 "Green" H 1400 6860 60  0001 L CNN "Color"
+F 11 " " H 1400 6770 60  0001 L CNN "Device"
+F 12 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 1400 6590 60  0001 L CNN "PackageDescription"
+F 13 " " H 1400 6500 60  0001 L CNN "Status"
+F 14 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 1400 6410 60  0001 L CNN "Part Description"
+F 15 "WURTH" H 1400 6320 60  0001 L CNN "Manufacturer"
+F 16 "150060VS75000" H 1400 6230 60  0001 L CNN "Manufacturer Part Number"
+F 17 "2" H 1400 6140 60  0001 L CNN "Pin Count"
+F 18 " " H 1400 6050 60  0001 L CNN "Case"
+F 19 "Yes" H 1400 5960 60  0001 L CNN "Mounted"
+F 20 "No" H 1400 5870 60  0001 L CNN "Socket"
+F 21 "Yes" H 1400 5780 60  0001 L CNN "SMD"
+F 22 "No" H 1400 5690 60  0001 L CNN "PressFit"
+F 23 " " H 1400 5600 60  0001 L CNN "Sense Comment"
+F 24 "No" H 1400 5510 60  0001 L CNN "Sense"
+F 25 "No" H 1400 5420 60  0001 L CNN "Bonding"
+F 26 " " H 1400 5330 60  0001 L CNN "Status Comment"
+F 27 "0.65mm" H 1400 5240 60  0001 L CNN "ComponentHeight"
+F 28 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 1400 5150 60  0001 L CNN "Footprint Path"
+F 29 "LED_KINGBRIGHT_KPH-1608CGCK" H 1400 5060 60  0001 L CNN "Footprint Ref"
+F 30 " " H 1400 4790 60  0001 L CNN "ComponentLink1Description"
+F 31 " " H 1400 4610 60  0001 L CNN "ComponentLink2Description"
+F 32 "CERN DEM JLC" H 1400 4520 60  0001 L CNN "Author"
+F 33 "07/03/17 00:00:00" H 1400 4430 60  0001 L CNN "CreateDate"
+F 34 "07/03/17 00:00:00" H 1400 4340 60  0001 L CNN "LatestRevisionDate"
+F 35 "ICs And Semiconductors SMD" H 1400 4250 60  0001 L CNN "Library Name"
+F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1400 4160 60  0001 L CNN "License"
 	1    1400 7900
 	0    1    1    0   
 $EndComp
@@ -4752,7 +4410,7 @@ F 7 "SchLib\\Resistors.SchLib" H 1400 6790 60  0001 L CNN "Library Path"
 F 8 "=Value" H 1400 6700 60  0001 L CNN "Comment"
 F 9 "Standard" H 1400 6610 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 1400 6520 60  0001 L CNN "Component Type"
-F 11 "~~" H 1400 6340 60  0001 L CNN "PackageDescription"
+F 11 " " H 1400 6340 60  0001 L CNN "PackageDescription"
 F 12 "2" H 1400 6250 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 1400 6160 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 1400 6070 60  0001 L CNN "Footprint Ref"
@@ -4760,7 +4418,7 @@ F 15 "1k" H 1400 5980 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 1400 5890 60  0001 L CNN "Status"
 F 17 "0.0625W" H 1400 5800 60  0001 L CNN "Power"
 F 18 "±100ppm/°C" H 1400 5710 60  0001 L CNN "TC"
-F 19 "~~" H 1400 5620 60  0001 L CNN "Voltage"
+F 19 " " H 1400 5620 60  0001 L CNN "Voltage"
 F 20 "±1%" H 1400 5530 60  0001 L CNN "Tolerance"
 F 21 "General Purpose Thick Film Chip Resistor" H 1400 5440 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 1400 5350 60  0001 L CNN "Manufacturer"
@@ -4768,21 +4426,20 @@ F 23 "R0402_1K_1%_0.0625W_100PPM" H 1400 5260 60  0001 L CNN "Manufacturer Part 
 F 24 "0402" H 1400 5170 60  0001 L CNN "Case"
 F 25 "No" H 1400 5080 60  0001 L CNN "PressFit"
 F 26 "Yes" H 1400 4990 60  0001 L CNN "Mounted"
-F 27 "~~" H 1400 4900 60  0001 L CNN "Sense Comment"
+F 27 " " H 1400 4900 60  0001 L CNN "Sense Comment"
 F 28 "No" H 1400 4810 60  0001 L CNN "Sense"
-F 29 "~~" H 1400 4720 60  0001 L CNN "Status Comment"
+F 29 " " H 1400 4720 60  0001 L CNN "Status Comment"
 F 30 "No" H 1400 4630 60  0001 L CNN "Socket"
 F 31 "Yes" H 1400 4540 60  0001 L CNN "SMD"
-F 32 "~~" H 1400 4450 60  0001 L CNN "ComponentHeight"
+F 32 " " H 1400 4450 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 1400 4360 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270671002L" H 1400 4270 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 1400 4180 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 1400 4090 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 1400 4000 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 1400 3910 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 1400 3820 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 1400 3730 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1400 3640 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 1400 4000 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 1400 3910 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 1400 3820 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 1400 3730 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1400 3640 60  0001 L CNN "License"
 	1    1400 7450
 	0    1    1    0   
 $EndComp
@@ -4810,43 +4467,39 @@ F 0 "LD6" V 2050 8070 50  0000 L CNN
 F 1 "LED_KINGBRIGHT_KPH-1608CGCK" H 2050 7670 60  0001 L CNN
 F 2 "ICs And Semiconductors SMD:LED_KINGBRIGHT_KPH-1608CGCK" H 2050 6680 60  0001 L CNN
 F 3 "" H 2050 7490 60  0001 L CNN
-F 4 "Green" H 2050 7400 60  0001 L CNN "Pole4"
-F 5 "150060VS75000" H 2050 7400 60  0001 L CNN "Part Number"
-F 6 "LED Green 1C 2A" H 2050 7310 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\LEDs & Displays.SchLib" H 2050 7220 60  0001 L CNN "Library Path"
-F 8 "~~" H 2050 7130 60  0001 L CNN "Comment"
-F 9 "Standard" H 2050 7040 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 2050 6950 60  0001 L CNN "Component Type"
-F 11 "Green" H 2050 6860 60  0001 L CNN "Color"
-F 12 "~~" H 2050 6770 60  0001 L CNN "Device"
-F 13 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 2050 6590 60  0001 L CNN "PackageDescription"
-F 14 "~~" H 2050 6500 60  0001 L CNN "Status"
-F 15 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 2050 6410 60  0001 L CNN "Part Description"
-F 16 "KINGBRIGHT" H 2050 6320 60  0001 L CNN "Manufacturer"
-F 17 "150060VS75000" H 2050 6230 60  0001 L CNN "Manufacturer Part Number"
-F 18 "2" H 2050 6140 60  0001 L CNN "Pin Count"
-F 19 "~~" H 2050 6050 60  0001 L CNN "Case"
-F 20 "Yes" H 2050 5960 60  0001 L CNN "Mounted"
-F 21 "No" H 2050 5870 60  0001 L CNN "Socket"
-F 22 "Yes" H 2050 5780 60  0001 L CNN "SMD"
-F 23 "No" H 2050 5690 60  0001 L CNN "PressFit"
-F 24 "~~" H 2050 5600 60  0001 L CNN "Sense Comment"
-F 25 "No" H 2050 5510 60  0001 L CNN "Sense"
-F 26 "No" H 2050 5420 60  0001 L CNN "Bonding"
-F 27 "~~" H 2050 5330 60  0001 L CNN "Status Comment"
-F 28 "0.65mm" H 2050 5240 60  0001 L CNN "ComponentHeight"
-F 29 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 2050 5150 60  0001 L CNN "Footprint Path"
-F 30 "LED_KINGBRIGHT_KPH-1608CGCK" H 2050 5060 60  0001 L CNN "Footprint Ref"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\LED_KINGBRIGHT_KPH-1608CGCK.pdf" H 2050 4970 60  0001 L CNN "HelpURL"
-F 32 "~~" H 2050 4880 60  0001 L CNN "ComponentLink1URL"
-F 33 "~~" H 2050 4790 60  0001 L CNN "ComponentLink1Description"
-F 34 "~~" H 2050 4700 60  0001 L CNN "ComponentLink2URL"
-F 35 "~~" H 2050 4610 60  0001 L CNN "ComponentLink2Description"
-F 36 "CERN DEM JLC" H 2050 4520 60  0001 L CNN "Author"
-F 37 "07/03/17 00:00:00" H 2050 4430 60  0001 L CNN "CreateDate"
-F 38 "07/03/17 00:00:00" H 2050 4340 60  0001 L CNN "LatestRevisionDate"
-F 39 "ICs And Semiconductors SMD" H 2050 4250 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2050 4160 60  0001 L CNN "License"
+F 4 "LED_KINGBRIGHT_KPH-1608CGCK" H 2050 7400 60  0001 L CNN "Part Number"
+F 5 "LED Green 1C 2A" H 2050 7310 60  0001 L CNN "Library Ref"
+F 6 "SchLib\\LEDs & Displays.SchLib" H 2050 7220 60  0001 L CNN "Library Path"
+F 7 " " H 2050 7130 60  0001 L CNN "Comment"
+F 8 "Standard" H 2050 7040 60  0001 L CNN "Component Kind"
+F 9 "Standard" H 2050 6950 60  0001 L CNN "Component Type"
+F 10 "Green" H 2050 6860 60  0001 L CNN "Color"
+F 11 " " H 2050 6770 60  0001 L CNN "Device"
+F 12 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 2050 6590 60  0001 L CNN "PackageDescription"
+F 13 " " H 2050 6500 60  0001 L CNN "Status"
+F 14 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 2050 6410 60  0001 L CNN "Part Description"
+F 15 "WURTH" H 2050 6320 60  0001 L CNN "Manufacturer"
+F 16 "150060VS75000" H 2050 6230 60  0001 L CNN "Manufacturer Part Number"
+F 17 "2" H 2050 6140 60  0001 L CNN "Pin Count"
+F 18 " " H 2050 6050 60  0001 L CNN "Case"
+F 19 "Yes" H 2050 5960 60  0001 L CNN "Mounted"
+F 20 "No" H 2050 5870 60  0001 L CNN "Socket"
+F 21 "Yes" H 2050 5780 60  0001 L CNN "SMD"
+F 22 "No" H 2050 5690 60  0001 L CNN "PressFit"
+F 23 " " H 2050 5600 60  0001 L CNN "Sense Comment"
+F 24 "No" H 2050 5510 60  0001 L CNN "Sense"
+F 25 "No" H 2050 5420 60  0001 L CNN "Bonding"
+F 26 " " H 2050 5330 60  0001 L CNN "Status Comment"
+F 27 "0.65mm" H 2050 5240 60  0001 L CNN "ComponentHeight"
+F 28 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 2050 5150 60  0001 L CNN "Footprint Path"
+F 29 "LED_KINGBRIGHT_KPH-1608CGCK" H 2050 5060 60  0001 L CNN "Footprint Ref"
+F 30 " " H 2050 4790 60  0001 L CNN "ComponentLink1Description"
+F 31 " " H 2050 4610 60  0001 L CNN "ComponentLink2Description"
+F 32 "CERN DEM JLC" H 2050 4520 60  0001 L CNN "Author"
+F 33 "07/03/17 00:00:00" H 2050 4430 60  0001 L CNN "CreateDate"
+F 34 "07/03/17 00:00:00" H 2050 4340 60  0001 L CNN "LatestRevisionDate"
+F 35 "ICs And Semiconductors SMD" H 2050 4250 60  0001 L CNN "Library Name"
+F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2050 4160 60  0001 L CNN "License"
 	1    2050 7900
 	0    1    1    0   
 $EndComp
@@ -4881,7 +4534,7 @@ F 7 "SchLib\\Resistors.SchLib" H 2050 6790 60  0001 L CNN "Library Path"
 F 8 "=Value" H 2050 6700 60  0001 L CNN "Comment"
 F 9 "Standard" H 2050 6610 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 2050 6520 60  0001 L CNN "Component Type"
-F 11 "~~" H 2050 6340 60  0001 L CNN "PackageDescription"
+F 11 " " H 2050 6340 60  0001 L CNN "PackageDescription"
 F 12 "2" H 2050 6250 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 2050 6160 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 2050 6070 60  0001 L CNN "Footprint Ref"
@@ -4889,7 +4542,7 @@ F 15 "1k" H 2050 5980 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 2050 5890 60  0001 L CNN "Status"
 F 17 "0.0625W" H 2050 5800 60  0001 L CNN "Power"
 F 18 "±100ppm/°C" H 2050 5710 60  0001 L CNN "TC"
-F 19 "~~" H 2050 5620 60  0001 L CNN "Voltage"
+F 19 " " H 2050 5620 60  0001 L CNN "Voltage"
 F 20 "±1%" H 2050 5530 60  0001 L CNN "Tolerance"
 F 21 "General Purpose Thick Film Chip Resistor" H 2050 5440 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 2050 5350 60  0001 L CNN "Manufacturer"
@@ -4897,21 +4550,20 @@ F 23 "R0402_1K_1%_0.0625W_100PPM" H 2050 5260 60  0001 L CNN "Manufacturer Part 
 F 24 "0402" H 2050 5170 60  0001 L CNN "Case"
 F 25 "No" H 2050 5080 60  0001 L CNN "PressFit"
 F 26 "Yes" H 2050 4990 60  0001 L CNN "Mounted"
-F 27 "~~" H 2050 4900 60  0001 L CNN "Sense Comment"
+F 27 " " H 2050 4900 60  0001 L CNN "Sense Comment"
 F 28 "No" H 2050 4810 60  0001 L CNN "Sense"
-F 29 "~~" H 2050 4720 60  0001 L CNN "Status Comment"
+F 29 " " H 2050 4720 60  0001 L CNN "Status Comment"
 F 30 "No" H 2050 4630 60  0001 L CNN "Socket"
 F 31 "Yes" H 2050 4540 60  0001 L CNN "SMD"
-F 32 "~~" H 2050 4450 60  0001 L CNN "ComponentHeight"
+F 32 " " H 2050 4450 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 2050 4360 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270671002L" H 2050 4270 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 2050 4180 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 2050 4090 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 2050 4000 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 2050 3910 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 2050 3820 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 2050 3730 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2050 3640 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 2050 4000 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 2050 3910 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 2050 3820 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 2050 3730 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2050 3640 60  0001 L CNN "License"
 	1    2050 7450
 	0    1    1    0   
 $EndComp
@@ -4923,18 +4575,18 @@ F 0 "U35" H 6850 1765 50  0000 C CNN
 F 1 "XRP7724ILBTR-F" H 6850 1674 50  0000 C CNN
 F 2 "ICs And Semiconductors SMD:QFN50P700X700X80-45N-S520" H 6350 -3090 60  0001 L CNN
 F 3 "" H 6350 -2370 60  0001 L CNN
-F 4 "XRP7724ILBTR-F" H 6350 -2460 60  0001 L CNN "Part Number"
-F 5 "XRP7724ILBTR-F" H 6350 -2550 60  0001 L CNN "Library Ref"
+F 4 "XRP7724ILB-F" H 6350 -2460 60  0001 L CNN "Part Number"
+F 5 "XRP7724ILB-F" H 6350 -2550 60  0001 L CNN "Library Ref"
 F 6 "SchLib\\Regulators.SchLib" H 6350 -2640 60  0001 L CNN "Library Path"
 F 7 "=Device" H 6350 -2730 60  0001 L CNN "Comment"
 F 8 "Standard" H 6350 -2820 60  0001 L CNN "Component Kind"
 F 9 "Standard" H 6350 -2910 60  0001 L CNN "Component Type"
 F 10 "XRP7724ILBTR-F" H 6350 -3000 60  0001 L CNN "Device"
 F 11 "50mm Pitch, Square; 44 Pin, 7.00mm L X 7.00mm W X 0.80mm H Body (W/Thermal Tab 5.2mm X 5.2mm), IPC Medium Density" H 6350 -3180 60  0001 L CNN "PackageDescription"
-F 12 "~~" H 6350 -3270 60  0001 L CNN "Status"
-F 13 "Quad Channel Digital PWM/PFM Proggrammable Power Management System" H 6350 -3360 60  0001 L CNN "Part Description"
+F 12 " " H 6350 -3270 60  0001 L CNN "Status"
+F 13 "Quad Channel Digital PWM/PFM Programmable Power Management System" H 6350 -3360 60  0001 L CNN "Part Description"
 F 14 "EXAR" H 6350 -3450 60  0001 L CNN "Manufacturer"
-F 15 "XRP7724ILBTR-F" H 6350 -3540 60  0001 L CNN "Manufacturer Part Number"
+F 15 "XRP7724ILB-F" H 6350 -3540 60  0001 L CNN "Manufacturer Part Number"
 F 16 "45" H 6350 -3630 60  0001 L CNN "Pin Count"
 F 17 "QFN44" H 6350 -3720 60  0001 L CNN "Case"
 F 18 "Yes" H 6350 -3810 60  0001 L CNN "Mounted"
@@ -4942,23 +4594,19 @@ F 19 "No" H 6350 -3900 60  0001 L CNN "Socket"
 F 20 "Yes" H 6350 -3990 60  0001 L CNN "SMD"
 F 21 "No" H 6350 -4080 60  0001 L CNN "PressFit"
 F 22 "No" H 6350 -4170 60  0001 L CNN "Sense"
-F 23 "~~" H 6350 -4260 60  0001 L CNN "Sense Comment"
+F 23 " " H 6350 -4260 60  0001 L CNN "Sense Comment"
 F 24 "No" H 6350 -4350 60  0001 L CNN "Bonding"
-F 25 "~~" H 6350 -4440 60  0001 L CNN "Status Comment"
+F 25 " " H 6350 -4440 60  0001 L CNN "Status Comment"
 F 26 "0.8mm" H 6350 -4530 60  0001 L CNN "ComponentHeight"
 F 27 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 6350 -4620 60  0001 L CNN "Footprint Path"
 F 28 "QFN50P700X700X80-45N-S520" H 6350 -4710 60  0001 L CNN "Footprint Ref"
-F 29 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\XRP7724ILB-F.pdf" H 6350 -4800 60  0001 L CNN "HelpURL"
-F 30 "~~" H 6350 -4890 60  0001 L CNN "ComponentLink1URL"
-F 31 "~~" H 6350 -4980 60  0001 L CNN "ComponentLink1Description"
-F 32 "~~" H 6350 -5070 60  0001 L CNN "ComponentLink2URL"
-F 33 "~~" H 6350 -5160 60  0001 L CNN "ComponentLink2Description"
-F 34 "CERN DEM JLC" H 6350 -5250 60  0001 L CNN "Author"
-F 35 "11/20/14 00:00:00" H 6350 -5340 60  0001 L CNN "CreateDate"
-F 36 "11/20/14 00:00:00" H 6350 -5430 60  0001 L CNN "LatestRevisionDate"
-F 37 "~~" H 6350 -5520 60  0001 L CNN "SCEM"
-F 38 "ICs And Semiconductors SMD" H 6350 -5610 60  0001 L CNN "Library Name"
-F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6350 -5700 60  0001 L CNN "License"
+F 29 " " H 6350 -4980 60  0001 L CNN "ComponentLink1Description"
+F 30 " " H 6350 -5160 60  0001 L CNN "ComponentLink2Description"
+F 31 "CERN DEM JLC" H 6350 -5250 60  0001 L CNN "Author"
+F 32 "11/20/14 00:00:00" H 6350 -5340 60  0001 L CNN "CreateDate"
+F 33 "11/20/14 00:00:00" H 6350 -5430 60  0001 L CNN "LatestRevisionDate"
+F 34 "ICs And Semiconductors SMD" H 6350 -5610 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6350 -5700 60  0001 L CNN "License"
 	1    6350 1600
 	1    0    0    -1  
 $EndComp
@@ -4986,13 +4634,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 3900 8740 60  0001 L CNN "Library Path"
 F 8 "=Value" H 3900 8650 60  0001 L CNN "Comment"
 F 9 "Standard" H 3900 8560 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 3900 8470 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 3900 8290 60  0001 L CNN "Pin Count"
+F 11 "2" H 3900 8290 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 3900 8200 60  0001 L CNN "Footprint Path"
 F 13 "CAPC1709X100N" H 3900 8110 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 3900 8020 60  0001 L CNN "PackageDescription"
+F 14 " " H 3900 8020 60  0001 L CNN "PackageDescription"
 F 15 "22uF" H 3900 7930 60  0001 L CNN "Val"
 F 16 "None" H 3900 7840 60  0001 L CNN "Status"
-F 17 "~~" H 3900 7750 60  0001 L CNN "Status Comment"
+F 17 " " H 3900 7750 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 3900 7660 60  0001 L CNN "Voltage"
 F 19 "X5R" H 3900 7570 60  0001 L CNN "TC"
 F 20 "±20%" H 3900 7480 60  0001 L CNN "Tolerance"
@@ -5003,19 +4651,18 @@ F 24 "0603" H 3900 7120 60  0001 L CNN "Case"
 F 25 "Yes" H 3900 7030 60  0001 L CNN "Mounted"
 F 26 "No" H 3900 6940 60  0001 L CNN "Socket"
 F 27 "Yes" H 3900 6850 60  0001 L CNN "SMD"
-F 28 "~~" H 3900 6760 60  0001 L CNN "PressFit"
+F 28 " " H 3900 6760 60  0001 L CNN "PressFit"
 F 29 "No" H 3900 6670 60  0001 L CNN "Sense"
-F 30 "~~" H 3900 6580 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 3900 6490 60  0001 L CNN "ComponentHeight"
+F 30 " " H 3900 6580 60  0001 L CNN "Sense Comment"
+F 31 " " H 3900 6490 60  0001 L CNN "ComponentHeight"
 F 32 "TDK" H 3900 6400 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C1608X5R0J226M080AC" H 3900 6310 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1mm" H 3900 6220 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X5R_TDK_C.pdf" H 3900 6130 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 3900 6040 60  0001 L CNN "Author"
-F 37 "12/16/13 00:00:00" H 3900 5950 60  0001 L CNN "CreateDate"
-F 38 "09/13/16 00:00:00" H 3900 5860 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 3900 5770 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3900 5680 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 3900 6040 60  0001 L CNN "Author"
+F 36 "12/16/13 00:00:00" H 3900 5950 60  0001 L CNN "CreateDate"
+F 37 "09/13/16 00:00:00" H 3900 5860 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 3900 5770 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3900 5680 60  0001 L CNN "License"
 	1    3900 9450
 	0    1    1    0   
 $EndComp
@@ -5034,8 +4681,8 @@ F 7 "SchLib\\Inductors & Transformers.SchLib" H 3400 8810 60  0001 L CNN "Librar
 F 8 "=Value" H 3400 8720 60  0001 L CNN "Comment"
 F 9 "Standard" H 3400 8630 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 3400 8540 60  0001 L CNN "Component Type"
-F 11 "~~" H 3400 8360 60  0001 L CNN "PackageDescription"
-F 12 "2.0000000000000000e+00" H 3400 8270 60  0001 L CNN "Pin Count"
+F 11 " " H 3400 8360 60  0001 L CNN "PackageDescription"
+F 12 "2" H 3400 8270 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Inductors SMD.PcbLib" H 3400 8180 60  0001 L CNN "Footprint Path"
 F 14 "INDC1608X65N" H 3400 8090 60  0001 L CNN "Footprint Ref"
 F 15 "120R@100MHz" H 3400 8000 60  0001 L CNN "Val"
@@ -5050,16 +4697,15 @@ F 23 "0603" H 3400 7280 60  0001 L CNN "Case"
 F 24 "Yes" H 3400 7190 60  0001 L CNN "Mounted"
 F 25 "No" H 3400 7100 60  0001 L CNN "Socket"
 F 26 "Yes" H 3400 7010 60  0001 L CNN "SMD"
-F 27 "~~" H 3400 6920 60  0001 L CNN "Sense Comment"
+F 27 " " H 3400 6920 60  0001 L CNN "Sense Comment"
 F 28 "No" H 3400 6830 60  0001 L CNN "Sense"
-F 29 "~~" H 3400 6740 60  0001 L CNN "Status Comment"
+F 29 " " H 3400 6740 60  0001 L CNN "Status Comment"
 F 30 "0.65mm" H 3400 6650 60  0001 L CNN "ComponentHeight"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND0603_MURATA_BLM18S.pdf" H 3400 6560 60  0001 L CNN "HelpURL"
-F 32 "CERN DEM JLC" H 3400 6470 60  0001 L CNN "Author"
-F 33 "07/23/14 00:00:00" H 3400 6380 60  0001 L CNN "CreateDate"
-F 34 "07/23/14 00:00:00" H 3400 6290 60  0001 L CNN "LatestRevisionDate"
-F 35 "Inductors SMD" H 3400 6200 60  0001 L CNN "Library Name"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3400 6110 60  0001 L CNN "License"
+F 31 "CERN DEM JLC" H 3400 6470 60  0001 L CNN "Author"
+F 32 "07/23/14 00:00:00" H 3400 6380 60  0001 L CNN "CreateDate"
+F 33 "07/23/14 00:00:00" H 3400 6290 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 3400 6200 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3400 6110 60  0001 L CNN "License"
 	1    3400 9450
 	1    0    0    -1  
 $EndComp
@@ -5083,7 +4729,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 9450 3900 9450
 $Comp
-L AMC_FMC_Carrier-PcbDoc-rescue:MGTAVTT-powerMG-AMC_FMC_Carrier-PcbDoc-rescue-AMC_FMC_Carrier-PcbDoc-rescue-AMC_FMC_Carrier-PcbDoc-rescue #PWR?
+L marble_misc:MGTAVTT #PWR?
 U 1 1 5DBB815F
 P 3900 9400
 AR Path="/5C907554/5C417BCB/5DBB815F" Ref="#PWR?"  Part="1" 
@@ -5100,17 +4746,17 @@ NoConn ~ 6150 2600
 NoConn ~ 6150 2200
 NoConn ~ 7550 5100
 $Comp
-L AMC_FMC_Carrier-PcbDoc-rescue:MGTAVTT-powerMG-AMC_FMC_Carrier-PcbDoc-rescue-AMC_FMC_Carrier-PcbDoc-rescue-AMC_FMC_Carrier-PcbDoc-rescue #PWR?
+L marble_misc:MGTAVTT #PWR?
 U 1 1 5CF3EE50
-P 3100 6450
+P 3100 6500
 AR Path="/5C907554/5C417BCB/5CF3EE50" Ref="#PWR?"  Part="1" 
 AR Path="/5C16BF8E/5CF3EE50" Ref="#PWR?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5CF3EE50" Ref="#PWR0623"  Part="1" 
-F 0 "#PWR0623" H 3100 6300 50  0001 C CNN
-F 1 "MGTAVTT" H 3115 6623 50  0000 C CNN
-F 2 "" H 3100 6450 50  0001 C CNN
-F 3 "" H 3100 6450 50  0001 C CNN
-	1    3100 6450
+F 0 "#PWR0623" H 3100 6350 50  0001 C CNN
+F 1 "MGTAVTT" H 3115 6673 50  0000 C CNN
+F 2 "" H 3100 6500 50  0001 C CNN
+F 3 "" H 3100 6500 50  0001 C CNN
+	1    3100 6500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -5125,98 +4771,96 @@ Connection ~ 7800 4800
 Wire Wire Line
 	7800 4800 7800 4900
 $Comp
-L Capacitors_SMD:CC0603_4.7UF_16V_10%_X5R C144
+L Capacitors_SMD:CC0603_4.7UF_25V_10%_X5R C144
 U 1 1 5CF08194
 P 7800 4900
 F 0 "C144" V 7850 4900 50  0000 L CNN
-F 1 "CC0603_4.7UF_16V_10%_X5R" H 7800 4640 60  0001 L CNN
-F 2 "CAPC1709X95N" H 7800 3830 60  0001 L CNN
+F 1 "CC0603_4.7UF_25V_10%_X5R" H 7800 4640 60  0001 L CNN
+F 2 "Capacitors SMD:CAPC1608X90N" H 7800 3830 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X7R_TAIYO-YUDEN_HIGH-VALUE.pdf" H 7800 4460 60  0001 L CNN
 F 4 "4.7uF" V 8050 4900 50  0000 L CNN "~"
-F 5 "CC0603_4.7UF_16V_10%_X5R" H 7800 4370 60  0001 L CNN "Part Number"
+F 5 "CC0603_4.7UF_25V_10%_X5R" H 7800 4370 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 7800 4280 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 7800 4190 60  0001 L CNN "Library Path"
-F 8 "=Value" H 7800 4100 60  0001 L CNN "Comment"
+F 8 "4.7uF" H 7800 4100 60  0001 L CNN "Comment"
 F 9 "Standard" H 7800 4010 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 7800 3920 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 7800 3740 60  0001 L CNN "Pin Count"
+F 11 "2" H 7800 3740 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 7800 3650 60  0001 L CNN "Footprint Path"
-F 13 "CAPC1709X95N" H 7800 3560 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 7800 3470 60  0001 L CNN "PackageDescription"
+F 13 "CAPC1608X90N" H 7800 3560 60  0001 L CNN "Footprint Ref"
+F 14 " " H 7800 3470 60  0001 L CNN "PackageDescription"
 F 15 "4.7uF" H 7800 3380 60  0001 L CNN "Val"
 F 16 "None" H 7800 3290 60  0001 L CNN "Status"
-F 17 "~~" H 7800 3200 60  0001 L CNN "Status Comment"
-F 18 "16V" H 7800 3110 60  0001 L CNN "Voltage"
+F 17 " " H 7800 3200 60  0001 L CNN "Status Comment"
+F 18 "25V" H 7800 3110 60  0001 L CNN "Voltage"
 F 19 "X5R" H 7800 3020 60  0001 L CNN "TC"
 F 20 "±10%" H 7800 2930 60  0001 L CNN "Tolerance"
 F 21 "SMD Multilayer Chip Ceramic Capacitor" H 7800 2840 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 7800 2750 60  0001 L CNN "Manufacturer"
-F 23 "CC0603_4.7UF_16V_10%_X5R" H 7800 2660 60  0001 L CNN "Manufacturer Part Number"
+F 23 "CC0603_4.7UF_25V_10%_X5R" H 7800 2660 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0603" H 7800 2570 60  0001 L CNN "Case"
 F 25 "Yes" H 7800 2480 60  0001 L CNN "Mounted"
 F 26 "No" H 7800 2390 60  0001 L CNN "Socket"
 F 27 "Yes" H 7800 2300 60  0001 L CNN "SMD"
-F 28 "~~" H 7800 2210 60  0001 L CNN "PressFit"
+F 28 " " H 7800 2210 60  0001 L CNN "PressFit"
 F 29 "No" H 7800 2120 60  0001 L CNN "Sense"
-F 30 "~~" H 7800 2030 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 7800 1940 60  0001 L CNN "ComponentHeight"
-F 32 "TAIYO YUDEN" H 7800 1850 60  0001 L CNN "Manufacturer1 Example"
-F 33 "EMK107ABJ475KA-T" H 7800 1760 60  0001 L CNN "Manufacturer1 Part Number"
+F 30 " " H 7800 2030 60  0001 L CNN "Sense Comment"
+F 31 " " H 7800 1940 60  0001 L CNN "ComponentHeight"
+F 32 "MURATA" H 7800 1850 60  0001 L CNN "Manufacturer1 Example"
+F 33 "GRM188R61E475KE11D" H 7800 1760 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "0.95mm" H 7800 1670 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X7R_TAIYO-YUDEN_HIGH-VALUE.pdf" H 7800 1580 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 7800 1490 60  0001 L CNN "Author"
-F 37 "12/16/13 00:00:00" H 7800 1400 60  0001 L CNN "CreateDate"
-F 38 "09/16/14 00:00:00" H 7800 1310 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 7800 1220 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 7800 1130 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 7800 1490 60  0001 L CNN "Author"
+F 36 "11/10/14 00:00:00" H 7800 1400 60  0001 L CNN "CreateDate"
+F 37 "11/10/14 00:00:00" H 7800 1310 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors.DbLib" H 7800 1220 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 7800 1130 60  0001 L CNN "License"
 	1    7800 4900
 	0    1    1    0   
 $EndComp
 $Comp
-L Capacitors_SMD:CC0603_4.7UF_16V_10%_X5R C361
+L Capacitors_SMD:CC0603_4.7UF_25V_10%_X5R C361
 U 1 1 5CF2125F
 P 8150 4900
 F 0 "C361" V 8200 4900 50  0000 L CNN
-F 1 "CC0603_4.7UF_16V_10%_X5R" H 8150 4640 60  0001 L CNN
-F 2 "CAPC1709X95N" H 8150 3830 60  0001 L CNN
+F 1 "CC0603_4.7UF_25V_10%_X5R" H 8150 4640 60  0001 L CNN
+F 2 "Capacitors SMD:CAPC1608X90N" H 8150 3830 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X7R_TAIYO-YUDEN_HIGH-VALUE.pdf" H 8150 4460 60  0001 L CNN
 F 4 "4.7uF" V 8400 4900 50  0000 L CNN "~"
-F 5 "CC0603_4.7UF_16V_10%_X5R" H 8150 4370 60  0001 L CNN "Part Number"
+F 5 "CC0603_4.7UF_25V_10%_X5R" H 8150 4370 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 8150 4280 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 8150 4190 60  0001 L CNN "Library Path"
-F 8 "=Value" H 8150 4100 60  0001 L CNN "Comment"
+F 8 "4.7uF" H 8150 4100 60  0001 L CNN "Comment"
 F 9 "Standard" H 8150 4010 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 8150 3920 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 8150 3740 60  0001 L CNN "Pin Count"
+F 11 "2" H 8150 3740 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 8150 3650 60  0001 L CNN "Footprint Path"
-F 13 "CAPC1709X95N" H 8150 3560 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 8150 3470 60  0001 L CNN "PackageDescription"
+F 13 "CAPC1608X90N" H 8150 3560 60  0001 L CNN "Footprint Ref"
+F 14 " " H 8150 3470 60  0001 L CNN "PackageDescription"
 F 15 "4.7uF" H 8150 3380 60  0001 L CNN "Val"
 F 16 "None" H 8150 3290 60  0001 L CNN "Status"
-F 17 "~~" H 8150 3200 60  0001 L CNN "Status Comment"
-F 18 "16V" H 8150 3110 60  0001 L CNN "Voltage"
+F 17 " " H 8150 3200 60  0001 L CNN "Status Comment"
+F 18 "25V" H 8150 3110 60  0001 L CNN "Voltage"
 F 19 "X5R" H 8150 3020 60  0001 L CNN "TC"
 F 20 "±10%" H 8150 2930 60  0001 L CNN "Tolerance"
 F 21 "SMD Multilayer Chip Ceramic Capacitor" H 8150 2840 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 8150 2750 60  0001 L CNN "Manufacturer"
-F 23 "CC0603_4.7UF_16V_10%_X5R" H 8150 2660 60  0001 L CNN "Manufacturer Part Number"
+F 23 "CC0603_4.7UF_25V_10%_X5R" H 8150 2660 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0603" H 8150 2570 60  0001 L CNN "Case"
 F 25 "Yes" H 8150 2480 60  0001 L CNN "Mounted"
 F 26 "No" H 8150 2390 60  0001 L CNN "Socket"
 F 27 "Yes" H 8150 2300 60  0001 L CNN "SMD"
-F 28 "~~" H 8150 2210 60  0001 L CNN "PressFit"
+F 28 " " H 8150 2210 60  0001 L CNN "PressFit"
 F 29 "No" H 8150 2120 60  0001 L CNN "Sense"
-F 30 "~~" H 8150 2030 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 8150 1940 60  0001 L CNN "ComponentHeight"
-F 32 "TAIYO YUDEN" H 8150 1850 60  0001 L CNN "Manufacturer1 Example"
-F 33 "EMK107ABJ475KA-T" H 8150 1760 60  0001 L CNN "Manufacturer1 Part Number"
+F 30 " " H 8150 2030 60  0001 L CNN "Sense Comment"
+F 31 " " H 8150 1940 60  0001 L CNN "ComponentHeight"
+F 32 "MURATA" H 8150 1850 60  0001 L CNN "Manufacturer1 Example"
+F 33 "GRM188R61E475KE11D" H 8150 1760 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "0.95mm" H 8150 1670 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X7R_TAIYO-YUDEN_HIGH-VALUE.pdf" H 8150 1580 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 8150 1490 60  0001 L CNN "Author"
-F 37 "12/16/13 00:00:00" H 8150 1400 60  0001 L CNN "CreateDate"
-F 38 "09/16/14 00:00:00" H 8150 1310 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 8150 1220 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8150 1130 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 8150 1490 60  0001 L CNN "Author"
+F 36 "11/10/14 00:00:00" H 8150 1400 60  0001 L CNN "CreateDate"
+F 37 "11/10/14 00:00:00" H 8150 1310 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors.DbLib" H 8150 1220 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8150 1130 60  0001 L CNN "License"
 	1    8150 4900
 	0    1    1    0   
 $EndComp
@@ -5258,15 +4902,15 @@ Wire Wire Line
 Wire Wire Line
 	8150 5200 8150 5250
 $Comp
-L Capacitors_SMD:CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF C362
+L Capacitors_SMD:CC0402_100NF_25V_10%_X5R C362
 U 1 1 5D042ACD
 P 8500 4900
 F 0 "C362" V 8550 4900 50  0000 L CNN
-F 1 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 8500 4640 60  0001 L CNN
-F 2 "Capacitors SMD:CAPC1005X55N" H 8500 3830 60  0001 L CNN
+F 1 "CC0402_100NF_25V_10%_X5R" H 8500 4640 60  0001 L CNN
+F 2 "Marble:CAPC1005X55N" H 8500 3830 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 8500 4460 60  0001 L CNN
 F 4 "100nF" V 8750 4900 50  0000 L CNN "~"
-F 5 "CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF" H 8500 4370 60  0001 L CNN "Part Number"
+F 5 "CC0402_100NF_25V_10%_X5R" H 8500 4370 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 8500 4280 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 8500 4190 60  0001 L CNN "Library Path"
 F 8 "100nF" H 8500 4100 60  0001 L CNN "Comment"
@@ -5277,14 +4921,14 @@ F 12 "PcbLib\\Capacitors SMD.PcbLib" H 8500 3650 60  0001 L CNN "Footprint Path"
 F 13 "CAPC1005X55N" H 8500 3560 60  0001 L CNN "Footprint Ref"
 F 14 " " H 8500 3470 60  0001 L CNN "PackageDescription"
 F 15 "100nF" H 8500 3380 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 8500 3290 60  0001 L CNN "Status"
+F 16 "None" H 8500 3290 60  0001 L CNN "Status"
 F 17 " " H 8500 3200 60  0001 L CNN "Status Comment"
 F 18 "25V" H 8500 3110 60  0001 L CNN "Voltage"
-F 19 "X7R" H 8500 3020 60  0001 L CNN "TC"
+F 19 "X5R" H 8500 3020 60  0001 L CNN "TC"
 F 20 "±10%" H 8500 2930 60  0001 L CNN "Tolerance"
-F 21 "SMD Multilayer Chip Ceramic Capacitor (High Dielectric Type) for Automotive / Industrial Applications" H 8500 2840 60  0001 L CNN "Part Description"
-F 22 "TAIYO YUDEN" H 8500 2750 60  0001 L CNN "Manufacturer"
-F 23 "TMK105B7104KVHF" H 8500 2660 60  0001 L CNN "Manufacturer Part Number"
+F 21 "SMD Multilayer Chip Ceramic Capacitor" H 8500 2840 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 8500 2750 60  0001 L CNN "Manufacturer"
+F 23 "CC0402_100NF_25V_10%_X5R" H 8500 2660 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 8500 2570 60  0001 L CNN "Case"
 F 25 "Yes" H 8500 2480 60  0001 L CNN "Mounted"
 F 26 "No" H 8500 2390 60  0001 L CNN "Socket"
@@ -5292,18 +4936,15 @@ F 27 "Yes" H 8500 2300 60  0001 L CNN "SMD"
 F 28 " " H 8500 2210 60  0001 L CNN "PressFit"
 F 29 "No" H 8500 2120 60  0001 L CNN "Sense"
 F 30 " " H 8500 2030 60  0001 L CNN "Sense Comment"
-F 31 "0.55mm" H 8500 1940 60  0001 L CNN "ComponentHeight"
-F 32 " " H 8500 1850 60  0001 L CNN "Manufacturer1 Example"
-F 33 " " H 8500 1760 60  0001 L CNN "Manufacturer1 Part Number"
-F 34 " " H 8500 1670 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 8500 1580 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 8500 1490 60  0001 L CNN "Author"
-F 37 "05/10/17 00:00:00" H 8500 1400 60  0001 L CNN "CreateDate"
-F 38 "05/10/17 00:00:00" H 8500 1310 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors.DbLib" H 8500 1220 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8500 1130 60  0001 L CNN "License"
-F 41 "Capacitors SMD" H 8500 4900 50  0001 C CNN "Database Table Name"
-F 42 "Capacitors SMD" H 8500 4900 50  0001 C CNN "Footprint Library"
+F 31 " " H 8500 1940 60  0001 L CNN "ComponentHeight"
+F 32 "Samsung" H 8500 1850 60  0001 L CNN "Manufacturer1 Example"
+F 33 "CL05A104KA5NNNC" H 8500 1760 60  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.55mm" H 8500 1670 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 8500 1490 60  0001 L CNN "Author"
+F 36 "12/10/13 00:00:00" H 8500 1400 60  0001 L CNN "CreateDate"
+F 37 "05/25/20 00:00:00" H 8500 1310 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 8500 1220 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8500 1130 60  0001 L CNN "License"
 	1    8500 4900
 	0    1    1    0   
 $EndComp
@@ -5328,50 +4969,49 @@ Wire Wire Line
 	8500 4900 8150 4900
 Connection ~ 8150 4900
 $Comp
-L Capacitors_SMD:CC0402_100NF_25V_10%_X7R_YUDEN_TMK105B7104KVHF C363
+L Capacitors_SMD:CC0402_100NF_25V_10%_X5R C363
 U 1 1 5D09E04F
 P 8700 3800
 F 0 "C363" V 8750 3800 50  0000 L CNN
-F 1 "CC0402_100NF_16V_10%_X5R" H 8700 3540 60  0001 L CNN
-F 2 "CAPC1005X55N" H 8700 2730 60  0001 L CNN
+F 1 "CC0402_100NF_25V_10%_X5R" H 8700 3540 60  0001 L CNN
+F 2 "Marble:CAPC1005X55N" H 8700 2730 60  0001 L CNN
 F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 8700 3360 60  0001 L CNN
 F 4 "100nF" V 8950 3800 50  0000 L CNN "~"
-F 5 "CC0402_100NF_16V_10%_X5R" H 8700 3270 60  0001 L CNN "Part Number"
+F 5 "CC0402_100NF_25V_10%_X5R" H 8700 3270 60  0001 L CNN "Part Number"
 F 6 "Capacitor - non polarized" H 8700 3180 60  0001 L CNN "Library Ref"
 F 7 "SchLib\\Capacitors.SchLib" H 8700 3090 60  0001 L CNN "Library Path"
-F 8 "=Value" H 8700 3000 60  0001 L CNN "Comment"
+F 8 "100nF" H 8700 3000 60  0001 L CNN "Comment"
 F 9 "Standard" H 8700 2910 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 8700 2820 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 8700 2640 60  0001 L CNN "Pin Count"
+F 11 "2" H 8700 2640 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 8700 2550 60  0001 L CNN "Footprint Path"
 F 13 "CAPC1005X55N" H 8700 2460 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 8700 2370 60  0001 L CNN "PackageDescription"
+F 14 " " H 8700 2370 60  0001 L CNN "PackageDescription"
 F 15 "100nF" H 8700 2280 60  0001 L CNN "Val"
 F 16 "None" H 8700 2190 60  0001 L CNN "Status"
-F 17 "~~" H 8700 2100 60  0001 L CNN "Status Comment"
-F 18 "16V" H 8700 2010 60  0001 L CNN "Voltage"
+F 17 " " H 8700 2100 60  0001 L CNN "Status Comment"
+F 18 "25V" H 8700 2010 60  0001 L CNN "Voltage"
 F 19 "X5R" H 8700 1920 60  0001 L CNN "TC"
 F 20 "±10%" H 8700 1830 60  0001 L CNN "Tolerance"
 F 21 "SMD Multilayer Chip Ceramic Capacitor" H 8700 1740 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 8700 1650 60  0001 L CNN "Manufacturer"
-F 23 "CC0402_100NF_16V_10%_X5R" H 8700 1560 60  0001 L CNN "Manufacturer Part Number"
+F 23 "CC0402_100NF_25V_10%_X5R" H 8700 1560 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 8700 1470 60  0001 L CNN "Case"
 F 25 "Yes" H 8700 1380 60  0001 L CNN "Mounted"
 F 26 "No" H 8700 1290 60  0001 L CNN "Socket"
 F 27 "Yes" H 8700 1200 60  0001 L CNN "SMD"
-F 28 "~~" H 8700 1110 60  0001 L CNN "PressFit"
+F 28 " " H 8700 1110 60  0001 L CNN "PressFit"
 F 29 "No" H 8700 1020 60  0001 L CNN "Sense"
-F 30 "~~" H 8700 930 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 8700 840 60  0001 L CNN "ComponentHeight"
-F 32 "MURATA" H 8700 750 60  0001 L CNN "Manufacturer1 Example"
-F 33 "GRM155R61C104KA88D" H 8700 660 60  0001 L CNN "Manufacturer1 Part Number"
+F 30 " " H 8700 930 60  0001 L CNN "Sense Comment"
+F 31 " " H 8700 840 60  0001 L CNN "ComponentHeight"
+F 32 "Samsung" H 8700 750 60  0001 L CNN "Manufacturer1 Example"
+F 33 "CL05A104KA5NNNC" H 8700 660 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "0.55mm" H 8700 570 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0402_X5R_MURATA_GRM.pdf" H 8700 480 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 8700 390 60  0001 L CNN "Author"
-F 37 "12/10/13 00:00:00" H 8700 300 60  0001 L CNN "CreateDate"
-F 38 "12/10/13 00:00:00" H 8700 210 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 8700 120 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8700 30  60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 8700 390 60  0001 L CNN "Author"
+F 36 "12/10/13 00:00:00" H 8700 300 60  0001 L CNN "CreateDate"
+F 37 "05/25/20 00:00:00" H 8700 210 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 8700 120 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8700 30  60  0001 L CNN "License"
 	1    8700 3800
 	0    1    1    0   
 $EndComp
@@ -5404,7 +5044,7 @@ AR Path="/5C16BF8E/5DB9B7E6/5D379B6E" Ref="#FLG0122"  Part="1"
 F 0 "#FLG0122" H 5800 4275 50  0001 C CNN
 F 1 "PWR_FLAG" H 5800 4373 50  0000 C CNN
 F 2 "" H 5800 4200 50  0001 C CNN
-F 3 "~" H 5800 4200 50  0001 C CNN
+F 3 " " H 5800 4200 50  0001 C CNN
 	1    5800 4200
 	1    0    0    -1  
 $EndComp
@@ -5417,7 +5057,7 @@ AR Path="/5C16BF8E/5DB9B7E6/5D6E1768" Ref="#FLG0142"  Part="1"
 F 0 "#FLG0142" H 8650 2275 50  0001 C CNN
 F 1 "PWR_FLAG" H 8650 2373 50  0000 C CNN
 F 2 "" H 8650 2200 50  0001 C CNN
-F 3 "~" H 8650 2200 50  0001 C CNN
+F 3 " " H 8650 2200 50  0001 C CNN
 	1    8650 2200
 	1    0    0    -1  
 $EndComp
@@ -5433,7 +5073,7 @@ AR Path="/5C16BF8E/5DB9B7E6/5D6FADC7" Ref="#FLG0143"  Part="1"
 F 0 "#FLG0143" H 8650 2975 50  0001 C CNN
 F 1 "PWR_FLAG" H 8650 3073 50  0000 C CNN
 F 2 "" H 8650 2900 50  0001 C CNN
-F 3 "~" H 8650 2900 50  0001 C CNN
+F 3 " " H 8650 2900 50  0001 C CNN
 	1    8650 2900
 	1    0    0    -1  
 $EndComp
@@ -5449,7 +5089,7 @@ AR Path="/5C16BF8E/5DB9B7E6/5D73017E" Ref="#FLG0144"  Part="1"
 F 0 "#FLG0144" H 8650 3675 50  0001 C CNN
 F 1 "PWR_FLAG" H 8650 3773 50  0000 C CNN
 F 2 "" H 8650 3600 50  0001 C CNN
-F 3 "~" H 8650 3600 50  0001 C CNN
+F 3 " " H 8650 3600 50  0001 C CNN
 	1    8650 3600
 	1    0    0    -1  
 $EndComp
@@ -5465,7 +5105,7 @@ AR Path="/5C16BF8E/5DB9B7E6/5D764766" Ref="#FLG0145"  Part="1"
 F 0 "#FLG0145" H 8650 4575 50  0001 C CNN
 F 1 "PWR_FLAG" H 8650 4673 50  0000 C CNN
 F 2 "" H 8650 4500 50  0001 C CNN
-F 3 "~" H 8650 4500 50  0001 C CNN
+F 3 " " H 8650 4500 50  0001 C CNN
 	1    8650 4500
 	-1   0    0    1   
 $EndComp
@@ -5489,7 +5129,7 @@ AR Path="/5C16BF8E/5DB9B7E6/5D81B466" Ref="#FLG0147"  Part="1"
 F 0 "#FLG0147" H 8400 3875 50  0001 C CNN
 F 1 "PWR_FLAG" H 8400 3950 50  0000 C CNN
 F 2 "" H 8400 3800 50  0001 C CNN
-F 3 "~" H 8400 3800 50  0001 C CNN
+F 3 " " H 8400 3800 50  0001 C CNN
 	1    8400 3800
 	1    0    0    -1  
 $EndComp
@@ -5505,7 +5145,7 @@ AR Path="/5C16BF8E/5DB9B7E6/5D839552" Ref="#FLG0148"  Part="1"
 F 0 "#FLG0148" H 13550 4225 50  0001 C CNN
 F 1 "PWR_FLAG" H 13550 4323 50  0000 C CNN
 F 2 "" H 13550 4150 50  0001 C CNN
-F 3 "~" H 13550 4150 50  0001 C CNN
+F 3 " " H 13550 4150 50  0001 C CNN
 	1    13550 4150
 	1    0    0    -1  
 $EndComp
@@ -5518,7 +5158,7 @@ AR Path="/5C16BF8E/5DB9B7E6/5D853B5F" Ref="#FLG0149"  Part="1"
 F 0 "#FLG0149" H 13550 2425 50  0001 C CNN
 F 1 "PWR_FLAG" H 13550 2523 50  0000 C CNN
 F 2 "" H 13550 2350 50  0001 C CNN
-F 3 "~" H 13550 2350 50  0001 C CNN
+F 3 " " H 13550 2350 50  0001 C CNN
 	1    13550 2350
 	1    0    0    -1  
 $EndComp
@@ -5531,7 +5171,7 @@ AR Path="/5C16BF8E/5DB9B7E6/5D86E226" Ref="#FLG0150"  Part="1"
 F 0 "#FLG0150" H 13550 7825 50  0001 C CNN
 F 1 "PWR_FLAG" H 13550 7923 50  0000 C CNN
 F 2 "" H 13550 7750 50  0001 C CNN
-F 3 "~" H 13550 7750 50  0001 C CNN
+F 3 " " H 13550 7750 50  0001 C CNN
 	1    13550 7750
 	1    0    0    -1  
 $EndComp
@@ -5544,7 +5184,7 @@ AR Path="/5C16BF8E/5DB9B7E6/5D888AA7" Ref="#FLG0151"  Part="1"
 F 0 "#FLG0151" H 13550 6025 50  0001 C CNN
 F 1 "PWR_FLAG" H 13550 6123 50  0000 C CNN
 F 2 "" H 13550 5950 50  0001 C CNN
-F 3 "~" H 13550 5950 50  0001 C CNN
+F 3 " " H 13550 5950 50  0001 C CNN
 	1    13550 5950
 	1    0    0    -1  
 $EndComp
@@ -5557,7 +5197,7 @@ AR Path="/5C16BF8E/5DB9B7E6/5D8A31C2" Ref="#FLG0152"  Part="1"
 F 0 "#FLG0152" H 14400 7825 50  0001 C CNN
 F 1 "PWR_FLAG" H 14400 7923 50  0000 C CNN
 F 2 "" H 14400 7750 50  0001 C CNN
-F 3 "~" H 14400 7750 50  0001 C CNN
+F 3 " " H 14400 7750 50  0001 C CNN
 	1    14400 7750
 	1    0    0    -1  
 $EndComp
@@ -5567,19 +5207,16 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5D8BEC35
-P 14400 4150
+P 14400 3800
 AR Path="/5BABAC65/5D8BEC35" Ref="#FLG?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5D8BEC35" Ref="#FLG0153"  Part="1" 
-F 0 "#FLG0153" H 14400 4225 50  0001 C CNN
-F 1 "PWR_FLAG" H 14400 4323 50  0000 C CNN
-F 2 "" H 14400 4150 50  0001 C CNN
-F 3 "~" H 14400 4150 50  0001 C CNN
-	1    14400 4150
+F 0 "#FLG0153" H 14400 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 14400 3973 50  0000 C CNN
+F 2 "" H 14400 3800 50  0001 C CNN
+F 3 " " H 14400 3800 50  0001 C CNN
+	1    14400 3800
 	1    0    0    -1  
 $EndComp
-Connection ~ 14400 4150
-Wire Wire Line
-	14400 4150 14700 4150
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5D8D9728
@@ -5589,7 +5226,7 @@ AR Path="/5C16BF8E/5DB9B7E6/5D8D9728" Ref="#FLG0154"  Part="1"
 F 0 "#FLG0154" H 14400 2425 50  0001 C CNN
 F 1 "PWR_FLAG" H 14400 2523 50  0000 C CNN
 F 2 "" H 14400 2350 50  0001 C CNN
-F 3 "~" H 14400 2350 50  0001 C CNN
+F 3 " " H 14400 2350 50  0001 C CNN
 	1    14400 2350
 	1    0    0    -1  
 $EndComp
@@ -5616,7 +5253,7 @@ F 10 "BAT165" H 4350 850 60  0001 L CNN "Device"
 F 11 "Small Outline Diode Flat Lead (SOD-323), 1.70mm W X 1.25mm L X 1.10mm H body,  IPC Medium Density" H 4350 670 60  0001 L CNN "PackageDescription"
 F 12 "40V" H 4350 580 60  0001 L CNN "Voltage"
 F 13 "750mA" H 4350 490 60  0001 L CNN "Power"
-F 14 "~~" H 4350 400 60  0001 L CNN "Status"
+F 14 " " H 4350 400 60  0001 L CNN "Status"
 F 15 "Medium Power AF Schottky Diode" H 4350 310 60  0001 L CNN "Part Description"
 F 16 "INFINEON" H 4350 220 60  0001 L CNN "Manufacturer"
 F 17 "BAT165AX" H 4350 130 60  0001 L CNN "Manufacturer Part Number"
@@ -5627,22 +5264,19 @@ F 21 "No" H 4350 -230 60  0001 L CNN "Socket"
 F 22 "Yes" H 4350 -320 60  0001 L CNN "SMD"
 F 23 "No" H 4350 -410 60  0001 L CNN "PressFit"
 F 24 "No" H 4350 -500 60  0001 L CNN "Sense"
-F 25 "~~" H 4350 -590 60  0001 L CNN "Sense Comment"
+F 25 " " H 4350 -590 60  0001 L CNN "Sense Comment"
 F 26 "No" H 4350 -680 60  0001 L CNN "Bonding"
-F 27 "~~" H 4350 -770 60  0001 L CNN "Status Comment"
+F 27 " " H 4350 -770 60  0001 L CNN "Status Comment"
 F 28 "1.1mm" H 4350 -860 60  0001 L CNN "ComponentHeight"
 F 29 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 4350 -950 60  0001 L CNN "Footprint Path"
 F 30 "SOD2512X110N" H 4350 -1040 60  0001 L CNN "Footprint Ref"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\BAT165.pdf" H 4350 -1130 60  0001 L CNN "HelpURL"
-F 32 "~~" H 4350 -1220 60  0001 L CNN "ComponentLink1URL"
-F 33 "~~" H 4350 -1310 60  0001 L CNN "ComponentLink1Description"
-F 34 "~~" H 4350 -1400 60  0001 L CNN "ComponentLink2URL"
-F 35 "~~" H 4350 -1490 60  0001 L CNN "ComponentLink2Description"
-F 36 "CERN DEM JLC" H 4350 -1580 60  0001 L CNN "Author"
-F 37 "11/12/14 00:00:00" H 4350 -1670 60  0001 L CNN "CreateDate"
-F 38 "11/12/14 00:00:00" H 4350 -1760 60  0001 L CNN "LatestRevisionDate"
-F 39 "ICs And Semiconductors SMD" H 4350 -1850 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4350 -1940 60  0001 L CNN "License"
+F 31 " " H 4350 -1310 60  0001 L CNN "ComponentLink1Description"
+F 32 " " H 4350 -1490 60  0001 L CNN "ComponentLink2Description"
+F 33 "CERN DEM JLC" H 4350 -1580 60  0001 L CNN "Author"
+F 34 "11/12/14 00:00:00" H 4350 -1670 60  0001 L CNN "CreateDate"
+F 35 "11/12/14 00:00:00" H 4350 -1760 60  0001 L CNN "LatestRevisionDate"
+F 36 "ICs And Semiconductors SMD" H 4350 -1850 60  0001 L CNN "Library Name"
+F 37 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4350 -1940 60  0001 L CNN "License"
 	1    4350 1900
 	0    -1   -1   0   
 $EndComp
@@ -5666,7 +5300,7 @@ F 10 "BAT165" H 4450 1550 60  0001 L CNN "Device"
 F 11 "Small Outline Diode Flat Lead (SOD-323), 1.70mm W X 1.25mm L X 1.10mm H body,  IPC Medium Density" H 4450 1370 60  0001 L CNN "PackageDescription"
 F 12 "40V" H 4450 1280 60  0001 L CNN "Voltage"
 F 13 "750mA" H 4450 1190 60  0001 L CNN "Power"
-F 14 "~~" H 4450 1100 60  0001 L CNN "Status"
+F 14 " " H 4450 1100 60  0001 L CNN "Status"
 F 15 "Medium Power AF Schottky Diode" H 4450 1010 60  0001 L CNN "Part Description"
 F 16 "INFINEON" H 4450 920 60  0001 L CNN "Manufacturer"
 F 17 "BAT165AX" H 4450 830 60  0001 L CNN "Manufacturer Part Number"
@@ -5677,22 +5311,19 @@ F 21 "No" H 4450 470 60  0001 L CNN "Socket"
 F 22 "Yes" H 4450 380 60  0001 L CNN "SMD"
 F 23 "No" H 4450 290 60  0001 L CNN "PressFit"
 F 24 "No" H 4450 200 60  0001 L CNN "Sense"
-F 25 "~~" H 4450 110 60  0001 L CNN "Sense Comment"
+F 25 " " H 4450 110 60  0001 L CNN "Sense Comment"
 F 26 "No" H 4450 20  60  0001 L CNN "Bonding"
-F 27 "~~" H 4450 -70 60  0001 L CNN "Status Comment"
+F 27 " " H 4450 -70 60  0001 L CNN "Status Comment"
 F 28 "1.1mm" H 4450 -160 60  0001 L CNN "ComponentHeight"
 F 29 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 4450 -250 60  0001 L CNN "Footprint Path"
 F 30 "SOD2512X110N" H 4450 -340 60  0001 L CNN "Footprint Ref"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\BAT165.pdf" H 4450 -430 60  0001 L CNN "HelpURL"
-F 32 "~~" H 4450 -520 60  0001 L CNN "ComponentLink1URL"
-F 33 "~~" H 4450 -610 60  0001 L CNN "ComponentLink1Description"
-F 34 "~~" H 4450 -700 60  0001 L CNN "ComponentLink2URL"
-F 35 "~~" H 4450 -790 60  0001 L CNN "ComponentLink2Description"
-F 36 "CERN DEM JLC" H 4450 -880 60  0001 L CNN "Author"
-F 37 "11/12/14 00:00:00" H 4450 -970 60  0001 L CNN "CreateDate"
-F 38 "11/12/14 00:00:00" H 4450 -1060 60  0001 L CNN "LatestRevisionDate"
-F 39 "ICs And Semiconductors SMD" H 4450 -1150 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4450 -1240 60  0001 L CNN "License"
+F 31 " " H 4450 -610 60  0001 L CNN "ComponentLink1Description"
+F 32 " " H 4450 -790 60  0001 L CNN "ComponentLink2Description"
+F 33 "CERN DEM JLC" H 4450 -880 60  0001 L CNN "Author"
+F 34 "11/12/14 00:00:00" H 4450 -970 60  0001 L CNN "CreateDate"
+F 35 "11/12/14 00:00:00" H 4450 -1060 60  0001 L CNN "LatestRevisionDate"
+F 36 "ICs And Semiconductors SMD" H 4450 -1150 60  0001 L CNN "Library Name"
+F 37 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4450 -1240 60  0001 L CNN "License"
 	1    4450 2600
 	1    0    0    1   
 $EndComp
@@ -5711,15 +5342,15 @@ F 7 "SchLib\\Inductors & Transformers.SchLib" H 13900 5060 60  0001 L CNN "Libra
 F 8 "=Value" H 13900 4970 60  0001 L CNN "Comment"
 F 9 "Standard" H 13900 4880 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 13900 4790 60  0001 L CNN "Component Type"
-F 11 "~~" H 13900 4610 60  0001 L CNN "PackageDescription"
-F 12 "2.0000000000000000e+00" H 13900 4520 60  0001 L CNN "Pin Count"
+F 11 " " H 13900 4610 60  0001 L CNN "PackageDescription"
+F 12 "2" H 13900 4520 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Inductors SMD.PcbLib" H 13900 4430 60  0001 L CNN "Footprint Path"
 F 14 "INDC4516X180N" H 13900 4340 60  0001 L CNN "Footprint Ref"
 F 15 "60R@100MHz" H 13900 4250 60  0001 L CNN "Val"
 F 16 "None" H 13900 4160 60  0001 L CNN "Status"
 F 17 "6A" H 13900 4070 60  0001 L CNN "Power"
 F 18 "0.01R" H 13900 3980 60  0001 L CNN "Resistance"
-F 19 "~~" H 13900 3890 60  0001 L CNN "Tolerance"
+F 19 " " H 13900 3890 60  0001 L CNN "Tolerance"
 F 20 "SMD EMI Suppression Chip Ferrite Bead (BLM41P Series)" H 13900 3800 60  0001 L CNN "Part Description"
 F 21 "MURATA" H 13900 3710 60  0001 L CNN "Manufacturer"
 F 22 "BLM41PG600SN1L" H 13900 3620 60  0001 L CNN "Manufacturer Part Number"
@@ -5727,16 +5358,15 @@ F 23 "1806" H 13900 3530 60  0001 L CNN "Case"
 F 24 "Yes" H 13900 3440 60  0001 L CNN "Mounted"
 F 25 "No" H 13900 3350 60  0001 L CNN "Socket"
 F 26 "Yes" H 13900 3260 60  0001 L CNN "SMD"
-F 27 "~~" H 13900 3170 60  0001 L CNN "Sense Comment"
+F 27 " " H 13900 3170 60  0001 L CNN "Sense Comment"
 F 28 "No" H 13900 3080 60  0001 L CNN "Sense"
-F 29 "~~" H 13900 2990 60  0001 L CNN "Status Comment"
+F 29 " " H 13900 2990 60  0001 L CNN "Status Comment"
 F 30 "1.8mm" H 13900 2900 60  0001 L CNN "ComponentHeight"
-F 31 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND1806_MURATA_BLM41P.pdf" H 13900 2810 60  0001 L CNN "HelpURL"
-F 32 "CERN DEM JLC" H 13900 2720 60  0001 L CNN "Author"
-F 33 "12/02/09 00:00:00" H 13900 2630 60  0001 L CNN "CreateDate"
-F 34 "12/02/09 00:00:00" H 13900 2540 60  0001 L CNN "LatestRevisionDate"
-F 35 "Inductors SMD" H 13900 2450 60  0001 L CNN "Library Name"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13900 2360 60  0001 L CNN "License"
+F 31 "CERN DEM JLC" H 13900 2720 60  0001 L CNN "Author"
+F 32 "12/02/09 00:00:00" H 13900 2630 60  0001 L CNN "CreateDate"
+F 33 "12/02/09 00:00:00" H 13900 2540 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 13900 2450 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13900 2360 60  0001 L CNN "License"
 	1    13900 5700
 	1    0    0    -1  
 $EndComp
@@ -5760,8 +5390,6 @@ Text Notes 12300 6650 0    50   ~ 0
 350uF LOAD on FPGA sheet
 Text Notes 12300 4800 0    50   ~ 0
 140uF LOAD on FPGA sheet
-Text Notes 12300 3000 0    50   ~ 0
-90uF LOAD on FPGA sheet
 Text Notes 10750 2850 0    50   ~ 0
 RDSon 7.2 mOhms
 Text Notes 10750 4650 0    50   ~ 0
@@ -5807,17 +5435,15 @@ F 29 "6.5mm" H 11900 3750 50  0001 L CNN "ComponentHeight"
 F 30 "CERN DEM JLC" H 11900 3675 50  0001 L CNN "Author"
 F 31 "02/22/17 00:00:00" H 11900 3600 50  0001 L CNN "CreateDate"
 F 32 "02/22/17 00:00:00" H 11900 3525 50  0001 L CNN "LatestRevisionDate"
-F 33 "Inductors SMD" H 11900 3450 50  0001 L CNN "Database Table Name"
-F 34 "Inductors & Transformers.DbLib" H 11900 3375 50  0001 L CNN "Library Name"
-F 35 "Inductors SMD" H 11900 3300 50  0001 L CNN "Footprint Library"
-F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 11900 3225 50  0001 L CNN "License"
+F 33 "Inductors & Transformers.DbLib" H 11900 3375 50  0001 L CNN "Library Name"
+F 34 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 11900 3225 50  0001 L CNN "License"
 	1    11900 5950
 	1    0    0    -1  
 $EndComp
 Text Notes 6350 9600 0    89   ~ 18
 1V05
 $Comp
-L AMC_FMC_Carrier-PcbDoc-rescue:VCCAUXIO2V0-power2-AMC_FMC_Carrier-PcbDoc-rescue #PWR?
+L marble_misc:VCCAUXIO2V0 #PWR?
 U 1 1 5E14CB07
 P 9100 7500
 AR Path="/5C907554/5C417BCB/5E14CB07" Ref="#PWR?"  Part="1" 
@@ -5867,11 +5493,8 @@ F 30 " " H 5300 5300 50  0001 L CNN "ComponentLink2Description"
 F 31 "CERN DEM JLC" H 5300 5225 50  0001 L CNN "Author"
 F 32 "02/02/10 00:00:00" H 5300 5150 50  0001 L CNN "CreateDate"
 F 33 "02/02/10 00:00:00" H 5300 5075 50  0001 L CNN "LatestRevisionDate"
-F 34 " " H 5300 5000 50  0001 L CNN "SCEM"
-F 35 "Regulators" H 5300 4925 50  0001 L CNN "Database Table Name"
-F 36 "ICs And Semiconductors.DbLib" H 5300 4850 50  0001 L CNN "Library Name"
-F 37 "ICs And Semiconductors SMD" H 5300 4775 50  0001 L CNN "Footprint Library"
-F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5300 4700 50  0001 L CNN "License"
+F 34 "ICs And Semiconductors.DbLib" H 5300 4850 50  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5300 4700 50  0001 L CNN "License"
 	1    5300 9150
 	1    0    0    -1  
 $EndComp
@@ -5881,55 +5504,6 @@ NoConn ~ 5100 10250
 NoConn ~ 5100 10350
 NoConn ~ 5100 10450
 NoConn ~ 5100 10550
-$Comp
-L Resistors_SMD:R0603_1K37_0.1%_0.063W_10PPM R195
-U 1 1 5E59EC50
-P 6650 9950
-F 0 "R195" V 6754 10010 50  0000 L CNN
-F 1 "R0603_1K37_0.1%_0.063W_10PPM" H 6650 9755 50  0001 L CNN
-F 2 "Resistors SMD:RESC1608X55N" H 6650 9680 50  0001 L CNN
-F 3 " " H 6650 9605 50  0001 L CNN
-F 4 "1k37" V 6845 10010 50  0000 L CNN "Val"
-F 5 "R0603_1K37_0.1%_0.063W_10PPM" H 6650 9530 50  0001 L CNN "Part Number"
-F 6 "Resistor - 0.1%" H 6650 9455 50  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 6650 9380 50  0001 L CNN "Library Path"
-F 8 "1k37" H 6650 9305 50  0001 L CNN "Comment"
-F 9 "Standard" H 6650 9230 50  0001 L CNN "Component Kind"
-F 10 "Standard" H 6650 9155 50  0001 L CNN "Component Type"
-F 11 " " H 6650 9080 50  0001 L CNN "PackageDescription"
-F 12 "2" H 6650 9005 50  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 6650 8930 50  0001 L CNN "Footprint Path"
-F 14 "RESC1608X55N" H 6650 8855 50  0001 L CNN "Footprint Ref"
-F 15 "Not Recommended" H 6650 8780 50  0001 L CNN "Status"
-F 16 "0.063W" H 6650 8705 50  0001 L CNN "Power"
-F 17 "±10ppm" H 6650 8630 50  0001 L CNN "TC"
-F 18 " " H 6650 8555 50  0001 L CNN "Voltage"
-F 19 "±0.1%" H 6650 8480 50  0001 L CNN "Tolerance"
-F 20 "Thin Film Chip Resistor" H 6650 8405 50  0001 L CNN "Part Description"
-F 21 "GENERIC" H 6650 8330 50  0001 L CNN "Manufacturer"
-F 22 "R0603_1K37_0.1%_0.063W_10PPM" H 6650 8255 50  0001 L CNN "Manufacturer Part Number"
-F 23 "0603" H 6650 8180 50  0001 L CNN "Case"
-F 24 "No" H 6650 8105 50  0001 L CNN "PressFit"
-F 25 "Yes" H 6650 8030 50  0001 L CNN "Mounted"
-F 26 " " H 6650 7955 50  0001 L CNN "Sense Comment"
-F 27 "No" H 6650 7880 50  0001 L CNN "Sense"
-F 28 " " H 6650 7805 50  0001 L CNN "Status Comment"
-F 29 "No" H 6650 7730 50  0001 L CNN "Socket"
-F 30 "Yes" H 6650 7655 50  0001 L CNN "SMD"
-F 31 " " H 6650 7580 50  0001 L CNN "ComponentHeight"
-F 32 "TYCO HOLSWORTHY" H 6650 7505 50  0001 L CNN "Manufacturer1 Example"
-F 33 "RN73C1J1K37BTDF" H 6650 7430 50  0001 L CNN "Manufacturer1 Part Number"
-F 34 "0.5mm" H 6650 7355 50  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "CERN DEM JLC" H 6650 7280 50  0001 L CNN "Author"
-F 36 "12/03/07 00:00:00" H 6650 7205 50  0001 L CNN "CreateDate"
-F 37 "03/13/08 00:00:00" H 6650 7130 50  0001 L CNN "LatestRevisionDate"
-F 38 "Resistors SMD" H 6650 7055 50  0001 L CNN "Database Table Name"
-F 39 "Resistors.DbLib" H 6650 6980 50  0001 L CNN "Library Name"
-F 40 "Resistors SMD" H 6650 6905 50  0001 L CNN "Footprint Library"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6650 6830 50  0001 L CNN "License"
-	1    6650 9950
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7000 9650 6650 9650
 Wire Wire Line
@@ -5946,58 +5520,6 @@ Wire Wire Line
 Connection ~ 6650 9650
 Wire Wire Line
 	6650 9650 6300 9650
-Wire Wire Line
-	6300 10250 6650 10250
-$Comp
-L Resistors_SMD:R0603_4K42_0.1%_0.063W_10PPM R196
-U 1 1 5E6647AB
-P 6650 10250
-F 0 "R196" V 6754 10310 50  0000 L CNN
-F 1 "R0603_4K42_0.1%_0.063W_10PPM" H 6650 10055 50  0001 L CNN
-F 2 "Resistors SMD:RESC1608X55N" H 6650 9980 50  0001 L CNN
-F 3 " " H 6650 9905 50  0001 L CNN
-F 4 "4k42" V 6845 10310 50  0000 L CNN "Val"
-F 5 "R0603_4K42_0.1%_0.063W_10PPM" H 6650 9830 50  0001 L CNN "Part Number"
-F 6 "Resistor - 0.1%" H 6650 9755 50  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 6650 9680 50  0001 L CNN "Library Path"
-F 8 "4k42" H 6650 9605 50  0001 L CNN "Comment"
-F 9 "Standard" H 6650 9530 50  0001 L CNN "Component Kind"
-F 10 "Standard" H 6650 9455 50  0001 L CNN "Component Type"
-F 11 " " H 6650 9380 50  0001 L CNN "PackageDescription"
-F 12 "2" H 6650 9305 50  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 6650 9230 50  0001 L CNN "Footprint Path"
-F 14 "RESC1608X55N" H 6650 9155 50  0001 L CNN "Footprint Ref"
-F 15 "Not Recommended" H 6650 9080 50  0001 L CNN "Status"
-F 16 "0.063W" H 6650 9005 50  0001 L CNN "Power"
-F 17 "±10ppm" H 6650 8930 50  0001 L CNN "TC"
-F 18 " " H 6650 8855 50  0001 L CNN "Voltage"
-F 19 "±0.1%" H 6650 8780 50  0001 L CNN "Tolerance"
-F 20 "Thin Film Chip Resistor" H 6650 8705 50  0001 L CNN "Part Description"
-F 21 "GENERIC" H 6650 8630 50  0001 L CNN "Manufacturer"
-F 22 "R0603_4K42_0.1%_0.063W_10PPM" H 6650 8555 50  0001 L CNN "Manufacturer Part Number"
-F 23 "0603" H 6650 8480 50  0001 L CNN "Case"
-F 24 "No" H 6650 8405 50  0001 L CNN "PressFit"
-F 25 "Yes" H 6650 8330 50  0001 L CNN "Mounted"
-F 26 " " H 6650 8255 50  0001 L CNN "Sense Comment"
-F 27 "No" H 6650 8180 50  0001 L CNN "Sense"
-F 28 " " H 6650 8105 50  0001 L CNN "Status Comment"
-F 29 "No" H 6650 8030 50  0001 L CNN "Socket"
-F 30 "Yes" H 6650 7955 50  0001 L CNN "SMD"
-F 31 " " H 6650 7880 50  0001 L CNN "ComponentHeight"
-F 32 "TYCO HOLSWORTHY" H 6650 7805 50  0001 L CNN "Manufacturer1 Example"
-F 33 "RN73C1J4K42BTDF" H 6650 7730 50  0001 L CNN "Manufacturer1 Part Number"
-F 34 "0.5mm" H 6650 7655 50  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "CERN DEM JLC" H 6650 7580 50  0001 L CNN "Author"
-F 36 "12/03/07 00:00:00" H 6650 7505 50  0001 L CNN "CreateDate"
-F 37 "03/13/08 00:00:00" H 6650 7430 50  0001 L CNN "LatestRevisionDate"
-F 38 "Resistors SMD" H 6650 7355 50  0001 L CNN "Database Table Name"
-F 39 "Resistors.DbLib" H 6650 7280 50  0001 L CNN "Library Name"
-F 40 "Resistors SMD" H 6650 7205 50  0001 L CNN "Footprint Library"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6650 7130 50  0001 L CNN "License"
-	1    6650 10250
-	0    1    1    0   
-$EndComp
-Connection ~ 6650 10250
 $Comp
 L power:GND #PWR?
 U 1 1 5E66A4F7
@@ -6071,11 +5593,8 @@ F 30 " " H 1600 5300 50  0001 L CNN "ComponentLink2Description"
 F 31 "CERN DEM JLC" H 1600 5225 50  0001 L CNN "Author"
 F 32 "02/02/10 00:00:00" H 1600 5150 50  0001 L CNN "CreateDate"
 F 33 "02/02/10 00:00:00" H 1600 5075 50  0001 L CNN "LatestRevisionDate"
-F 34 " " H 1600 5000 50  0001 L CNN "SCEM"
-F 35 "Regulators" H 1600 4925 50  0001 L CNN "Database Table Name"
-F 36 "ICs And Semiconductors.DbLib" H 1600 4850 50  0001 L CNN "Library Name"
-F 37 "ICs And Semiconductors SMD" H 1600 4775 50  0001 L CNN "Footprint Library"
-F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1600 4700 50  0001 L CNN "License"
+F 34 "ICs And Semiconductors.DbLib" H 1600 4850 50  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1600 4700 50  0001 L CNN "License"
 	1    1600 9150
 	1    0    0    -1  
 $EndComp
@@ -6096,8 +5615,6 @@ Wire Wire Line
 Connection ~ 2600 9850
 Wire Wire Line
 	2600 9850 2600 9950
-Wire Wire Line
-	2950 9950 2950 9650
 Connection ~ 2950 9650
 Wire Wire Line
 	2950 9650 2600 9650
@@ -6136,105 +5653,6 @@ $EndComp
 Wire Wire Line
 	2600 10450 2600 10550
 Connection ~ 2600 10550
-$Comp
-L Resistors_SMD:R0603_2K49_0.1%_0.063W_10PPM R168
-U 1 1 5E8486D3
-P 2950 9950
-F 0 "R168" V 3054 10010 50  0000 L CNN
-F 1 "R0603_2K49_0.1%_0.063W_10PPM" H 2950 9755 50  0001 L CNN
-F 2 "Resistors SMD:RESC1608X55N" H 2950 9680 50  0001 L CNN
-F 3 " " H 2950 9605 50  0001 L CNN
-F 4 "2k49" V 3145 10010 50  0000 L CNN "Val"
-F 5 "R0603_2K49_0.1%_0.063W_10PPM" H 2950 9530 50  0001 L CNN "Part Number"
-F 6 "Resistor - 0.1%" H 2950 9455 50  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 2950 9380 50  0001 L CNN "Library Path"
-F 8 "2k49" H 2950 9305 50  0001 L CNN "Comment"
-F 9 "Standard" H 2950 9230 50  0001 L CNN "Component Kind"
-F 10 "Standard" H 2950 9155 50  0001 L CNN "Component Type"
-F 11 " " H 2950 9080 50  0001 L CNN "PackageDescription"
-F 12 "2" H 2950 9005 50  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 2950 8930 50  0001 L CNN "Footprint Path"
-F 14 "RESC1608X55N" H 2950 8855 50  0001 L CNN "Footprint Ref"
-F 15 "Not Recommended" H 2950 8780 50  0001 L CNN "Status"
-F 16 "0.063W" H 2950 8705 50  0001 L CNN "Power"
-F 17 "±10ppm" H 2950 8630 50  0001 L CNN "TC"
-F 18 " " H 2950 8555 50  0001 L CNN "Voltage"
-F 19 "±0.1%" H 2950 8480 50  0001 L CNN "Tolerance"
-F 20 "Thin Film Chip Resistor" H 2950 8405 50  0001 L CNN "Part Description"
-F 21 "GENERIC" H 2950 8330 50  0001 L CNN "Manufacturer"
-F 22 "R0603_2K49_0.1%_0.063W_10PPM" H 2950 8255 50  0001 L CNN "Manufacturer Part Number"
-F 23 "0603" H 2950 8180 50  0001 L CNN "Case"
-F 24 "No" H 2950 8105 50  0001 L CNN "PressFit"
-F 25 "Yes" H 2950 8030 50  0001 L CNN "Mounted"
-F 26 " " H 2950 7955 50  0001 L CNN "Sense Comment"
-F 27 "No" H 2950 7880 50  0001 L CNN "Sense"
-F 28 " " H 2950 7805 50  0001 L CNN "Status Comment"
-F 29 "No" H 2950 7730 50  0001 L CNN "Socket"
-F 30 "Yes" H 2950 7655 50  0001 L CNN "SMD"
-F 31 " " H 2950 7580 50  0001 L CNN "ComponentHeight"
-F 32 "TYCO HOLSWORTHY" H 2950 7505 50  0001 L CNN "Manufacturer1 Example"
-F 33 "RN73C1J2K49BTDF" H 2950 7430 50  0001 L CNN "Manufacturer1 Part Number"
-F 34 "0.5mm" H 2950 7355 50  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "CERN DEM JLC" H 2950 7280 50  0001 L CNN "Author"
-F 36 "12/03/07 00:00:00" H 2950 7205 50  0001 L CNN "CreateDate"
-F 37 "03/13/08 00:00:00" H 2950 7130 50  0001 L CNN "LatestRevisionDate"
-F 38 "Resistors SMD" H 2950 7055 50  0001 L CNN "Database Table Name"
-F 39 "Resistors.DbLib" H 2950 6980 50  0001 L CNN "Library Name"
-F 40 "Resistors SMD" H 2950 6905 50  0001 L CNN "Footprint Library"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2950 6830 50  0001 L CNN "License"
-	1    2950 9950
-	0    1    1    0   
-$EndComp
-$Comp
-L Resistors_SMD:R0603_4K99_0.1%_0.063W_10PPM R189
-U 1 1 5E84C795
-P 2950 10250
-F 0 "R189" V 3054 10310 50  0000 L CNN
-F 1 "R0603_4K99_0.1%_0.063W_10PPM" H 2950 10055 50  0001 L CNN
-F 2 "Resistors SMD:RESC1608X55N" H 2950 9980 50  0001 L CNN
-F 3 " " H 2950 9905 50  0001 L CNN
-F 4 "4k99" V 3145 10310 50  0000 L CNN "Val"
-F 5 "R0603_4K99_0.1%_0.063W_10PPM" H 2950 9830 50  0001 L CNN "Part Number"
-F 6 "Resistor - 0.1%" H 2950 9755 50  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 2950 9680 50  0001 L CNN "Library Path"
-F 8 "4k99" H 2950 9605 50  0001 L CNN "Comment"
-F 9 "Standard" H 2950 9530 50  0001 L CNN "Component Kind"
-F 10 "Standard" H 2950 9455 50  0001 L CNN "Component Type"
-F 11 " " H 2950 9380 50  0001 L CNN "PackageDescription"
-F 12 "2" H 2950 9305 50  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 2950 9230 50  0001 L CNN "Footprint Path"
-F 14 "RESC1608X55N" H 2950 9155 50  0001 L CNN "Footprint Ref"
-F 15 "Not Recommended" H 2950 9080 50  0001 L CNN "Status"
-F 16 "0.063W" H 2950 9005 50  0001 L CNN "Power"
-F 17 "±10ppm" H 2950 8930 50  0001 L CNN "TC"
-F 18 " " H 2950 8855 50  0001 L CNN "Voltage"
-F 19 "±0.1%" H 2950 8780 50  0001 L CNN "Tolerance"
-F 20 "Thin Film Chip Resistor" H 2950 8705 50  0001 L CNN "Part Description"
-F 21 "GENERIC" H 2950 8630 50  0001 L CNN "Manufacturer"
-F 22 "R0603_4K99_0.1%_0.063W_10PPM" H 2950 8555 50  0001 L CNN "Manufacturer Part Number"
-F 23 "0603" H 2950 8480 50  0001 L CNN "Case"
-F 24 "No" H 2950 8405 50  0001 L CNN "PressFit"
-F 25 "Yes" H 2950 8330 50  0001 L CNN "Mounted"
-F 26 " " H 2950 8255 50  0001 L CNN "Sense Comment"
-F 27 "No" H 2950 8180 50  0001 L CNN "Sense"
-F 28 " " H 2950 8105 50  0001 L CNN "Status Comment"
-F 29 "No" H 2950 8030 50  0001 L CNN "Socket"
-F 30 "Yes" H 2950 7955 50  0001 L CNN "SMD"
-F 31 " " H 2950 7880 50  0001 L CNN "ComponentHeight"
-F 32 "TYCO HOLSWORTHY" H 2950 7805 50  0001 L CNN "Manufacturer1 Example"
-F 33 "RN73C1J4K99BTDF" H 2950 7730 50  0001 L CNN "Manufacturer1 Part Number"
-F 34 "0.5mm" H 2950 7655 50  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "CERN DEM JLC" H 2950 7580 50  0001 L CNN "Author"
-F 36 "12/03/07 00:00:00" H 2950 7505 50  0001 L CNN "CreateDate"
-F 37 "03/13/08 00:00:00" H 2950 7430 50  0001 L CNN "LatestRevisionDate"
-F 38 "Resistors SMD" H 2950 7355 50  0001 L CNN "Database Table Name"
-F 39 "Resistors.DbLib" H 2950 7280 50  0001 L CNN "Library Name"
-F 40 "Resistors SMD" H 2950 7205 50  0001 L CNN "Footprint Library"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2950 7130 50  0001 L CNN "License"
-	1    2950 10250
-	0    1    1    0   
-$EndComp
-Connection ~ 2950 10250
 Text Notes 2900 9400 0    89   ~ 18
 1V2
 $Comp
@@ -6278,10 +5696,8 @@ F 33 "0.55mm" H 7000 7080 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 7000 7005 50  0001 L CNN "Author"
 F 35 "10/25/12 00:00:00" H 7000 6930 50  0001 L CNN "CreateDate"
 F 36 "10/25/12 00:00:00" H 7000 6855 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 7000 6780 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 7000 6705 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 7000 6630 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 7000 6555 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 7000 6705 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 7000 6555 50  0001 L CNN "License"
 	1    7000 9650
 	0    1    1    0   
 $EndComp
@@ -6326,10 +5742,8 @@ F 33 "0.55mm" H 3300 7080 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 3300 7005 50  0001 L CNN "Author"
 F 35 "10/25/12 00:00:00" H 3300 6930 50  0001 L CNN "CreateDate"
 F 36 "10/25/12 00:00:00" H 3300 6855 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 3300 6780 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 3300 6705 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 3300 6630 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3300 6555 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 3300 6705 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3300 6555 50  0001 L CNN "License"
 	1    3300 9650
 	0    1    1    0   
 $EndComp
@@ -6374,10 +5788,8 @@ F 33 "0.55mm" H 4450 6680 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 4450 6605 50  0001 L CNN "Author"
 F 35 "10/25/12 00:00:00" H 4450 6530 50  0001 L CNN "CreateDate"
 F 36 "10/25/12 00:00:00" H 4450 6455 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 4450 6380 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 4450 6305 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 4450 6230 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4450 6155 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 4450 6305 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4450 6155 50  0001 L CNN "License"
 	1    4450 9250
 	0    1    1    0   
 $EndComp
@@ -6422,10 +5834,8 @@ F 33 "0.55mm" H 4450 7280 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 4450 7205 50  0001 L CNN "Author"
 F 35 "10/25/12 00:00:00" H 4450 7130 50  0001 L CNN "CreateDate"
 F 36 "10/25/12 00:00:00" H 4450 7055 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 4450 6980 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 4450 6905 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 4450 6830 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4450 6755 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 4450 6905 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4450 6755 50  0001 L CNN "License"
 	1    4450 9850
 	0    1    1    0   
 $EndComp
@@ -6470,10 +5880,8 @@ F 33 "0.55mm" H 750 7280 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 750 7205 50  0001 L CNN "Author"
 F 35 "10/25/12 00:00:00" H 750 7130 50  0001 L CNN "CreateDate"
 F 36 "10/25/12 00:00:00" H 750 7055 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 750 6980 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 750 6905 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 750 6830 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 750 6755 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 750 6905 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 750 6755 50  0001 L CNN "License"
 	1    750  9850
 	0    1    1    0   
 $EndComp
@@ -6518,10 +5926,8 @@ F 33 "0.55mm" H 750 6680 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 750 6605 50  0001 L CNN "Author"
 F 35 "10/25/12 00:00:00" H 750 6530 50  0001 L CNN "CreateDate"
 F 36 "10/25/12 00:00:00" H 750 6455 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 750 6380 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 750 6305 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 750 6230 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 750 6155 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 750 6305 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 750 6155 50  0001 L CNN "License"
 	1    750  9250
 	0    1    1    0   
 $EndComp
@@ -6672,10 +6078,8 @@ F 33 "0.55mm" H 4800 7380 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 4800 7305 50  0001 L CNN "Author"
 F 35 "12/03/07 00:00:00" H 4800 7230 50  0001 L CNN "CreateDate"
 F 36 "12/03/07 00:00:00" H 4800 7155 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 4800 7080 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 4800 7005 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 4800 6930 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4800 6855 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 4800 7005 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4800 6855 50  0001 L CNN "License"
 	1    4800 9950
 	0    1    1    0   
 $EndComp
@@ -6720,10 +6124,8 @@ F 33 "0.55mm" H 1100 7380 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 1100 7305 50  0001 L CNN "Author"
 F 35 "12/03/07 00:00:00" H 1100 7230 50  0001 L CNN "CreateDate"
 F 36 "12/03/07 00:00:00" H 1100 7155 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 1100 7080 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 1100 7005 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 1100 6930 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1100 6855 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 1100 7005 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1100 6855 50  0001 L CNN "License"
 	1    1100 9950
 	0    1    1    0   
 $EndComp
@@ -6832,13 +6234,15 @@ F 3 "" H 750 9250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AMC_FMC_Carrier-PcbDoc-rescue:TPS7A8901RTJT-powerMG2-AMC_FMC_Carrier-PcbDoc-rescue U47
+L marble_misc:TPS7A8901RTJT U47
 U 1 1 5E200024
 P 6700 6700
 F 0 "U47" H 7325 6825 50  0000 C CNN
 F 1 "TPS7A8901RTJT" H 7325 6734 50  0000 C CNN
 F 2 "ICs And Semiconductors SMD:QFN50P400X400X100-21N-S265" H 6700 6700 50  0001 C CNN
 F 3 "" H 6700 6700 50  0001 C CNN
+F 4 "TEXAS INSTRUMENTS" H 6700 6700 50  0001 C CNN "Manufacturer"
+F 5 "TPS7A8901RTJT" H 6700 6700 50  0001 C CNN "Manufacturer Part Number"
 	1    6700 6700
 	1    0    0    -1  
 $EndComp
@@ -6872,110 +6276,6 @@ Wire Wire Line
 	6700 8350 6700 8450
 Connection ~ 7950 6800
 $Comp
-L Resistors_SMD:R0603_15K_0.1%_0.063W_10PPM R70
-U 1 1 5E45CA5D
-P 8050 7500
-F 0 "R70" V 8154 7560 50  0000 L CNN
-F 1 "R0603_15K_0.1%_0.063W_10PPM" H 8050 7290 60  0001 L CNN
-F 2 "RESC1608X55N" H 8050 6480 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0603_Tyco_RN73.pdf" H 8050 7110 60  0001 L CNN
-F 4 "15k" V 8245 7560 50  0000 L CNN "~"
-F 5 "R0603_15K_0.1%_0.063W_10PPM" H 8050 7020 60  0001 L CNN "Part Number"
-F 6 "Resistor - 0.1%" H 8050 6930 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 8050 6840 60  0001 L CNN "Library Path"
-F 8 "=Value" H 8050 6750 60  0001 L CNN "Comment"
-F 9 "Standard" H 8050 6660 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 8050 6570 60  0001 L CNN "Component Type"
-F 11 "~~" H 8050 6390 60  0001 L CNN "PackageDescription"
-F 12 "2" H 8050 6300 60  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 8050 6210 60  0001 L CNN "Footprint Path"
-F 14 "RESC1608X55N" H 8050 6120 60  0001 L CNN "Footprint Ref"
-F 15 "15k" H 8050 6030 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 8050 5940 60  0001 L CNN "Status"
-F 17 "0.063W" H 8050 5850 60  0001 L CNN "Power"
-F 18 "±10ppm" H 8050 5760 60  0001 L CNN "TC"
-F 19 "~~" H 8050 5670 60  0001 L CNN "Voltage"
-F 20 "±0.1%" H 8050 5580 60  0001 L CNN "Tolerance"
-F 21 "Thin Film Chip Resistor" H 8050 5490 60  0001 L CNN "Part Description"
-F 22 "GENERIC" H 8050 5400 60  0001 L CNN "Manufacturer"
-F 23 "R0603_15K_0.1%_0.063W_10PPM" H 8050 5310 60  0001 L CNN "Manufacturer Part Number"
-F 24 "0603" H 8050 5220 60  0001 L CNN "Case"
-F 25 "No" H 8050 5130 60  0001 L CNN "PressFit"
-F 26 "Yes" H 8050 5040 60  0001 L CNN "Mounted"
-F 27 "~~" H 8050 4950 60  0001 L CNN "Sense Comment"
-F 28 "No" H 8050 4860 60  0001 L CNN "Sense"
-F 29 "~~" H 8050 4770 60  0001 L CNN "Status Comment"
-F 30 "No" H 8050 4680 60  0001 L CNN "Socket"
-F 31 "Yes" H 8050 4590 60  0001 L CNN "SMD"
-F 32 "~~" H 8050 4500 60  0001 L CNN "ComponentHeight"
-F 33 "TYCO HOLSWORTHY" H 8050 4410 60  0001 L CNN "Manufacturer1 Example"
-F 34 "RN73C1J15KBTDF" H 8050 4320 60  0001 L CNN "Manufacturer1 Part Number"
-F 35 "0.5mm" H 8050 4230 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0603_Tyco_RN73.pdf" H 8050 4140 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 8050 4050 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 8050 3960 60  0001 L CNN "CreateDate"
-F 39 "03/13/08 00:00:00" H 8050 3870 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 8050 3780 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8050 3690 60  0001 L CNN "License"
-	1    8050 7500
-	0    1    1    0   
-$EndComp
-Connection ~ 8050 7500
-Wire Wire Line
-	8050 7500 7950 7500
-$Comp
-L Resistors_SMD:R0402_10K_0.1%_0.063W_25PPM R71
-U 1 1 5E45FBAB
-P 8650 7800
-F 0 "R71" H 8800 7997 50  0000 C CNN
-F 1 "R0402_10K_0.1%_0.063W_25PPM" H 8650 7590 60  0001 L CNN
-F 2 "RESC1005X35N" H 8650 6780 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_TYCO_CPF.pdf" H 8650 7410 60  0001 L CNN
-F 4 "10k" H 8800 7906 50  0000 C CNN "~"
-F 5 "R0402_10K_0.1%_0.063W_25PPM" H 8650 7320 60  0001 L CNN "Part Number"
-F 6 "Resistor - 0.1%" H 8650 7230 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 8650 7140 60  0001 L CNN "Library Path"
-F 8 "=Value" H 8650 7050 60  0001 L CNN "Comment"
-F 9 "Standard" H 8650 6960 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 8650 6870 60  0001 L CNN "Component Type"
-F 11 "~~" H 8650 6690 60  0001 L CNN "PackageDescription"
-F 12 "2" H 8650 6600 60  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 8650 6510 60  0001 L CNN "Footprint Path"
-F 14 "RESC1005X35N" H 8650 6420 60  0001 L CNN "Footprint Ref"
-F 15 "10k" H 8650 6330 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 8650 6240 60  0001 L CNN "Status"
-F 17 "0.063W" H 8650 6150 60  0001 L CNN "Power"
-F 18 "±25ppm/°C" H 8650 6060 60  0001 L CNN "TC"
-F 19 "~~" H 8650 5970 60  0001 L CNN "Voltage"
-F 20 "±0.1%" H 8650 5880 60  0001 L CNN "Tolerance"
-F 21 "Thin Film Precision Resistor" H 8650 5790 60  0001 L CNN "Part Description"
-F 22 "GENERIC" H 8650 5700 60  0001 L CNN "Manufacturer"
-F 23 "R0402_10K_0.1%_0.063W_25PPM" H 8650 5610 60  0001 L CNN "Manufacturer Part Number"
-F 24 "0402" H 8650 5520 60  0001 L CNN "Case"
-F 25 "No" H 8650 5430 60  0001 L CNN "PressFit"
-F 26 "Yes" H 8650 5340 60  0001 L CNN "Mounted"
-F 27 "~~" H 8650 5250 60  0001 L CNN "Sense Comment"
-F 28 "No" H 8650 5160 60  0001 L CNN "Sense"
-F 29 "~~" H 8650 5070 60  0001 L CNN "Status Comment"
-F 30 "No" H 8650 4980 60  0001 L CNN "Socket"
-F 31 "Yes" H 8650 4890 60  0001 L CNN "SMD"
-F 32 "~~" H 8650 4800 60  0001 L CNN "ComponentHeight"
-F 33 "TE CONNECTIVITY" H 8650 4710 60  0001 L CNN "Manufacturer1 Example"
-F 34 "CPF0402B10KE1" H 8650 4620 60  0001 L CNN "Manufacturer1 Part Number"
-F 35 "0.35mm" H 8650 4530 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_TYCO_CPF.pdf" H 8650 4440 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JMW" H 8650 4350 60  0001 L CNN "Author"
-F 38 "09/22/15 00:00:00" H 8650 4260 60  0001 L CNN "CreateDate"
-F 39 "09/22/15 00:00:00" H 8650 4170 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 8650 4080 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8650 3990 60  0001 L CNN "License"
-	1    8650 7800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 7800 8050 7800
-Connection ~ 8050 7800
-$Comp
 L Capacitors_SMD:CC0603_22UF_6.3V_20%_X5R C72
 U 1 1 5E51833A
 P 9100 6800
@@ -6990,13 +6290,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 9100 6090 60  0001 L CNN "Library Path"
 F 8 "=Value" H 9100 6000 60  0001 L CNN "Comment"
 F 9 "Standard" H 9100 5910 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 9100 5820 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 9100 5640 60  0001 L CNN "Pin Count"
+F 11 "2" H 9100 5640 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 9100 5550 60  0001 L CNN "Footprint Path"
 F 13 "CAPC1709X100N" H 9100 5460 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 9100 5370 60  0001 L CNN "PackageDescription"
+F 14 " " H 9100 5370 60  0001 L CNN "PackageDescription"
 F 15 "22uF" H 9100 5280 60  0001 L CNN "Val"
 F 16 "None" H 9100 5190 60  0001 L CNN "Status"
-F 17 "~~" H 9100 5100 60  0001 L CNN "Status Comment"
+F 17 " " H 9100 5100 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 9100 5010 60  0001 L CNN "Voltage"
 F 19 "X5R" H 9100 4920 60  0001 L CNN "TC"
 F 20 "±20%" H 9100 4830 60  0001 L CNN "Tolerance"
@@ -7007,19 +6307,18 @@ F 24 "0603" H 9100 4470 60  0001 L CNN "Case"
 F 25 "Yes" H 9100 4380 60  0001 L CNN "Mounted"
 F 26 "No" H 9100 4290 60  0001 L CNN "Socket"
 F 27 "Yes" H 9100 4200 60  0001 L CNN "SMD"
-F 28 "~~" H 9100 4110 60  0001 L CNN "PressFit"
+F 28 " " H 9100 4110 60  0001 L CNN "PressFit"
 F 29 "No" H 9100 4020 60  0001 L CNN "Sense"
-F 30 "~~" H 9100 3930 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 9100 3840 60  0001 L CNN "ComponentHeight"
+F 30 " " H 9100 3930 60  0001 L CNN "Sense Comment"
+F 31 " " H 9100 3840 60  0001 L CNN "ComponentHeight"
 F 32 "TDK" H 9100 3750 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C1608X5R0J226M080AC" H 9100 3660 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1mm" H 9100 3570 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X5R_TDK_C.pdf" H 9100 3480 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 9100 3390 60  0001 L CNN "Author"
-F 37 "12/16/13 00:00:00" H 9100 3300 60  0001 L CNN "CreateDate"
-F 38 "09/13/16 00:00:00" H 9100 3210 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 9100 3120 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9100 3030 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 9100 3390 60  0001 L CNN "Author"
+F 36 "12/16/13 00:00:00" H 9100 3300 60  0001 L CNN "CreateDate"
+F 37 "09/13/16 00:00:00" H 9100 3210 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 9100 3120 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9100 3030 60  0001 L CNN "License"
 	1    9100 6800
 	0    1    1    0   
 $EndComp
@@ -7053,13 +6352,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 9100 6790 60  0001 L CNN "Library Path"
 F 8 "=Value" H 9100 6700 60  0001 L CNN "Comment"
 F 9 "Standard" H 9100 6610 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 9100 6520 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 9100 6340 60  0001 L CNN "Pin Count"
+F 11 "2" H 9100 6340 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 9100 6250 60  0001 L CNN "Footprint Path"
 F 13 "CAPC1709X100N" H 9100 6160 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 9100 6070 60  0001 L CNN "PackageDescription"
+F 14 " " H 9100 6070 60  0001 L CNN "PackageDescription"
 F 15 "22uF" H 9100 5980 60  0001 L CNN "Val"
 F 16 "None" H 9100 5890 60  0001 L CNN "Status"
-F 17 "~~" H 9100 5800 60  0001 L CNN "Status Comment"
+F 17 " " H 9100 5800 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 9100 5710 60  0001 L CNN "Voltage"
 F 19 "X5R" H 9100 5620 60  0001 L CNN "TC"
 F 20 "±20%" H 9100 5530 60  0001 L CNN "Tolerance"
@@ -7070,19 +6369,18 @@ F 24 "0603" H 9100 5170 60  0001 L CNN "Case"
 F 25 "Yes" H 9100 5080 60  0001 L CNN "Mounted"
 F 26 "No" H 9100 4990 60  0001 L CNN "Socket"
 F 27 "Yes" H 9100 4900 60  0001 L CNN "SMD"
-F 28 "~~" H 9100 4810 60  0001 L CNN "PressFit"
+F 28 " " H 9100 4810 60  0001 L CNN "PressFit"
 F 29 "No" H 9100 4720 60  0001 L CNN "Sense"
-F 30 "~~" H 9100 4630 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 9100 4540 60  0001 L CNN "ComponentHeight"
+F 30 " " H 9100 4630 60  0001 L CNN "Sense Comment"
+F 31 " " H 9100 4540 60  0001 L CNN "ComponentHeight"
 F 32 "TDK" H 9100 4450 60  0001 L CNN "Manufacturer1 Example"
 F 33 "C1608X5R0J226M080AC" H 9100 4360 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "1mm" H 9100 4270 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X5R_TDK_C.pdf" H 9100 4180 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 9100 4090 60  0001 L CNN "Author"
-F 37 "12/16/13 00:00:00" H 9100 4000 60  0001 L CNN "CreateDate"
-F 38 "09/13/16 00:00:00" H 9100 3910 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 9100 3820 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9100 3730 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 9100 4090 60  0001 L CNN "Author"
+F 36 "12/16/13 00:00:00" H 9100 4000 60  0001 L CNN "CreateDate"
+F 37 "09/13/16 00:00:00" H 9100 3910 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 9100 3820 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9100 3730 60  0001 L CNN "License"
 	1    9100 7500
 	0    1    1    0   
 $EndComp
@@ -7125,13 +6423,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 8300 6790 60  0001 L CNN "Library Path"
 F 8 "=Value" H 8300 6700 60  0001 L CNN "Comment"
 F 9 "Standard" H 8300 6610 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 8300 6520 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 8300 6340 60  0001 L CNN "Pin Count"
+F 11 "2" H 8300 6340 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 8300 6250 60  0001 L CNN "Footprint Path"
 F 13 "CAPC0603X33N" H 8300 6160 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 8300 6070 60  0001 L CNN "PackageDescription"
+F 14 " " H 8300 6070 60  0001 L CNN "PackageDescription"
 F 15 "100nF" H 8300 5980 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 8300 5890 60  0001 L CNN "Status"
-F 17 "~~" H 8300 5800 60  0001 L CNN "Status Comment"
+F 17 " " H 8300 5800 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 8300 5710 60  0001 L CNN "Voltage"
 F 19 "X5R" H 8300 5620 60  0001 L CNN "TC"
 F 20 "±10%" H 8300 5530 60  0001 L CNN "Tolerance"
@@ -7142,19 +6440,18 @@ F 24 "0201" H 8300 5170 60  0001 L CNN "Case"
 F 25 "Yes" H 8300 5080 60  0001 L CNN "Mounted"
 F 26 "No" H 8300 4990 60  0001 L CNN "Socket"
 F 27 "Yes" H 8300 4900 60  0001 L CNN "SMD"
-F 28 "~~" H 8300 4810 60  0001 L CNN "PressFit"
+F 28 " " H 8300 4810 60  0001 L CNN "PressFit"
 F 29 "No" H 8300 4720 60  0001 L CNN "Sense"
-F 30 "~~" H 8300 4630 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 8300 4540 60  0001 L CNN "ComponentHeight"
+F 30 " " H 8300 4630 60  0001 L CNN "Sense Comment"
+F 31 " " H 8300 4540 60  0001 L CNN "ComponentHeight"
 F 32 "AVX" H 8300 4450 60  0001 L CNN "Manufacturer1 Example"
 F 33 "02016D104KAT2A" H 8300 4360 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "0.33mm" H 8300 4270 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0201_X5R_AVX.pdf" H 8300 4180 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 8300 4090 60  0001 L CNN "Author"
-F 37 "12/03/07 00:00:00" H 8300 4000 60  0001 L CNN "CreateDate"
-F 38 "12/03/07 00:00:00" H 8300 3910 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 8300 3820 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8300 3730 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 8300 4090 60  0001 L CNN "Author"
+F 36 "12/03/07 00:00:00" H 8300 4000 60  0001 L CNN "CreateDate"
+F 37 "12/03/07 00:00:00" H 8300 3910 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 8300 3820 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8300 3730 60  0001 L CNN "License"
 	1    8300 7500
 	0    1    1    0   
 $EndComp
@@ -7179,13 +6476,13 @@ F 7 "SchLib\\Capacitors.SchLib" H 8350 6090 60  0001 L CNN "Library Path"
 F 8 "=Value" H 8350 6000 60  0001 L CNN "Comment"
 F 9 "Standard" H 8350 5910 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 8350 5820 60  0001 L CNN "Component Type"
-F 11 "2.0000000000000000e+00" H 8350 5640 60  0001 L CNN "Pin Count"
+F 11 "2" H 8350 5640 60  0001 L CNN "Pin Count"
 F 12 "PcbLib\\Capacitors SMD.PcbLib" H 8350 5550 60  0001 L CNN "Footprint Path"
 F 13 "CAPC0603X33N" H 8350 5460 60  0001 L CNN "Footprint Ref"
-F 14 "~~" H 8350 5370 60  0001 L CNN "PackageDescription"
+F 14 " " H 8350 5370 60  0001 L CNN "PackageDescription"
 F 15 "100nF" H 8350 5280 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 8350 5190 60  0001 L CNN "Status"
-F 17 "~~" H 8350 5100 60  0001 L CNN "Status Comment"
+F 17 " " H 8350 5100 60  0001 L CNN "Status Comment"
 F 18 "6.3V" H 8350 5010 60  0001 L CNN "Voltage"
 F 19 "X5R" H 8350 4920 60  0001 L CNN "TC"
 F 20 "±10%" H 8350 4830 60  0001 L CNN "Tolerance"
@@ -7196,39 +6493,30 @@ F 24 "0201" H 8350 4470 60  0001 L CNN "Case"
 F 25 "Yes" H 8350 4380 60  0001 L CNN "Mounted"
 F 26 "No" H 8350 4290 60  0001 L CNN "Socket"
 F 27 "Yes" H 8350 4200 60  0001 L CNN "SMD"
-F 28 "~~" H 8350 4110 60  0001 L CNN "PressFit"
+F 28 " " H 8350 4110 60  0001 L CNN "PressFit"
 F 29 "No" H 8350 4020 60  0001 L CNN "Sense"
-F 30 "~~" H 8350 3930 60  0001 L CNN "Sense Comment"
-F 31 "~~" H 8350 3840 60  0001 L CNN "ComponentHeight"
+F 30 " " H 8350 3930 60  0001 L CNN "Sense Comment"
+F 31 " " H 8350 3840 60  0001 L CNN "ComponentHeight"
 F 32 "AVX" H 8350 3750 60  0001 L CNN "Manufacturer1 Example"
 F 33 "02016D104KAT2A" H 8350 3660 60  0001 L CNN "Manufacturer1 Part Number"
 F 34 "0.33mm" H 8350 3570 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0201_X5R_AVX.pdf" H 8350 3480 60  0001 L CNN "HelpURL"
-F 36 "CERN DEM JLC" H 8350 3390 60  0001 L CNN "Author"
-F 37 "12/03/07 00:00:00" H 8350 3300 60  0001 L CNN "CreateDate"
-F 38 "12/03/07 00:00:00" H 8350 3210 60  0001 L CNN "LatestRevisionDate"
-F 39 "Capacitors SMD" H 8350 3120 60  0001 L CNN "Library Name"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8350 3030 60  0001 L CNN "License"
+F 35 "CERN DEM JLC" H 8350 3390 60  0001 L CNN "Author"
+F 36 "12/03/07 00:00:00" H 8350 3300 60  0001 L CNN "CreateDate"
+F 37 "12/03/07 00:00:00" H 8350 3210 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 8350 3120 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8350 3030 60  0001 L CNN "License"
 	1    8350 6800
 	0    1    1    0   
 $EndComp
 Connection ~ 8350 6800
-Wire Wire Line
-	8350 6800 8450 6800
 Connection ~ 8350 7100
 Wire Wire Line
 	8350 7100 8650 7100
 Connection ~ 9100 7500
 Wire Wire Line
-	8050 7500 8300 7500
-Wire Wire Line
 	8950 7800 9100 7800
 Connection ~ 9100 7800
 Connection ~ 8300 7500
-Wire Wire Line
-	8300 7500 9100 7500
-Wire Wire Line
-	8050 7800 8300 7800
 Connection ~ 8300 7800
 Wire Wire Line
 	8300 7800 8650 7800
@@ -7273,10 +6561,8 @@ F 33 "0.55mm" H 6600 4680 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 6600 4605 50  0001 L CNN "Author"
 F 35 "10/25/12 00:00:00" H 6600 4530 50  0001 L CNN "CreateDate"
 F 36 "10/25/12 00:00:00" H 6600 4455 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 6600 4380 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 6600 4305 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 6600 4230 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6600 4155 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 6600 4305 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6600 4155 50  0001 L CNN "License"
 	1    6600 7250
 	-1   0    0    1   
 $EndComp
@@ -7321,10 +6607,8 @@ F 33 "0.55mm" H 6300 5380 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 6300 5305 50  0001 L CNN "Author"
 F 35 "10/25/12 00:00:00" H 6300 5230 50  0001 L CNN "CreateDate"
 F 36 "10/25/12 00:00:00" H 6300 5155 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 6300 5080 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 6300 5005 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 6300 4930 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6300 4855 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 6300 5005 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6300 4855 50  0001 L CNN "License"
 	1    6300 7950
 	1    0    0    -1  
 $EndComp
@@ -7367,7 +6651,7 @@ Wire Wire Line
 	6700 7600 6700 7500
 Connection ~ 6700 7500
 Wire Wire Line
-	5950 6800 6400 6800
+	5950 6800 6350 6800
 Wire Wire Line
 	6700 6900 6700 6800
 Connection ~ 6700 6800
@@ -7427,10 +6711,8 @@ F 33 "0.55mm" H 5950 4230 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 5950 4155 50  0001 L CNN "Author"
 F 35 "10/25/12 00:00:00" H 5950 4080 50  0001 L CNN "CreateDate"
 F 36 "10/25/12 00:00:00" H 5950 4005 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 5950 3930 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 5950 3855 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 5950 3780 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5950 3705 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 5950 3855 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5950 3705 50  0001 L CNN "License"
 	1    5950 6800
 	0    1    1    0   
 $EndComp
@@ -7490,10 +6772,8 @@ F 33 "0.55mm" H 5950 4930 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 5950 4855 50  0001 L CNN "Author"
 F 35 "10/25/12 00:00:00" H 5950 4780 50  0001 L CNN "CreateDate"
 F 36 "10/25/12 00:00:00" H 5950 4705 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 5950 4630 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 5950 4555 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 5950 4480 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5950 4405 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 5950 4555 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5950 4405 50  0001 L CNN "License"
 	1    5950 7500
 	0    1    1    0   
 $EndComp
@@ -7557,57 +6837,55 @@ Connection ~ 5950 6800
 Wire Wire Line
 	14400 8250 14650 8250
 $Comp
-L Resistors_SMD:R0402_0R_JUMPER R72
+L Resistors_SMD:R0402_100K_1%_0.0625W_100PPM R72
 U 1 1 5ED0FBAC
-P 6400 6800
-F 0 "R72" V 6504 6860 50  0000 L CNN
-F 1 "R0402_0R_JUMPER" H 6400 6590 60  0001 L CNN
-F 2 "RESC1005X40N" H 6400 5780 60  0001 L CNN
-F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 6400 6410 60  0001 L CNN
-F 4 "0" V 6595 6860 50  0000 L CNN "~"
-F 5 "R0402_0R_JUMPER" H 6400 6320 60  0001 L CNN "Part Number"
-F 6 "Resistor" H 6400 6230 60  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 6400 6140 60  0001 L CNN "Library Path"
-F 8 "=Value" H 6400 6050 60  0001 L CNN "Comment"
-F 9 "Standard" H 6400 5960 60  0001 L CNN "Component Kind"
-F 10 "Standard" H 6400 5870 60  0001 L CNN "Component Type"
-F 11 "~~" H 6400 5690 60  0001 L CNN "PackageDescription"
-F 12 "2" H 6400 5600 60  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 6400 5510 60  0001 L CNN "Footprint Path"
-F 14 "RESC1005X40N" H 6400 5420 60  0001 L CNN "Footprint Ref"
-F 15 "0" H 6400 5330 60  0001 L CNN "Val"
-F 16 "Not Recommended" H 6400 5240 60  0001 L CNN "Status"
-F 17 "~~" H 6400 5150 60  0001 L CNN "Power"
-F 18 "~~" H 6400 5060 60  0001 L CNN "TC"
-F 19 "~~" H 6400 4970 60  0001 L CNN "Voltage"
-F 20 "~~" H 6400 4880 60  0001 L CNN "Tolerance"
-F 21 "1A (0.05R Max DC Resistance) Zero Ohm Jumper" H 6400 4790 60  0001 L CNN "Part Description"
-F 22 "GENERIC" H 6400 4700 60  0001 L CNN "Manufacturer"
-F 23 "R0402_0R_JUMPER" H 6400 4610 60  0001 L CNN "Manufacturer Part Number"
-F 24 "0402" H 6400 4520 60  0001 L CNN "Case"
-F 25 "No" H 6400 4430 60  0001 L CNN "PressFit"
-F 26 "Yes" H 6400 4340 60  0001 L CNN "Mounted"
-F 27 "~~" H 6400 4250 60  0001 L CNN "Sense Comment"
-F 28 "No" H 6400 4160 60  0001 L CNN "Sense"
-F 29 "~~" H 6400 4070 60  0001 L CNN "Status Comment"
-F 30 "No" H 6400 3980 60  0001 L CNN "Socket"
-F 31 "Yes" H 6400 3890 60  0001 L CNN "SMD"
-F 32 "~~" H 6400 3800 60  0001 L CNN "ComponentHeight"
-F 33 "YAGEO PHYCOMP" H 6400 3710 60  0001 L CNN "Manufacturer1 Example"
-F 34 "232270591001L" H 6400 3620 60  0001 L CNN "Manufacturer1 Part Number"
-F 35 "0.4mm" H 6400 3530 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 6400 3440 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 6400 3350 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 6400 3260 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 6400 3170 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 6400 3080 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6400 2990 60  0001 L CNN "License"
-	1    6400 6800
+P 6350 6800
+F 0 "R72" V 6400 6850 50  0000 L CNN
+F 1 "R0402_100K_1%_0.0625W_100PPM" H 6350 6590 60  0001 L CNN
+F 2 "Resistors SMD:RESC1005X40N" H 6350 5780 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 6350 6410 60  0001 L CNN
+F 4 "100k" V 6500 6850 50  0000 L CNN "~"
+F 5 "R0402_100K_1%_0.0625W_100PPM" H 6350 6320 60  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 6350 6230 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 6350 6140 60  0001 L CNN "Library Path"
+F 8 "100k" H 6350 6050 60  0001 L CNN "Comment"
+F 9 "Standard" H 6350 5960 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 6350 5870 60  0001 L CNN "Component Type"
+F 11 " " H 6350 5690 60  0001 L CNN "PackageDescription"
+F 12 "2" H 6350 5600 60  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 6350 5510 60  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 6350 5420 60  0001 L CNN "Footprint Ref"
+F 15 "100k" H 6350 5330 60  0001 L CNN "Val"
+F 16 "Not Recommended" H 6350 5240 60  0001 L CNN "Status"
+F 17 "0.0625W" H 6350 5150 60  0001 L CNN "Power"
+F 18 "±100ppm/°C" H 6350 5060 60  0001 L CNN "TC"
+F 19 " " H 6350 4970 60  0001 L CNN "Voltage"
+F 20 "±1%" H 6350 4880 60  0001 L CNN "Tolerance"
+F 21 "General Purpose Thick Film Chip Resistor" H 6350 4790 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 6350 4700 60  0001 L CNN "Manufacturer"
+F 23 "R0402_100K_1%_0.0625W_100PPM" H 6350 4610 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0402" H 6350 4520 60  0001 L CNN "Case"
+F 25 "No" H 6350 4430 60  0001 L CNN "PressFit"
+F 26 "Yes" H 6350 4340 60  0001 L CNN "Mounted"
+F 27 " " H 6350 4250 60  0001 L CNN "Sense Comment"
+F 28 "No" H 6350 4160 60  0001 L CNN "Sense"
+F 29 " " H 6350 4070 60  0001 L CNN "Status Comment"
+F 30 "No" H 6350 3980 60  0001 L CNN "Socket"
+F 31 "Yes" H 6350 3890 60  0001 L CNN "SMD"
+F 32 " " H 6350 3800 60  0001 L CNN "ComponentHeight"
+F 33 "YAGEO PHYCOMP" H 6350 3710 60  0001 L CNN "Manufacturer1 Example"
+F 34 "232270671004L" H 6350 3620 60  0001 L CNN "Manufacturer1 Part Number"
+F 35 "0.4mm" H 6350 3530 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 36 "CERN DEM JLC" H 6350 3350 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 6350 3260 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 6350 3170 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors.DbLib" H 6350 3080 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6350 2990 60  0001 L CNN "License"
+F 41 "dnf" H 6500 6700 50  0000 C CNN "config"
+F 42 "dnf" V 6350 6800 50  0001 C CNN "config"
+	1    6350 6800
 	0    1    1    0   
 $EndComp
-Connection ~ 6400 6800
-Wire Wire Line
-	6400 6800 6700 6800
 $Comp
 L Resistors_SMD:R0402_0R_JUMPER R73
 U 1 1 5ED18B44
@@ -7623,37 +6901,36 @@ F 7 "SchLib\\Resistors.SchLib" H 6400 6840 60  0001 L CNN "Library Path"
 F 8 "=Value" H 6400 6750 60  0001 L CNN "Comment"
 F 9 "Standard" H 6400 6660 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 6400 6570 60  0001 L CNN "Component Type"
-F 11 "~~" H 6400 6390 60  0001 L CNN "PackageDescription"
+F 11 " " H 6400 6390 60  0001 L CNN "PackageDescription"
 F 12 "2" H 6400 6300 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 6400 6210 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 6400 6120 60  0001 L CNN "Footprint Ref"
 F 15 "0" H 6400 6030 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 6400 5940 60  0001 L CNN "Status"
-F 17 "~~" H 6400 5850 60  0001 L CNN "Power"
-F 18 "~~" H 6400 5760 60  0001 L CNN "TC"
-F 19 "~~" H 6400 5670 60  0001 L CNN "Voltage"
-F 20 "~~" H 6400 5580 60  0001 L CNN "Tolerance"
+F 17 " " H 6400 5850 60  0001 L CNN "Power"
+F 18 " " H 6400 5760 60  0001 L CNN "TC"
+F 19 " " H 6400 5670 60  0001 L CNN "Voltage"
+F 20 " " H 6400 5580 60  0001 L CNN "Tolerance"
 F 21 "1A (0.05R Max DC Resistance) Zero Ohm Jumper" H 6400 5490 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 6400 5400 60  0001 L CNN "Manufacturer"
 F 23 "R0402_0R_JUMPER" H 6400 5310 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 6400 5220 60  0001 L CNN "Case"
 F 25 "No" H 6400 5130 60  0001 L CNN "PressFit"
 F 26 "Yes" H 6400 5040 60  0001 L CNN "Mounted"
-F 27 "~~" H 6400 4950 60  0001 L CNN "Sense Comment"
+F 27 " " H 6400 4950 60  0001 L CNN "Sense Comment"
 F 28 "No" H 6400 4860 60  0001 L CNN "Sense"
-F 29 "~~" H 6400 4770 60  0001 L CNN "Status Comment"
+F 29 " " H 6400 4770 60  0001 L CNN "Status Comment"
 F 30 "No" H 6400 4680 60  0001 L CNN "Socket"
 F 31 "Yes" H 6400 4590 60  0001 L CNN "SMD"
-F 32 "~~" H 6400 4500 60  0001 L CNN "ComponentHeight"
+F 32 " " H 6400 4500 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 6400 4410 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270591001L" H 6400 4320 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 6400 4230 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 6400 4140 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 6400 4050 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 6400 3960 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 6400 3870 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 6400 3780 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6400 3690 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 6400 4050 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 6400 3960 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 6400 3870 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 6400 3780 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6400 3690 60  0001 L CNN "License"
 	1    6400 7500
 	0    1    1    0   
 $EndComp
@@ -7666,12 +6943,6 @@ Wire Wire Line
 	6550 7800 6550 7750
 Wire Wire Line
 	6550 7750 6700 7750
-Wire Wire Line
-	6400 7100 6550 7100
-Wire Wire Line
-	6550 7100 6550 7050
-Wire Wire Line
-	6550 7050 6700 7050
 $Comp
 L Resistors_SMD:R0402_0R_JUMPER R74
 U 1 1 5FD9EE72
@@ -7687,37 +6958,36 @@ F 7 "SchLib\\Resistors.SchLib" H 1150 8690 60  0001 L CNN "Library Path"
 F 8 "=Value" H 1150 8600 60  0001 L CNN "Comment"
 F 9 "Standard" H 1150 8510 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 1150 8420 60  0001 L CNN "Component Type"
-F 11 "~~" H 1150 8240 60  0001 L CNN "PackageDescription"
+F 11 " " H 1150 8240 60  0001 L CNN "PackageDescription"
 F 12 "2" H 1150 8150 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 1150 8060 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 1150 7970 60  0001 L CNN "Footprint Ref"
 F 15 "0" H 1150 7880 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 1150 7790 60  0001 L CNN "Status"
-F 17 "~~" H 1150 7700 60  0001 L CNN "Power"
-F 18 "~~" H 1150 7610 60  0001 L CNN "TC"
-F 19 "~~" H 1150 7520 60  0001 L CNN "Voltage"
-F 20 "~~" H 1150 7430 60  0001 L CNN "Tolerance"
+F 17 " " H 1150 7700 60  0001 L CNN "Power"
+F 18 " " H 1150 7610 60  0001 L CNN "TC"
+F 19 " " H 1150 7520 60  0001 L CNN "Voltage"
+F 20 " " H 1150 7430 60  0001 L CNN "Tolerance"
 F 21 "1A (0.05R Max DC Resistance) Zero Ohm Jumper" H 1150 7340 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 1150 7250 60  0001 L CNN "Manufacturer"
 F 23 "R0402_0R_JUMPER" H 1150 7160 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 1150 7070 60  0001 L CNN "Case"
 F 25 "No" H 1150 6980 60  0001 L CNN "PressFit"
 F 26 "Yes" H 1150 6890 60  0001 L CNN "Mounted"
-F 27 "~~" H 1150 6800 60  0001 L CNN "Sense Comment"
+F 27 " " H 1150 6800 60  0001 L CNN "Sense Comment"
 F 28 "No" H 1150 6710 60  0001 L CNN "Sense"
-F 29 "~~" H 1150 6620 60  0001 L CNN "Status Comment"
+F 29 " " H 1150 6620 60  0001 L CNN "Status Comment"
 F 30 "No" H 1150 6530 60  0001 L CNN "Socket"
 F 31 "Yes" H 1150 6440 60  0001 L CNN "SMD"
-F 32 "~~" H 1150 6350 60  0001 L CNN "ComponentHeight"
+F 32 " " H 1150 6350 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 1150 6260 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270591001L" H 1150 6170 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 1150 6080 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 1150 5990 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 1150 5900 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 1150 5810 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 1150 5720 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 1150 5630 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1150 5540 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 1150 5900 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 1150 5810 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 1150 5720 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 1150 5630 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 1150 5540 60  0001 L CNN "License"
 	1    1150 9350
 	0    1    1    0   
 $EndComp
@@ -7736,37 +7006,36 @@ F 7 "SchLib\\Resistors.SchLib" H 4850 8690 60  0001 L CNN "Library Path"
 F 8 "=Value" H 4850 8600 60  0001 L CNN "Comment"
 F 9 "Standard" H 4850 8510 60  0001 L CNN "Component Kind"
 F 10 "Standard" H 4850 8420 60  0001 L CNN "Component Type"
-F 11 "~~" H 4850 8240 60  0001 L CNN "PackageDescription"
+F 11 " " H 4850 8240 60  0001 L CNN "PackageDescription"
 F 12 "2" H 4850 8150 60  0001 L CNN "Pin Count"
 F 13 "PcbLib\\Resistors SMD.PcbLib" H 4850 8060 60  0001 L CNN "Footprint Path"
 F 14 "RESC1005X40N" H 4850 7970 60  0001 L CNN "Footprint Ref"
 F 15 "0" H 4850 7880 60  0001 L CNN "Val"
 F 16 "Not Recommended" H 4850 7790 60  0001 L CNN "Status"
-F 17 "~~" H 4850 7700 60  0001 L CNN "Power"
-F 18 "~~" H 4850 7610 60  0001 L CNN "TC"
-F 19 "~~" H 4850 7520 60  0001 L CNN "Voltage"
-F 20 "~~" H 4850 7430 60  0001 L CNN "Tolerance"
+F 17 " " H 4850 7700 60  0001 L CNN "Power"
+F 18 " " H 4850 7610 60  0001 L CNN "TC"
+F 19 " " H 4850 7520 60  0001 L CNN "Voltage"
+F 20 " " H 4850 7430 60  0001 L CNN "Tolerance"
 F 21 "1A (0.05R Max DC Resistance) Zero Ohm Jumper" H 4850 7340 60  0001 L CNN "Part Description"
 F 22 "GENERIC" H 4850 7250 60  0001 L CNN "Manufacturer"
 F 23 "R0402_0R_JUMPER" H 4850 7160 60  0001 L CNN "Manufacturer Part Number"
 F 24 "0402" H 4850 7070 60  0001 L CNN "Case"
 F 25 "No" H 4850 6980 60  0001 L CNN "PressFit"
 F 26 "Yes" H 4850 6890 60  0001 L CNN "Mounted"
-F 27 "~~" H 4850 6800 60  0001 L CNN "Sense Comment"
+F 27 " " H 4850 6800 60  0001 L CNN "Sense Comment"
 F 28 "No" H 4850 6710 60  0001 L CNN "Sense"
-F 29 "~~" H 4850 6620 60  0001 L CNN "Status Comment"
+F 29 " " H 4850 6620 60  0001 L CNN "Status Comment"
 F 30 "No" H 4850 6530 60  0001 L CNN "Socket"
 F 31 "Yes" H 4850 6440 60  0001 L CNN "SMD"
-F 32 "~~" H 4850 6350 60  0001 L CNN "ComponentHeight"
+F 32 " " H 4850 6350 60  0001 L CNN "ComponentHeight"
 F 33 "YAGEO PHYCOMP" H 4850 6260 60  0001 L CNN "Manufacturer1 Example"
 F 34 "232270591001L" H 4850 6170 60  0001 L CNN "Manufacturer1 Part Number"
 F 35 "0.4mm" H 4850 6080 60  0001 L CNN "Manufacturer1 ComponentHeight"
-F 36 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 4850 5990 60  0001 L CNN "HelpURL"
-F 37 "CERN DEM JLC" H 4850 5900 60  0001 L CNN "Author"
-F 38 "12/03/07 00:00:00" H 4850 5810 60  0001 L CNN "CreateDate"
-F 39 "10/17/12 00:00:00" H 4850 5720 60  0001 L CNN "LatestRevisionDate"
-F 40 "Resistors SMD" H 4850 5630 60  0001 L CNN "Library Name"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4850 5540 60  0001 L CNN "License"
+F 36 "CERN DEM JLC" H 4850 5900 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 4850 5810 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 4850 5720 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 4850 5630 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 4850 5540 60  0001 L CNN "License"
 	1    4850 9350
 	0    1    1    0   
 $EndComp
@@ -7801,134 +7070,14 @@ NoConn ~ 7950 7900
 NoConn ~ 2600 9250
 NoConn ~ 6300 9250
 $Comp
-L Resistors_SMD:R0603_9K31_0.1%_0.063W_10PPM R69
-U 1 1 63AA419B
-P 8650 7100
-F 0 "R69" H 8800 7297 50  0000 C CNN
-F 1 "R0603_9K31_0.1%_0.063W_10PPM" H 8650 6905 50  0001 L CNN
-F 2 "Resistors SMD:RESC1608X55N" H 8650 6830 50  0001 L CNN
-F 3 " " H 8650 6755 50  0001 L CNN
-F 4 "9k31" H 8800 7206 50  0000 C CNN "Val"
-F 5 "R0603_9K31_0.1%_0.063W_10PPM" H 8650 6680 50  0001 L CNN "Part Number"
-F 6 "Resistor - 0.1%" H 8650 6605 50  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 8650 6530 50  0001 L CNN "Library Path"
-F 8 "9k31" H 8650 6455 50  0001 L CNN "Comment"
-F 9 "Standard" H 8650 6380 50  0001 L CNN "Component Kind"
-F 10 "Standard" H 8650 6305 50  0001 L CNN "Component Type"
-F 11 " " H 8650 6230 50  0001 L CNN "PackageDescription"
-F 12 "2" H 8650 6155 50  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 8650 6080 50  0001 L CNN "Footprint Path"
-F 14 "RESC1608X55N" H 8650 6005 50  0001 L CNN "Footprint Ref"
-F 15 "Not Recommended" H 8650 5930 50  0001 L CNN "Status"
-F 16 "0.063W" H 8650 5855 50  0001 L CNN "Power"
-F 17 "±10ppm" H 8650 5780 50  0001 L CNN "TC"
-F 18 " " H 8650 5705 50  0001 L CNN "Voltage"
-F 19 "±0.1%" H 8650 5630 50  0001 L CNN "Tolerance"
-F 20 "Thin Film Chip Resistor" H 8650 5555 50  0001 L CNN "Part Description"
-F 21 "GENERIC" H 8650 5480 50  0001 L CNN "Manufacturer"
-F 22 "R0603_9K31_0.1%_0.063W_10PPM" H 8650 5405 50  0001 L CNN "Manufacturer Part Number"
-F 23 "0603" H 8650 5330 50  0001 L CNN "Case"
-F 24 "No" H 8650 5255 50  0001 L CNN "PressFit"
-F 25 "Yes" H 8650 5180 50  0001 L CNN "Mounted"
-F 26 " " H 8650 5105 50  0001 L CNN "Sense Comment"
-F 27 "No" H 8650 5030 50  0001 L CNN "Sense"
-F 28 " " H 8650 4955 50  0001 L CNN "Status Comment"
-F 29 "No" H 8650 4880 50  0001 L CNN "Socket"
-F 30 "Yes" H 8650 4805 50  0001 L CNN "SMD"
-F 31 " " H 8650 4730 50  0001 L CNN "ComponentHeight"
-F 32 "TYCO HOLSWORTHY" H 8650 4655 50  0001 L CNN "Manufacturer1 Example"
-F 33 "RN73C1J9K31BTDF" H 8650 4580 50  0001 L CNN "Manufacturer1 Part Number"
-F 34 "0.5mm" H 8650 4505 50  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "CERN DEM JLC" H 8650 4430 50  0001 L CNN "Author"
-F 36 "12/03/07 00:00:00" H 8650 4355 50  0001 L CNN "CreateDate"
-F 37 "03/13/08 00:00:00" H 8650 4280 50  0001 L CNN "LatestRevisionDate"
-F 38 "Resistors SMD" H 8650 4205 50  0001 L CNN "Database Table Name"
-F 39 "Resistors.DbLib" H 8650 4130 50  0001 L CNN "Library Name"
-F 40 "Resistors SMD" H 8650 4055 50  0001 L CNN "Footprint Library"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8650 3980 50  0001 L CNN "License"
-	1    8650 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Resistors_SMD:R0603_10K7_0.1%_0.063W_10PPM R68
-U 1 1 63AA6AD7
-P 8050 6800
-F 0 "R68" V 8154 6860 50  0000 L CNN
-F 1 "R0603_10K7_0.1%_0.063W_10PPM" H 8050 6605 50  0001 L CNN
-F 2 "Resistors SMD:RESC1608X55N" H 8050 6530 50  0001 L CNN
-F 3 " " H 8050 6455 50  0001 L CNN
-F 4 "10k7" V 8245 6860 50  0000 L CNN "Val"
-F 5 "R0603_10K7_0.1%_0.063W_10PPM" H 8050 6380 50  0001 L CNN "Part Number"
-F 6 "Resistor - 0.1%" H 8050 6305 50  0001 L CNN "Library Ref"
-F 7 "SchLib\\Resistors.SchLib" H 8050 6230 50  0001 L CNN "Library Path"
-F 8 "10k7" H 8050 6155 50  0001 L CNN "Comment"
-F 9 "Standard" H 8050 6080 50  0001 L CNN "Component Kind"
-F 10 "Standard" H 8050 6005 50  0001 L CNN "Component Type"
-F 11 " " H 8050 5930 50  0001 L CNN "PackageDescription"
-F 12 "2" H 8050 5855 50  0001 L CNN "Pin Count"
-F 13 "PcbLib\\Resistors SMD.PcbLib" H 8050 5780 50  0001 L CNN "Footprint Path"
-F 14 "RESC1608X55N" H 8050 5705 50  0001 L CNN "Footprint Ref"
-F 15 "Not Recommended" H 8050 5630 50  0001 L CNN "Status"
-F 16 "0.063W" H 8050 5555 50  0001 L CNN "Power"
-F 17 "±10ppm" H 8050 5480 50  0001 L CNN "TC"
-F 18 " " H 8050 5405 50  0001 L CNN "Voltage"
-F 19 "±0.1%" H 8050 5330 50  0001 L CNN "Tolerance"
-F 20 "Thin Film Chip Resistor" H 8050 5255 50  0001 L CNN "Part Description"
-F 21 "GENERIC" H 8050 5180 50  0001 L CNN "Manufacturer"
-F 22 "R0603_10K7_0.1%_0.063W_10PPM" H 8050 5105 50  0001 L CNN "Manufacturer Part Number"
-F 23 "0603" H 8050 5030 50  0001 L CNN "Case"
-F 24 "No" H 8050 4955 50  0001 L CNN "PressFit"
-F 25 "Yes" H 8050 4880 50  0001 L CNN "Mounted"
-F 26 " " H 8050 4805 50  0001 L CNN "Sense Comment"
-F 27 "No" H 8050 4730 50  0001 L CNN "Sense"
-F 28 " " H 8050 4655 50  0001 L CNN "Status Comment"
-F 29 "No" H 8050 4580 50  0001 L CNN "Socket"
-F 30 "Yes" H 8050 4505 50  0001 L CNN "SMD"
-F 31 " " H 8050 4430 50  0001 L CNN "ComponentHeight"
-F 32 "TYCO HOLSWORTHY" H 8050 4355 50  0001 L CNN "Manufacturer1 Example"
-F 33 "RN73C1J10K7BTDF" H 8050 4280 50  0001 L CNN "Manufacturer1 Part Number"
-F 34 "0.5mm" H 8050 4205 50  0001 L CNN "Manufacturer1 ComponentHeight"
-F 35 "CERN DEM JLC" H 8050 4130 50  0001 L CNN "Author"
-F 36 "12/03/07 00:00:00" H 8050 4055 50  0001 L CNN "CreateDate"
-F 37 "03/13/08 00:00:00" H 8050 3980 50  0001 L CNN "LatestRevisionDate"
-F 38 "Resistors SMD" H 8050 3905 50  0001 L CNN "Database Table Name"
-F 39 "Resistors.DbLib" H 8050 3830 50  0001 L CNN "Library Name"
-F 40 "Resistors SMD" H 8050 3755 50  0001 L CNN "Footprint Library"
-F 41 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8050 3680 50  0001 L CNN "License"
-	1    8050 6800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7950 6800 8050 6800
-Wire Wire Line
-	7950 7100 8050 7100
-Connection ~ 8050 6800
-Wire Wire Line
-	8050 6800 8350 6800
-Connection ~ 8050 7100
-Wire Wire Line
-	8050 7100 8350 7100
-$Comp
-L power:+1V5 #PWR0544
-U 1 1 63AD62B5
-P 9100 6800
-F 0 "#PWR0544" H 9100 6650 50  0001 C CNN
-F 1 "+1V5" H 9115 6973 50  0000 C CNN
-F 2 "" H 9100 6800 50  0001 C CNN
-F 3 "" H 9100 6800 50  0001 C CNN
-	1    9100 6800
-	1    0    0    -1  
-$EndComp
-Connection ~ 9100 6800
-$Comp
 L power:+1V5 #PWR0597
 U 1 1 5F86D76A
-P 1950 6450
-F 0 "#PWR0597" H 1950 6300 50  0001 C CNN
-F 1 "+1V5" H 1965 6623 50  0000 C CNN
-F 2 "" H 1950 6450 50  0001 C CNN
-F 3 "" H 1950 6450 50  0001 C CNN
-	1    1950 6450
+P 1950 6500
+F 0 "#PWR0597" H 1950 6350 50  0001 C CNN
+F 1 "+1V5" H 1965 6673 50  0000 C CNN
+F 2 "" H 1950 6500 50  0001 C CNN
+F 3 "" H 1950 6500 50  0001 C CNN
+	1    1950 6500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -7976,45 +7125,44 @@ Connection ~ 4450 9850
 Wire Wire Line
 	14700 2500 14700 2350
 $Comp
-L Connector:TestPoint TP?
+L Connector_Generic:TestPoint TP?
 U 1 1 5F742157
 P 14700 2500
 AR Path="/5C16BF8E/5F742157" Ref="TP?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5F742157" Ref="TP10"  Part="1" 
 F 0 "TP10" H 14758 2618 50  0000 L CNN
 F 1 "TestPoint" H 14758 2527 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14900 2500 50  0001 C CNN
-F 3 "~" H 14900 2500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 14900 2500 50  0001 C CNN
+F 3 " " H 14900 2500 50  0001 C CNN
 	1    14700 2500
 	-1   0    0    1   
 $EndComp
 Connection ~ 14700 2350
 $Comp
-L Connector:TestPoint TP?
+L Connector_Generic:TestPoint TP?
 U 1 1 5F7A2E7E
 P 14700 4300
 AR Path="/5C16BF8E/5F7A2E7E" Ref="TP?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5F7A2E7E" Ref="TP11"  Part="1" 
 F 0 "TP11" H 14758 4418 50  0000 L CNN
 F 1 "TestPoint" H 14758 4327 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14900 4300 50  0001 C CNN
-F 3 "~" H 14900 4300 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 14900 4300 50  0001 C CNN
+F 3 " " H 14900 4300 50  0001 C CNN
 	1    14700 4300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	14700 4300 14700 4150
-Connection ~ 14700 4150
 $Comp
-L Connector:TestPoint TP?
+L Connector_Generic:TestPoint TP?
 U 1 1 5F805386
 P 14550 6100
 AR Path="/5C16BF8E/5F805386" Ref="TP?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5F805386" Ref="TP9"  Part="1" 
 F 0 "TP9" H 14608 6218 50  0000 L CNN
 F 1 "TestPoint" H 14608 6127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14750 6100 50  0001 C CNN
-F 3 "~" H 14750 6100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 14750 6100 50  0001 C CNN
+F 3 " " H 14750 6100 50  0001 C CNN
 	1    14550 6100
 	-1   0    0    1   
 $EndComp
@@ -8024,15 +7172,15 @@ Connection ~ 14550 5950
 Wire Wire Line
 	14550 5950 14850 5950
 $Comp
-L Connector:TestPoint TP?
+L Connector_Generic:TestPoint TP?
 U 1 1 5F861998
 P 14400 8400
 AR Path="/5C16BF8E/5F861998" Ref="TP?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5F861998" Ref="TP8"  Part="1" 
 F 0 "TP8" H 14458 8518 50  0000 L CNN
 F 1 "TestPoint" H 14458 8427 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14600 8400 50  0001 C CNN
-F 3 "~" H 14600 8400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 14600 8400 50  0001 C CNN
+F 3 " " H 14600 8400 50  0001 C CNN
 	1    14400 8400
 	-1   0    0    1   
 $EndComp
@@ -8040,48 +7188,30 @@ Wire Wire Line
 	14400 8400 14400 8250
 Connection ~ 14400 8250
 $Comp
-L Connector:TestPoint TP?
-U 1 1 5F8BFCD0
-P 8450 6650
-AR Path="/5C16BF8E/5F8BFCD0" Ref="TP?"  Part="1" 
-AR Path="/5C16BF8E/5DB9B7E6/5F8BFCD0" Ref="TP6"  Part="1" 
-F 0 "TP6" H 8508 6768 50  0000 L CNN
-F 1 "TestPoint" H 8508 6677 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8650 6650 50  0001 C CNN
-F 3 "~" H 8650 6650 50  0001 C CNN
-	1    8450 6650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8450 6650 8450 6800
-Connection ~ 8450 6800
-Wire Wire Line
-	8450 6800 9100 6800
-$Comp
-L Connector:TestPoint TP?
+L Connector_Generic:TestPoint TP?
 U 1 1 5F9282C9
 P 9450 7500
 AR Path="/5C16BF8E/5F9282C9" Ref="TP?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5F9282C9" Ref="TP7"  Part="1" 
 F 0 "TP7" H 9508 7618 50  0000 L CNN
 F 1 "TestPoint" H 9508 7527 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9650 7500 50  0001 C CNN
-F 3 "~" H 9650 7500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 9650 7500 50  0001 C CNN
+F 3 " " H 9650 7500 50  0001 C CNN
 	1    9450 7500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	9100 7500 9450 7500
 $Comp
-L Connector:TestPoint TP?
+L Connector_Generic:TestPoint TP?
 U 1 1 5F9761ED
 P 8000 9650
 AR Path="/5C16BF8E/5F9761ED" Ref="TP?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5F9761ED" Ref="TP5"  Part="1" 
 F 0 "TP5" H 8058 9768 50  0000 L CNN
 F 1 "TestPoint" H 8058 9677 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8200 9650 50  0001 C CNN
-F 3 "~" H 8200 9650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 8200 9650 50  0001 C CNN
+F 3 " " H 8200 9650 50  0001 C CNN
 	1    8000 9650
 	0    1    1    0   
 $EndComp
@@ -8089,15 +7219,15 @@ Wire Wire Line
 	8000 9650 7850 9650
 Connection ~ 7850 9650
 $Comp
-L Connector:TestPoint TP?
+L Connector_Generic:TestPoint TP?
 U 1 1 5F9F839A
 P 3250 9150
 AR Path="/5C16BF8E/5F9F839A" Ref="TP?"  Part="1" 
 AR Path="/5C16BF8E/5DB9B7E6/5F9F839A" Ref="TP4"  Part="1" 
 F 0 "TP4" H 3308 9268 50  0000 L CNN
 F 1 "TestPoint" H 3308 9177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3450 9150 50  0001 C CNN
-F 3 "~" H 3450 9150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 3450 9150 50  0001 C CNN
+F 3 " " H 3450 9150 50  0001 C CNN
 	1    3250 9150
 	1    0    0    -1  
 $EndComp
@@ -8147,10 +7277,8 @@ F 33 "1.8mm" H 12350 4480 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM WB" H 12350 4405 50  0001 L CNN "Author"
 F 35 "07/25/18 00:00:00" H 12350 4330 50  0001 L CNN "CreateDate"
 F 36 "07/25/18 00:00:00" H 12350 4255 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 12350 4180 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 12350 4105 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 12350 4030 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 3955 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 12350 4105 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 3955 50  0001 L CNN "License"
 	1    12350 7050
 	0    1    1    0   
 $EndComp
@@ -8195,10 +7323,8 @@ F 33 "0.95mm" H 12650 4480 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 12650 4405 50  0001 L CNN "Author"
 F 35 "11/10/14 00:00:00" H 12650 4330 50  0001 L CNN "CreateDate"
 F 36 "11/10/14 00:00:00" H 12650 4255 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 12650 4180 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 12650 4105 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 12650 4030 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 3955 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 12650 4105 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 3955 50  0001 L CNN "License"
 	1    12650 7050
 	0    1    1    0   
 $EndComp
@@ -8244,10 +7370,8 @@ F 33 "1.8mm" H 12350 2630 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM WB" H 12350 2555 50  0001 L CNN "Author"
 F 35 "07/25/18 00:00:00" H 12350 2480 50  0001 L CNN "CreateDate"
 F 36 "07/25/18 00:00:00" H 12350 2405 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 12350 2330 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 12350 2255 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 12350 2180 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 2105 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 12350 2255 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 2105 50  0001 L CNN "License"
 	1    12350 5200
 	0    1    1    0   
 $EndComp
@@ -8292,10 +7416,8 @@ F 33 "0.95mm" H 12650 2630 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 12650 2555 50  0001 L CNN "Author"
 F 35 "11/10/14 00:00:00" H 12650 2480 50  0001 L CNN "CreateDate"
 F 36 "11/10/14 00:00:00" H 12650 2405 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 12650 2330 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 12650 2255 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 12650 2180 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 2105 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 12650 2255 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 2105 50  0001 L CNN "License"
 	1    12650 5200
 	0    1    1    0   
 $EndComp
@@ -8341,10 +7463,8 @@ F 33 "1.8mm" H 12350 830 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM WB" H 12350 755 50  0001 L CNN "Author"
 F 35 "07/25/18 00:00:00" H 12350 680 50  0001 L CNN "CreateDate"
 F 36 "07/25/18 00:00:00" H 12350 605 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 12350 530 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 12350 455 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 12350 380 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 305 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 12350 455 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 305 50  0001 L CNN "License"
 	1    12350 3400
 	0    1    1    0   
 $EndComp
@@ -8389,10 +7509,8 @@ F 33 "0.95mm" H 12650 830 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 12650 755 50  0001 L CNN "Author"
 F 35 "11/10/14 00:00:00" H 12650 680 50  0001 L CNN "CreateDate"
 F 36 "11/10/14 00:00:00" H 12650 605 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 12650 530 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 12650 455 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 12650 380 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 305 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 12650 455 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 305 50  0001 L CNN "License"
 	1    12650 3400
 	0    1    1    0   
 $EndComp
@@ -8437,10 +7555,8 @@ F 33 "1.8mm" H 12350 -970 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM WB" H 12350 -1045 50  0001 L CNN "Author"
 F 35 "07/25/18 00:00:00" H 12350 -1120 50  0001 L CNN "CreateDate"
 F 36 "07/25/18 00:00:00" H 12350 -1195 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 12350 -1270 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 12350 -1345 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 12350 -1420 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 -1495 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 12350 -1345 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12350 -1495 50  0001 L CNN "License"
 	1    12350 1600
 	0    1    1    0   
 $EndComp
@@ -8485,10 +7601,8 @@ F 33 "0.95mm" H 12650 -970 50  0001 L CNN "Manufacturer1 ComponentHeight"
 F 34 "CERN DEM JLC" H 12650 -1045 50  0001 L CNN "Author"
 F 35 "11/10/14 00:00:00" H 12650 -1120 50  0001 L CNN "CreateDate"
 F 36 "11/10/14 00:00:00" H 12650 -1195 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 12650 -1270 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 12650 -1345 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 12650 -1420 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 -1495 50  0001 L CNN "License"
+F 37 "Capacitors.DbLib" H 12650 -1345 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12650 -1495 50  0001 L CNN "License"
 	1    12650 1600
 	0    1    1    0   
 $EndComp
@@ -8497,51 +7611,1589 @@ Connection ~ 12350 1600
 $Comp
 L Capacitors_SMD:CC0603_4.7UF_25V_10%_X5R C105
 U 1 1 5F2DF533
-P 5300 1050
-F 0 "C105" V 5350 1050 50  0000 L CNN
-F 1 "CC0603_4.7UF_25V_10%_X5R" H 5300 805 50  0001 L CNN
-F 2 "Capacitors SMD:CAPC1608X90N" H 5300 730 50  0001 L CNN
-F 3 " " H 5300 655 50  0001 L CNN
-F 4 "4.7uF" V 5550 1050 50  0000 L CNN "Val"
-F 5 "CC0603_4.7UF_25V_10%_X5R" H 5300 580 50  0001 L CNN "Part Number"
-F 6 "Capacitor - non polarized" H 5300 505 50  0001 L CNN "Library Ref"
-F 7 "SchLib\\Capacitors.SchLib" H 5300 430 50  0001 L CNN "Library Path"
-F 8 "4.7uF" H 5300 355 50  0001 L CNN "Comment"
-F 9 "Standard" H 5300 280 50  0001 L CNN "Component Kind"
-F 10 "Standard" H 5300 205 50  0001 L CNN "Component Type"
-F 11 "2" H 5300 130 50  0001 L CNN "Pin Count"
-F 12 "PcbLib\\Capacitors SMD.PcbLib" H 5300 55  50  0001 L CNN "Footprint Path"
-F 13 "CAPC1608X90N" H 5300 -20 50  0001 L CNN "Footprint Ref"
-F 14 " " H 5300 -95 50  0001 L CNN "PackageDescription"
-F 15 "None" H 5300 -170 50  0001 L CNN "Status"
-F 16 " " H 5300 -245 50  0001 L CNN "Status Comment"
-F 17 "25V" H 5300 -320 50  0001 L CNN "Voltage"
-F 18 "X5R" H 5300 -395 50  0001 L CNN "TC"
-F 19 "±10%" H 5300 -470 50  0001 L CNN "Tolerance"
-F 20 "SMD Multilayer Chip Ceramic Capacitor" H 5300 -545 50  0001 L CNN "Part Description"
-F 21 "GENERIC" H 5300 -620 50  0001 L CNN "Manufacturer"
-F 22 "CC0603_4.7UF_25V_10%_X5R" H 5300 -695 50  0001 L CNN "Manufacturer Part Number"
-F 23 "0603" H 5300 -770 50  0001 L CNN "Case"
-F 24 "Yes" H 5300 -845 50  0001 L CNN "Mounted"
-F 25 "No" H 5300 -920 50  0001 L CNN "Socket"
-F 26 "Yes" H 5300 -995 50  0001 L CNN "SMD"
-F 27 " " H 5300 -1070 50  0001 L CNN "PressFit"
-F 28 "No" H 5300 -1145 50  0001 L CNN "Sense"
-F 29 " " H 5300 -1220 50  0001 L CNN "Sense Comment"
-F 30 " " H 5300 -1295 50  0001 L CNN "ComponentHeight"
-F 31 "MURATA" H 5300 -1370 50  0001 L CNN "Manufacturer1 Example"
-F 32 "GRM188R61E475KE11D" H 5300 -1445 50  0001 L CNN "Manufacturer1 Part Number"
-F 33 "0.95mm" H 5300 -1520 50  0001 L CNN "Manufacturer1 ComponentHeight"
-F 34 "CERN DEM JLC" H 5300 -1595 50  0001 L CNN "Author"
-F 35 "11/10/14 00:00:00" H 5300 -1670 50  0001 L CNN "CreateDate"
-F 36 "11/10/14 00:00:00" H 5300 -1745 50  0001 L CNN "LatestRevisionDate"
-F 37 "Capacitors SMD" H 5300 -1820 50  0001 L CNN "Database Table Name"
-F 38 "Capacitors.DbLib" H 5300 -1895 50  0001 L CNN "Library Name"
-F 39 "Capacitors SMD" H 5300 -1970 50  0001 L CNN "Footprint Library"
-F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5300 -2045 50  0001 L CNN "License"
-	1    5300 1050
+P 5100 1050
+F 0 "C105" V 5150 1050 50  0000 L CNN
+F 1 "CC0603_4.7UF_25V_10%_X5R" H 5100 805 50  0001 L CNN
+F 2 "Capacitors SMD:CAPC1608X90N" H 5100 730 50  0001 L CNN
+F 3 " " H 5100 655 50  0001 L CNN
+F 4 "4.7uF" V 5350 1050 50  0000 L CNN "Val"
+F 5 "CC0603_4.7UF_25V_10%_X5R" H 5100 580 50  0001 L CNN "Part Number"
+F 6 "Capacitor - non polarized" H 5100 505 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Capacitors.SchLib" H 5100 430 50  0001 L CNN "Library Path"
+F 8 "4.7uF" H 5100 355 50  0001 L CNN "Comment"
+F 9 "Standard" H 5100 280 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 5100 205 50  0001 L CNN "Component Type"
+F 11 "2" H 5100 130 50  0001 L CNN "Pin Count"
+F 12 "PcbLib\\Capacitors SMD.PcbLib" H 5100 55  50  0001 L CNN "Footprint Path"
+F 13 "CAPC1608X90N" H 5100 -20 50  0001 L CNN "Footprint Ref"
+F 14 " " H 5100 -95 50  0001 L CNN "PackageDescription"
+F 15 "None" H 5100 -170 50  0001 L CNN "Status"
+F 16 " " H 5100 -245 50  0001 L CNN "Status Comment"
+F 17 "25V" H 5100 -320 50  0001 L CNN "Voltage"
+F 18 "X5R" H 5100 -395 50  0001 L CNN "TC"
+F 19 "±10%" H 5100 -470 50  0001 L CNN "Tolerance"
+F 20 "SMD Multilayer Chip Ceramic Capacitor" H 5100 -545 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 5100 -620 50  0001 L CNN "Manufacturer"
+F 22 "CC0603_4.7UF_25V_10%_X5R" H 5100 -695 50  0001 L CNN "Manufacturer Part Number"
+F 23 "0603" H 5100 -770 50  0001 L CNN "Case"
+F 24 "Yes" H 5100 -845 50  0001 L CNN "Mounted"
+F 25 "No" H 5100 -920 50  0001 L CNN "Socket"
+F 26 "Yes" H 5100 -995 50  0001 L CNN "SMD"
+F 27 " " H 5100 -1070 50  0001 L CNN "PressFit"
+F 28 "No" H 5100 -1145 50  0001 L CNN "Sense"
+F 29 " " H 5100 -1220 50  0001 L CNN "Sense Comment"
+F 30 " " H 5100 -1295 50  0001 L CNN "ComponentHeight"
+F 31 "MURATA" H 5100 -1370 50  0001 L CNN "Manufacturer1 Example"
+F 32 "GRM188R61E475KE11D" H 5100 -1445 50  0001 L CNN "Manufacturer1 Part Number"
+F 33 "0.95mm" H 5100 -1520 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 34 "CERN DEM JLC" H 5100 -1595 50  0001 L CNN "Author"
+F 35 "11/10/14 00:00:00" H 5100 -1670 50  0001 L CNN "CreateDate"
+F 36 "11/10/14 00:00:00" H 5100 -1745 50  0001 L CNN "LatestRevisionDate"
+F 37 "Capacitors.DbLib" H 5100 -1895 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5100 -2045 50  0001 L CNN "License"
+	1    5100 1050
 	0    1    1    0   
 $EndComp
-Connection ~ 5300 1050
-Connection ~ 5300 1350
+Connection ~ 5100 1050
+Connection ~ 5100 1350
+Wire Wire Line
+	10050 3250 10850 3250
+$Comp
+L marble_misc:MPM3830GQV-P U58
+U 1 1 6018E5B8
+P 9800 9100
+F 0 "U58" H 10350 9375 50  0000 C CNN
+F 1 "MPM3830GQV-P" H 10350 9284 50  0000 C CNN
+F 2 "SamacSys_Parts:MPM3830GQVP" H 10950 9200 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MPM3830GQV-P.pdf" H 10950 9100 50  0001 L CNN
+F 4 "Switching Voltage Regulators 6V, 1.2 MHz, 3A Sync StepDown Convtr" H 10950 9000 50  0001 L CNN "Description"
+F 5 "1.6" H 10950 8900 50  0001 L CNN "Height"
+F 6 "946-MPM3830GQV-P" H 10950 8800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=946-MPM3830GQV-P" H 10950 8700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Monolithic Power Systems (MPS)" H 10950 8600 50  0001 L CNN "Manufacturer"
+F 9 "MPM3830GQV-P" H 10950 8500 50  0001 L CNN "Manufacturer Part Number"
+	1    9800 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors_SMD:CC0603_22UF_6.3V_20%_X5R C413
+U 1 1 6018E5E3
+P 11550 9050
+F 0 "C413" V 11654 9160 50  0000 L CNN
+F 1 "CC0603_22UF_6.3V_20%_X5R" H 11550 8790 60  0001 L CNN
+F 2 "CAPC1709X100N" H 11550 7980 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X5R_TDK_C.pdf" H 11550 8610 60  0001 L CNN
+F 4 "22uF" V 11745 9160 50  0000 L CNN "~"
+F 5 "CC0603_22UF_6.3V_20%_X5R" H 11550 8520 60  0001 L CNN "Part Number"
+F 6 "Capacitor - non polarized" H 11550 8430 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Capacitors.SchLib" H 11550 8340 60  0001 L CNN "Library Path"
+F 8 "=Value" H 11550 8250 60  0001 L CNN "Comment"
+F 9 "Standard" H 11550 8160 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 11550 8070 60  0001 L CNN "Component Type"
+F 11 "2" H 11550 7890 60  0001 L CNN "Pin Count"
+F 12 "PcbLib\\Capacitors SMD.PcbLib" H 11550 7800 60  0001 L CNN "Footprint Path"
+F 13 "CAPC1709X100N" H 11550 7710 60  0001 L CNN "Footprint Ref"
+F 14 " " H 11550 7620 60  0001 L CNN "PackageDescription"
+F 15 "22uF" H 11550 7530 60  0001 L CNN "Val"
+F 16 "None" H 11550 7440 60  0001 L CNN "Status"
+F 17 " " H 11550 7350 60  0001 L CNN "Status Comment"
+F 18 "6.3V" H 11550 7260 60  0001 L CNN "Voltage"
+F 19 "X5R" H 11550 7170 60  0001 L CNN "TC"
+F 20 "±20%" H 11550 7080 60  0001 L CNN "Tolerance"
+F 21 "SMD Multilayer Chip Ceramic Capacitor" H 11550 6990 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 11550 6900 60  0001 L CNN "Manufacturer"
+F 23 "CC0603_22UF_6.3V_20%_X5R" H 11550 6810 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0603" H 11550 6720 60  0001 L CNN "Case"
+F 25 "Yes" H 11550 6630 60  0001 L CNN "Mounted"
+F 26 "No" H 11550 6540 60  0001 L CNN "Socket"
+F 27 "Yes" H 11550 6450 60  0001 L CNN "SMD"
+F 28 " " H 11550 6360 60  0001 L CNN "PressFit"
+F 29 "No" H 11550 6270 60  0001 L CNN "Sense"
+F 30 " " H 11550 6180 60  0001 L CNN "Sense Comment"
+F 31 " " H 11550 6090 60  0001 L CNN "ComponentHeight"
+F 32 "TDK" H 11550 6000 60  0001 L CNN "Manufacturer1 Example"
+F 33 "C1608X5R0J226M080AC" H 11550 5910 60  0001 L CNN "Manufacturer1 Part Number"
+F 34 "1mm" H 11550 5820 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 11550 5640 60  0001 L CNN "Author"
+F 36 "12/16/13 00:00:00" H 11550 5550 60  0001 L CNN "CreateDate"
+F 37 "09/13/16 00:00:00" H 11550 5460 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 11550 5370 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 11550 5280 60  0001 L CNN "License"
+	1    11550 9050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6018E5E9
+P 11550 9350
+AR Path="/5BD32060/6018E5E9" Ref="#PWR?"  Part="1" 
+AR Path="/5C16C03C/6018E5E9" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/6018E5E9" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/6018E5E9" Ref="#PWR0830"  Part="1" 
+F 0 "#PWR0830" H 11550 9100 50  0001 C CNN
+F 1 "GND" H 11555 9177 50  0000 C CNN
+F 2 "" H 11550 9350 50  0001 C CNN
+F 3 "" H 11550 9350 50  0001 C CNN
+	1    11550 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors_SMD:CC0603_22UF_6.3V_20%_X5R C414
+U 1 1 6018E614
+P 11950 9050
+F 0 "C414" V 12054 9160 50  0000 L CNN
+F 1 "CC0603_22UF_6.3V_20%_X5R" H 11950 8790 60  0001 L CNN
+F 2 "CAPC1709X100N" H 11950 7980 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X5R_TDK_C.pdf" H 11950 8610 60  0001 L CNN
+F 4 "22uF" V 12145 9160 50  0000 L CNN "~"
+F 5 "CC0603_22UF_6.3V_20%_X5R" H 11950 8520 60  0001 L CNN "Part Number"
+F 6 "Capacitor - non polarized" H 11950 8430 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Capacitors.SchLib" H 11950 8340 60  0001 L CNN "Library Path"
+F 8 "=Value" H 11950 8250 60  0001 L CNN "Comment"
+F 9 "Standard" H 11950 8160 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 11950 8070 60  0001 L CNN "Component Type"
+F 11 "2" H 11950 7890 60  0001 L CNN "Pin Count"
+F 12 "PcbLib\\Capacitors SMD.PcbLib" H 11950 7800 60  0001 L CNN "Footprint Path"
+F 13 "CAPC1709X100N" H 11950 7710 60  0001 L CNN "Footprint Ref"
+F 14 " " H 11950 7620 60  0001 L CNN "PackageDescription"
+F 15 "22uF" H 11950 7530 60  0001 L CNN "Val"
+F 16 "None" H 11950 7440 60  0001 L CNN "Status"
+F 17 " " H 11950 7350 60  0001 L CNN "Status Comment"
+F 18 "6.3V" H 11950 7260 60  0001 L CNN "Voltage"
+F 19 "X5R" H 11950 7170 60  0001 L CNN "TC"
+F 20 "±20%" H 11950 7080 60  0001 L CNN "Tolerance"
+F 21 "SMD Multilayer Chip Ceramic Capacitor" H 11950 6990 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 11950 6900 60  0001 L CNN "Manufacturer"
+F 23 "CC0603_22UF_6.3V_20%_X5R" H 11950 6810 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0603" H 11950 6720 60  0001 L CNN "Case"
+F 25 "Yes" H 11950 6630 60  0001 L CNN "Mounted"
+F 26 "No" H 11950 6540 60  0001 L CNN "Socket"
+F 27 "Yes" H 11950 6450 60  0001 L CNN "SMD"
+F 28 " " H 11950 6360 60  0001 L CNN "PressFit"
+F 29 "No" H 11950 6270 60  0001 L CNN "Sense"
+F 30 " " H 11950 6180 60  0001 L CNN "Sense Comment"
+F 31 " " H 11950 6090 60  0001 L CNN "ComponentHeight"
+F 32 "TDK" H 11950 6000 60  0001 L CNN "Manufacturer1 Example"
+F 33 "C1608X5R0J226M080AC" H 11950 5910 60  0001 L CNN "Manufacturer1 Part Number"
+F 34 "1mm" H 11950 5820 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 11950 5640 60  0001 L CNN "Author"
+F 36 "12/16/13 00:00:00" H 11950 5550 60  0001 L CNN "CreateDate"
+F 37 "09/13/16 00:00:00" H 11950 5460 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 11950 5370 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 11950 5280 60  0001 L CNN "License"
+	1    11950 9050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6018E61A
+P 11950 9350
+AR Path="/5BD32060/6018E61A" Ref="#PWR?"  Part="1" 
+AR Path="/5C16C03C/6018E61A" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/6018E61A" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/6018E61A" Ref="#PWR0831"  Part="1" 
+F 0 "#PWR0831" H 11950 9100 50  0001 C CNN
+F 1 "GND" H 11955 9177 50  0000 C CNN
+F 2 "" H 11950 9350 50  0001 C CNN
+F 3 "" H 11950 9350 50  0001 C CNN
+	1    11950 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6018E620
+P 10350 10300
+AR Path="/5C16C03C/6018E620" Ref="#PWR?"  Part="1" 
+AR Path="/5BCEDA59/6018E620" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/6018E620" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/6018E620" Ref="#PWR0832"  Part="1" 
+F 0 "#PWR0832" H 10350 10050 50  0001 C CNN
+F 1 "GND" H 10355 10127 50  0000 C CNN
+F 2 "" H 10350 10300 50  0001 C CNN
+F 3 "" H 10350 10300 50  0001 C CNN
+	1    10350 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 10300 10350 10300
+Connection ~ 10350 10300
+Wire Wire Line
+	10450 10300 10350 10300
+NoConn ~ 9800 9850
+NoConn ~ 9800 9950
+$Comp
+L Resistors_SMD:R0402_100K_1%_0.0625W_100PPM R26
+U 1 1 6018E651
+P 11250 9150
+F 0 "R26" V 11354 9210 50  0000 L CNN
+F 1 "R0402_100K_1%_0.0625W_100PPM" H 11250 8955 50  0001 L CNN
+F 2 "Resistors SMD:RESC1005X40N" H 11250 8880 50  0001 L CNN
+F 3 " " H 11250 8805 50  0001 L CNN
+F 4 "100k" V 11445 9210 50  0000 L CNN "Val"
+F 5 "R0402_100K_1%_0.0625W_100PPM" H 11250 8730 50  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 11250 8655 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 11250 8580 50  0001 L CNN "Library Path"
+F 8 "100k" H 11250 8505 50  0001 L CNN "Comment"
+F 9 "Standard" H 11250 8430 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 11250 8355 50  0001 L CNN "Component Type"
+F 11 " " H 11250 8280 50  0001 L CNN "PackageDescription"
+F 12 "2" H 11250 8205 50  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 11250 8130 50  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 11250 8055 50  0001 L CNN "Footprint Ref"
+F 15 "Not Recommended" H 11250 7980 50  0001 L CNN "Status"
+F 16 "0.0625W" H 11250 7905 50  0001 L CNN "Power"
+F 17 "±100ppm/°C" H 11250 7830 50  0001 L CNN "TC"
+F 18 " " H 11250 7755 50  0001 L CNN "Voltage"
+F 19 "±1%" H 11250 7680 50  0001 L CNN "Tolerance"
+F 20 "General Purpose Thick Film Chip Resistor" H 11250 7605 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 11250 7530 50  0001 L CNN "Manufacturer"
+F 22 "R0402_100K_1%_0.0625W_100PPM" H 11250 7455 50  0001 L CNN "Manufacturer Part Number"
+F 23 "0402" H 11250 7380 50  0001 L CNN "Case"
+F 24 "No" H 11250 7305 50  0001 L CNN "PressFit"
+F 25 "Yes" H 11250 7230 50  0001 L CNN "Mounted"
+F 26 " " H 11250 7155 50  0001 L CNN "Sense Comment"
+F 27 "No" H 11250 7080 50  0001 L CNN "Sense"
+F 28 " " H 11250 7005 50  0001 L CNN "Status Comment"
+F 29 "No" H 11250 6930 50  0001 L CNN "Socket"
+F 30 "Yes" H 11250 6855 50  0001 L CNN "SMD"
+F 31 " " H 11250 6780 50  0001 L CNN "ComponentHeight"
+F 32 "YAGEO PHYCOMP" H 11250 6705 50  0001 L CNN "Manufacturer1 Example"
+F 33 "232270671004L" H 11250 6630 50  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.4mm" H 11250 6555 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 11250 6480 50  0001 L CNN "Author"
+F 36 "12/03/07 00:00:00" H 11250 6405 50  0001 L CNN "CreateDate"
+F 37 "10/17/12 00:00:00" H 11250 6330 50  0001 L CNN "LatestRevisionDate"
+F 38 "Resistors.DbLib" H 11250 6180 50  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 11250 6030 50  0001 L CNN "License"
+	1    11250 9150
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors_SMD:R0402_150K_1%_0.0625W_100PPM R27
+U 1 1 6018E67D
+P 11250 9600
+F 0 "R27" V 11354 9660 50  0000 L CNN
+F 1 "R0402_150K_1%_0.0625W_100PPM" H 11250 9405 50  0001 L CNN
+F 2 "Resistors SMD:RESC1005X40N" H 11250 9330 50  0001 L CNN
+F 3 " " H 11250 9255 50  0001 L CNN
+F 4 "150k" V 11445 9660 50  0000 L CNN "Val"
+F 5 "R0402_150K_1%_0.0625W_100PPM" H 11250 9180 50  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 11250 9105 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 11250 9030 50  0001 L CNN "Library Path"
+F 8 "150k" H 11250 8955 50  0001 L CNN "Comment"
+F 9 "Standard" H 11250 8880 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 11250 8805 50  0001 L CNN "Component Type"
+F 11 " " H 11250 8730 50  0001 L CNN "PackageDescription"
+F 12 "2" H 11250 8655 50  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 11250 8580 50  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 11250 8505 50  0001 L CNN "Footprint Ref"
+F 15 "Not Recommended" H 11250 8430 50  0001 L CNN "Status"
+F 16 "0.0625W" H 11250 8355 50  0001 L CNN "Power"
+F 17 "±100ppm/°C" H 11250 8280 50  0001 L CNN "TC"
+F 18 " " H 11250 8205 50  0001 L CNN "Voltage"
+F 19 "±1%" H 11250 8130 50  0001 L CNN "Tolerance"
+F 20 "General Purpose Thick Film Chip Resistor" H 11250 8055 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 11250 7980 50  0001 L CNN "Manufacturer"
+F 22 "R0402_150K_1%_0.0625W_100PPM" H 11250 7905 50  0001 L CNN "Manufacturer Part Number"
+F 23 "0402" H 11250 7830 50  0001 L CNN "Case"
+F 24 "No" H 11250 7755 50  0001 L CNN "PressFit"
+F 25 "Yes" H 11250 7680 50  0001 L CNN "Mounted"
+F 26 " " H 11250 7605 50  0001 L CNN "Sense Comment"
+F 27 "No" H 11250 7530 50  0001 L CNN "Sense"
+F 28 " " H 11250 7455 50  0001 L CNN "Status Comment"
+F 29 "No" H 11250 7380 50  0001 L CNN "Socket"
+F 30 "Yes" H 11250 7305 50  0001 L CNN "SMD"
+F 31 " " H 11250 7230 50  0001 L CNN "ComponentHeight"
+F 32 "YAGEO PHYCOMP" H 11250 7155 50  0001 L CNN "Manufacturer1 Example"
+F 33 "232270671504L" H 11250 7080 50  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.4mm" H 11250 7005 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 11250 6930 50  0001 L CNN "Author"
+F 36 "12/03/07 00:00:00" H 11250 6855 50  0001 L CNN "CreateDate"
+F 37 "10/17/12 00:00:00" H 11250 6780 50  0001 L CNN "LatestRevisionDate"
+F 38 "Resistors.DbLib" H 11250 6630 50  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 11250 6480 50  0001 L CNN "License"
+	1    11250 9600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10900 9750 10900 9850
+Connection ~ 10900 9850
+Wire Wire Line
+	10900 9850 10900 9950
+Connection ~ 10900 9950
+Wire Wire Line
+	10900 9950 10900 10050
+Wire Wire Line
+	10900 9050 10900 9150
+Connection ~ 10900 9150
+Wire Wire Line
+	10900 9150 10900 9250
+Connection ~ 10900 9250
+Wire Wire Line
+	10900 9250 10900 9350
+Connection ~ 10900 9350
+Wire Wire Line
+	10900 9350 10900 9450
+Wire Wire Line
+	11950 9050 11550 9050
+Connection ~ 10900 9050
+Connection ~ 11550 9050
+Wire Wire Line
+	11550 9050 11250 9050
+Wire Wire Line
+	11250 9150 11250 9050
+Connection ~ 11250 9050
+Wire Wire Line
+	11250 9050 10900 9050
+Wire Wire Line
+	10900 9600 11250 9600
+Wire Wire Line
+	11250 9450 11250 9600
+Connection ~ 11250 9600
+$Comp
+L power:GND #PWR?
+U 1 1 6018E699
+P 11250 9900
+AR Path="/5BD32060/6018E699" Ref="#PWR?"  Part="1" 
+AR Path="/5C16C03C/6018E699" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/6018E699" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/6018E699" Ref="#PWR0833"  Part="1" 
+F 0 "#PWR0833" H 11250 9650 50  0001 C CNN
+F 1 "GND" H 11255 9727 50  0000 C CNN
+F 2 "" H 11250 9900 50  0001 C CNN
+F 3 "" H 11250 9900 50  0001 C CNN
+	1    11250 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V5 #PWR0834
+U 1 1 6018E69F
+P 12550 8950
+F 0 "#PWR0834" H 12550 8800 50  0001 C CNN
+F 1 "+1V5" H 12565 9123 50  0000 C CNN
+F 2 "" H 12550 8950 50  0001 C CNN
+F 3 "" H 12550 8950 50  0001 C CNN
+	1    12550 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors_SMD:CC0603_22UF_6.3V_20%_X5R C411
+U 1 1 6018E6CB
+P 9300 9050
+F 0 "C411" V 9404 9160 50  0000 L CNN
+F 1 "CC0603_22UF_6.3V_20%_X5R" H 9300 8790 60  0001 L CNN
+F 2 "CAPC1709X100N" H 9300 7980 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC0603_X5R_TDK_C.pdf" H 9300 8610 60  0001 L CNN
+F 4 "22uF" V 9495 9160 50  0000 L CNN "~"
+F 5 "CC0603_22UF_6.3V_20%_X5R" H 9300 8520 60  0001 L CNN "Part Number"
+F 6 "Capacitor - non polarized" H 9300 8430 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Capacitors.SchLib" H 9300 8340 60  0001 L CNN "Library Path"
+F 8 "=Value" H 9300 8250 60  0001 L CNN "Comment"
+F 9 "Standard" H 9300 8160 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 9300 8070 60  0001 L CNN "Component Type"
+F 11 "2" H 9300 7890 60  0001 L CNN "Pin Count"
+F 12 "PcbLib\\Capacitors SMD.PcbLib" H 9300 7800 60  0001 L CNN "Footprint Path"
+F 13 "CAPC1709X100N" H 9300 7710 60  0001 L CNN "Footprint Ref"
+F 14 " " H 9300 7620 60  0001 L CNN "PackageDescription"
+F 15 "22uF" H 9300 7530 60  0001 L CNN "Val"
+F 16 "None" H 9300 7440 60  0001 L CNN "Status"
+F 17 " " H 9300 7350 60  0001 L CNN "Status Comment"
+F 18 "6.3V" H 9300 7260 60  0001 L CNN "Voltage"
+F 19 "X5R" H 9300 7170 60  0001 L CNN "TC"
+F 20 "±20%" H 9300 7080 60  0001 L CNN "Tolerance"
+F 21 "SMD Multilayer Chip Ceramic Capacitor" H 9300 6990 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 9300 6900 60  0001 L CNN "Manufacturer"
+F 23 "CC0603_22UF_6.3V_20%_X5R" H 9300 6810 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0603" H 9300 6720 60  0001 L CNN "Case"
+F 25 "Yes" H 9300 6630 60  0001 L CNN "Mounted"
+F 26 "No" H 9300 6540 60  0001 L CNN "Socket"
+F 27 "Yes" H 9300 6450 60  0001 L CNN "SMD"
+F 28 " " H 9300 6360 60  0001 L CNN "PressFit"
+F 29 "No" H 9300 6270 60  0001 L CNN "Sense"
+F 30 " " H 9300 6180 60  0001 L CNN "Sense Comment"
+F 31 " " H 9300 6090 60  0001 L CNN "ComponentHeight"
+F 32 "TDK" H 9300 6000 60  0001 L CNN "Manufacturer1 Example"
+F 33 "C1608X5R0J226M080AC" H 9300 5910 60  0001 L CNN "Manufacturer1 Part Number"
+F 34 "1mm" H 9300 5820 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 9300 5640 60  0001 L CNN "Author"
+F 36 "12/16/13 00:00:00" H 9300 5550 60  0001 L CNN "CreateDate"
+F 37 "09/13/16 00:00:00" H 9300 5460 60  0001 L CNN "LatestRevisionDate"
+F 38 "Capacitors SMD" H 9300 5370 60  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9300 5280 60  0001 L CNN "License"
+	1    9300 9050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6018E6D1
+P 9300 9350
+AR Path="/5BD32060/6018E6D1" Ref="#PWR?"  Part="1" 
+AR Path="/5C16C03C/6018E6D1" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/6018E6D1" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/6018E6D1" Ref="#PWR0835"  Part="1" 
+F 0 "#PWR0835" H 9300 9100 50  0001 C CNN
+F 1 "GND" H 9305 9177 50  0000 C CNN
+F 2 "" H 9300 9350 50  0001 C CNN
+F 3 "" H 9300 9350 50  0001 C CNN
+	1    9300 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 9250 9800 9150
+Connection ~ 9800 9050
+Connection ~ 9800 9150
+Wire Wire Line
+	9800 9150 9800 9050
+$Comp
+L Resistors_SMD:R0402_100K_1%_0.0625W_100PPM R24
+U 1 1 6018E701
+P 9650 9200
+F 0 "R24" V 9754 9260 50  0000 L CNN
+F 1 "R0402_100K_1%_0.0625W_100PPM" H 9650 9005 50  0001 L CNN
+F 2 "Resistors SMD:RESC1005X40N" H 9650 8930 50  0001 L CNN
+F 3 " " H 9650 8855 50  0001 L CNN
+F 4 "100k" V 9845 9260 50  0000 L CNN "Val"
+F 5 "R0402_100K_1%_0.0625W_100PPM" H 9650 8780 50  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 9650 8705 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 9650 8630 50  0001 L CNN "Library Path"
+F 8 "100k" H 9650 8555 50  0001 L CNN "Comment"
+F 9 "Standard" H 9650 8480 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 9650 8405 50  0001 L CNN "Component Type"
+F 11 " " H 9650 8330 50  0001 L CNN "PackageDescription"
+F 12 "2" H 9650 8255 50  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 9650 8180 50  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 9650 8105 50  0001 L CNN "Footprint Ref"
+F 15 "Not Recommended" H 9650 8030 50  0001 L CNN "Status"
+F 16 "0.0625W" H 9650 7955 50  0001 L CNN "Power"
+F 17 "±100ppm/°C" H 9650 7880 50  0001 L CNN "TC"
+F 18 " " H 9650 7805 50  0001 L CNN "Voltage"
+F 19 "±1%" H 9650 7730 50  0001 L CNN "Tolerance"
+F 20 "General Purpose Thick Film Chip Resistor" H 9650 7655 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 9650 7580 50  0001 L CNN "Manufacturer"
+F 22 "R0402_100K_1%_0.0625W_100PPM" H 9650 7505 50  0001 L CNN "Manufacturer Part Number"
+F 23 "0402" H 9650 7430 50  0001 L CNN "Case"
+F 24 "No" H 9650 7355 50  0001 L CNN "PressFit"
+F 25 "Yes" H 9650 7280 50  0001 L CNN "Mounted"
+F 26 " " H 9650 7205 50  0001 L CNN "Sense Comment"
+F 27 "No" H 9650 7130 50  0001 L CNN "Sense"
+F 28 " " H 9650 7055 50  0001 L CNN "Status Comment"
+F 29 "No" H 9650 6980 50  0001 L CNN "Socket"
+F 30 "Yes" H 9650 6905 50  0001 L CNN "SMD"
+F 31 " " H 9650 6830 50  0001 L CNN "ComponentHeight"
+F 32 "YAGEO PHYCOMP" H 9650 6755 50  0001 L CNN "Manufacturer1 Example"
+F 33 "232270671004L" H 9650 6680 50  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.4mm" H 9650 6605 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 9650 6530 50  0001 L CNN "Author"
+F 36 "12/03/07 00:00:00" H 9650 6455 50  0001 L CNN "CreateDate"
+F 37 "10/17/12 00:00:00" H 9650 6380 50  0001 L CNN "LatestRevisionDate"
+F 38 "Resistors.DbLib" H 9650 6230 50  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9650 6080 50  0001 L CNN "License"
+	1    9650 9200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 9050 9650 9200
+Connection ~ 9650 9050
+Wire Wire Line
+	9650 9050 9800 9050
+Wire Wire Line
+	9650 9500 9800 9500
+Wire Wire Line
+	9300 9050 9650 9050
+Wire Wire Line
+	11850 3250 11850 3400
+Connection ~ 11850 3400
+Wire Wire Line
+	11850 3400 11850 4150
+$Comp
+L Inductors_SMD:IND0603_MURATA_BLM18SG121TN1D L42
+U 1 1 603DC9A5
+P 12100 8950
+F 0 "L42" H 12400 9000 50  0000 C CNN
+F 1 "IND0603_MURATA_BLM18SG121TN1D" H 12100 8760 60  0001 L CNN
+F 2 "INDC1608X65N" H 12100 7950 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND0603_MURATA_BLM18S.pdf" H 12100 8580 60  0001 L CNN
+F 4 "120R@100MHz" H 12250 8850 50  0000 C CNN "~"
+F 5 "IND0603_MURATA_BLM18SG121TN1D" H 12100 8490 60  0001 L CNN "Part Number"
+F 6 "Inductor" H 12100 8400 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Inductors & Transformers.SchLib" H 12100 8310 60  0001 L CNN "Library Path"
+F 8 "=Value" H 12100 8220 60  0001 L CNN "Comment"
+F 9 "Standard" H 12100 8130 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 12100 8040 60  0001 L CNN "Component Type"
+F 11 " " H 12100 7860 60  0001 L CNN "PackageDescription"
+F 12 "2" H 12100 7770 60  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Inductors SMD.PcbLib" H 12100 7680 60  0001 L CNN "Footprint Path"
+F 14 "INDC1608X65N" H 12100 7590 60  0001 L CNN "Footprint Ref"
+F 15 "120R@100MHz" H 12100 7500 60  0001 L CNN "Val"
+F 16 "None" H 12100 7410 60  0001 L CNN "Status"
+F 17 "3A" H 12100 7320 60  0001 L CNN "Power"
+F 18 "0.025R" H 12100 7230 60  0001 L CNN "Resistance"
+F 19 "±25%" H 12100 7140 60  0001 L CNN "Tolerance"
+F 20 "SMD EMIFIL Suppression Chip Ferrite Bead" H 12100 7050 60  0001 L CNN "Part Description"
+F 21 "MURATA" H 12100 6960 60  0001 L CNN "Manufacturer"
+F 22 "BLM18SG121TN1D" H 12100 6870 60  0001 L CNN "Manufacturer Part Number"
+F 23 "0603" H 12100 6780 60  0001 L CNN "Case"
+F 24 "Yes" H 12100 6690 60  0001 L CNN "Mounted"
+F 25 "No" H 12100 6600 60  0001 L CNN "Socket"
+F 26 "Yes" H 12100 6510 60  0001 L CNN "SMD"
+F 27 " " H 12100 6420 60  0001 L CNN "Sense Comment"
+F 28 "No" H 12100 6330 60  0001 L CNN "Sense"
+F 29 " " H 12100 6240 60  0001 L CNN "Status Comment"
+F 30 "0.65mm" H 12100 6150 60  0001 L CNN "ComponentHeight"
+F 31 "CERN DEM JLC" H 12100 5970 60  0001 L CNN "Author"
+F 32 "07/23/14 00:00:00" H 12100 5880 60  0001 L CNN "CreateDate"
+F 33 "07/23/14 00:00:00" H 12100 5790 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 12100 5700 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 12100 5610 60  0001 L CNN "License"
+	1    12100 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Inductors_SMD:IND0603_MURATA_BLM18SG121TN1D L41
+U 1 1 6040717D
+P 9050 6650
+F 0 "L41" H 9350 6700 50  0000 C CNN
+F 1 "IND0603_MURATA_BLM18SG121TN1D" H 9050 6460 60  0001 L CNN
+F 2 "INDC1608X65N" H 9050 5650 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND0603_MURATA_BLM18S.pdf" H 9050 6280 60  0001 L CNN
+F 4 "120R@100MHz" H 9200 6550 50  0000 C CNN "~"
+F 5 "IND0603_MURATA_BLM18SG121TN1D" H 9050 6190 60  0001 L CNN "Part Number"
+F 6 "Inductor" H 9050 6100 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Inductors & Transformers.SchLib" H 9050 6010 60  0001 L CNN "Library Path"
+F 8 "=Value" H 9050 5920 60  0001 L CNN "Comment"
+F 9 "Standard" H 9050 5830 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 9050 5740 60  0001 L CNN "Component Type"
+F 11 " " H 9050 5560 60  0001 L CNN "PackageDescription"
+F 12 "2" H 9050 5470 60  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Inductors SMD.PcbLib" H 9050 5380 60  0001 L CNN "Footprint Path"
+F 14 "INDC1608X65N" H 9050 5290 60  0001 L CNN "Footprint Ref"
+F 15 "120R@100MHz" H 9050 5200 60  0001 L CNN "Val"
+F 16 "None" H 9050 5110 60  0001 L CNN "Status"
+F 17 "3A" H 9050 5020 60  0001 L CNN "Power"
+F 18 "0.025R" H 9050 4930 60  0001 L CNN "Resistance"
+F 19 "±25%" H 9050 4840 60  0001 L CNN "Tolerance"
+F 20 "SMD EMIFIL Suppression Chip Ferrite Bead" H 9050 4750 60  0001 L CNN "Part Description"
+F 21 "MURATA" H 9050 4660 60  0001 L CNN "Manufacturer"
+F 22 "BLM18SG121TN1D" H 9050 4570 60  0001 L CNN "Manufacturer Part Number"
+F 23 "0603" H 9050 4480 60  0001 L CNN "Case"
+F 24 "Yes" H 9050 4390 60  0001 L CNN "Mounted"
+F 25 "No" H 9050 4300 60  0001 L CNN "Socket"
+F 26 "Yes" H 9050 4210 60  0001 L CNN "SMD"
+F 27 " " H 9050 4120 60  0001 L CNN "Sense Comment"
+F 28 "No" H 9050 4030 60  0001 L CNN "Sense"
+F 29 " " H 9050 3940 60  0001 L CNN "Status Comment"
+F 30 "0.65mm" H 9050 3850 60  0001 L CNN "ComponentHeight"
+F 31 "CERN DEM JLC" H 9050 3670 60  0001 L CNN "Author"
+F 32 "07/23/14 00:00:00" H 9050 3580 60  0001 L CNN "CreateDate"
+F 33 "07/23/14 00:00:00" H 9050 3490 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 9050 3400 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 9050 3310 60  0001 L CNN "License"
+F 36 "dnf" H 9200 6750 50  0000 C CNN "config"
+	1    9050 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12400 8950 12550 8950
+Wire Wire Line
+	12100 8950 11950 8950
+Wire Wire Line
+	11950 8950 11950 9050
+Connection ~ 11950 9050
+Wire Wire Line
+	9500 6650 9350 6650
+Wire Wire Line
+	9050 6650 8850 6650
+Wire Wire Line
+	8850 6650 8850 6800
+Connection ~ 8850 6800
+Wire Wire Line
+	8850 6800 9100 6800
+Text Label 8000 6800 0    50   ~ 0
+1V5_LDO
+Text Label 11050 9050 0    50   ~ 0
+1V5_DCDC
+Wire Wire Line
+	8350 6800 8850 6800
+Wire Wire Line
+	9650 6650 9500 6650
+$Comp
+L Connector_Generic:TestPoint TP?
+U 1 1 5F8BFCD0
+P 9650 6650
+AR Path="/5C16BF8E/5F8BFCD0" Ref="TP?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/5F8BFCD0" Ref="TP6"  Part="1" 
+F 0 "TP6" V 9708 6768 50  0000 L CNN
+F 1 "TestPoint" V 9800 6650 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 9850 6650 50  0001 C CNN
+F 3 " " H 9850 6650 50  0001 C CNN
+	1    9650 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+1V5 #PWR0544
+U 1 1 63AD62B5
+P 9500 6650
+F 0 "#PWR0544" H 9500 6500 50  0001 C CNN
+F 1 "+1V5" H 9515 6823 50  0000 C CNN
+F 2 "" H 9500 6650 50  0001 C CNN
+F 3 "" H 9500 6650 50  0001 C CNN
+	1    9500 6650
+	1    0    0    -1  
+$EndComp
+Connection ~ 9500 6650
+$Comp
+L power:+3V3 #PWR?
+U 1 1 608BE684
+P 9300 9050
+AR Path="/5BD32060/608BE684" Ref="#PWR?"  Part="1" 
+AR Path="/5BABAC65/608BE684" Ref="#PWR?"  Part="1" 
+AR Path="/5CC24E97/608BE684" Ref="#PWR?"  Part="1" 
+AR Path="/5CC393D3/608BE684" Ref="#PWR?"  Part="1" 
+AR Path="/5CC6DBF7/608BE684" Ref="#PWR?"  Part="1" 
+AR Path="/5CC8AFE1/608BE684" Ref="#PWR?"  Part="1" 
+AR Path="/5BCEDA59/608BE684" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/608BE684" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/608BE684" Ref="#PWR0824"  Part="1" 
+F 0 "#PWR0824" H 9300 8900 50  0001 C CNN
+F 1 "+3V3" H 9300 9200 50  0000 C CNN
+F 2 "" H 9300 9050 50  0001 C CNN
+F 3 "" H 9300 9050 50  0001 C CNN
+	1    9300 9050
+	1    0    0    -1  
+$EndComp
+Connection ~ 9300 9050
+NoConn ~ 9800 9650
+$Comp
+L power:PWR_FLAG #FLG0118
+U 1 1 6024A9BD
+P 12550 8950
+F 0 "#FLG0118" H 12550 9025 50  0001 C CNN
+F 1 "PWR_FLAG" V 12550 9078 50  0000 L CNN
+F 2 "" H 12550 8950 50  0001 C CNN
+F 3 "" H 12550 8950 50  0001 C CNN
+	1    12550 8950
+	0    1    1    0   
+$EndComp
+Connection ~ 12550 8950
+Wire Wire Line
+	8300 7500 9100 7500
+$Comp
+L LEDs_&_Displays:LED_KINGBRIGHT_KPH-1608CGCK LD?
+U 1 1 5FD2F823
+P 2700 7900
+AR Path="/5C907554/5C417BCB/5FD2F823" Ref="LD?"  Part="1" 
+AR Path="/5C16BF8E/5FD2F823" Ref="LD?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/5FD2F823" Ref="LD18"  Part="1" 
+F 0 "LD18" V 2700 8070 50  0000 L CNN
+F 1 "LED_KINGBRIGHT_KPH-1608CGCK" H 2700 7670 60  0001 L CNN
+F 2 "ICs And Semiconductors SMD:LED_KINGBRIGHT_KPH-1608CGCK" H 2700 6680 60  0001 L CNN
+F 3 "" H 2700 7490 60  0001 L CNN
+F 4 "LED_KINGBRIGHT_KPH-1608CGCK" H 2700 7400 60  0001 L CNN "Part Number"
+F 5 "LED Green 1C 2A" H 2700 7310 60  0001 L CNN "Library Ref"
+F 6 "SchLib\\LEDs & Displays.SchLib" H 2700 7220 60  0001 L CNN "Library Path"
+F 7 " " H 2700 7130 60  0001 L CNN "Comment"
+F 8 "Standard" H 2700 7040 60  0001 L CNN "Component Kind"
+F 9 "Standard" H 2700 6950 60  0001 L CNN "Component Type"
+F 10 "Green" H 2700 6860 60  0001 L CNN "Color"
+F 11 " " H 2700 6770 60  0001 L CNN "Device"
+F 12 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 2700 6590 60  0001 L CNN "PackageDescription"
+F 13 " " H 2700 6500 60  0001 L CNN "Status"
+F 14 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 2700 6410 60  0001 L CNN "Part Description"
+F 15 "WURTH" H 2700 6320 60  0001 L CNN "Manufacturer"
+F 16 "150060VS75000" H 2700 6230 60  0001 L CNN "Manufacturer Part Number"
+F 17 "2" H 2700 6140 60  0001 L CNN "Pin Count"
+F 18 " " H 2700 6050 60  0001 L CNN "Case"
+F 19 "Yes" H 2700 5960 60  0001 L CNN "Mounted"
+F 20 "No" H 2700 5870 60  0001 L CNN "Socket"
+F 21 "Yes" H 2700 5780 60  0001 L CNN "SMD"
+F 22 "No" H 2700 5690 60  0001 L CNN "PressFit"
+F 23 " " H 2700 5600 60  0001 L CNN "Sense Comment"
+F 24 "No" H 2700 5510 60  0001 L CNN "Sense"
+F 25 "No" H 2700 5420 60  0001 L CNN "Bonding"
+F 26 " " H 2700 5330 60  0001 L CNN "Status Comment"
+F 27 "0.65mm" H 2700 5240 60  0001 L CNN "ComponentHeight"
+F 28 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 2700 5150 60  0001 L CNN "Footprint Path"
+F 29 "LED_KINGBRIGHT_KPH-1608CGCK" H 2700 5060 60  0001 L CNN "Footprint Ref"
+F 30 " " H 2700 4790 60  0001 L CNN "ComponentLink1Description"
+F 31 " " H 2700 4610 60  0001 L CNN "ComponentLink2Description"
+F 32 "CERN DEM JLC" H 2700 4520 60  0001 L CNN "Author"
+F 33 "07/03/17 00:00:00" H 2700 4430 60  0001 L CNN "CreateDate"
+F 34 "07/03/17 00:00:00" H 2700 4340 60  0001 L CNN "LatestRevisionDate"
+F 35 "ICs And Semiconductors SMD" H 2700 4250 60  0001 L CNN "Library Name"
+F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2700 4160 60  0001 L CNN "License"
+	1    2700 7900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD2F829
+P 2700 8450
+AR Path="/5C16C03C/5FD2F829" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5FD2F829" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/5FD2F829" Ref="#PWR0838"  Part="1" 
+F 0 "#PWR0838" H 2700 8200 50  0001 C CNN
+F 1 "GND" H 2705 8277 50  0000 C CNN
+F 2 "" H 2700 8450 50  0001 C CNN
+F 3 "" H 2700 8450 50  0001 C CNN
+	1    2700 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 8050 2700 8450
+$Comp
+L Resistors_SMD:R0402_1K_1%_0.0625W_100PPM R61
+U 1 1 5FD2F85C
+P 2700 7450
+F 0 "R61" V 2804 7510 50  0000 L CNN
+F 1 "R0402_1K_1%_0.0625W_100PPM" H 2700 7240 60  0001 L CNN
+F 2 "RESC1005X40N" H 2700 6430 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 2700 7060 60  0001 L CNN
+F 4 "1k" V 2895 7510 50  0000 L CNN "~"
+F 5 "R0402_1K_1%_0.0625W_100PPM" H 2700 6970 60  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 2700 6880 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 2700 6790 60  0001 L CNN "Library Path"
+F 8 "=Value" H 2700 6700 60  0001 L CNN "Comment"
+F 9 "Standard" H 2700 6610 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 2700 6520 60  0001 L CNN "Component Type"
+F 11 " " H 2700 6340 60  0001 L CNN "PackageDescription"
+F 12 "2" H 2700 6250 60  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 2700 6160 60  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 2700 6070 60  0001 L CNN "Footprint Ref"
+F 15 "1k" H 2700 5980 60  0001 L CNN "Val"
+F 16 "Not Recommended" H 2700 5890 60  0001 L CNN "Status"
+F 17 "0.0625W" H 2700 5800 60  0001 L CNN "Power"
+F 18 "±100ppm/°C" H 2700 5710 60  0001 L CNN "TC"
+F 19 " " H 2700 5620 60  0001 L CNN "Voltage"
+F 20 "±1%" H 2700 5530 60  0001 L CNN "Tolerance"
+F 21 "General Purpose Thick Film Chip Resistor" H 2700 5440 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 2700 5350 60  0001 L CNN "Manufacturer"
+F 23 "R0402_1K_1%_0.0625W_100PPM" H 2700 5260 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0402" H 2700 5170 60  0001 L CNN "Case"
+F 25 "No" H 2700 5080 60  0001 L CNN "PressFit"
+F 26 "Yes" H 2700 4990 60  0001 L CNN "Mounted"
+F 27 " " H 2700 4900 60  0001 L CNN "Sense Comment"
+F 28 "No" H 2700 4810 60  0001 L CNN "Sense"
+F 29 " " H 2700 4720 60  0001 L CNN "Status Comment"
+F 30 "No" H 2700 4630 60  0001 L CNN "Socket"
+F 31 "Yes" H 2700 4540 60  0001 L CNN "SMD"
+F 32 " " H 2700 4450 60  0001 L CNN "ComponentHeight"
+F 33 "YAGEO PHYCOMP" H 2700 4360 60  0001 L CNN "Manufacturer1 Example"
+F 34 "232270671002L" H 2700 4270 60  0001 L CNN "Manufacturer1 Part Number"
+F 35 "0.4mm" H 2700 4180 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 36 "CERN DEM JLC" H 2700 4000 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 2700 3910 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 2700 3820 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 2700 3730 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2700 3640 60  0001 L CNN "License"
+	1    2700 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3P #PWR?
+U 1 1 5FD675EC
+P 2700 7450
+AR Path="/5C16C03C/5FD675EC" Ref="#PWR?"  Part="1" 
+AR Path="/5BCEDA39/5FD675EC" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5FD675EC" Ref="#PWR?"  Part="1" 
+AR Path="/5FD675EC" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/5FD675EC" Ref="#PWR0837"  Part="1" 
+F 0 "#PWR0837" H 2700 7300 50  0001 C CNN
+F 1 "+3.3P" H 2715 7623 50  0000 C CNN
+F 2 "" H 2700 7450 50  0001 C CNN
+F 3 "" H 2700 7450 50  0001 C CNN
+	1    2700 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDs_&_Displays:LED_KINGBRIGHT_KPH-1608CGCK LD?
+U 1 1 5FEA9BB6
+P 3350 7900
+AR Path="/5C907554/5C417BCB/5FEA9BB6" Ref="LD?"  Part="1" 
+AR Path="/5C16BF8E/5FEA9BB6" Ref="LD?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/5FEA9BB6" Ref="LD19"  Part="1" 
+F 0 "LD19" V 3350 8070 50  0000 L CNN
+F 1 "LED_KINGBRIGHT_KPH-1608CGCK" H 3350 7670 60  0001 L CNN
+F 2 "ICs And Semiconductors SMD:LED_KINGBRIGHT_KPH-1608CGCK" H 3350 6680 60  0001 L CNN
+F 3 "" H 3350 7490 60  0001 L CNN
+F 4 "LED_KINGBRIGHT_KPH-1608CGCK" H 3350 7400 60  0001 L CNN "Part Number"
+F 5 "LED Green 1C 2A" H 3350 7310 60  0001 L CNN "Library Ref"
+F 6 "SchLib\\LEDs & Displays.SchLib" H 3350 7220 60  0001 L CNN "Library Path"
+F 7 " " H 3350 7130 60  0001 L CNN "Comment"
+F 8 "Standard" H 3350 7040 60  0001 L CNN "Component Kind"
+F 9 "Standard" H 3350 6950 60  0001 L CNN "Component Type"
+F 10 "Green" H 3350 6860 60  0001 L CNN "Color"
+F 11 " " H 3350 6770 60  0001 L CNN "Device"
+F 12 "SMT Green LED, Case 0603, Body L 1.6 x W 0.8mm H 0.65mm" H 3350 6590 60  0001 L CNN "PackageDescription"
+F 13 " " H 3350 6500 60  0001 L CNN "Status"
+F 14 "SMD Green LED, Case 1.6mmX0.8mm(0603), 0.65mm Thickness" H 3350 6410 60  0001 L CNN "Part Description"
+F 15 "WURTH" H 3350 6320 60  0001 L CNN "Manufacturer"
+F 16 "150060VS75000" H 3350 6230 60  0001 L CNN "Manufacturer Part Number"
+F 17 "2" H 3350 6140 60  0001 L CNN "Pin Count"
+F 18 " " H 3350 6050 60  0001 L CNN "Case"
+F 19 "Yes" H 3350 5960 60  0001 L CNN "Mounted"
+F 20 "No" H 3350 5870 60  0001 L CNN "Socket"
+F 21 "Yes" H 3350 5780 60  0001 L CNN "SMD"
+F 22 "No" H 3350 5690 60  0001 L CNN "PressFit"
+F 23 " " H 3350 5600 60  0001 L CNN "Sense Comment"
+F 24 "No" H 3350 5510 60  0001 L CNN "Sense"
+F 25 "No" H 3350 5420 60  0001 L CNN "Bonding"
+F 26 " " H 3350 5330 60  0001 L CNN "Status Comment"
+F 27 "0.65mm" H 3350 5240 60  0001 L CNN "ComponentHeight"
+F 28 "PcbLib\\ICs And Semiconductors SMD.PcbLib" H 3350 5150 60  0001 L CNN "Footprint Path"
+F 29 "LED_KINGBRIGHT_KPH-1608CGCK" H 3350 5060 60  0001 L CNN "Footprint Ref"
+F 30 " " H 3350 4790 60  0001 L CNN "ComponentLink1Description"
+F 31 " " H 3350 4610 60  0001 L CNN "ComponentLink2Description"
+F 32 "CERN DEM JLC" H 3350 4520 60  0001 L CNN "Author"
+F 33 "07/03/17 00:00:00" H 3350 4430 60  0001 L CNN "CreateDate"
+F 34 "07/03/17 00:00:00" H 3350 4340 60  0001 L CNN "LatestRevisionDate"
+F 35 "ICs And Semiconductors SMD" H 3350 4250 60  0001 L CNN "Library Name"
+F 36 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3350 4160 60  0001 L CNN "License"
+	1    3350 7900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FEA9BBC
+P 3350 8450
+AR Path="/5C16C03C/5FEA9BBC" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5FEA9BBC" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/5FEA9BBC" Ref="#PWR0840"  Part="1" 
+F 0 "#PWR0840" H 3350 8200 50  0001 C CNN
+F 1 "GND" H 3355 8277 50  0000 C CNN
+F 2 "" H 3350 8450 50  0001 C CNN
+F 3 "" H 3350 8450 50  0001 C CNN
+	1    3350 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 8050 3350 8450
+$Comp
+L Resistors_SMD:R0402_1K_1%_0.0625W_100PPM R78
+U 1 1 5FEA9BE9
+P 3350 7450
+F 0 "R78" V 3454 7510 50  0000 L CNN
+F 1 "R0402_1K_1%_0.0625W_100PPM" H 3350 7240 60  0001 L CNN
+F 2 "RESC1005X40N" H 3350 6430 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 3350 7060 60  0001 L CNN
+F 4 "1k" V 3545 7510 50  0000 L CNN "~"
+F 5 "R0402_1K_1%_0.0625W_100PPM" H 3350 6970 60  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 3350 6880 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 3350 6790 60  0001 L CNN "Library Path"
+F 8 "=Value" H 3350 6700 60  0001 L CNN "Comment"
+F 9 "Standard" H 3350 6610 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 3350 6520 60  0001 L CNN "Component Type"
+F 11 " " H 3350 6340 60  0001 L CNN "PackageDescription"
+F 12 "2" H 3350 6250 60  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 3350 6160 60  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 3350 6070 60  0001 L CNN "Footprint Ref"
+F 15 "1k" H 3350 5980 60  0001 L CNN "Val"
+F 16 "Not Recommended" H 3350 5890 60  0001 L CNN "Status"
+F 17 "0.0625W" H 3350 5800 60  0001 L CNN "Power"
+F 18 "±100ppm/°C" H 3350 5710 60  0001 L CNN "TC"
+F 19 " " H 3350 5620 60  0001 L CNN "Voltage"
+F 20 "±1%" H 3350 5530 60  0001 L CNN "Tolerance"
+F 21 "General Purpose Thick Film Chip Resistor" H 3350 5440 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 3350 5350 60  0001 L CNN "Manufacturer"
+F 23 "R0402_1K_1%_0.0625W_100PPM" H 3350 5260 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0402" H 3350 5170 60  0001 L CNN "Case"
+F 25 "No" H 3350 5080 60  0001 L CNN "PressFit"
+F 26 "Yes" H 3350 4990 60  0001 L CNN "Mounted"
+F 27 " " H 3350 4900 60  0001 L CNN "Sense Comment"
+F 28 "No" H 3350 4810 60  0001 L CNN "Sense"
+F 29 " " H 3350 4720 60  0001 L CNN "Status Comment"
+F 30 "No" H 3350 4630 60  0001 L CNN "Socket"
+F 31 "Yes" H 3350 4540 60  0001 L CNN "SMD"
+F 32 " " H 3350 4450 60  0001 L CNN "ComponentHeight"
+F 33 "YAGEO PHYCOMP" H 3350 4360 60  0001 L CNN "Manufacturer1 Example"
+F 34 "232270671002L" H 3350 4270 60  0001 L CNN "Manufacturer1 Part Number"
+F 35 "0.4mm" H 3350 4180 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 36 "CERN DEM JLC" H 3350 4000 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 3350 3910 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 3350 3820 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 3350 3730 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 3350 3640 60  0001 L CNN "License"
+	1    3350 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L marble_misc:+3V3_USB #PWR?
+U 1 1 5FEF1658
+P 3350 7450
+AR Path="/5C16C03C/5FEF1658" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/5FEF1658" Ref="#PWR0839"  Part="1" 
+F 0 "#PWR0839" H 3350 7300 50  0001 C CNN
+F 1 "+3V3_USB" H 3365 7623 50  0000 C CNN
+F 2 "" H 3350 7450 50  0001 C CNN
+F 3 "" H 3350 7450 50  0001 C CNN
+	1    3350 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistors:NX3008NBKV Q3
+U 1 1 5FFBC510
+P 1100 6450
+F 0 "Q3" H 1050 6100 50  0000 L CNN
+F 1 "NX3008NBKV" H 900 6000 50  0000 L CNN
+F 2 "ICs And Semiconductors SMD:SOTFL50P160X60-6N" H 1100 6450 50  0001 C CNN
+F 3 "" H 1100 6450 50  0001 C CNN
+F 4 "NXP" H 1100 6450 50  0001 C CNN "Manufacturer"
+F 5 "NX3008NBKV" H 1100 6450 50  0001 C CNN "Manufacturer Part Number"
+	1    1100 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistors:NX3008NBKV Q3
+U 2 1 5FFBED1D
+P 2150 6400
+F 0 "Q3" H 2100 6000 50  0000 L CNN
+F 1 "NX3008NBKV" H 1900 5900 50  0000 L CNN
+F 2 "ICs And Semiconductors SMD:SOTFL50P160X60-6N" H 2150 6400 50  0001 C CNN
+F 3 "" H 2150 6400 50  0001 C CNN
+F 4 "NXP" H 2150 6400 50  0001 C CNN "Manufacturer"
+F 5 "NX3008NBKV" H 2150 6400 50  0001 C CNN "Manufacturer Part Number"
+	2    2150 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistors:NX3008NBKV Q20
+U 1 1 6008EF97
+P 3300 6450
+F 0 "Q20" H 3250 6100 50  0000 L CNN
+F 1 "NX3008NBKV" H 3100 6000 50  0000 L CNN
+F 2 "ICs And Semiconductors SMD:SOTFL50P160X60-6N" H 3300 6450 50  0001 C CNN
+F 3 "" H 3300 6450 50  0001 C CNN
+F 4 "NXP" H 3300 6450 50  0001 C CNN "Manufacturer"
+F 5 "NX3008NBKV" H 3300 6450 50  0001 C CNN "Manufacturer Part Number"
+	1    3300 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistors:NX3008NBKV Q20
+U 2 1 60090727
+P 4350 6400
+F 0 "Q20" H 4350 6000 50  0000 L CNN
+F 1 "NX3008NBKV" H 4150 5900 50  0000 L CNN
+F 2 "ICs And Semiconductors SMD:SOTFL50P160X60-6N" H 4350 6400 50  0001 C CNN
+F 3 "" H 4350 6400 50  0001 C CNN
+F 4 "NXP" H 4350 6400 50  0001 C CNN "Manufacturer"
+F 5 "NX3008NBKV" H 4350 6400 50  0001 C CNN "Manufacturer Part Number"
+	2    4350 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors_SMD:R0402_10K_1%_0.0625W_100PPM R71
+U 1 1 5FB15568
+P 8650 7800
+F 0 "R71" H 8800 7997 50  0000 C CNN
+F 1 "R0402_10K_1%_0.0625W_100PPM" H 8650 7605 50  0001 L CNN
+F 2 "RESC1005X40N" H 8650 7530 50  0001 L CNN
+F 3 " " H 8650 7455 50  0001 L CNN
+F 4 "10k" H 8800 7906 50  0000 C CNN "Val"
+F 5 "R0402_10K_1%_0.0625W_100PPM" H 8650 7380 50  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 8650 7305 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 8650 7230 50  0001 L CNN "Library Path"
+F 8 "=Value" H 8650 7155 50  0001 L CNN "Comment"
+F 9 "Standard" H 8650 7080 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 8650 7005 50  0001 L CNN "Component Type"
+F 11 " " H 8650 6930 50  0001 L CNN "PackageDescription"
+F 12 "2" H 8650 6855 50  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 8650 6780 50  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 8650 6705 50  0001 L CNN "Footprint Ref"
+F 15 "Not Recommended" H 8650 6630 50  0001 L CNN "Status"
+F 16 "0.0625W" H 8650 6555 50  0001 L CNN "Power"
+F 17 "±100ppm/°C" H 8650 6480 50  0001 L CNN "TC"
+F 18 " " H 8650 6405 50  0001 L CNN "Voltage"
+F 19 "±1%" H 8650 6330 50  0001 L CNN "Tolerance"
+F 20 "General Purpose Thick Film Chip Resistor" H 8650 6255 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 8650 6180 50  0001 L CNN "Manufacturer"
+F 22 "R0402_10K_1%_0.0625W_100PPM" H 8650 6105 50  0001 L CNN "Manufacturer Part Number"
+F 23 "0402" H 8650 6030 50  0001 L CNN "Case"
+F 24 "No" H 8650 5955 50  0001 L CNN "PressFit"
+F 25 "Yes" H 8650 5880 50  0001 L CNN "Mounted"
+F 26 " " H 8650 5805 50  0001 L CNN "Sense Comment"
+F 27 "No" H 8650 5730 50  0001 L CNN "Sense"
+F 28 " " H 8650 5655 50  0001 L CNN "Status Comment"
+F 29 "No" H 8650 5580 50  0001 L CNN "Socket"
+F 30 "Yes" H 8650 5505 50  0001 L CNN "SMD"
+F 31 " " H 8650 5430 50  0001 L CNN "ComponentHeight"
+F 32 "YAGEO PHYCOMP" H 8650 5355 50  0001 L CNN "Manufacturer1 Example"
+F 33 "232270671003L" H 8650 5280 50  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.4mm" H 8650 5205 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 8650 5130 50  0001 L CNN "Author"
+F 36 "12/03/07 00:00:00" H 8650 5055 50  0001 L CNN "CreateDate"
+F 37 "10/17/12 00:00:00" H 8650 4980 50  0001 L CNN "LatestRevisionDate"
+F 38 "Resistors SMD" H 8650 4830 50  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8650 4680 50  0001 L CNN "License"
+	1    8650 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors_SMD:CC1206_22UF_25V_20%_X5R C141
+U 1 1 5FC06FEE
+P 5650 1050
+F 0 "C141" V 5700 1050 50  0000 L CNN
+F 1 "CC1206_22UF_25V_20%_X5R" H 5650 805 50  0001 L CNN
+F 2 "Capacitors SMD:CAPC3216X180N" H 5650 730 50  0001 L CNN
+F 3 " " H 5650 655 50  0001 L CNN
+F 4 "22uF" V 5900 1050 50  0000 L CNN "Val"
+F 5 "CC1206_22UF_25V_20%_X5R" H 5650 580 50  0001 L CNN "Part Number"
+F 6 "Capacitor - non polarized" H 5650 505 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Capacitors.SchLib" H 5650 430 50  0001 L CNN "Library Path"
+F 8 "22uF" H 5650 355 50  0001 L CNN "Comment"
+F 9 "Standard" H 5650 280 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 5650 205 50  0001 L CNN "Component Type"
+F 11 "2" H 5650 130 50  0001 L CNN "Pin Count"
+F 12 "PcbLib\\Capacitors SMD.PcbLib" H 5650 55  50  0001 L CNN "Footprint Path"
+F 13 "CAPC3216X180N" H 5650 -20 50  0001 L CNN "Footprint Ref"
+F 14 " " H 5650 -95 50  0001 L CNN "PackageDescription"
+F 15 "None" H 5650 -170 50  0001 L CNN "Status"
+F 16 " " H 5650 -245 50  0001 L CNN "Status Comment"
+F 17 "25V" H 5650 -320 50  0001 L CNN "Voltage"
+F 18 "X5R" H 5650 -395 50  0001 L CNN "TC"
+F 19 "±20%" H 5650 -470 50  0001 L CNN "Tolerance"
+F 20 "SMD Multilayer Chip Ceramic Capacitor" H 5650 -545 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 5650 -620 50  0001 L CNN "Manufacturer"
+F 22 "CC1206_22UF_25V_20%_X5R" H 5650 -695 50  0001 L CNN "Manufacturer Part Number"
+F 23 "1206" H 5650 -770 50  0001 L CNN "Case"
+F 24 "Yes" H 5650 -845 50  0001 L CNN "Mounted"
+F 25 "No" H 5650 -920 50  0001 L CNN "Socket"
+F 26 "Yes" H 5650 -995 50  0001 L CNN "SMD"
+F 27 " " H 5650 -1070 50  0001 L CNN "PressFit"
+F 28 "No" H 5650 -1145 50  0001 L CNN "Sense"
+F 29 " " H 5650 -1220 50  0001 L CNN "Sense Comment"
+F 30 " " H 5650 -1295 50  0001 L CNN "ComponentHeight"
+F 31 "TDK" H 5650 -1370 50  0001 L CNN "Manufacturer1 Example"
+F 32 "C3216X5R1E226M160AB" H 5650 -1445 50  0001 L CNN "Manufacturer1 Part Number"
+F 33 "1.8mm" H 5650 -1520 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 34 "CERN DEM WB" H 5650 -1595 50  0001 L CNN "Author"
+F 35 "07/25/18 00:00:00" H 5650 -1670 50  0001 L CNN "CreateDate"
+F 36 "07/25/18 00:00:00" H 5650 -1745 50  0001 L CNN "LatestRevisionDate"
+F 37 "Capacitors.DbLib" H 5650 -1895 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5650 -2045 50  0001 L CNN "License"
+	1    5650 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitors_SMD:CC1206_22UF_25V_20%_X5R C416
+U 1 1 5FC33063
+P 5900 1050
+F 0 "C416" V 5950 1050 50  0000 L CNN
+F 1 "CC1206_22UF_25V_20%_X5R" H 5900 805 50  0001 L CNN
+F 2 "Capacitors SMD:CAPC3216X180N" H 5900 730 50  0001 L CNN
+F 3 " " H 5900 655 50  0001 L CNN
+F 4 "22uF" V 6150 1050 50  0000 L CNN "Val"
+F 5 "CC1206_22UF_25V_20%_X5R" H 5900 580 50  0001 L CNN "Part Number"
+F 6 "Capacitor - non polarized" H 5900 505 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Capacitors.SchLib" H 5900 430 50  0001 L CNN "Library Path"
+F 8 "22uF" H 5900 355 50  0001 L CNN "Comment"
+F 9 "Standard" H 5900 280 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 5900 205 50  0001 L CNN "Component Type"
+F 11 "2" H 5900 130 50  0001 L CNN "Pin Count"
+F 12 "PcbLib\\Capacitors SMD.PcbLib" H 5900 55  50  0001 L CNN "Footprint Path"
+F 13 "CAPC3216X180N" H 5900 -20 50  0001 L CNN "Footprint Ref"
+F 14 " " H 5900 -95 50  0001 L CNN "PackageDescription"
+F 15 "None" H 5900 -170 50  0001 L CNN "Status"
+F 16 " " H 5900 -245 50  0001 L CNN "Status Comment"
+F 17 "25V" H 5900 -320 50  0001 L CNN "Voltage"
+F 18 "X5R" H 5900 -395 50  0001 L CNN "TC"
+F 19 "±20%" H 5900 -470 50  0001 L CNN "Tolerance"
+F 20 "SMD Multilayer Chip Ceramic Capacitor" H 5900 -545 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 5900 -620 50  0001 L CNN "Manufacturer"
+F 22 "CC1206_22UF_25V_20%_X5R" H 5900 -695 50  0001 L CNN "Manufacturer Part Number"
+F 23 "1206" H 5900 -770 50  0001 L CNN "Case"
+F 24 "Yes" H 5900 -845 50  0001 L CNN "Mounted"
+F 25 "No" H 5900 -920 50  0001 L CNN "Socket"
+F 26 "Yes" H 5900 -995 50  0001 L CNN "SMD"
+F 27 " " H 5900 -1070 50  0001 L CNN "PressFit"
+F 28 "No" H 5900 -1145 50  0001 L CNN "Sense"
+F 29 " " H 5900 -1220 50  0001 L CNN "Sense Comment"
+F 30 " " H 5900 -1295 50  0001 L CNN "ComponentHeight"
+F 31 "TDK" H 5900 -1370 50  0001 L CNN "Manufacturer1 Example"
+F 32 "C3216X5R1E226M160AB" H 5900 -1445 50  0001 L CNN "Manufacturer1 Part Number"
+F 33 "1.8mm" H 5900 -1520 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 34 "CERN DEM WB" H 5900 -1595 50  0001 L CNN "Author"
+F 35 "07/25/18 00:00:00" H 5900 -1670 50  0001 L CNN "CreateDate"
+F 36 "07/25/18 00:00:00" H 5900 -1745 50  0001 L CNN "LatestRevisionDate"
+F 37 "Capacitors.DbLib" H 5900 -1895 50  0001 L CNN "Library Name"
+F 38 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 5900 -2045 50  0001 L CNN "License"
+	1    5900 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 1050 5650 1050
+Connection ~ 5650 1050
+Wire Wire Line
+	5650 1050 5900 1050
+Connection ~ 5900 1050
+Wire Wire Line
+	5900 1350 5650 1350
+Connection ~ 5650 1350
+Wire Wire Line
+	5900 1050 6150 1050
+Text HLabel 9000 9700 0    50   Input ~ 0
+DDR_1V5_EN
+Wire Wire Line
+	9000 9700 9650 9700
+Wire Wire Line
+	9650 9700 9650 9500
+Connection ~ 9650 9500
+Text Label 9100 9700 0    50   ~ 0
+1V5_EN
+Connection ~ 6350 6800
+Wire Wire Line
+	6350 6800 6700 6800
+Text Label 6450 7050 0    50   ~ 0
+1V5_EN
+Wire Wire Line
+	6450 7050 6700 7050
+Wire Wire Line
+	6350 7100 6450 7100
+Wire Wire Line
+	6450 7100 6450 7050
+$Comp
+L Connector_Generic:TestPoint TP?
+U 1 1 5FC62BFE
+P 8000 10150
+AR Path="/5C16BF8E/5FC62BFE" Ref="TP?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/5FC62BFE" Ref="TP12"  Part="1" 
+F 0 "TP12" H 8058 10268 50  0000 L CNN
+F 1 "TestPoint" H 8058 10177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 8200 10150 50  0001 C CNN
+F 3 " " H 8200 10150 50  0001 C CNN
+	1    8000 10150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC94969
+P 7850 10150
+AR Path="/5C16C03C/5FC94969" Ref="#PWR?"  Part="1" 
+AR Path="/5BCEDA59/5FC94969" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5FC94969" Ref="#PWR?"  Part="1" 
+AR Path="/5C16BF8E/5DB9B7E6/5FC94969" Ref="#PWR029"  Part="1" 
+F 0 "#PWR029" H 7850 9900 50  0001 C CNN
+F 1 "GND" H 7855 9977 50  0000 C CNN
+F 2 "" H 7850 10150 50  0001 C CNN
+F 3 "" H 7850 10150 50  0001 C CNN
+	1    7850 10150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 10150 8000 10150
+$Comp
+L Resistors_SMD:R0402_24K_1%_0.0625W_100PPM R196
+U 1 1 5FF0EF29
+P 6650 10250
+F 0 "R196" V 6754 10310 50  0000 L CNN
+F 1 "R0402_24K_1%_0.0625W_100PPM" H 6650 10055 50  0001 L CNN
+F 2 "Resistors SMD:RESC1005X40N" H 6650 9980 50  0001 L CNN
+F 3 " " H 6650 9905 50  0001 L CNN
+F 4 "24k" V 6845 10310 50  0000 L CNN "Val"
+F 5 "R0402_24K_1%_0.0625W_100PPM" H 6650 9830 50  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 6650 9755 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 6650 9680 50  0001 L CNN "Library Path"
+F 8 "24k" H 6650 9605 50  0001 L CNN "Comment"
+F 9 "Standard" H 6650 9530 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 6650 9455 50  0001 L CNN "Component Type"
+F 11 " " H 6650 9380 50  0001 L CNN "PackageDescription"
+F 12 "2" H 6650 9305 50  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 6650 9230 50  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 6650 9155 50  0001 L CNN "Footprint Ref"
+F 15 "Not Recommended" H 6650 9080 50  0001 L CNN "Status"
+F 16 "0.0625W" H 6650 9005 50  0001 L CNN "Power"
+F 17 "±100ppm/°C" H 6650 8930 50  0001 L CNN "TC"
+F 18 " " H 6650 8855 50  0001 L CNN "Voltage"
+F 19 "±1%" H 6650 8780 50  0001 L CNN "Tolerance"
+F 20 "General Purpose Thick Film Chip Resistor" H 6650 8705 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 6650 8630 50  0001 L CNN "Manufacturer"
+F 22 "R0402_24K_1%_0.0625W_100PPM" H 6650 8555 50  0001 L CNN "Manufacturer Part Number"
+F 23 "0402" H 6650 8480 50  0001 L CNN "Case"
+F 24 "No" H 6650 8405 50  0001 L CNN "PressFit"
+F 25 "Yes" H 6650 8330 50  0001 L CNN "Mounted"
+F 26 " " H 6650 8255 50  0001 L CNN "Sense Comment"
+F 27 "No" H 6650 8180 50  0001 L CNN "Sense"
+F 28 " " H 6650 8105 50  0001 L CNN "Status Comment"
+F 29 "No" H 6650 8030 50  0001 L CNN "Socket"
+F 30 "Yes" H 6650 7955 50  0001 L CNN "SMD"
+F 31 " " H 6650 7880 50  0001 L CNN "ComponentHeight"
+F 32 "YAGEO PHYCOMP" H 6650 7805 50  0001 L CNN "Manufacturer1 Example"
+F 33 "232270672403L" H 6650 7730 50  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.4mm" H 6650 7655 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 6650 7580 50  0001 L CNN "Author"
+F 36 "12/03/07 00:00:00" H 6650 7505 50  0001 L CNN "CreateDate"
+F 37 "10/17/12 00:00:00" H 6650 7430 50  0001 L CNN "LatestRevisionDate"
+F 38 "Resistors.DbLib" H 6650 7280 50  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6650 7130 50  0001 L CNN "License"
+	1    6650 10250
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors_SMD:R0402_3K6_1%_0.0625W_100PPM R189
+U 1 1 5FF15D64
+P 2950 10250
+F 0 "R189" V 3054 10310 50  0000 L CNN
+F 1 "R0402_3K6_1%_0.0625W_100PPM" H 2950 10055 50  0001 L CNN
+F 2 "Resistors SMD:RESC1005X40N" H 2950 9980 50  0001 L CNN
+F 3 " " H 2950 9905 50  0001 L CNN
+F 4 "3k6" V 3145 10310 50  0000 L CNN "Val"
+F 5 "R0402_3K6_1%_0.0625W_100PPM" H 2950 9830 50  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 2950 9755 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 2950 9680 50  0001 L CNN "Library Path"
+F 8 "3k6" H 2950 9605 50  0001 L CNN "Comment"
+F 9 "Standard" H 2950 9530 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 2950 9455 50  0001 L CNN "Component Type"
+F 11 " " H 2950 9380 50  0001 L CNN "PackageDescription"
+F 12 "2" H 2950 9305 50  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 2950 9230 50  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 2950 9155 50  0001 L CNN "Footprint Ref"
+F 15 "Not Recommended" H 2950 9080 50  0001 L CNN "Status"
+F 16 "0.0625W" H 2950 9005 50  0001 L CNN "Power"
+F 17 "±100ppm/°C" H 2950 8930 50  0001 L CNN "TC"
+F 18 " " H 2950 8855 50  0001 L CNN "Voltage"
+F 19 "±1%" H 2950 8780 50  0001 L CNN "Tolerance"
+F 20 "General Purpose Thick Film Chip Resistor" H 2950 8705 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 2950 8630 50  0001 L CNN "Manufacturer"
+F 22 "R0402_3K6_1%_0.0625W_100PPM" H 2950 8555 50  0001 L CNN "Manufacturer Part Number"
+F 23 "0402" H 2950 8480 50  0001 L CNN "Case"
+F 24 "No" H 2950 8405 50  0001 L CNN "PressFit"
+F 25 "Yes" H 2950 8330 50  0001 L CNN "Mounted"
+F 26 " " H 2950 8255 50  0001 L CNN "Sense Comment"
+F 27 "No" H 2950 8180 50  0001 L CNN "Sense"
+F 28 " " H 2950 8105 50  0001 L CNN "Status Comment"
+F 29 "No" H 2950 8030 50  0001 L CNN "Socket"
+F 30 "Yes" H 2950 7955 50  0001 L CNN "SMD"
+F 31 " " H 2950 7880 50  0001 L CNN "ComponentHeight"
+F 32 "YAGEO PHYCOMP" H 2950 7805 50  0001 L CNN "Manufacturer1 Example"
+F 33 "232270673602L" H 2950 7730 50  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.4mm" H 2950 7655 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 2950 7580 50  0001 L CNN "Author"
+F 36 "12/03/07 00:00:00" H 2950 7505 50  0001 L CNN "CreateDate"
+F 37 "10/17/12 00:00:00" H 2950 7430 50  0001 L CNN "LatestRevisionDate"
+F 38 "Resistors.DbLib" H 2950 7280 50  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2950 7130 50  0001 L CNN "License"
+	1    2950 10250
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors_SMD:R0402_15K_1%_0.0625W_100PPM R68
+U 1 1 5FF1BA7A
+P 8650 7100
+F 0 "R68" H 8800 7297 50  0000 C CNN
+F 1 "R0402_15K_1%_0.0625W_100PPM" H 8650 6905 50  0001 L CNN
+F 2 "Resistors SMD:RESC1005X40N" H 8650 6830 50  0001 L CNN
+F 3 " " H 8650 6755 50  0001 L CNN
+F 4 "15k" H 8800 7206 50  0000 C CNN "Val"
+F 5 "R0402_15K_1%_0.0625W_100PPM" H 8650 6680 50  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 8650 6605 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 8650 6530 50  0001 L CNN "Library Path"
+F 8 "15k" H 8650 6455 50  0001 L CNN "Comment"
+F 9 "Standard" H 8650 6380 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 8650 6305 50  0001 L CNN "Component Type"
+F 11 " " H 8650 6230 50  0001 L CNN "PackageDescription"
+F 12 "2" H 8650 6155 50  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 8650 6080 50  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 8650 6005 50  0001 L CNN "Footprint Ref"
+F 15 "None" H 8650 5930 50  0001 L CNN "Status"
+F 16 "0.0625W" H 8650 5855 50  0001 L CNN "Power"
+F 17 "±100ppm/°C" H 8650 5780 50  0001 L CNN "TC"
+F 18 " " H 8650 5705 50  0001 L CNN "Voltage"
+F 19 "±1%" H 8650 5630 50  0001 L CNN "Tolerance"
+F 20 "General Purpose Thick Film Chip Resistor" H 8650 5555 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 8650 5480 50  0001 L CNN "Manufacturer"
+F 22 "R0402_15K_1%_0.0625W_100PPM" H 8650 5405 50  0001 L CNN "Manufacturer Part Number"
+F 23 "0402" H 8650 5330 50  0001 L CNN "Case"
+F 24 "No" H 8650 5255 50  0001 L CNN "PressFit"
+F 25 "Yes" H 8650 5180 50  0001 L CNN "Mounted"
+F 26 " " H 8650 5105 50  0001 L CNN "Sense Comment"
+F 27 "No" H 8650 5030 50  0001 L CNN "Sense"
+F 28 " " H 8650 4955 50  0001 L CNN "Status Comment"
+F 29 "No" H 8650 4880 50  0001 L CNN "Socket"
+F 30 "Yes" H 8650 4805 50  0001 L CNN "SMD"
+F 31 " " H 8650 4730 50  0001 L CNN "ComponentHeight"
+F 32 "VISHAY" H 8650 4655 50  0001 L CNN "Manufacturer1 Example"
+F 33 "CRCW040215K0FKED" H 8650 4580 50  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.4mm" H 8650 4505 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JMW" H 8650 4430 50  0001 L CNN "Author"
+F 36 "07/06/15 00:00:00" H 8650 4355 50  0001 L CNN "CreateDate"
+F 37 "07/06/15 00:00:00" H 8650 4280 50  0001 L CNN "LatestRevisionDate"
+F 38 "Resistors.DbLib" H 8650 4130 50  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8650 3980 50  0001 L CNN "License"
+	1    8650 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors_SMD:R0402_15K_1%_0.0625W_100PPM R70
+U 1 1 5FF1E5CD
+P 8050 7500
+F 0 "R70" V 8154 7560 50  0000 L CNN
+F 1 "R0402_15K_1%_0.0625W_100PPM" H 8050 7305 50  0001 L CNN
+F 2 "Resistors SMD:RESC1005X40N" H 8050 7230 50  0001 L CNN
+F 3 " " H 8050 7155 50  0001 L CNN
+F 4 "15k" V 8245 7560 50  0000 L CNN "Val"
+F 5 "R0402_15K_1%_0.0625W_100PPM" H 8050 7080 50  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 8050 7005 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 8050 6930 50  0001 L CNN "Library Path"
+F 8 "15k" H 8050 6855 50  0001 L CNN "Comment"
+F 9 "Standard" H 8050 6780 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 8050 6705 50  0001 L CNN "Component Type"
+F 11 " " H 8050 6630 50  0001 L CNN "PackageDescription"
+F 12 "2" H 8050 6555 50  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 8050 6480 50  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 8050 6405 50  0001 L CNN "Footprint Ref"
+F 15 "None" H 8050 6330 50  0001 L CNN "Status"
+F 16 "0.0625W" H 8050 6255 50  0001 L CNN "Power"
+F 17 "±100ppm/°C" H 8050 6180 50  0001 L CNN "TC"
+F 18 " " H 8050 6105 50  0001 L CNN "Voltage"
+F 19 "±1%" H 8050 6030 50  0001 L CNN "Tolerance"
+F 20 "General Purpose Thick Film Chip Resistor" H 8050 5955 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 8050 5880 50  0001 L CNN "Manufacturer"
+F 22 "R0402_15K_1%_0.0625W_100PPM" H 8050 5805 50  0001 L CNN "Manufacturer Part Number"
+F 23 "0402" H 8050 5730 50  0001 L CNN "Case"
+F 24 "No" H 8050 5655 50  0001 L CNN "PressFit"
+F 25 "Yes" H 8050 5580 50  0001 L CNN "Mounted"
+F 26 " " H 8050 5505 50  0001 L CNN "Sense Comment"
+F 27 "No" H 8050 5430 50  0001 L CNN "Sense"
+F 28 " " H 8050 5355 50  0001 L CNN "Status Comment"
+F 29 "No" H 8050 5280 50  0001 L CNN "Socket"
+F 30 "Yes" H 8050 5205 50  0001 L CNN "SMD"
+F 31 " " H 8050 5130 50  0001 L CNN "ComponentHeight"
+F 32 "VISHAY" H 8050 5055 50  0001 L CNN "Manufacturer1 Example"
+F 33 "CRCW040215K0FKED" H 8050 4980 50  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.4mm" H 8050 4905 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JMW" H 8050 4830 50  0001 L CNN "Author"
+F 36 "07/06/15 00:00:00" H 8050 4755 50  0001 L CNN "CreateDate"
+F 37 "07/06/15 00:00:00" H 8050 4680 50  0001 L CNN "LatestRevisionDate"
+F 38 "Resistors.DbLib" H 8050 4530 50  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8050 4380 50  0001 L CNN "License"
+	1    8050 7500
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors_SMD:R0402_13K_1%_0.0625W_100PPM R69
+U 1 1 5FF21930
+P 8050 6800
+F 0 "R69" V 8154 6860 50  0000 L CNN
+F 1 "R0402_13K_1%_0.0625W_100PPM" H 8050 6605 50  0001 L CNN
+F 2 "Resistors SMD:RESC1005X40N" H 8050 6530 50  0001 L CNN
+F 3 " " H 8050 6455 50  0001 L CNN
+F 4 "13k" V 8245 6860 50  0000 L CNN "Val"
+F 5 "R0402_13K_1%_0.0625W_100PPM" H 8050 6380 50  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 8050 6305 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 8050 6230 50  0001 L CNN "Library Path"
+F 8 "13k" H 8050 6155 50  0001 L CNN "Comment"
+F 9 "Standard" H 8050 6080 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 8050 6005 50  0001 L CNN "Component Type"
+F 11 " " H 8050 5930 50  0001 L CNN "PackageDescription"
+F 12 "2" H 8050 5855 50  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 8050 5780 50  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 8050 5705 50  0001 L CNN "Footprint Ref"
+F 15 "Not Recommended" H 8050 5630 50  0001 L CNN "Status"
+F 16 "0.0625W" H 8050 5555 50  0001 L CNN "Power"
+F 17 "±100ppm/°C" H 8050 5480 50  0001 L CNN "TC"
+F 18 " " H 8050 5405 50  0001 L CNN "Voltage"
+F 19 "±1%" H 8050 5330 50  0001 L CNN "Tolerance"
+F 20 "General Purpose Thick Film Chip Resistor" H 8050 5255 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 8050 5180 50  0001 L CNN "Manufacturer"
+F 22 "R0402_13K_1%_0.0625W_100PPM" H 8050 5105 50  0001 L CNN "Manufacturer Part Number"
+F 23 "0402" H 8050 5030 50  0001 L CNN "Case"
+F 24 "No" H 8050 4955 50  0001 L CNN "PressFit"
+F 25 "Yes" H 8050 4880 50  0001 L CNN "Mounted"
+F 26 " " H 8050 4805 50  0001 L CNN "Sense Comment"
+F 27 "No" H 8050 4730 50  0001 L CNN "Sense"
+F 28 " " H 8050 4655 50  0001 L CNN "Status Comment"
+F 29 "No" H 8050 4580 50  0001 L CNN "Socket"
+F 30 "Yes" H 8050 4505 50  0001 L CNN "SMD"
+F 31 " " H 8050 4430 50  0001 L CNN "ComponentHeight"
+F 32 "YAGEO PHYCOMP" H 8050 4355 50  0001 L CNN "Manufacturer1 Example"
+F 33 "232270671303L" H 8050 4280 50  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.4mm" H 8050 4205 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 8050 4130 50  0001 L CNN "Author"
+F 36 "12/03/07 00:00:00" H 8050 4055 50  0001 L CNN "CreateDate"
+F 37 "10/17/12 00:00:00" H 8050 3980 50  0001 L CNN "LatestRevisionDate"
+F 38 "Resistors.DbLib" H 8050 3830 50  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8050 3680 50  0001 L CNN "License"
+	1    8050 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 6800 8050 6800
+Wire Wire Line
+	7950 7100 8050 7100
+Connection ~ 8050 6800
+Wire Wire Line
+	8050 6800 8350 6800
+Connection ~ 8050 7100
+Wire Wire Line
+	8050 7100 8350 7100
+Wire Wire Line
+	7950 7500 8050 7500
+Wire Wire Line
+	7950 7800 8050 7800
+Connection ~ 8050 7500
+Wire Wire Line
+	8050 7500 8300 7500
+Connection ~ 8050 7800
+Wire Wire Line
+	8050 7800 8300 7800
+Wire Wire Line
+	6300 10250 6650 10250
+$Comp
+L Resistors_SMD:R0402_7K5_1%_0.0625W_100PPM R195
+U 1 1 5FEDF136
+P 6650 9950
+F 0 "R195" V 6754 10010 50  0000 L CNN
+F 1 "R0402_7K5_1%_0.0625W_100PPM" H 6650 9755 50  0001 L CNN
+F 2 "Resistors SMD:RESC1005X40N" H 6650 9680 50  0001 L CNN
+F 3 " " H 6650 9605 50  0001 L CNN
+F 4 "7k5" V 6845 10010 50  0000 L CNN "Val"
+F 5 "R0402_7K5_1%_0.0625W_100PPM" H 6650 9530 50  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 6650 9455 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 6650 9380 50  0001 L CNN "Library Path"
+F 8 "7k5" H 6650 9305 50  0001 L CNN "Comment"
+F 9 "Standard" H 6650 9230 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 6650 9155 50  0001 L CNN "Component Type"
+F 11 " " H 6650 9080 50  0001 L CNN "PackageDescription"
+F 12 "2" H 6650 9005 50  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 6650 8930 50  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 6650 8855 50  0001 L CNN "Footprint Ref"
+F 15 "Not Recommended" H 6650 8780 50  0001 L CNN "Status"
+F 16 "0.0625W" H 6650 8705 50  0001 L CNN "Power"
+F 17 "±100ppm/°C" H 6650 8630 50  0001 L CNN "TC"
+F 18 " " H 6650 8555 50  0001 L CNN "Voltage"
+F 19 "±1%" H 6650 8480 50  0001 L CNN "Tolerance"
+F 20 "General Purpose Thick Film Chip Resistor" H 6650 8405 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 6650 8330 50  0001 L CNN "Manufacturer"
+F 22 "R0402_7K5_1%_0.0625W_100PPM" H 6650 8255 50  0001 L CNN "Manufacturer Part Number"
+F 23 "0402" H 6650 8180 50  0001 L CNN "Case"
+F 24 "No" H 6650 8105 50  0001 L CNN "PressFit"
+F 25 "Yes" H 6650 8030 50  0001 L CNN "Mounted"
+F 26 " " H 6650 7955 50  0001 L CNN "Sense Comment"
+F 27 "No" H 6650 7880 50  0001 L CNN "Sense"
+F 28 " " H 6650 7805 50  0001 L CNN "Status Comment"
+F 29 "No" H 6650 7730 50  0001 L CNN "Socket"
+F 30 "Yes" H 6650 7655 50  0001 L CNN "SMD"
+F 31 " " H 6650 7580 50  0001 L CNN "ComponentHeight"
+F 32 "YAGEO PHYCOMP" H 6650 7505 50  0001 L CNN "Manufacturer1 Example"
+F 33 "232270677502L" H 6650 7430 50  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.4mm" H 6650 7355 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 6650 7280 50  0001 L CNN "Author"
+F 36 "12/03/07 00:00:00" H 6650 7205 50  0001 L CNN "CreateDate"
+F 37 "10/17/12 00:00:00" H 6650 7130 50  0001 L CNN "LatestRevisionDate"
+F 38 "Resistors.DbLib" H 6650 6980 50  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 6650 6830 50  0001 L CNN "License"
+	1    6650 9950
+	0    1    1    0   
+$EndComp
+Connection ~ 6650 10250
+Wire Wire Line
+	2950 9950 2950 9650
+$Comp
+L Resistors_SMD:R0402_1K8_1%_0.0625W_100PPM R168
+U 1 1 5FF12B7E
+P 2950 9950
+F 0 "R168" V 3054 10010 50  0000 L CNN
+F 1 "R0402_1K8_1%_0.0625W_100PPM" H 2950 9755 50  0001 L CNN
+F 2 "Resistors SMD:RESC1005X40N" H 2950 9680 50  0001 L CNN
+F 3 " " H 2950 9605 50  0001 L CNN
+F 4 "1k8" V 3145 10010 50  0000 L CNN "Val"
+F 5 "R0402_1K8_1%_0.0625W_100PPM" H 2950 9530 50  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 2950 9455 50  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 2950 9380 50  0001 L CNN "Library Path"
+F 8 "1k8" H 2950 9305 50  0001 L CNN "Comment"
+F 9 "Standard" H 2950 9230 50  0001 L CNN "Component Kind"
+F 10 "Standard" H 2950 9155 50  0001 L CNN "Component Type"
+F 11 " " H 2950 9080 50  0001 L CNN "PackageDescription"
+F 12 "2" H 2950 9005 50  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 2950 8930 50  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 2950 8855 50  0001 L CNN "Footprint Ref"
+F 15 "Not Recommended" H 2950 8780 50  0001 L CNN "Status"
+F 16 "0.0625W" H 2950 8705 50  0001 L CNN "Power"
+F 17 "±100ppm/°C" H 2950 8630 50  0001 L CNN "TC"
+F 18 " " H 2950 8555 50  0001 L CNN "Voltage"
+F 19 "±1%" H 2950 8480 50  0001 L CNN "Tolerance"
+F 20 "General Purpose Thick Film Chip Resistor" H 2950 8405 50  0001 L CNN "Part Description"
+F 21 "GENERIC" H 2950 8330 50  0001 L CNN "Manufacturer"
+F 22 "R0402_1K8_1%_0.0625W_100PPM" H 2950 8255 50  0001 L CNN "Manufacturer Part Number"
+F 23 "0402" H 2950 8180 50  0001 L CNN "Case"
+F 24 "No" H 2950 8105 50  0001 L CNN "PressFit"
+F 25 "Yes" H 2950 8030 50  0001 L CNN "Mounted"
+F 26 " " H 2950 7955 50  0001 L CNN "Sense Comment"
+F 27 "No" H 2950 7880 50  0001 L CNN "Sense"
+F 28 " " H 2950 7805 50  0001 L CNN "Status Comment"
+F 29 "No" H 2950 7730 50  0001 L CNN "Socket"
+F 30 "Yes" H 2950 7655 50  0001 L CNN "SMD"
+F 31 " " H 2950 7580 50  0001 L CNN "ComponentHeight"
+F 32 "YAGEO PHYCOMP" H 2950 7505 50  0001 L CNN "Manufacturer1 Example"
+F 33 "232270671802L" H 2950 7430 50  0001 L CNN "Manufacturer1 Part Number"
+F 34 "0.4mm" H 2950 7355 50  0001 L CNN "Manufacturer1 ComponentHeight"
+F 35 "CERN DEM JLC" H 2950 7280 50  0001 L CNN "Author"
+F 36 "12/03/07 00:00:00" H 2950 7205 50  0001 L CNN "CreateDate"
+F 37 "10/17/12 00:00:00" H 2950 7130 50  0001 L CNN "LatestRevisionDate"
+F 38 "Resistors.DbLib" H 2950 6980 50  0001 L CNN "Library Name"
+F 39 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 2950 6830 50  0001 L CNN "License"
+	1    2950 9950
+	0    1    1    0   
+$EndComp
+Connection ~ 2950 10250
+$Comp
+L Inductors_SMD:IND1806_MURATA_BLM41PG600SN1L L45
+U 1 1 606C0DCD
+P 13900 3800
+F 0 "L45" H 14050 3900 50  0000 C CNN
+F 1 "IND1806_MURATA_BLM41PG600SN1L" H 13900 3610 60  0001 L CNN
+F 2 "INDC4516X180N" H 13900 2800 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\IND1806_MURATA_BLM41P.pdf" H 13900 3430 60  0001 L CNN
+F 4 "60R@100MHz" H 14050 3700 50  0000 C CNN "~"
+F 5 "IND1806_MURATA_BLM41PG600SN1L" H 13900 3340 60  0001 L CNN "Part Number"
+F 6 "Inductor" H 13900 3250 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Inductors & Transformers.SchLib" H 13900 3160 60  0001 L CNN "Library Path"
+F 8 "=Value" H 13900 3070 60  0001 L CNN "Comment"
+F 9 "Standard" H 13900 2980 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 13900 2890 60  0001 L CNN "Component Type"
+F 11 " " H 13900 2710 60  0001 L CNN "PackageDescription"
+F 12 "2" H 13900 2620 60  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Inductors SMD.PcbLib" H 13900 2530 60  0001 L CNN "Footprint Path"
+F 14 "INDC4516X180N" H 13900 2440 60  0001 L CNN "Footprint Ref"
+F 15 "60R@100MHz" H 13900 2350 60  0001 L CNN "Val"
+F 16 "None" H 13900 2260 60  0001 L CNN "Status"
+F 17 "6A" H 13900 2170 60  0001 L CNN "Power"
+F 18 "0.01R" H 13900 2080 60  0001 L CNN "Resistance"
+F 19 " " H 13900 1990 60  0001 L CNN "Tolerance"
+F 20 "SMD EMI Suppression Chip Ferrite Bead (BLM41P Series)" H 13900 1900 60  0001 L CNN "Part Description"
+F 21 "MURATA" H 13900 1810 60  0001 L CNN "Manufacturer"
+F 22 "BLM41PG600SN1L" H 13900 1720 60  0001 L CNN "Manufacturer Part Number"
+F 23 "1806" H 13900 1630 60  0001 L CNN "Case"
+F 24 "Yes" H 13900 1540 60  0001 L CNN "Mounted"
+F 25 "No" H 13900 1450 60  0001 L CNN "Socket"
+F 26 "Yes" H 13900 1360 60  0001 L CNN "SMD"
+F 27 " " H 13900 1270 60  0001 L CNN "Sense Comment"
+F 28 "No" H 13900 1180 60  0001 L CNN "Sense"
+F 29 " " H 13900 1090 60  0001 L CNN "Status Comment"
+F 30 "1.8mm" H 13900 1000 60  0001 L CNN "ComponentHeight"
+F 31 "CERN DEM JLC" H 13900 820 60  0001 L CNN "Author"
+F 32 "12/02/09 00:00:00" H 13900 730 60  0001 L CNN "CreateDate"
+F 33 "12/02/09 00:00:00" H 13900 640 60  0001 L CNN "LatestRevisionDate"
+F 34 "Inductors SMD" H 13900 550 60  0001 L CNN "Library Name"
+F 35 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 13900 460 60  0001 L CNN "License"
+	1    13900 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14200 4150 14700 4150
+Wire Wire Line
+	14400 3800 14200 3800
+Wire Wire Line
+	13900 3800 13800 3800
+Wire Wire Line
+	13800 3800 13800 4150
+Connection ~ 13800 4150
+Wire Wire Line
+	13800 4150 13900 4150
+Wire Wire Line
+	14700 3800 14700 4150
+Connection ~ 14700 4150
+Wire Wire Line
+	14400 3800 14700 3800
+Connection ~ 14400 3800
+Connection ~ 14700 3800
 $EndSCHEMATC
