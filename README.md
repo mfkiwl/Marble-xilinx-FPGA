@@ -1,16 +1,18 @@
 # Marble board
 
-LBNL: Dual FMC (HPC & LPC) NAD Carrier
+Marble is a dual FMC FPGA carrier board developed for general purpose use in particle accelerator electronics instrumentation. It is currently under development and the base platform for two accelerator projects at DOE: ALS-U (the Advanced Light Source Upgrade at LBNL and the LCLS-II HE (the Linac Coherent Light Source II High Energy upgrade).
 
-A general purpose carrier board, sized to satisfy needs of some BPM and LLRF applications
+![marble](docs/marble.jpg)
 
-Status: under development, prototype in testing
+The design responds deployment needs in an accelerator environment: reliability, ability to be remotely programmed, safety watchdog, self monitoring, etc. It is intended to be the base digital design for instrumentation electronics, with the capability of connecting to different I/O or analog front ends through the FMC connectors, and is optimized for cost effectiveness for deployments of hundreds of units. It is based on a Network Attached Device (NAD) approach, where high-speed serial links serve as the communication backbone with other systems in the accelerator.
 
 ## Basic Idea
 
 ![block diagram](docs/block_k3.png)
 
 ## Tools
+
+The Marble design is fully Open Source (licensed under the CERN Open Hardware License v1.2) and designed using Open Source tools (KiCAD).
 
 The schematic/layout tool used is [KiCad EDA](http://www.kicad-pcb.org/)
 version 5.1.8; you can feel comfortable using KiCad version 5.1.x, where x &ge; 5.
@@ -19,22 +21,18 @@ in this repo, or will save files that are not compatible with
 collaborators' reference installations.
 We also make use of [KiBoM](https://github.com/SchrodingersGat/KiBoM).
 
-See more comments about KiCad versions in [scripts/README.md](scripts/README.md).
+See more comments about KiCad versions in [design/scripts/README.md](design/scripts/README.md).
 
 ## Major Parts
 
 * U1: Xilinx [XC7K160T-FFG676](https://www.xilinx.com/products/silicon-devices/fpga/kintex-7.html) FPGA
 * SK1: 204-pin [DDR3](https://en.wikipedia.org/wiki/DDR3_SDRAM) [SO-DIMM](https://en.wikipedia.org/wiki/SO-DIMM)
-* U2: ST [STM32L083VZT](https://www.st.com/resource/en/datasheet/stm32l083vz.pdf) Microcontroller
+* U54: ST [STM32F207VCT6](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00237391.pdf) Microcontroller
 * U4: Marvell [88E1512](https://www.marvell.com/documents/eoxwrbluvwybgxvagkkf/) Ethernet PHY
 * U20: TI [CDCM61004](http://www.ti.com/product/CDCM61004) Clock Generator
 * U23: FTDI [FT4232H-56Q](https://www.ftdichip.com/Products/ICs/FT4232H.htm) USB interface
 * U35: Maxlinear [XRP7724](https://www.maxlinear.com/product/power-management/universal-pmics/universal-pmics/xrp7724) Quad PWM Power Controller
 * Y1: Taitien [TXEAADSANF-25.000000](https://www.taitien.com/wp-content/uploads/2015/12/XO-0076_TX.pdf) 25 MHz VCTCXO
-
-## (Almost) Reality:
-
-![layout](docs/marble_top.png)
 
 ## Auxiliary documentation
 
@@ -49,9 +47,14 @@ indexes to the actual machine-readable and DRC'd schematics.
 These are EPS files, authored using [xcircuit](http://opencircuitdesign.com/xcircuit/).
 Maybe you want to use GhostView to look at them.
 
+Also see notes on [current measurement capabilities](docs/shunts.md)
+at runtime.
+
+Our use of the XRP7724 PWM Power Controller has its own [README](xr_chip/README.md).
+
 ## Scripting and processing
 
-See the [scripts subdirectory](scripts) for
+See the [scripts subdirectory](design/scripts) for
 instructions and helper scripts covering:
 
 * Updating the I2C subsystem diagram in schematics
@@ -68,3 +71,9 @@ That's a *different board*: 4xSFP instead of 2xQSFP, and no SO-DIMM socket
 are the most obvious indicators.
 You can go [directly](https://github.com/BerkeleyLab/Marble-Mini/releases/tag/v1.0rc3)
 to the documentation related to that manufacturing run.
+
+## Credits
+
+The initial design is supported by the Berkeley Accelerator Controls and Instrumentation (BACI), a DOE High Energy Physics (HEP) General Accelerator R&D (GARD) program and carried out by the Accelerator Technology Group (ATG) at LBNL, in collaboration with the Warsaw University of Technology (WUT) and Creotech Instruments in Poland.
+
+The board was designed by Michal Gaska (WUT) and Larry Doolittle (LBNL) is the mastermind behind the design. Michael Betz, Vamsi Vytla, Sergio Paiagua and Eric Norum (LBNL) have also contributed to the design and supporting software and firmware throughout the development.

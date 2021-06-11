@@ -1,0 +1,319 @@
+\documentclass[12pt,oneside,a4]{article}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,width=160mm,top=25mm,bottom=25mm]{geometry}
+\usepackage[lining,tabular]{fbb} % so math uses tabular lining figures
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage[svgnames]{xcolor}
+
+
+
+\setlist{leftmargin=*}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,frame=single,xleftmargin=3em,xrightmargin=3em}
+\usepackage[os=win]{menukeys}
+\renewmenumacro{\keys}[+]{shadowedroundedkeys}
+\usepackage{framed}
+\usepackage{etoolbox}
+\AtBeginEnvironment{leftbar}{\sffamily\small}
+\usepackage{array,lipsum}
+\newenvironment{fulltable}[1][H]
+ {\begin{table}[#1]%
+  \hspace*{-\leftmarginwidth}%
+  \begin{minipage}{\fullwidth}}
+ {\end{minipage}\end{table}}
+\usetikzlibrary{chains,arrows,shapes,positioning}
+\usepackage{hyperref}
+\graphicspath{{figures/}} %Setting the graphicspath
+\renewcommand\abstractname{Introduction}
+
+\title{Marble -- Factory Acceptance Tests\\ \small{v1.0 2020}}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+\includegraphics[width=0.8\linewidth]{marble_top.png}
+\end{center}
+\begin{abstract}
+%\includegraphics[width=1.0\linewidth]{PhysLogger.png}\\
+This document presents a user--friendly guide on how to perform Factory Acceptance Tests (FAT) for the Marble module. Tests begin from a short description of where Marble's useful connector, LED indicators, and test points are placed on the board. It is highly recommended to perform the tests in the order presented in this document.
+\end{abstract}
+
+\clearpage
+\tableofcontents
+
+\clearpage
+
+\section{Overview}
+
+\begin{leftbar}
+Design files are open source and can be downloaded from GitHub:
+
+https://github.com/BerkeleyLab/Marble
+\end{leftbar}
+
+
+\begin{leftbar}
+Each board is marked with a revision number. Make sure that the
+
+downloaded files correspond to your board.
+\end{leftbar}
+
+\subsection{Hardware requirements}
+To perform all tests the following hardware is required:
+\begin{enumerate}
+    \item Lab bench-top power supply.
+    \item Micro USB cable.
+    \item QSFP loopback module.
+    \item FMC Tester module.
+    \item Multimeter.
+    \item MMC JTAG (example: SEGGER J-LINK mini).
+    \item FPGA JTAG (example: Digilent JTAG HS3).
+\end{enumerate}
+
+\subsection{Software requirements}
+To perform all tests the following software is required:
+\begin{enumerate}
+    \item Vivado 19.1.
+    \item Serial port terminal.
+\end{enumerate}
+
+\section{Power connection}
+Before connecting the power supply for the first time, check that the main bus is not shorted. Using a multimeter set in resistance measurement mode, measure the resistance between metal pads of the J19 connector (Figure \ref{01}).
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\linewidth]{J19.png}
+ \caption{Connector's terminals. }\label{01}
+\end{center}
+\end{figure}
+\begin{leftbar}
+Measured resistance should be around \textbf{{\color{red}200 kOhm}}
+\end{leftbar}
+
+If the resistance is correct, connect the main power. For this purpose, the current limitation on the power supply should be set to 100mA and the voltage to 12V. \textbf{Make sure that the current limit of the laboratory power supply is on.} Now the power cable can be connected to the board and the used laboratory power supply channel can be switched on.
+This should result in the \textit{12V} LED lighting up as shown  on Figure \ref{02}. Now it is recommended to go to section \nameref{microcontroller}.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\linewidth, angle = 180]{xrpoff.png}
+ \caption{12V indicator LED is on. }\label{02}
+\end{center}
+\end{figure}
+
+\section{Microcontroller programing}
+\label{microcontroller}
+
+Download the latest version of the microcontroller testing code from GitHub:
+\begin{leftbar}
+https://gitlab.lbl.gov/spaiagua/marble\_mmc/-/tree/unified\_marble
+\end{leftbar}
+
+A recent version of OpenOCD (v0.10.0 or later) is required.
+\begin{enumerate}
+	\item Connect JTAG module to \textbf{J14} as shown on Figure \ref{23}.
+	\item Connect the micro USB cable and using the serial terminal, connect to the last serial port for the new listed device in the operating system. Use 115200 baudrate.
+	\item Power up the board.
+	\item Program the microcontroller using the following commands:
+	\begin{enumerate}
+	\item Go to the main folder of the downloaded repository.
+	\item From the command line, run the following:
+	\begin{lstlisting}[backgroundcolor = \color{Gainsboro}, language=bash, frame=none]]
+$ make download
+	\end{lstlisting}
+	\end{enumerate}
+	\item After successful programming, a menu in the serial terminal should appear and LEDs (LD15, LD11, LD12) should blink.
+\end{enumerate}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\linewidth]{mmcjtag.png}
+ \caption{J14 connector. }\label{23}
+\end{center}
+\end{figure}
+
+
+
+\section{Power Supply programing}
+Before doing the steps below it is highly recommended to verify that there are no shorts on the power rails. This can be done by measuring the resistance between the test points:
+
+\begin{enumerate}
+    \item \textbf{TP12 (GND)} and \textbf{TP7 (+2V0)}.
+    \item \textbf{TP12 (GND)} and \textbf{TP9 (+1V0)}.
+    \item \textbf{TP12 (GND)} and \textbf{TP10 (+2V5)}.
+    \item \textbf{TP12 (GND)} and \textbf{TP8 (+1V8)}.
+    \item \textbf{TP12 (GND)} and \textbf{TP6 (+1V5)}.
+    \item \textbf{TP12 (GND)} and \textbf{TP4 (+1V2)}.
+    \item \textbf{TP12 (GND)} and \textbf{TP11 (+3V3)}.
+    \item \textbf{TP12 (GND)} and \textbf{TP11 (+3V3USB)}.
+    \item \textbf{TP12 (GND)} and \textbf{TP11 (+3V3P)}.
+    \item \textbf{TP12 (GND)} and \textbf{TP5 (+1V05)}.
+\end{enumerate}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\linewidth]{Marble_TP.png}
+ \caption{Test points. }\label{tp}
+\end{center}
+\end{figure}
+
+\textbf{Warning:} Only perform the following steps if there are no shorts on the power rails.
+\begin{enumerate}
+    \item Connect the micro USB cable and, using the serial terminal, connect to the last serial port for the new device listed in the operating system. Use 115200 baudrate.
+    \item Set up voltage to 12V and the current limit to 1A on a lab power supply.
+    \item Power up the board.
+    \item From the menu displayed in the serial terminal, select the option \menu{g) XRP7724 go}.
+    \item Power cycle by turning the lab power supply Off and then On.
+    \item All power LED indicators should be On (Figure \ref{leds}).
+    \item Using multimeter measure the voltage between the test points:
+    \begin{enumerate}
+    	\item \textbf{TP12 (GND)} and \textbf{TP7 (+2V0)} - expected voltage: +2.0V.
+    	\item \textbf{TP12 (GND)} and \textbf{TP9 (+1V0)} - expected voltage: +1.0V.
+    	\item \textbf{TP12 (GND)} and \textbf{TP10 (+2V5)} - expected voltage: +2.5V.
+    	\item \textbf{TP12 (GND)} and \textbf{TP8 (+1V8)} - expected voltage: +1.8V.
+    	\item \textbf{TP12 (GND)} and \textbf{TP6 (+1V5)} - expected voltage: +1.5V.
+    	\item \textbf{TP12 (GND)} and \textbf{TP4 (+1V2)} - expected voltage: +1.2V.
+    	\item \textbf{TP12 (GND)} and \textbf{TP11 (+3V3)} - expected voltage: +3.3V.
+    	\item \textbf{TP12 (GND)} and \textbf{TP11 (+3V3USB)} - expected voltage: +3.3V.
+    	\item \textbf{TP12 (GND)} and \textbf{TP11 (+3V3P)} - expected voltage: +3.3V.
+    	\item \textbf{TP12 (GND)} and \textbf{TP5 (+1V05)} - expected voltage: +1.05V.
+\end{enumerate}
+\end{enumerate}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.7\linewidth]{leds.png}
+ \caption{Power LED indicators after a successful power cycle.}\label{leds}
+\end{center}
+\end{figure}
+
+\section{FPGA programing}
+Download the latest version of the FPGA testing code from GitHub:
+\begin{leftbar}
+https://github.com/BerkeleyLab/Bedrock/
+\end{leftbar}
+
+\begin{leftbar}
+Before testing the FPGA it is recommended to set up the current limit to 2A on the lab power supply.
+\end{leftbar}
+\subsection{FMC test}
+\begin{leftbar}
+Board power should be turned off when inserting and removing the FMC module.
+\end{leftbar}
+\begin{enumerate}
+	\item Plug FMC Tester module to one of the FMC connectors as shown on Figure \ref{fig:example}.
+	\item Connect the micro USB cable and, using the serial terminal, connect to the last serial port for the new device listed in the operating system. Use 115200 baudrate.
+	\item Change the network adapter settings to connect with static IP address \textbf{192.168.9.10}.
+    \item Connect Marble to the computer using an Ethernet cable.
+    \item Power up the board.
+    \item In the serial terminal menu choose \menu{4) GPIO control
+>a) FMC power} to turn on power to the FMCs.
+	\item Program the FPGA using the following steps:
+	\begin{enumerate}
+	\item Go to the folder \textbf{Bedrock/projects/test\_marble\_family/}
+	\item Open command terminal and run command:
+	\begin{lstlisting}[backgroundcolor = \color{Gainsboro}, language=bash, frame=none]]
+$ mutil usb
+	\end{lstlisting}
+	\end{enumerate}
+	\item To run a test do the following steps:
+	\begin{enumerate}
+	\item Go to the folder \textbf{Bedrock/projects/test\_marble\_family/}
+	\item To test P1 FMC connector run the following command:
+	\begin{lstlisting}[backgroundcolor = \color{Gainsboro}, language=bash, frame=none]]
+$ PYTHONPATH=../../badger:../../periphera\l_drivers
+/i2cbridge python fmc\_test\_c.py --ip $IP --fmc 0
+	\end{lstlisting}
+	\item To test P2 FMC connector run the following command:
+	\begin{lstlisting}[backgroundcolor = \color{Gainsboro}, language=bash, frame=none]]
+$ PYTHONPATH=../../badger:../../periphera\l_drivers
+/i2cbridge python fmc\_test\_c.py --ip $IP --fmc 1
+	\end{lstlisting}
+	\end{enumerate}
+\end{enumerate}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\linewidth]{fmc_tester.png}
+ \caption{FMC connectors FMC Tester board plugged in.}
+\end{center}
+\end{figure}
+
+\subsection{QSFP test}
+
+\begin{leftbar}
+Board power should be turned off when inserting and removing the QSFP module.
+\end{leftbar}
+\begin{enumerate}
+	\item Plug QSFP loopback module to one of the ports.
+	\item Connect FPGA JTAG programmer.
+	\item Configure FPGA using \texttt{marble\_ibert.bit} bit file.
+	\begin{enumerate}
+		\item Run Vivado
+		\item Go to \menu{Flow>Open Hardware Manager} and then  \menu{Tools>Auto Connect}
+		\item Click \menu{Tools>Program Device>xc7k160t\_0} to open the programming window.
+		\item Choose the \textit{bitstream file} and click \menu{Program}
+	\end{enumerate}
+	\item After successful programming, the Dashboard should start automatically.
+	\item Detect links by clicking \menu{Serial I/O Links>Auto-detect links}
+	\item Correctly detected and working links should appear as shown in figure \ref{links}.
+	\item Connect the QSFP loopback module to the other QSFP connector and repeat the steps above.
+\end{enumerate}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\linewidth]{links.png}
+ \caption{Working links.}\label{links}
+\end{center}
+\end{figure}
+
+\subsection{Ethernet test}
+The following steps should be performed to test the Ethernet:
+\begin{enumerate}
+    \item Program the FPGA using the following steps:
+	\begin{enumerate}
+	\item Go to the folder \textbf{Bedrock/projects/test\_marble\_family/}
+	\item Open command terminal and run command:
+	\begin{lstlisting}[backgroundcolor = \color{Gainsboro}, language=bash, frame=none]]
+$ mutil usb
+	\end{lstlisting}
+	\end{enumerate}
+    \item Change the network adapter settings to connect with static IP address \textbf{192.168.9.10}.
+    \item Connect Marble to the computer using an Ethernet cable.
+    \item Ping the board:
+    \begin{lstlisting}[backgroundcolor = \color{Gainsboro}, language=bash, frame=none]]
+$ ping 192.168.9.10
+	\end{lstlisting}
+    \item Expected result:
+    \begin{lstlisting}[backgroundcolor = \color{Gainsboro}, language=bash, frame=none]]
+Pinging [192.168.9.10] with 32 bytes of data:
+Reply from 192.168.9.10: bytes=32 time=17ms TTL=55
+Reply from 192.168.9.10: bytes=32 time=152ms TTL=55
+Reply from 192.168.9.10: bytes=32 time=12ms TTL=55
+Reply from 192.168.9.10: bytes=32 time=14ms TTL=55
+
+Ping statistics for 192.168.9.10:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 12ms, Maximum = 152ms, Average = 48ms
+	\end{lstlisting}
+    \item For data traffic test use \textit{iperf}. Run command:
+    \begin{lstlisting}[backgroundcolor = \color{Gainsboro}, language=bash, frame=none]]
+$ iperf -c 192.168.9.10 -u -b 1000M -p 802
+	\end{lstlisting}
+\end{enumerate}
+
+
+\section{Appendix}
+\subsection{An alternative way to program FPGA}
+Programming FPGA using Vivado and Digilent JTAG HS3:
+\begin{enumerate}
+		\item Run Vivado
+		\item Go to \menu{Flow>Open Hardware Manager} and then  \menu{Tools>Auto Connect}
+		\item Click \menu{Tools>Program Device>xc7k160t\_0} to open the programming window.
+		\item Choose the \textit{bitstream file} and click \menu{Program}
+
+	\item After successful programming, the Dashboard should start automatically.
+\end{enumerate}
+\end{document}
